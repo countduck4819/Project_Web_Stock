@@ -74,3 +74,5 @@ db/__pycache__/
 *.bak
 *.swp
 docker-compose.override.yml
+
+db/
