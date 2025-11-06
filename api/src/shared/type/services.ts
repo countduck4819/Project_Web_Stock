@@ -1,0 +1,39 @@
+import { BaseResDataI } from './base';
+import { IndustryReqI, IndustryResI } from './industries';
+import { StockReqI, StockResI } from './stocks';
+import { UserReqI, UserResI } from './users';
+
+export interface BaseServicesI<RequestI, ResponseI> {
+  paginate: (
+    condition?: Partial<Record<keyof RequestI, any>>,
+    page?: number,
+    limit?: number,
+    searchFilters?: Partial<Record<keyof RequestI, any>>,
+  ) => Promise<BaseResDataI<ResponseI[] | null>>;
+  findOne: (id: number) => Promise<BaseResDataI<ResponseI[] | null>>;
+  find: (params?: any) => Promise<BaseResDataI<ResponseI[] | null>>;
+  create: (data: RequestI) => Promise<BaseResDataI<ResponseI[] | null>>;
+  updateOne: (
+    id: number,
+    data: RequestI,
+  ) => Promise<BaseResDataI<ResponseI[] | null>>;
+  softDelete: (id: number) => Promise<BaseResDataI<any>>;
+  getJsonData: (filename: string) => Promise<BaseResDataI<any>>;
+}
+
+export interface UsersServiceI extends BaseServicesI<UserReqI, UserResI> {}
+
+export interface AuthServiceI extends BaseServicesI<UserReqI, UserResI> {
+  loginWithPassword: (data: any) => Promise<BaseResDataI<any>>;
+  refreshToken: (tokenData: {
+    refreshToken: string;
+  }) => Promise<BaseResDataI<any>>;
+  logout: (userId: number) => Promise<BaseResDataI<any>>;
+}
+
+export interface IndustryServiceI
+  extends BaseServicesI<IndustryReqI, IndustryResI> {}
+
+export interface StocksServiceI extends BaseServicesI<StockReqI, StockResI> {
+  findByIndustry: (industryId: number) => Promise<any>;
+}

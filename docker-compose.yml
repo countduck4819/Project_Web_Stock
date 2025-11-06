@@ -1,0 +1,61 @@
+services:
+    db:
+        container_name: fireant_db
+        image: postgres:16
+        environment:
+            - POSTGRES_USER=countduck
+            - POSTGRES_PASSWORD=countduck
+            - POSTGRES_DB=fireant_stock
+        ports:
+            - "5000:5432"
+        volumes:
+            - ./db:/var/lib/postgresql/data
+    api:
+        container_name: fireant_api
+        image: node:22.9.0
+        working_dir: /fireant/api
+        volumes:
+            - ./api:/fireant/api
+            - ./data:/fireant/data
+        ports:
+            - "3000:3000"
+        depends_on:
+            - db
+        command: ["npm", "run", "start:dev"]
+        env_file:
+            - .env
+
+    web:
+        container_name: fireant_web
+        image: node:22.9.0
+        working_dir: /fireant/web
+        volumes:
+            - ./web:/fireant/web
+        ports:
+            - "7000:7000"
+        command: ["npm", "run", "dev"]
+        depends_on:
+            - api
+        env_file:
+            - .env
+
+    python_data:
+        container_name: fireant_python
+        image: python:3.11-slim
+        working_dir: /fireant/python
+        volumes:
+            - ./python_data:/fireant/python
+            - ./data/:/fireant/python/data/
+            - fireant_pip_cache:/usr/local/lib/python3.11/site-packages
+        ports:
+            - "6060:6060"
+        dns:
+            - 8.8.8.8
+            - 1.1.1.1
+        command: bash -c "apt-get update && apt-get install -y ca-certificates && pip install --no-cache-dir -r requirements.txt && python server.py"
+        environment:
+            - FLASK_APP=server.py
+            - FLASK_ENV=development
+            - TZ=Asia/Ho_Chi_Minh
+volumes:
+    fireant_pip_cache:

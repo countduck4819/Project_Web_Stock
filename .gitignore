@@ -1,0 +1,76 @@
+# ==========================
+# GLOBAL IGNORE (all services)
+# ==========================
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment
+.env
+.env.*
+*.env.local
+*.env.development
+*.env.production
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Cache
+.cache/
+.tmp/
+*.tsbuildinfo
+
+# ==========================
+# NESTJS API (api/)
+# ==========================
+api/node_modules/
+api/dist/
+api/coverage/
+
+# ==========================
+# NEXTJS WEB (web/)
+# ==========================
+web/node_modules/
+web/.next/
+web/lib/
+web/out/
+web/coverage/
+web/next-env.d.ts
+web/public/lg-*
+web/public/*.webp
+web/public/file.svg
+
+# ==========================
+# PYTHON SERVICE (python_data/)
+# ==========================
+python_data/__pycache__/
+python_data/.pytest_cache/
+python_data/venv/
+python_data/*.pyc
+python_data/*.pyo
+python_data/*.pyd
+python_data/*.egg-info/
+
+# ==========================
+# DATA EXPORTS (data/, db/)
+# ==========================
+data/*.json
+!data/industries_for_code.json   # giữ lại nếu cần ví dụ
+db/*.sqlite
+db/*.db
+db/__pycache__/
+
+# ==========================
+# DOCKER / TEMP
+# ==========================
+*.pid
+*.seed
+*.bak
+*.swp
+docker-compose.override.yml
