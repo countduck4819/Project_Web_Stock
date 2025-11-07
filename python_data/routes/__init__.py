@@ -1,12 +1,12 @@
-from .vnindex import vnindex_bp
-from .listing import listing_bp
-from .industries import industries_bp
-from .industries_for_code import industries_for_code_bp
-from .stocks_by_industries import stocks_by_industries_bp
-from .stock import stock_bp
-from .stocks_symbols import stocks_symbols_bp
-from .history import tv_bp
+import pkgutil
+import importlib
 
-blueprints = [tv_bp,stocks_symbols_bp,vnindex_bp, listing_bp, industries_bp, industries_for_code_bp, stocks_by_industries_bp, stock_bp]
+blueprints = []
+
+for loader, module_name, is_pkg in pkgutil.iter_modules(__path__):
+    module = importlib.import_module(f"{__name__}.{module_name}")
+    for attr in dir(module):
+        if attr.endswith("_bp"):  # chỉ lấy các biến blueprint
+            blueprints.append(getattr(module, attr))
 
 __all__ = ["blueprints"]

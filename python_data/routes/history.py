@@ -1,10 +1,10 @@
 from flask import Blueprint, jsonify, request
-from core.fetchers import fetch_tradingview_history_mock
+from core.fetchers import fetch_history
 import time
 
-tv_bp = Blueprint("tv_bp", __name__)  # ✅ tên blueprint chuẩn
+history_bp = Blueprint("history_bp", __name__)  # ✅ tên blueprint chuẩn
 
-@tv_bp.route("/api/tradingview-feed/config")
+@history_bp.route("/api/tradingview-feed/config")
 def config():
     return jsonify({
         "supported_resolutions": ["1", "5", "15", "60", "1D"],
@@ -14,7 +14,7 @@ def config():
         "supports_time": True,
     })
 
-@tv_bp.route("/api/tradingview-feed/symbols")
+@history_bp.route("/api/tradingview-feed/symbols")
 def symbols():
     symbol = request.args.get("symbol", "").upper()
     if not symbol:
@@ -34,7 +34,7 @@ def symbols():
         "supported_resolutions": ["1D"],
     })
 
-@tv_bp.route("/api/tradingview-feed/history")
+@history_bp.route("/api/tradingview-feed/history")
 def history():
     symbol = request.args.get("symbol", "").upper().strip()
     from_ts = int(request.args.get("from", 0))
@@ -47,9 +47,9 @@ def history():
         _, symbol = symbol.split(":")
 
     print(f"📊 Fetch mock data for {symbol} ({from_ts} → {to_ts})")
-    data = fetch_tradingview_history_mock(symbol)
+    data = fetch_history(symbol)
     return jsonify(data)
 
-@tv_bp.route("/api/tradingview-feed/time")
+@history_bp.route("/api/tradingview-feed/time")
 def time_now():
     return str(int(time.time()))

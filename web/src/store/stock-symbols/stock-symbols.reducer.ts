@@ -1,5 +1,18 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { fetchStockSymbols, fetchStocks } from "./stock-symbols.api";
+import {
+    fetchStockCandleData,
+    fetchStockSymbols,
+    fetchStocks,
+} from "./stock-symbols.api";
+
+export interface Candle {
+    time: string;
+    open: number;
+    high: number;
+    low: number;
+    close: number;
+    volume: number;
+}
 
 interface StockItem {
     symbol: string;
@@ -10,6 +23,7 @@ interface StockSymbolsState {
     symbolsList: string[];
     stocksFullList: StockItem[];
     stocksSymbolList: string[];
+    candleData: Candle[]; // chỉ là 1 mảng dữ liệu nến
     loading: boolean;
     error: string | null;
 }
@@ -18,6 +32,7 @@ const initialState: StockSymbolsState = {
     symbolsList: [],
     stocksFullList: [],
     stocksSymbolList: [],
+    candleData: [],
     loading: false,
     error: null,
 };
@@ -30,10 +45,12 @@ export const stockSymbolsSlice = createSlice({
             state.symbolsList = [];
             state.stocksFullList = [];
             state.stocksSymbolList = [];
+            state.candleData = [];
             state.error = null;
         },
     },
     extraReducers: (builder) => {
+        // ===== SYMBOL LIST =====
         builder
             .addCase(fetchStockSymbols.pending, (state) => {
                 state.loading = true;
@@ -50,6 +67,7 @@ export const stockSymbolsSlice = createSlice({
                 state.error = action.payload as string;
             });
 
+        // ===== STOCKS FULL LIST =====
         builder
             .addCase(fetchStocks.pending, (state) => {
                 state.loading = true;
@@ -62,6 +80,21 @@ export const stockSymbolsSlice = createSlice({
                 state.stocksSymbolList = data.map((item: any) => item.symbol);
             })
             .addCase(fetchStocks.rejected, (state, action) => {
+                state.loading = false;
+                state.error = action.payload as string;
+            });
+
+        // ===== CANDLE DATA =====
+        builder
+            .addCase(fetchStockCandleData.pending, (state) => {
+                state.loading = true;
+                state.error = null;
+            })
+            .addCase(fetchStockCandleData.fulfilled, (state, action) => {
+                state.loading = false;
+                state.candleData = action.payload; // gán trực tiếp mảng Candle[]
+            })
+            .addCase(fetchStockCandleData.rejected, (state, action) => {
                 state.loading = false;
                 state.error = action.payload as string;
             });

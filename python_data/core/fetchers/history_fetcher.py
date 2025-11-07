@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta
 import random
 
-def fetch_tradingview_history_mock(symbol: str):
+def fetch_history(symbol: str):
     """
     Sinh dữ liệu mẫu (mock) cho TradingView chart.
     Dùng để test biểu đồ mà không cần gọi vnstock.
