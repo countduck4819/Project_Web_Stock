@@ -4,3 +4,4 @@ export * from './users';
 export * from './industries';
 export * from './file';
 export * from './stocks';
+export * from './news';

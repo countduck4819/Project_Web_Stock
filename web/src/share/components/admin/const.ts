@@ -4,6 +4,7 @@ import {
     FileText,
     Settings,
     LucideIcon,
+    Layers3,
 } from "lucide-react";
 
 export interface SidebarMenuItem {
@@ -23,9 +24,19 @@ export const sidebarMenu: SidebarMenuItem[] = [
         href: "/admin",
     },
     {
-        title: "Quản lí tài khoản",
+        title: "Quản lý tài khoản",
         icon: Users,
         href: "/admin/users",
+    },
+    {
+        title: "Quản lý nhóm ngành",
+        icon: Layers3,
+        href: "/admin/industries",
+    },
+    {
+        title: "Quản lý cổ phiếu",
+        icon: Layers3,
+        href: "/admin/stocks",
     },
     {
         title: "Reports",

@@ -27,7 +27,7 @@
 //     useEffect(() => {
 //         if (!containerRef.current) return;
 
-//         // 🟢 Tạo chart
+//         //   Tạo chart
 //         const chart = createChart(containerRef.current, {
 //             width: containerRef.current.clientWidth,
 //             height: 500,
@@ -44,7 +44,7 @@
 //             rightPriceScale: { borderColor: "#cbd5e1" },
 //         });
 
-//         // 🟢 Các series
+//         //   Các series
 //         const candleSeries = chart.addSeries(CandlestickSeries, {
 //             upColor: "#00b894",
 //             borderUpColor: "#00b894",
@@ -80,7 +80,6 @@
 //                 `http://fireant_python:6060/api/stock/${symbol}`
 //             );
 //             const data: Candle[] = await res.json();
-//             console.log("📊 Raw data:", data.slice(0, 5));
 
 //             if (!data?.length) {
 //                 console.warn("⚠️ Không có dữ liệu!");

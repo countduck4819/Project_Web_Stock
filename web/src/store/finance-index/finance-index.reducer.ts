@@ -40,7 +40,6 @@ export const financeIndexSlice = createSlice({
                 state.loading = false;
                 const data = action.payload?.data;
                 state.data = data;
-                console.log("Finance Index Payload Data:", data);
                 state.symbol = action.payload.symbol || null;
             })
             .addCase(fetchFinanceIndex.rejected, (state, action) => {

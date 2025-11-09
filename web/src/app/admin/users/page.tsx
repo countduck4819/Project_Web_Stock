@@ -75,6 +75,13 @@ export default function AdminUsersPage() {
     return (
         <>
             <div className="p-6 w-full shadow-lg shadow-purple-900/30 h-full">
+                <h2
+                    className="text-[1.5rem] md:text-3xl font-semibold 
+  bg-gradient-to-r from-[#6A5AF9] to-[#FF5EDF] 
+  bg-clip-text text-transparent tracking-tight mb-8"
+                >
+                    Quản lý tài khoản
+                </h2>
                 <TableCustom
                     columns={userColumns}
                     data={users}

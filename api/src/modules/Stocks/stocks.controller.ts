@@ -43,10 +43,14 @@ export class StockController {
   }
 
   // Lấy danh sách hoặc tìm theo điều kiện
-  @Public()
   @Get()
-  getAll(@Query() condition: Record<string, any>) {
-    return this.stockService.find(condition);
+  @Public()
+  getAll(@Query() query: Record<string, any>) {
+    const page = Number(query.page) || 1;
+    const limit = Number(query.limit) || 10;
+
+    // query có thể gồm { page, limit, search }
+    return this.stockService.paginate(query, page, limit);
   }
 
   @Public()

@@ -18,7 +18,7 @@ import { AccountType } from "@/store/users/user.reducer";
 
 export default function Header() {
     const { user, logout } = useAuth();
-    console.log(user);
+
     return (
         <header
             className="

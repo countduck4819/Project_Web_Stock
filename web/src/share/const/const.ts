@@ -5,4 +5,5 @@ export const publicRouters: string[] = [
     "/not-found",
     "/dashboard",
     "/ma-chung-khoan",
+    "/tin-tuc",
 ];

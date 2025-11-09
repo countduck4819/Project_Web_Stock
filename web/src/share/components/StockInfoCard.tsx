@@ -8,9 +8,9 @@ import { fetchFinanceIndex } from "@/store/finance-index/finance-index.api";
 export default function StockInfoCard({ symbol }: { symbol?: string }) {
     const params = useParams();
     const dispatch = useAppDispatch();
-    const { data, loading } = useAppSelector((state) => state.financeIndex);
+    const { data } = useAppSelector((state) => state.financeIndex);
+    const { candleData } = useAppSelector((state) => state.stockSymbols);
 
-    // Ưu tiên prop symbol → fallback về URL param
     const stock = (symbol || String(params.stock || "")).toUpperCase();
 
     useEffect(() => {
@@ -18,22 +18,19 @@ export default function StockInfoCard({ symbol }: { symbol?: string }) {
         dispatch(fetchFinanceIndex(stock));
     }, [stock]);
 
-    if (loading)
-        return (
-            <div className="p-4 text-sm text-gray-500 bg-white border rounded-lg shadow-sm">
-                Đang tải dữ liệu...
-            </div>
-        );
+    const financeIndexData = data?.[0] ?? {};
 
-    if (!data || Object.keys(data).length === 0)
-        return (
-            <div className="p-4 text-sm text-gray-500 bg-white border rounded-lg shadow-sm">
-                Không có dữ liệu
-            </div>
-        );
+    // --- Lấy dữ liệu giá ---
+    const last = candleData.at(-1);
+    const prev = candleData.at(-2);
+    const reference = prev?.close ?? 0;
+    const open = last?.open ?? 0;
+    const low = last?.low ?? 0;
+    const high = last?.high ?? 0;
+    const volume = last?.volume ?? 0;
+    const value = (volume * open) / 1_000_000_000; // Tỷ đồng
 
-    const financeIndexData = data?.[0]; // alias
-
+    // --- Helper ---
     const formatNum = (v: any, digits = 2) => {
         if (v === null || v === undefined || v === "") return "-";
         const num = Number(v);
@@ -47,11 +44,14 @@ export default function StockInfoCard({ symbol }: { symbol?: string }) {
         return num.toLocaleString("vi-VN");
     };
 
-    const colored = (v: any) => {
+    const colored = (
+        v: any,
+        { positive = "text-green-600", negative = "text-red-500" } = {}
+    ) => {
         const num = Number(v);
         if (isNaN(num)) return "text-gray-800";
-        if (num > 0) return "text-green-600 font-semibold";
-        if (num < 0) return "text-red-500 font-semibold";
+        if (num > 0) return `${positive} font-semibold`;
+        if (num < 0) return `${negative} font-semibold`;
         return "text-gray-800";
     };
 
@@ -73,19 +73,15 @@ export default function StockInfoCard({ symbol }: { symbol?: string }) {
                     label="Tham chiếu"
                     value={
                         <span className="text-amber-500">
-                            {formatNum(
-                                financeIndexData["Chỉ tiêu định giá P/E"]
-                            )}
+                            {reference.toFixed(2)}
                         </span>
                     }
                 />
                 <Row
                     label="Mở cửa"
                     value={
-                        <span className="text-red-500">
-                            {formatNum(
-                                financeIndexData["Chỉ tiêu định giá P/B"]
-                            )}
+                        <span className="text-green-600">
+                            {open.toFixed(2)}
                         </span>
                     }
                 />
@@ -94,34 +90,25 @@ export default function StockInfoCard({ symbol }: { symbol?: string }) {
                     value={
                         <span>
                             <span className="text-red-500">
-                                {formatNum(
-                                    financeIndexData["Chỉ tiêu định giá P/S"]
-                                )}
+                                {low.toFixed(2)}
                             </span>{" "}
                             -{" "}
                             <span className="text-green-600">
-                                {formatNum(
-                                    financeIndexData[
-                                        "Chỉ tiêu định giá P/Cash Flow"
-                                    ]
-                                )}
+                                {high.toFixed(2)}
                             </span>
                         </span>
                     }
                 />
                 <Row
                     label="Khối lượng"
+                    value={volume.toLocaleString("vi-VN")}
+                />
+                <Row label="Giá trị" value={`${value.toFixed(2)} tỷ`} />
+                <Row
+                    label="KLTB 10 ngày"
                     value={formatNum(
                         financeIndexData[
                             "Chỉ tiêu định giá Outstanding Share (Mil. Shares)"
-                        ]
-                    )}
-                />
-                <Row
-                    label="Giá trị"
-                    value={formatNum(
-                        financeIndexData[
-                            "Chỉ tiêu định giá Market Capital (Bn. VND)"
                         ]
                     )}
                 />
@@ -130,6 +117,23 @@ export default function StockInfoCard({ symbol }: { symbol?: string }) {
                     value={formatNum(
                         financeIndexData[
                             "Chỉ tiêu thanh khoản Financial Leverage"
+                        ]
+                    )}
+                />
+                <Row
+                    label="Thị giá vốn"
+                    value={`${formatNum(
+                        financeIndexData[
+                            "Chỉ tiêu định giá Market Capital (Bn. VND)"
+                        ],
+                        2
+                    )}`}
+                />
+                <Row
+                    label="Số lượng CPHL"
+                    value={formatNum(
+                        financeIndexData[
+                            "Chỉ tiêu định giá Outstanding Share (Mil. Shares)"
                         ]
                     )}
                 />
@@ -160,14 +164,6 @@ export default function StockInfoCard({ symbol }: { symbol?: string }) {
                             )}
                         </span>
                     }
-                />
-                <Row
-                    label="Vốn hóa"
-                    value={formatNum(
-                        financeIndexData[
-                            "Chỉ tiêu định giá Market Capital (Bn. VND)"
-                        ]
-                    )}
                 />
             </div>
         </div>

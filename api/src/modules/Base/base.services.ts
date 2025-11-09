@@ -94,13 +94,13 @@ export class BaseServices<Entity extends BaseEntities> {
     try {
       const alias = this.getTableName();
 
-      // 🟣 1. Tạo query builder thủ công, không dùng handleSelect()
+      //   1. Tạo query builder thủ công, không dùng handleSelect()
       const query = this.repository
         .createQueryBuilder(alias)
         .where(`${alias}.active = true`)
         .andWhere(`${alias}.deletedAt IS NULL`);
 
-      // 🟢 2. Điều kiện EQUAL
+      // 2. Điều kiện EQUAL
       if (Object.keys(condition).length > 0) {
         for (const [key, value] of Object.entries(condition)) {
           if (value !== undefined && value !== null && value !== '') {
@@ -109,7 +109,7 @@ export class BaseServices<Entity extends BaseEntities> {
         }
       }
 
-      // 🟢 3. Điều kiện LIKE (search)
+      //   3. Điều kiện LIKE (search)
       if (searchFilters && Object.keys(searchFilters).length > 0) {
         const searchExprs: string[] = [];
         const searchParams: Record<string, any> = {};
@@ -128,7 +128,7 @@ export class BaseServices<Entity extends BaseEntities> {
         }
       }
 
-      // 🟣 4. Select đầy đủ, có alias
+      //   4. Select đầy đủ, có alias
       const publishCols = this.repository.metadata.columns
         .filter(
           (col) =>
@@ -147,7 +147,7 @@ export class BaseServices<Entity extends BaseEntities> {
 
       query.select(publishCols);
 
-      // 🟢 5. Order by createdAt nếu có
+      //   5. Order by createdAt nếu có
       if (
         this.repository.metadata.columns.some(
           (col) => col.propertyName === 'modifiedAt',
@@ -156,7 +156,7 @@ export class BaseServices<Entity extends BaseEntities> {
         query.orderBy(`${alias}.modifiedAt`, 'DESC');
       }
 
-      // 🟢 6. Phân trang
+      //   6. Phân trang
       const [data, total] = await query
         .take(limit)
         .skip((page - 1) * limit)
@@ -514,13 +514,13 @@ export class BaseServices<Entity extends BaseEntities> {
 //     try {
 //       const alias = this.getTableName();
 
-//       // 🟣 1. Tạo query builder thủ công, không dùng handleSelect()
+//       //   1. Tạo query builder thủ công, không dùng handleSelect()
 //       const query = this.repository
 //         .createQueryBuilder(alias)
 //         .where(`${alias}.active = true`)
 //         .andWhere(`${alias}.deleted_at IS NULL`);
 
-//       // 🟢 2. Điều kiện EQUAL
+//       //   2. Điều kiện EQUAL
 //       if (Object.keys(condition).length > 0) {
 //         for (const [key, value] of Object.entries(condition)) {
 //           if (value !== undefined && value !== null && value !== '') {
@@ -529,7 +529,7 @@ export class BaseServices<Entity extends BaseEntities> {
 //         }
 //       }
 
-//       // 🟢 3. Điều kiện LIKE (search)
+//       //   3. Điều kiện LIKE (search)
 //       if (searchFilters && Object.keys(searchFilters).length > 0) {
 //         const searchExprs: string[] = [];
 //         const searchParams: Record<string, any> = {};
@@ -548,7 +548,7 @@ export class BaseServices<Entity extends BaseEntities> {
 //         }
 //       }
 
-//       // 🟣 4. Select đầy đủ, có alias
+//       //   4. Select đầy đủ, có alias
 //       const publishCols = this.repository.metadata.columns
 //         .filter(
 //           (col) =>
@@ -567,7 +567,7 @@ export class BaseServices<Entity extends BaseEntities> {
 
 //       query.select(publishCols);
 
-//       // 🟢 5. Order by createdAt nếu có
+//       //   5. Order by createdAt nếu có
 //       if (
 //         this.repository.metadata.columns.some(
 //           (col) => col.propertyName === 'createdAt',
@@ -576,7 +576,7 @@ export class BaseServices<Entity extends BaseEntities> {
 //         query.orderBy(`${alias}.created_at`, 'DESC');
 //       }
 
-//       // 🟢 6. Phân trang
+//       //   6. Phân trang
 //       const [data, total] = await query
 //         .take(limit)
 //         .skip((page - 1) * limit)

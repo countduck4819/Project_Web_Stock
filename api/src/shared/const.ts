@@ -23,3 +23,7 @@ export const IndustryRepository = Symbol('IndustryRepository');
 // Stocks
 export const StocksServiceToken = Symbol('StocksService');
 export const StocksRepository = Symbol('StocksRepository');
+
+// News
+export const NewsRepository = Symbol('NewsRepository');
+export const NewsServiceToken = Symbol('NewsServiceToken');

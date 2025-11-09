@@ -1,5 +1,6 @@
 import { BaseResDataI } from './base';
 import { IndustryReqI, IndustryResI } from './industries';
+import { NewsReqI, NewsResI } from './news';
 import { StockReqI, StockResI } from './stocks';
 import { UserReqI, UserResI } from './users';
 
@@ -37,3 +38,5 @@ export interface IndustryServiceI
 export interface StocksServiceI extends BaseServicesI<StockReqI, StockResI> {
   findByIndustry: (industryId: number) => Promise<any>;
 }
+
+export interface NewsServiceI extends BaseServicesI<NewsReqI, NewsResI> {}

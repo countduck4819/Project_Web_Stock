@@ -56,9 +56,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     }, []);
 
     const refetchUser = async () => {
-        console.log("token", 1);
         const token = getAccessToken();
-        console.log("token", token);
         if (!token) {
             setUser(null);
             setLoading(false);
@@ -66,7 +64,6 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         }
 
         try {
-            console.log("helloasdfnaksdf ádfadsf");
             setLoading(true);
             const res = await fetch(
                 `${process.env.NEXT_PUBLIC_API_BASE_URL}/auth/me`,
@@ -75,7 +72,6 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
                     credentials: "include",
                 }
             );
-            console.log(res);
             if (!res.ok) throw new Error("Unauthorized");
             const { data } = await res.json();
             setUser(data?.[0]);

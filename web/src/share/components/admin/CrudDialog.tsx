@@ -38,7 +38,7 @@
 //     options?: { label: string; value: string }[];
 //     required?: boolean;
 //     placeholder?: string;
-//     // 🟣 cho phép validate phụ thuộc vào các field khác
+//     //   cho phép validate phụ thuộc vào các field khác
 //     validate?: (value: any, allValues?: Record<string, any>) => string | null;
 // }
 
@@ -102,7 +102,7 @@
 //         setFormData((prev) => ({ ...prev, [key]: file }));
 //     };
 
-//     // 🟣 validateForm hỗ trợ phụ thuộc field
+//     //   validateForm hỗ trợ phụ thuộc field
 //     const validateForm = () => {
 //         const newErrors: Record<string, string> = {};
 

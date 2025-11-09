@@ -293,7 +293,6 @@ export default function TradingViewWidgetPro({ symbol }: { symbol?: string }) {
         const found = stocksFullList.find((s) => s.symbol === symbol);
         return found?.organ_name || symbol;
     }, [stocksFullList, symbol]);
-    console.log(candleData);
     useEffect(() => {
         if (!stocksSymbolList.length) {
             dispatch(fetchStocks());
@@ -500,7 +499,7 @@ export default function TradingViewWidgetPro({ symbol }: { symbol?: string }) {
             </div>
 
             {/* Chart giữ nguyên */}
-            <div ref={containerRef} className="h-[580px] w-full relative" />
+            <div ref={containerRef} className="min-h-[30rem] w-full relative" />
         </div>
     );
 }
