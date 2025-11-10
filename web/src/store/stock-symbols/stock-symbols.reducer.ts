@@ -4,6 +4,8 @@ import {
     fetchStockSymbols,
     fetchStocks,
 } from "./stock-symbols.api";
+import { StockIndex } from "@/share/enum";
+import { STOCK_INDEX_MAP } from "@/share/const/const";
 
 export interface Candle {
     time: string;
@@ -76,8 +78,21 @@ export const stockSymbolsSlice = createSlice({
             .addCase(fetchStocks.fulfilled, (state, action) => {
                 state.loading = false;
                 const data = action.payload || [];
-                state.stocksFullList = data;
-                state.stocksSymbolList = data.map((item: any) => item.symbol);
+
+                const vnindex = {
+                    symbol: StockIndex.VNINDEX,
+                    organ_name: STOCK_INDEX_MAP[StockIndex.VNINDEX],
+                };
+
+                const hasVNIndex = data.some(
+                    (item: any) => item.symbol === StockIndex.VNINDEX
+                );
+                const finalData = hasVNIndex ? data : [vnindex, ...data];
+
+                state.stocksFullList = finalData;
+                state.stocksSymbolList = finalData.map(
+                    (item: any) => item.symbol
+                );
             })
             .addCase(fetchStocks.rejected, (state, action) => {
                 state.loading = false;

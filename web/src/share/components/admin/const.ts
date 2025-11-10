@@ -5,6 +5,8 @@ import {
     Settings,
     LucideIcon,
     Layers3,
+    BarChart3,
+    Newspaper,
 } from "lucide-react";
 
 export interface SidebarMenuItem {
@@ -30,13 +32,17 @@ export const sidebarMenu: SidebarMenuItem[] = [
     },
     {
         title: "Quản lý nhóm ngành",
-        icon: Layers3,
+        icon: BarChart3,
         href: "/admin/industries",
     },
     {
         title: "Quản lý cổ phiếu",
         icon: Layers3,
-        href: "/admin/stocks",
+    },
+    {
+        title: "Tin tức thị trường",
+        icon: Newspaper,
+        href: "/admin/news",
     },
     {
         title: "Reports",

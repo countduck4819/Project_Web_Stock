@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { useParams } from "next/navigation";
 import { useAppDispatch, useAppSelector } from "@/redux/hooks";
 import { fetchFinanceIndex } from "@/store/finance-index/finance-index.api";
+import { StockIndex } from "../enum";
 
 export default function StockInfoCard({ symbol }: { symbol?: string }) {
     const params = useParams();
@@ -68,7 +69,7 @@ export default function StockInfoCard({ symbol }: { symbol?: string }) {
             </div>
 
             {/* Body */}
-            <div className="divide-y divide-gray-100 p-3">
+            <div className="divide-y divide-gray-100 p-[1rem]">
                 <Row
                     label="Tham chiếu"
                     value={
@@ -104,67 +105,81 @@ export default function StockInfoCard({ symbol }: { symbol?: string }) {
                     value={volume.toLocaleString("vi-VN")}
                 />
                 <Row label="Giá trị" value={`${value.toFixed(2)} tỷ`} />
-                <Row
-                    label="KLTB 10 ngày"
-                    value={formatNum(
-                        financeIndexData[
-                            "Chỉ tiêu định giá Outstanding Share (Mil. Shares)"
-                        ]
-                    )}
-                />
-                <Row
-                    label="Beta"
-                    value={formatNum(
-                        financeIndexData[
-                            "Chỉ tiêu thanh khoản Financial Leverage"
-                        ]
-                    )}
-                />
-                <Row
-                    label="Thị giá vốn"
-                    value={`${formatNum(
-                        financeIndexData[
-                            "Chỉ tiêu định giá Market Capital (Bn. VND)"
-                        ],
-                        2
-                    )}`}
-                />
-                <Row
-                    label="Số lượng CPHL"
-                    value={formatNum(
-                        financeIndexData[
-                            "Chỉ tiêu định giá Outstanding Share (Mil. Shares)"
-                        ]
-                    )}
-                />
-                <Row
-                    label="P/E"
-                    value={
-                        <span
-                            className={colored(
-                                financeIndexData["Chỉ tiêu định giá P/E"]
+                {stock !== StockIndex.VNINDEX ? (
+                    <>
+                        <Row
+                            label="KLTB 10 ngày"
+                            value={formatNum(
+                                financeIndexData[
+                                    "Chỉ tiêu định giá Outstanding Share (Mil. Shares)"
+                                ]
                             )}
-                        >
-                            {formatNum(
-                                financeIndexData["Chỉ tiêu định giá P/E"]
+                        />
+                        <Row
+                            label="Beta"
+                            value={formatNum(
+                                financeIndexData[
+                                    "Chỉ tiêu thanh khoản Financial Leverage"
+                                ]
                             )}
-                        </span>
-                    }
-                />
-                <Row
-                    label="EPS"
-                    value={
-                        <span
-                            className={colored(
-                                financeIndexData["Chỉ tiêu định giá EPS (VND)"]
+                        />
+                        <Row
+                            label="Thị giá vốn"
+                            value={`${formatNum(
+                                financeIndexData[
+                                    "Chỉ tiêu định giá Market Capital (Bn. VND)"
+                                ],
+                                2
+                            )}`}
+                        />
+                        <Row
+                            label="Số lượng CPHL"
+                            value={formatNum(
+                                financeIndexData[
+                                    "Chỉ tiêu định giá Outstanding Share (Mil. Shares)"
+                                ]
                             )}
-                        >
-                            {formatNum(
-                                financeIndexData["Chỉ tiêu định giá EPS (VND)"]
-                            )}
-                        </span>
-                    }
-                />
+                        />
+                        <Row
+                            label="P/E"
+                            value={
+                                <span
+                                    className={colored(
+                                        financeIndexData[
+                                            "Chỉ tiêu định giá P/E"
+                                        ]
+                                    )}
+                                >
+                                    {formatNum(
+                                        financeIndexData[
+                                            "Chỉ tiêu định giá P/E"
+                                        ]
+                                    )}
+                                </span>
+                            }
+                        />
+                        <Row
+                            label="EPS"
+                            value={
+                                <span
+                                    className={colored(
+                                        financeIndexData[
+                                            "Chỉ tiêu định giá EPS (VND)"
+                                        ]
+                                    )}
+                                >
+                                    {formatNum(
+                                        financeIndexData[
+                                            "Chỉ tiêu định giá EPS (VND)"
+                                        ]
+                                    )}
+                                </span>
+                            }
+                        />
+                    </>
+                ) : (
+                    <></>
+                )}
             </div>
         </div>
     );

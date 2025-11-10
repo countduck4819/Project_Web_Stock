@@ -50,7 +50,7 @@ export function TableSearch({
             className="flex flex-wrap gap-4 items-end justify-start 
         bg-gradient-to-r from-[#1A1032] to-[#231A42] 
         p-4 rounded-xl border border-purple-600/20 
-        shadow-[0_0_25px_rgba(139,92,246,0.15)] backdrop-blur-md"
+        shadow-[0_0_1.5rem_rgba(139,92,246,0.15)] backdrop-blur-md"
         >
             <input
                 type="text"
@@ -66,7 +66,7 @@ export function TableSearch({
             />
 
             {searchConfig.map((item) => (
-                <div key={item.key} className="flex flex-col gap-1 w-[220px]">
+                <div key={item.key} className="flex flex-col gap-1 w-[13.75rem]">
                     <Label className="text-gray-200 text-sm font-medium">
                         {item.label}
                     </Label>

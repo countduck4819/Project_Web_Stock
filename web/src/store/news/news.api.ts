@@ -1,5 +1,6 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import { api } from "@/utils/axiosInstance";
+import { StockIndex } from "@/share/enum";
 
 const prefix = "/news";
 
@@ -50,6 +51,43 @@ export const fetchNewsDetailBySlug = createAsyncThunk(
             return rejectWithValue(
                 err.response?.data?.message ||
                     `Không thể tải chi tiết bài viết slug: ${slug}`
+            );
+        }
+    }
+);
+
+// 🔹 Lấy tất cả tin tức tổng hợp (dùng cho VNINDEX)
+export const fetchAllNewsForVNINDEX = createAsyncThunk(
+    `${prefix}/fetchAllForVNINDEX`,
+    async (params: { page?: number; limit?: number }, { rejectWithValue }) => {
+        try {
+            // symbol=VNINDEX để backend tự xử lý logic đặc biệt
+            const res = await api.get(`${prefix}`, {
+                params: { ...params, symbol: StockIndex?.VNINDEX },
+            });
+            return res.data;
+        } catch (err: any) {
+            return rejectWithValue(
+                err.response?.data?.message ||
+                    "Không thể tải tin tổng hợp cho VNINDEX"
+            );
+        }
+    }
+);
+
+// 🔍 Tìm kiếm tin tức (phân trang + keyword)
+export const fetchNewsSearchQuery = createAsyncThunk(
+    `${prefix}/fetchSearchQuery`,
+    async (
+        params: { page?: number; limit?: number; keyword?: string },
+        { rejectWithValue }
+    ) => {
+        try {
+            const res = await api.get(`${prefix}/search`, { params });
+            return res.data; // { data, meta, message }
+        } catch (err: any) {
+            return rejectWithValue(
+                err.response?.data?.message || "Không thể tìm kiếm tin tức"
             );
         }
     }

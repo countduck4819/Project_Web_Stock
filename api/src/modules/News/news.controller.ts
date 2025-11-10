@@ -47,4 +47,15 @@ export class NewsController {
   ) {
     return this.newsService.paginateNews(Number(page), Number(limit), symbol);
   }
+
+  // 🔍 Tìm kiếm tin tức (phân trang + keyword)
+  @Public()
+  @Get('/search')
+  async searchNews(
+    @Query('page') page = 1,
+    @Query('limit') limit = 10,
+    @Query('keyword') keyword?: string,
+  ) {
+    return this.newsService.searchNews(Number(page), Number(limit), keyword);
+  }
 }

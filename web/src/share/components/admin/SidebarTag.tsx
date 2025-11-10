@@ -34,7 +34,7 @@ export default function SidebarTag() {
         <Sidebar
             collapsible="icon"
             variant="sidebar"
-            className="border-r border-gray-200 bg-white/80 backdrop-blur-md shadow-sm"
+            className="border-r border-gray-200 bg-white/80 backdrop-blur-md shadow-sm w-[16rem]"
         >
             <SidebarContent>
                 <SidebarGroup>

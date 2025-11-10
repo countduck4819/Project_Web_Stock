@@ -3,15 +3,21 @@ import {
     fetchNewsQuery,
     fetchNewsFromJson,
     fetchNewsDetailBySlug,
+    fetchAllNewsForVNINDEX,
+    fetchNewsSearchQuery, // ✅ thêm mới
 } from "./news.api";
 
 const newsSlice = createSlice({
     name: "news",
     initialState: {
-        list: [] as any[], // dữ liệu từ DB
-        meta: {} as any, // phân trang
-        jsonData: [] as any[], // dữ liệu từ file JSON Python
-        detail: null as any, // chi tiết bài viết (theo slug)
+        list: [] as any[],
+        meta: {} as any,
+        vnindexList: [] as any[],
+        vnindexMeta: {} as any,
+        jsonData: [] as any[],
+        detail: null as any,
+        searchList: [] as any[], // ✅ thêm state riêng cho search
+        searchMeta: {} as any, // ✅ meta cho search
         loading: false,
         error: null as string | null,
     },
@@ -19,8 +25,12 @@ const newsSlice = createSlice({
         clearNews: (state) => {
             state.list = [];
             state.meta = {};
+            state.vnindexList = [];
+            state.vnindexMeta = {};
             state.jsonData = [];
             state.detail = null;
+            state.searchList = [];
+            state.searchMeta = {};
             state.loading = false;
             state.error = null;
         },
@@ -38,6 +48,33 @@ const newsSlice = createSlice({
                 state.meta = action.payload.meta;
             })
             .addCase(fetchNewsQuery.rejected, (state, action) => {
+                state.loading = false;
+                state.error = action.payload as string;
+            });
+
+        /** ✅ fetchAllNewsForVNINDEX */
+        builder
+            .addCase(fetchAllNewsForVNINDEX.pending, (state) => {
+                state.loading = true;
+                state.error = null;
+            })
+            .addCase(fetchAllNewsForVNINDEX.fulfilled, (state, action) => {
+                state.loading = false;
+
+                const newData = action.payload.data || [];
+                const meta = action.payload.meta || {};
+
+                // Nếu page > 1 → nối thêm vào list cũ
+                if (meta.page && meta.page > 1) {
+                    state.vnindexList = [...state.vnindexList, ...newData];
+                } else {
+                    // Nếu page = 1 → load mới hoàn toàn
+                    state.vnindexList = newData;
+                }
+
+                state.vnindexMeta = meta;
+            })
+            .addCase(fetchAllNewsForVNINDEX.rejected, (state, action) => {
                 state.loading = false;
                 state.error = action.payload as string;
             });
@@ -68,6 +105,22 @@ const newsSlice = createSlice({
                 state.detail = action.payload?.data || null;
             })
             .addCase(fetchNewsDetailBySlug.rejected, (state, action) => {
+                state.loading = false;
+                state.error = action.payload as string;
+            });
+
+        /** ✅ fetchNewsSearchQuery */
+        builder
+            .addCase(fetchNewsSearchQuery.pending, (state) => {
+                state.loading = true;
+                state.error = null;
+            })
+            .addCase(fetchNewsSearchQuery.fulfilled, (state, action) => {
+                state.loading = false;
+                state.searchList = action.payload.data || [];
+                state.searchMeta = action.payload.meta || {};
+            })
+            .addCase(fetchNewsSearchQuery.rejected, (state, action) => {
                 state.loading = false;
                 state.error = action.payload as string;
             });

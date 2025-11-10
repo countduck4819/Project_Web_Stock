@@ -134,7 +134,11 @@ export class NewsService
       .take(limit)
       .skip((page - 1) * limit);
 
-    if (symbol) qb.andWhere('news.symbol = :symbol', { symbol });
+    // ✅ Các mã khác: lọc theo symbol như cũ
+    // ✅ VNINDEX: KHÔNG lọc symbol → lấy tất cả news active, sort theo public_date
+    if (symbol && symbol !== 'VNINDEX') {
+      qb.andWhere('news.symbol = :symbol', { symbol });
+    }
 
     const [data, total] = await qb.getManyAndCount();
 
@@ -165,6 +169,36 @@ export class NewsService
       code: ResponseCode.SUCCESS,
       message: `Chi tiết bài viết: ${news.news_title}`,
       data: news,
+    };
+  }
+
+  // 🔍 Tìm kiếm + phân trang tin tức (chỉ theo title & slug)
+  async searchNews(page = 1, limit = 10, keyword?: string) {
+    const qb = this.newsRepository
+      .createQueryBuilder('news')
+      .where('news.active = true');
+
+    // 🔸 Tìm trong tiêu đề & slug
+    if (keyword) {
+      qb.andWhere(
+        `(LOWER(news.news_title) LIKE LOWER(:kw)
+        OR LOWER(news.slug) LIKE LOWER(:kw))`,
+        { kw: `%${keyword}%` },
+      );
+    }
+
+    qb.orderBy('news.public_date', 'DESC')
+      .take(limit)
+      .skip((page - 1) * limit);
+
+    const [data, total] = await qb.getManyAndCount();
+
+    return {
+      status: HttpStatusCode.OK,
+      code: ResponseCode.SUCCESS,
+      message: 'Tìm kiếm tin tức thành công',
+      data,
+      meta: { page, limit, total },
     };
   }
 }

@@ -5,7 +5,7 @@ import RightPanel from "./components/RightPanel";
 
 function page() {
     return (
-        <section className="grid grid-cols-[22rem_1fr_24rem] h-[100vh] bg-[#0B0F1A] text-white overflow-hidden">
+        <section className="grid grid-cols-[10rem_1fr_15rem] h-[90vh] bg-[#fff] text-white overflow-hidden">
             <LeftPanel />
             <MainMarketPanel />
             <RightPanel />
