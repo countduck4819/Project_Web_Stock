@@ -7,6 +7,7 @@ import AuthGate from "@/auth/AuthGate";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Script from "next/script";
+import Loading from "@/share/components/Loading";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",

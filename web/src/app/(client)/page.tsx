@@ -1,6 +1,7 @@
 "use client";
 
 import LeftSidebar from "@/share/components/home/LeftSidebar";
+import StockRecommendationTabs from "@/share/components/home/StockRecommendationTabs";
 import { useEffect, useRef, useState } from "react";
 
 // ✅ Mapping symbol mới (VNINDEX đổi sang HOSE:VNINDEX)
@@ -99,9 +100,11 @@ export default function Page() {
 
     return (
         <main className="max-w-[90vw] mx-auto px-4 py-6">
-            <section className="grid md:grid-cols-[2fr_1fr] grid-cols-1 gap-[0.6rem]">
+            <section className="grid md:grid-cols-[2fr_1fr] grid-cols-1 gap-[0.6rem] items-start">
                 <div>
                     <LeftSidebar />
+
+                    <StockRecommendationTabs />
                 </div>
 
                 <div className="rounded-lg border bg-white shadow-sm overflow-hidden">

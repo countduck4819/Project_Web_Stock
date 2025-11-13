@@ -192,7 +192,7 @@ export default function NewsListJson() {
     const router = useRouter();
     const dispatch = useDispatch<AppDispatch>();
 
-    const { jsonData, vnindexList, vnindexMeta, error, loading } =
+    const { jsonData, vnindexList, vnindexMeta, error} =
         useAppSelector((state: RootState) => state.news);
     const { candleData } = useAppSelector(
         (state: RootState) => state.stockSymbols

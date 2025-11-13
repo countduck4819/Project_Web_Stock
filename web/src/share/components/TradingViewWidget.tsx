@@ -280,19 +280,16 @@ export default function TradingViewWidgetPro({ symbol }: { symbol?: string }) {
     const dispatch = useAppDispatch();
     const { stocksSymbolList, stocksFullList, candleData, loading } =
         useAppSelector((state) => state.stockSymbols);
-    const stock = String(params.stock || "").toUpperCase();
+    const stock =
+        String(params.stock || "").toUpperCase() || symbol?.toUpperCase();
 
     const containerRef = useRef<HTMLDivElement>(null);
     const chartRef = useRef<IChartApi | null>(null);
     const tooltipRef = useRef<HTMLDivElement | null>(null);
-    const [theme, setTheme] = useState<"light" | "dark">("dark");
+    const [theme, setTheme] = useState<"light" | "dark">("light");
     const nameCompany = stocksFullList.find(
         (s) => s.symbol === stock
     )?.organ_name;
-    const company = useMemo(() => {
-        const found = stocksFullList.find((s) => s.symbol === symbol);
-        return found?.organ_name || symbol;
-    }, [stocksFullList, symbol]);
     useEffect(() => {
         if (!stocksSymbolList.length) {
             dispatch(fetchStocks());
@@ -470,13 +467,6 @@ export default function TradingViewWidgetPro({ symbol }: { symbol?: string }) {
             {/* Header giữ nguyên giao diện */}
             <div className="absolute top-3 left-5 z-10 flex items-center justify-between w-[calc(100%-2.5rem)]">
                 <div>
-                    <div
-                        className={`font-semibold text-lg ${
-                            theme === "dark" ? "text-white" : "text-gray-900"
-                        }`}
-                    >
-                        {company}
-                    </div>
                     <div
                         className={`text-md text-[#fff] ${
                             theme === "dark" ? "text-gray-400" : "text-gray-500"

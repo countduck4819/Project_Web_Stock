@@ -36,3 +36,10 @@ export enum HttpStatusCode {
   NOT_FOUND = 404,
   INTERNAL_ERROR = 500,
 }
+
+export enum StockRecommendationStatus {
+  ACTIVE = 'ACTIVE',
+  TARGET_HIT = 'TARGET_HIT',
+  STOP_LOSS = 'STOP_LOSS',
+  CLOSED = 'CLOSED',
+}

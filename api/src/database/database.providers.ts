@@ -1,5 +1,6 @@
 import { IndustryEntity } from 'src/modules/Industries/industries.entities';
 import { NewsEntity } from 'src/modules/News/news.entities';
+import { StockRecommendationEntity } from 'src/modules/StockRecommendation/stock-recommendations.entities';
 import { StockEntity } from 'src/modules/Stocks/stocks.entities';
 import { UsersEntities } from 'src/modules/Users/users.entities';
 import { DATA_SOURCE } from 'src/shared/const';
@@ -16,7 +17,7 @@ export const databaseProviders = [
         username: process.env.POSTGRES_USER,
         password: process.env.POSTGRES_PASSWORD,
         database: process.env.POSTGRES_DB,
-        entities: [UsersEntities, IndustryEntity, StockEntity, NewsEntity],
+        entities: [UsersEntities, IndustryEntity, StockEntity, NewsEntity,StockRecommendationEntity],
         synchronize: true,
         logging: true,
       });

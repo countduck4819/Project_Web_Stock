@@ -10,7 +10,8 @@ import { UploadModule } from './modules/UploadFile/upload.module';
 import { IndustryModule } from './modules/Industries/industries.module';
 import { StocksModule } from './modules/Stocks/stocks.module';
 import { NewsModule } from './modules/News/news.module';
-
+import { StockRecommendationsModule } from './modules/StockRecommendation/stock-recommendations.module';
+import { ScheduleModule } from '@nestjs/schedule';
 @Module({
   imports: [
     DatabaseModule,
@@ -20,6 +21,8 @@ import { NewsModule } from './modules/News/news.module';
     IndustryModule,
     StocksModule,
     NewsModule,
+    StockRecommendationsModule,
+    ScheduleModule.forRoot(),
   ],
   controllers: [],
   providers: [

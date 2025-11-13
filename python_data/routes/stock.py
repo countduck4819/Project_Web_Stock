@@ -6,7 +6,6 @@ stock_bp = Blueprint("stock_bp", __name__)
 
 @stock_bp.route("/api/stock/<symbol>")
 def get_stock(symbol):
-    print('symbol', symbol)
     try:
         end = datetime.today()
         start = end.replace(year=end.year - 10)

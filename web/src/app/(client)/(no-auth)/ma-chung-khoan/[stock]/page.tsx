@@ -93,8 +93,8 @@ export default function Page() {
                 </div>
             )}
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                <div className="lg:col-span-2 bg-white rounded-lg ">
+            <div className="grid grid-cols-3 gap-6">
+                <div className="col-span-2 bg-white rounded-lg ">
                     <TradingViewWidget />
 
                     <div className="w-full mt-[2rem]">

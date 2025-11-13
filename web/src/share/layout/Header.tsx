@@ -26,7 +26,7 @@ export default function Header() {
         backdrop-blur-md bg-white/70 border-b border-white/20
       "
         >
-            <div className="max-w-[90vw] mx-auto h-14 flex items-center justify-between px-4">
+            <div className="max-w-[90vw] mx-auto h-[3.5rem] flex items-center justify-between px-4">
                 {/* LEFT */}
                 <div className="flex items-center gap-6">
                     <Link href="/" className="font-bold text-lg">

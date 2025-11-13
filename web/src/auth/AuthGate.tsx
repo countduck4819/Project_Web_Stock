@@ -10,6 +10,7 @@ const publicRoutes = ["/", ...publicRouters];
 
 export default function AuthGate({ children }: { children: React.ReactNode }) {
     const { user, loading, isAuthenticated } = useAuth();
+    console.log(user)
     const router = useRouter();
     const pathname = usePathname();
     useEffect(() => {

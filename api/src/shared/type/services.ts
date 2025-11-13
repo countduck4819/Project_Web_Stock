@@ -1,6 +1,7 @@
 import { BaseResDataI } from './base';
 import { IndustryReqI, IndustryResI } from './industries';
 import { NewsReqI, NewsResI } from './news';
+import { StockRecommendationReqI, StockRecommendationResI } from './stock-recommendations';
 import { StockReqI, StockResI } from './stocks';
 import { UserReqI, UserResI } from './users';
 
@@ -40,3 +41,9 @@ export interface StocksServiceI extends BaseServicesI<StockReqI, StockResI> {
 }
 
 export interface NewsServiceI extends BaseServicesI<NewsReqI, NewsResI> {}
+
+/** Service interface cho StockRecommendations */
+export interface StockRecommendationsServiceI
+  extends BaseServicesI<StockRecommendationReqI, StockRecommendationResI> {
+  getAvailableStocks: () => Promise<BaseResDataI<any>>;
+}

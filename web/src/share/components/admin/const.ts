@@ -7,6 +7,7 @@ import {
     Layers3,
     BarChart3,
     Newspaper,
+    TrendingUp,
 } from "lucide-react";
 
 export interface SidebarMenuItem {
@@ -38,11 +39,17 @@ export const sidebarMenu: SidebarMenuItem[] = [
     {
         title: "Quản lý cổ phiếu",
         icon: Layers3,
+        href: "/admin/stocks",
     },
     {
         title: "Tin tức thị trường",
         icon: Newspaper,
         href: "/admin/news",
+    },
+    {
+        title: "Quản lý khuyến nghị cổ phiếu",
+        icon: TrendingUp,
+        href: "/admin/stock-recommendations",
     },
     {
         title: "Reports",

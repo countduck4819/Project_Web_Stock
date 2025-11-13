@@ -27,3 +27,8 @@ export const StocksRepository = Symbol('StocksRepository');
 // News
 export const NewsRepository = Symbol('NewsRepository');
 export const NewsServiceToken = Symbol('NewsServiceToken');
+
+
+// Stock Recommendations
+export const StockRecommendationServiceToken = Symbol('StockRecommendationService');
+export const StockRecommendationRepository = Symbol('StockRecommendationRepository');
