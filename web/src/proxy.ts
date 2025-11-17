@@ -10,10 +10,15 @@ const API_BASE_URL = process.env.API_BASE_URL || "";
 const pathPublic: string[] = publicRouters;
 
 const rolePaths: Record<Role, string[]> = {
-    [Role.Admin]: ["/admin", "/premium", ...pathPublic],
+    [Role.Admin]: ["/admin", "/premium", ...pathPublic, "/nang-cap-hoi-vien"],
     [Role.Premium]: ["/premium", "/user", ...pathPublic],
-    [Role.User]: ["/user", ...pathPublic],
-    [Role.Guest]: [...pathPublic],
+    [Role.User]: [
+        "/user",
+        "/nang-cap-hoi-vien",
+        ...pathPublic,
+        "/payment",
+    ],
+    [Role.Guest]: [...pathPublic, "/nang-cap-hoi-vien"],
 };
 
 export async function proxy(req: NextRequest) {

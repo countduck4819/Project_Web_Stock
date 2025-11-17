@@ -17,6 +17,7 @@ services:
         volumes:
             - ./api:/fireant/api
             - ./data:/fireant/data
+            - ./predict_xgboost_and_lstm:/fireant/predict_xgboost_and_lstm
         ports:
             - "3000:3000"
         depends_on:
@@ -38,6 +39,22 @@ services:
             - api
         env_file:
             - .env
+
+    ngrok:
+        container_name: fireant_ngrok
+        image: ngrok/ngrok:latest
+        restart: unless-stopped
+        command:
+            - "start"
+            - "--all"
+            - "--config"
+            - "/etc/ngrok.yml"
+        volumes:
+            - ./ngrok.yml:/etc/ngrok.yml
+        ports:
+            - "4040:4040"
+        depends_on:
+            - api
 
     python_data:
         container_name: fireant_python

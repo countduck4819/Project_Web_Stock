@@ -1,7 +1,18 @@
+import { StockPredictionEntity } from 'src/modules/StockPrediction/stock-prediction.entities';
+import {
+  AiStockAskReqI,
+  AiStockAskResI,
+  AiStockHistoryReqI,
+  AiStockHistoryResI,
+} from './ai-stock';
 import { BaseResDataI } from './base';
 import { IndustryReqI, IndustryResI } from './industries';
 import { NewsReqI, NewsResI } from './news';
-import { StockRecommendationReqI, StockRecommendationResI } from './stock-recommendations';
+import { StockPredictionResI } from './stock-prediction';
+import {
+  StockRecommendationReqI,
+  StockRecommendationResI,
+} from './stock-recommendations';
 import { StockReqI, StockResI } from './stocks';
 import { UserReqI, UserResI } from './users';
 
@@ -46,4 +57,24 @@ export interface NewsServiceI extends BaseServicesI<NewsReqI, NewsResI> {}
 export interface StockRecommendationsServiceI
   extends BaseServicesI<StockRecommendationReqI, StockRecommendationResI> {
   getAvailableStocks: () => Promise<BaseResDataI<any>>;
+}
+
+export interface AiStockServiceI
+  extends BaseServicesI<AiStockHistoryReqI, AiStockHistoryResI> {
+  askStockAi: (
+    data: AiStockAskReqI,
+  ) => Promise<BaseResDataI<AiStockAskResI | null>>;
+}
+
+export interface StockPredictionServiceI {
+  importFromJson(): Promise<any>;
+
+  savePrediction(dto: {
+    ticker: string;
+    lastClosePrice: number;
+    predictedPrice: number;
+    chartPath?: string | null;
+  }): Promise<any>;
+
+  getLatest(ticker: string): Promise<BaseResDataI<StockPredictionResI | null>>;
 }

@@ -4,7 +4,7 @@ import {
     fetchNewsFromJson,
     fetchNewsDetailBySlug,
     fetchAllNewsForVNINDEX,
-    fetchNewsSearchQuery, // ✅ thêm mới
+    fetchNewsSearchQuery,
 } from "./news.api";
 
 const newsSlice = createSlice({
@@ -16,8 +16,8 @@ const newsSlice = createSlice({
         vnindexMeta: {} as any,
         jsonData: [] as any[],
         detail: null as any,
-        searchList: [] as any[], // ✅ thêm state riêng cho search
-        searchMeta: {} as any, // ✅ meta cho search
+        searchList: [] as any[],
+        searchMeta: {} as any,
         loading: false,
         error: null as string | null,
     },
@@ -36,7 +36,6 @@ const newsSlice = createSlice({
         },
     },
     extraReducers: (builder) => {
-        /** fetchNewsQuery */
         builder
             .addCase(fetchNewsQuery.pending, (state) => {
                 state.loading = true;
@@ -52,7 +51,6 @@ const newsSlice = createSlice({
                 state.error = action.payload as string;
             });
 
-        /** ✅ fetchAllNewsForVNINDEX */
         builder
             .addCase(fetchAllNewsForVNINDEX.pending, (state) => {
                 state.loading = true;
@@ -64,11 +62,9 @@ const newsSlice = createSlice({
                 const newData = action.payload.data || [];
                 const meta = action.payload.meta || {};
 
-                // Nếu page > 1 → nối thêm vào list cũ
                 if (meta.page && meta.page > 1) {
                     state.vnindexList = [...state.vnindexList, ...newData];
                 } else {
-                    // Nếu page = 1 → load mới hoàn toàn
                     state.vnindexList = newData;
                 }
 
@@ -79,7 +75,6 @@ const newsSlice = createSlice({
                 state.error = action.payload as string;
             });
 
-        /** fetchNewsFromJson */
         builder
             .addCase(fetchNewsFromJson.pending, (state) => {
                 state.loading = true;
@@ -94,7 +89,6 @@ const newsSlice = createSlice({
                 state.error = action.payload as string;
             });
 
-        /** fetchNewsDetailBySlug */
         builder
             .addCase(fetchNewsDetailBySlug.pending, (state) => {
                 state.loading = true;
@@ -109,7 +103,6 @@ const newsSlice = createSlice({
                 state.error = action.payload as string;
             });
 
-        /** ✅ fetchNewsSearchQuery */
         builder
             .addCase(fetchNewsSearchQuery.pending, (state) => {
                 state.loading = true;

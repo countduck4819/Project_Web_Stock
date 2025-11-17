@@ -30,10 +30,8 @@ export default function AdminStockRecommendationsPage() {
         item?: StockRecommendation | null;
     }>({ open: false, mode: null, item: null });
 
-    // ✅ Lấy field động (gồm dropdown mã cổ phiếu)
     const fields = useStockRecFields();
 
-    // ✅ Fetch danh sách khuyến nghị
     useEffect(() => {
         dispatch(fetchStockRecsQuery({ page, limit, filters }));
     }, [dispatch, page, limit, filters]);
@@ -63,7 +61,7 @@ export default function AdminStockRecommendationsPage() {
             toast.error(error || "Thao tác thất bại!");
         }
     };
-    console.log(123);
+
     return (
         <>
             <div className="p-6 w-full shadow-lg shadow-purple-900/30 h-full">
@@ -76,7 +74,7 @@ export default function AdminStockRecommendationsPage() {
                     data={list}
                     meta={meta}
                     loading={loading}
-                    searchConfig={[{ key: "stock", label: "Mã cổ phiếu" }]}
+                    searchConfig={[{ key: "search", label: "Mã cổ phiếu" }]}
                     onAddClick={() =>
                         setDialog({ open: true, mode: "add", item: null })
                     }

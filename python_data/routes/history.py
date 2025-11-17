@@ -2,7 +2,7 @@ from flask import Blueprint, jsonify, request
 from core.fetchers import fetch_history
 import time
 
-history_bp = Blueprint("history_bp", __name__)  # ✅ tên blueprint chuẩn
+history_bp = Blueprint("history_bp", __name__)
 
 @history_bp.route("/api/tradingview-feed/config")
 def config():

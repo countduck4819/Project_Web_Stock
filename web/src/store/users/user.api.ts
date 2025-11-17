@@ -15,8 +15,6 @@ export const fetchUsersQuery = createAsyncThunk(
     ) => {
         try {
             const { page = 1, limit = 10, filters = {} } = params;
-
-            // build query string
             const queryString = new URLSearchParams({
                 page: String(page),
                 limit: String(limit),

@@ -83,7 +83,7 @@
 //         [fields, isEditMode]
 //     );
 
-//     // ✅ Khi mở dialog: load dữ liệu edit hoặc reset khi add
+//     //  Khi mở dialog: load dữ liệu edit hoặc reset khi add
 //     useEffect(() => {
 //         if (mode === "edit" && item) {
 //             setFormData(item);
@@ -461,6 +461,7 @@ export interface CrudField {
         value: string,
         updateForm: (values: Record<string, any>) => void
     ) => void;
+    disabled?: boolean;
 }
 
 interface CrudDialogProps<T> {
@@ -505,7 +506,6 @@ export function CrudDialog<T>({
         else if (mode === "add") setFormData({});
     }, [mode, item]);
 
-    // ✅ debounce update formData
     const handleChange = useCallback((key: string, value: string) => {
         setFormData((prev) => {
             if (prev[key as keyof typeof prev] === value) return prev;
@@ -694,7 +694,6 @@ const MemoField = memo(function MemoField({
         "w-full bg-[#21173B]/70 border text-white rounded-md " +
         (error ? "border-red-400" : "border-purple-500/40");
 
-    // ✅ INPUT / PASSWORD
     if (field.type === "input" || field.type === "password")
         return (
             <div>
@@ -705,6 +704,7 @@ const MemoField = memo(function MemoField({
                     )}
                 </label>
                 <Input
+                    disabled={field.disabled}
                     type={field.type === "password" ? "password" : "text"}
                     placeholder={field.placeholder || field.label}
                     value={value}
@@ -715,14 +715,12 @@ const MemoField = memo(function MemoField({
             </div>
         );
 
-    // ✅ NUMBER
     if (field.type === "number") {
         const buyPrice = parseFloat(
             ((allValues?.buyPrice ?? "") as any).toString() || "0"
         );
         const thisValue = parseFloat(((value ?? "") as any).toString() || "0");
 
-        // ✅ Tính % lời/lỗ
         const showPct =
             ["targetPrice", "stopLossPrice"].includes(field.name) && !!buyPrice;
         const diff = showPct ? ((thisValue - buyPrice) / buyPrice) * 100 : 0;
@@ -737,13 +735,10 @@ const MemoField = memo(function MemoField({
         const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
             let val = e.target.value;
 
-            // ❌ Chặn nhập âm hoặc 0
             if (val.startsWith("-") || val === "0") return;
 
-            // ✅ Ép về số
             const num = parseFloat(val || "0");
 
-            // ❌ Chặn sai logic
             if (field.name === "targetPrice" && buyPrice && num < buyPrice)
                 return;
             if (field.name === "stopLossPrice" && buyPrice && num > buyPrice)
@@ -759,6 +754,7 @@ const MemoField = memo(function MemoField({
                 </label>
                 <div className="relative w-full">
                     <input
+                        disabled={field.disabled}
                         type="number"
                         step="any"
                         value={value}
@@ -783,7 +779,6 @@ const MemoField = memo(function MemoField({
         );
     }
 
-    // ✅ TEXTAREA
     if (field.type === "textarea")
         return (
             <div>
@@ -791,6 +786,7 @@ const MemoField = memo(function MemoField({
                     {field.label}
                 </label>
                 <Textarea
+                    disabled={field.disabled}
                     rows={3}
                     value={value}
                     onChange={(e) => onChange(e.target.value)}
@@ -800,7 +796,6 @@ const MemoField = memo(function MemoField({
             </div>
         );
 
-    // ✅ SELECT
     if (field.type === "select")
         return (
             <div>
@@ -808,6 +803,7 @@ const MemoField = memo(function MemoField({
                     {field.label}
                 </label>
                 <Select
+                    disabled={field.disabled}
                     value={value?.toString() || ""}
                     onValueChange={onChange}
                 >
@@ -834,8 +830,6 @@ const MemoField = memo(function MemoField({
             </div>
         );
 
-    // ✅ SELECT-SEARCH (Command)
-    // ✅ SELECT-SEARCH (Dropdown dạng Popover)
     if (field.type === "select-search") {
         const [open, setOpen] = useState(false);
         const [query, setQuery] = useState("");
@@ -924,7 +918,6 @@ const MemoField = memo(function MemoField({
         );
     }
 
-    // ✅ FILE
     if (field.type === "file")
         return (
             <UploadFile

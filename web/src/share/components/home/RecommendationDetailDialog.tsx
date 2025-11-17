@@ -1,5 +1,4 @@
 "use client";
-
 import {
     Dialog,
     DialogContent,
@@ -8,20 +7,23 @@ import {
     DialogClose,
 } from "@/components/ui/dialog";
 import { Clock, Star, X } from "lucide-react";
-import TradingViewWidgetPro from "../TradingViewWidget";
 import { useAppSelector } from "@/redux/hooks";
+import { StockRecommendationStatus } from "@/share/enum";
+import { BadgeStatus } from "./BadgeStatus";
+import TradingViewWidgetPro from "../TradingViewWidget";
 
 export default function RecommendationDetailDialog({
     open,
     onOpenChange,
     item,
-    price, // giá hiện tại
+    price,
 }: {
     open: boolean;
     onOpenChange: (v: boolean) => void;
     item: any;
     price: number | undefined;
 }) {
+    console.log("test");
     if (!item) return null;
 
     // LẤY CANDLE ĐỂ TÍNH CHANGE & %
@@ -88,6 +90,16 @@ export default function RecommendationDetailDialog({
                                             size={16}
                                             className="text-gray-400 hover:text-yellow-400 cursor-pointer"
                                         />
+                                        <div className="font-semibold flex items-center justify-center">
+                                            {(item.status ===
+                                                StockRecommendationStatus.STOP_LOSS ||
+                                                item.status ===
+                                                    StockRecommendationStatus.TARGET_HIT) && (
+                                                <BadgeStatus
+                                                    status={item.status as any}
+                                                />
+                                            )}
+                                        </div>
                                     </div>
 
                                     <p className="text-xs text-gray-400 mt-1">

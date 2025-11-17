@@ -25,9 +25,8 @@ export default function SearchBox() {
     const [open, setOpen] = useState(false);
     const [value, setValue] = useState("");
     const [history, setHistory] = useState<string[]>([]);
-    const [hasOpened, setHasOpened] = useState(true); // Set true để render ngay
+    const [hasOpened, setHasOpened] = useState(true);
 
-    // 🧩 Lần đầu load
     useEffect(() => {
         if (!stocksFullList?.length) dispatch(fetchStocks());
         const saved = JSON.parse(
@@ -36,19 +35,16 @@ export default function SearchBox() {
         if (Array.isArray(saved)) setHistory(saved);
     }, [dispatch, stocksFullList?.length]);
 
-    // 🔍 Lọc kết quả - KHÔNG dùng debounce, dùng useMemo thôi
     const filtered = useMemo(() => {
         const term = value.trim().toLowerCase();
 
         if (term === "") {
-            // Hiển thị tối đa 5 mã gần nhất
             return history
                 .slice(0, 10)
                 .map((code) => stocksFullList.find((s) => s.symbol === code))
                 .filter(Boolean);
         }
 
-        // Tối ưu: check symbol trước (thường ngắn hơn), limit 30 kết quả
         const results = [];
         for (let i = 0; i < stocksFullList.length && results.length < 30; i++) {
             const item = stocksFullList[i];
@@ -65,7 +61,6 @@ export default function SearchBox() {
         return results;
     }, [value, stocksFullList, history]);
 
-    // 📌 Khi chọn 1 mã - dùng useCallback
     const handleSelect = useCallback(
         (code: string) => {
             const updated = [code, ...history.filter((i) => i !== code)].slice(
@@ -100,7 +95,7 @@ export default function SearchBox() {
     return (
         <Popover open={open} onOpenChange={setOpen}>
             <PopoverTrigger asChild>
-                <div className="relative w-[300px]">
+                <div className="relative w-[20rem]">
                     <Input
                         value={value}
                         onChange={handleChange}

@@ -4,7 +4,6 @@ import { StockIndex } from "@/share/enum";
 
 const prefix = "/news";
 
-//   Lấy danh sách tin tức (phân trang + lọc theo symbol)
 export const fetchNewsQuery = createAsyncThunk(
     `${prefix}/fetchQuery`,
     async (
@@ -13,7 +12,7 @@ export const fetchNewsQuery = createAsyncThunk(
     ) => {
         try {
             const res = await api.get(`${prefix}`, { params });
-            return res.data; // có { data, meta, message, ... }
+            return res.data;
         } catch (err: any) {
             return rejectWithValue(
                 err.response?.data?.message || "Không thể tải danh sách tin tức"
@@ -22,7 +21,6 @@ export const fetchNewsQuery = createAsyncThunk(
     }
 );
 
-//   Lấy tin tức thô từ file JSON (Python export)
 export const fetchNewsFromJson = createAsyncThunk(
     `${prefix}/fetchFromJson`,
     async (symbol: string, { rejectWithValue }) => {
@@ -46,7 +44,7 @@ export const fetchNewsDetailBySlug = createAsyncThunk(
     async (slug: string, { rejectWithValue }) => {
         try {
             const res = await api.get(`${prefix}/${slug}`);
-            return res.data; // có { status, code, data, message }
+            return res.data;
         } catch (err: any) {
             return rejectWithValue(
                 err.response?.data?.message ||
@@ -56,12 +54,10 @@ export const fetchNewsDetailBySlug = createAsyncThunk(
     }
 );
 
-// 🔹 Lấy tất cả tin tức tổng hợp (dùng cho VNINDEX)
 export const fetchAllNewsForVNINDEX = createAsyncThunk(
     `${prefix}/fetchAllForVNINDEX`,
     async (params: { page?: number; limit?: number }, { rejectWithValue }) => {
         try {
-            // symbol=VNINDEX để backend tự xử lý logic đặc biệt
             const res = await api.get(`${prefix}`, {
                 params: { ...params, symbol: StockIndex?.VNINDEX },
             });
@@ -75,7 +71,6 @@ export const fetchAllNewsForVNINDEX = createAsyncThunk(
     }
 );
 
-// 🔍 Tìm kiếm tin tức (phân trang + keyword)
 export const fetchNewsSearchQuery = createAsyncThunk(
     `${prefix}/fetchSearchQuery`,
     async (
@@ -84,7 +79,7 @@ export const fetchNewsSearchQuery = createAsyncThunk(
     ) => {
         try {
             const res = await api.get(`${prefix}/search`, { params });
-            return res.data; // { data, meta, message }
+            return res.data;
         } catch (err: any) {
             return rejectWithValue(
                 err.response?.data?.message || "Không thể tìm kiếm tin tức"

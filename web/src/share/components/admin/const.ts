@@ -8,6 +8,8 @@ import {
     BarChart3,
     Newspaper,
     TrendingUp,
+    LineChart,
+    PackageSearch,
 } from "lucide-react";
 
 export interface SidebarMenuItem {
@@ -52,13 +54,23 @@ export const sidebarMenu: SidebarMenuItem[] = [
         href: "/admin/stock-recommendations",
     },
     {
-        title: "Reports",
-        icon: FileText,
-        href: "/admin/reports",
+        title: "Cổ phiếu xu hướng tăng",
+        icon: LineChart,
+        href: "/admin/stock-prediction",
     },
     {
-        title: "Settings",
-        icon: Settings,
-        href: "/admin/settings",
+        title: "Quản lý đơn hàng",
+        icon: PackageSearch,
+        href: "/admin/premium-orders",
     },
+    // {
+    //     title: "Reports",
+    //     icon: FileText,
+    //     href: "/admin/reports",
+    // },
+    // {
+    //     title: "Settings",
+    //     icon: Settings,
+    //     href: "/admin/settings",
+    // },
 ];

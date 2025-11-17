@@ -76,7 +76,7 @@ import { UploadService, UploadResponse } from './upload.service';
 import { UploadToken } from 'src/shared';
 import { Public } from 'src/shared/decorator/is-public.decorator';
 
-// ✅ Định nghĩa type cho file từ Fastify Multer
+// Định nghĩa type cho file từ Fastify Multer
 type FastifyMulterFile = {
   fieldname: string;
   originalname: string;

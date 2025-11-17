@@ -16,7 +16,7 @@ function formatTimeAgo(dateStr?: string) {
     if (diff < 60) return `${diff} phút`;
     const hours = Math.floor(diff / 60);
     if (hours < 24) return `Khoảng ${hours} tiếng`;
-    return `${date?.getDate()}/${date?.getMonth()}`;
+    return `${date?.getDate()}/${date?.getMonth() + 1}`;
 }
 
 export default function RightPanel() {
@@ -34,7 +34,7 @@ export default function RightPanel() {
             {/* Header */}
             <div className="px-[0.75rem] py-[0.5rem] border-b border-gray-200 flex justify-between items-center">
                 <h2 className="text-[0.875rem] font-semibold text-gray-800">
-                    Bài nổi bật
+                    Bài viết nổi bật
                 </h2>
             </div>
 

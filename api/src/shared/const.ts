@@ -28,7 +28,21 @@ export const StocksRepository = Symbol('StocksRepository');
 export const NewsRepository = Symbol('NewsRepository');
 export const NewsServiceToken = Symbol('NewsServiceToken');
 
-
 // Stock Recommendations
-export const StockRecommendationServiceToken = Symbol('StockRecommendationService');
-export const StockRecommendationRepository = Symbol('StockRecommendationRepository');
+export const StockRecommendationServiceToken = Symbol(
+  'StockRecommendationService',
+);
+export const StockRecommendationRepository = Symbol(
+  'StockRecommendationRepository',
+);
+
+export const AiStockServiceToken = Symbol('AiStockServiceToken');
+export const AiStockRepository = Symbol('AiStockRepository');
+
+export const StockPredictionRepository = Symbol('STOCK_PREDICTION_REPO');
+export const StockPredictionServiceToken = Symbol(
+  'STOCK_PREDICTION_SERVICE_TOKEN',
+);
+
+export const PremiumOrdersRepository = Symbol('PremiumOrdersRepository');
+export const PremiumOrdersServiceToken = Symbol('PremiumOrdersService');

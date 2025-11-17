@@ -3,7 +3,6 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 
 const prefix = "/stock-recommendations";
 
-// ✅ Lấy danh sách có phân trang
 export const fetchStockRecsQuery = createAsyncThunk(
     `${prefix}/paginate`,
     async (
@@ -38,7 +37,6 @@ export const fetchStockRecsQuery = createAsyncThunk(
     }
 );
 
-// ✅ Lấy chi tiết 1 khuyến nghị
 export const fetchStockRecDetail = createAsyncThunk(
     `${prefix}/detail`,
     async (id: string, { rejectWithValue }) => {
@@ -54,7 +52,6 @@ export const fetchStockRecDetail = createAsyncThunk(
     }
 );
 
-// ✅ Tạo mới khuyến nghị
 export const createStockRec = createAsyncThunk(
     `${prefix}/create`,
     async (data: Record<string, any>, { rejectWithValue }) => {
@@ -69,7 +66,6 @@ export const createStockRec = createAsyncThunk(
     }
 );
 
-// ✅ Cập nhật
 export const updateStockRec = createAsyncThunk(
     `${prefix}/update`,
     async (
@@ -87,7 +83,6 @@ export const updateStockRec = createAsyncThunk(
     }
 );
 
-// ✅ Xóa
 export const deleteStockRec = createAsyncThunk(
     `${prefix}/delete`,
     async (id: string, { rejectWithValue }) => {

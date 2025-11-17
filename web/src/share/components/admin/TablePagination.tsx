@@ -36,13 +36,11 @@ export function TablePagination({
 
     const limitOptions = [10, 20, 50, 100];
 
-    // ✅ Dùng useMemo để không re-render mảng pages mỗi lần
     const pages = useMemo(
         () => Array.from({ length: totalPages }, (_, i) => i + 1),
         [totalPages]
     );
 
-    // ✅ Tính danh sách trang hiển thị (ví dụ: hiển thị max 5 trang)
     const visiblePages = useMemo(() => {
         const range = 2; // 2 trước + 2 sau
         const start = Math.max(1, page - range);

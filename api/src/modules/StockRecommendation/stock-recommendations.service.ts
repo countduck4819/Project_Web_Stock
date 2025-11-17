@@ -15,7 +15,7 @@ import {
 import { StockRecommendationResI } from 'src/shared/type/stock-recommendations';
 import { Cron, CronExpression } from '@nestjs/schedule';
 
-@Injectable() // ✅ implement OnModuleInit
+@Injectable()
 export class StockRecommendationsService
   extends BaseServices<StockRecommendationEntity>
   implements StockRecommendationsServiceI, OnModuleInit
@@ -31,17 +31,15 @@ export class StockRecommendationsService
     super(recommendationRepo);
   }
 
-  /* ===========================================================
-     📜 LẤY DANH SÁCH PHÂN TRANG
-  =========================================================== */
   async findPaginated(
     query: Record<string, any>,
   ): Promise<BaseResDataI<StockRecommendationResI[] | null>> {
     try {
+      console.log(query)
       const page = Number(query.page) || 1;
       const limit = Number(query.limit) || 10;
       const { page: _p, limit: _l, search, ...condition } = query;
-
+      console.log(search)
       const qb = this.recommendationRepo
         .createQueryBuilder('rec')
         .leftJoinAndSelect('rec.stock', 'stock')
@@ -145,15 +143,15 @@ export class StockRecommendationsService
           rec.status = StockRecommendationStatus.TARGET_HIT;
           (rec as any).closedAt = new Date();
           await this.recommendationRepo.save(rec);
-          this.logger.log(`✅ ${symbol}: đạt chốt lời (${currentPrice})`);
+          this.logger.log(`${symbol}: đạt chốt lời (${currentPrice})`);
         } else if (currentPrice <= +rec.stopLossPrice) {
           rec.status = StockRecommendationStatus.STOP_LOSS;
           (rec as any).closedAt = new Date();
           await this.recommendationRepo.save(rec);
-          this.logger.log(`⚠️ ${symbol}: bị cắt lỗ (${currentPrice})`);
+          this.logger.log(`${symbol}: bị cắt lỗ (${currentPrice})`);
         }
       } catch (err) {
-        this.logger.error(`❌ Lỗi cập nhật cho ${rec.stock?.code}`, err);
+        this.logger.error(`Lỗi cập nhật cho ${rec.stock?.code}`, err);
       }
     }
   }

@@ -110,9 +110,6 @@ export class NewsService
     const check = await this.newsRepository.query(`
     SELECT last_value FROM ${'"'}news_id_seq${'"'};
   `);
-
-    console.log('✅ Sequence synced to', check[0]?.last_value);
-
     return {
       status: HttpStatusCode.OK,
       code: ResponseCode.SUCCESS,
@@ -134,8 +131,6 @@ export class NewsService
       .take(limit)
       .skip((page - 1) * limit);
 
-    // ✅ Các mã khác: lọc theo symbol như cũ
-    // ✅ VNINDEX: KHÔNG lọc symbol → lấy tất cả news active, sort theo public_date
     if (symbol && symbol !== 'VNINDEX') {
       qb.andWhere('news.symbol = :symbol', { symbol });
     }

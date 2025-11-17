@@ -66,7 +66,6 @@ export default function Login() {
     return (
         <main className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#F9F5FF] to-[#F3E8FF] p-6">
             <div className="w-full max-w-md relative overflow-hidden rounded-2xl bg-white/70 backdrop-blur-xl border border-[#E0CCFF] shadow-[0_10px_30px_rgba(147,51,234,0.1)] animate-fadeIn">
-                {/* ✨ Decorative blur gradient */}
                 <div className="absolute inset-0 pointer-events-none">
                     <div className="absolute -top-32 left-20 w-72 h-72 bg-[#C084FC]/40 blur-3xl rounded-full animate-pulse"></div>
                     <div className="absolute -bottom-32 right-20 w-72 h-72 bg-[#7C3AED]/30 blur-3xl rounded-full animate-pulse delay-300"></div>

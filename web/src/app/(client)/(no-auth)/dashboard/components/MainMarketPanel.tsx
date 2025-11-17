@@ -6,11 +6,11 @@ import { fetchStockCandleData } from "@/store/stock-symbols/stock-symbols.api";
 import Loading from "@/share/components/Loading";
 import { SECTORS } from "@/const/const";
 import RightPanel from "./RightPanel";
-import { useRouter } from "next/navigation"; // ✅ thêm import
+import { useRouter } from "next/navigation";
 
 export default function MarketHeatmap() {
     const dispatch = useAppDispatch();
-    const router = useRouter(); // ✅ thêm router
+    const router = useRouter();
     const [data, setData] = useState<any[]>([]);
     const [loading, setLoading] = useState(false);
 
@@ -41,15 +41,14 @@ export default function MarketHeatmap() {
                                 change = (Math.random() - 0.5) * 10;
                             }
 
-                            // 🎨 Gán màu theo % thay đổi
-                            let color = "#cccc00"; // vàng
+                            let color = "#cccc00";
                             if (change > 2) color = "#46c100";
                             else if (change > 0) color = "#75c500";
                             else if (change < -2) color = "#bb0000";
                             else if (change < 0) color = "#c46700";
 
                             children.push({
-                                symbol, // ✅ thêm symbol để click biết mã
+                                symbol,
                                 name: `${symbol}\n${change.toFixed(2)}%`,
                                 value: Math.abs(change) || 1,
                                 change,
@@ -131,7 +130,7 @@ export default function MarketHeatmap() {
             {loading ? (
                 <Loading />
             ) : (
-                <section className="relative grid grid-cols-[1fr_20rem] space-x-[1rem] bg-[#fff] text-white">
+                <section className="relative grid grid-cols-[1fr_20rem] space-x-[1.5rem] bg-[#fff] text-white">
                     <div className="sticky top-[3.5rem] max-h-[calc(100vh-3.5rem)]">
                         <div className="relative bg-white rounded-lg overflow-hidden h-full border border-gray-200 ">
                             <ReactECharts

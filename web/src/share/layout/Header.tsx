@@ -35,6 +35,7 @@ export default function Header() {
                             width={120}
                             height={20}
                             alt="fireant"
+                            className="w-[8rem] h-[8rem]"
                         />
                     </Link>
 
@@ -87,7 +88,6 @@ export default function Header() {
                                 className="mt-2 w-56 bg-white rounded-xl shadow-xl border border-gray-100 p-3 text-sm z-[999]"
                                 align="end"
                             >
-                                {/* Header user info */}
                                 <div className="flex flex-col items-center pb-2 border-b border-gray-200">
                                     <Image
                                         src={
@@ -119,7 +119,6 @@ export default function Header() {
                                     </p>
                                 </div>
 
-                                {/* Menu items */}
                                 <div className="mt-2 flex flex-col space-y-1">
                                     <DropdownMenu.Item asChild>
                                         <Link

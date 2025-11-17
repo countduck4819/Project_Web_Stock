@@ -30,9 +30,6 @@ export class StockService
     super(stockRepository);
   }
 
-  /** =======================
-   * 🔹 Giữ nguyên các hàm gốc
-   * ======================= */
   async findByIndustry(industryId: number) {
     return this.find({ industryId });
   }
@@ -45,9 +42,6 @@ export class StockService
     return this.getJsonData('stocks_symbols.json');
   }
 
-  /** =======================
-   * 🔹 Đồng bộ dữ liệu từ JSON
-   * ======================= */
   async onModuleInit() {
     await this.syncFromJson();
   }
@@ -58,7 +52,7 @@ export class StockService
       const content = fs.readFileSync(filePath, 'utf-8');
       return JSON.parse(content);
     } catch (err) {
-      this.logger.error(`❌ Lỗi đọc file ${filePath}:`, err.message);
+      this.logger.error(`Lỗi đọc file ${filePath}:`, err.message);
       return null;
     }
   }
@@ -69,7 +63,7 @@ export class StockService
 
     if (!data || Object.keys(data).length === 0) {
       this.logger.warn(
-        '⚠️ File stocks_by_industries.json rỗng hoặc sai định dạng',
+        'File stocks_by_industries.json rỗng hoặc sai định dạng',
       );
       return;
     }
@@ -100,7 +94,7 @@ export class StockService
 
       if (!industryId) {
         this.logger.warn(
-          `⚠️ Không tìm thấy ngành "${industryName}" trong DB — bỏ qua`,
+          `Không tìm thấy ngành "${industryName}" trong DB — bỏ qua`,
         );
         continue;
       }
@@ -130,7 +124,7 @@ export class StockService
 
     if (toInsert.length > 0) {
       await this.stockRepository.insert(toInsert);
-      this.logger.log(`➕ Đã thêm ${toInsert.length} cổ phiếu mới`);
+      this.logger.log(`Đã thêm ${toInsert.length} cổ phiếu mới`);
     }
 
     if (toUpdate.length > 0) {
@@ -140,15 +134,12 @@ export class StockService
           industryId: stock.industryId,
         });
       }
-      this.logger.log(`📝 Đã cập nhật ${toUpdate.length} cổ phiếu (tên/ngành)`);
+      this.logger.log(`Đã cập nhật ${toUpdate.length} cổ phiếu (tên/ngành)`);
     }
 
-    this.logger.log('✅ Đồng bộ stocks_by_industries.json → DB hoàn tất');
+    this.logger.log('Đồng bộ stocks_by_industries.json → DB hoàn tất');
   }
 
-  /** =======================
-   * 🔹 Override paginate() để JOIN industry
-   * ======================= */
   async paginate(condition: Record<string, any> = {}, page = 1, limit = 10) {
     try {
       const qb = this.stockRepository
@@ -202,7 +193,7 @@ export class StockService
         },
       };
     } catch (error) {
-      this.logger.error(`❌ paginate() lỗi: ${error.message}`);
+      this.logger.error(`paginate() lỗi: ${error.message}`);
       return {
         status: 200,
         code: 1,

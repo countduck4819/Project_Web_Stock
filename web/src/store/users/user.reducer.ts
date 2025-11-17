@@ -5,7 +5,7 @@ import {
     deleteUser,
     fetchUserDetail,
     fetchUsers,
-    fetchUsersQuery, // ✅ thêm import
+    fetchUsersQuery,
     updateUser,
 } from "./user.api";
 
@@ -50,7 +50,7 @@ interface AdminUserState {
     selected: AdminUser | null;
     loading: boolean;
     error: string | null;
-    meta: Meta | null; // ✅ thêm meta
+    meta: Meta | null;
 }
 
 const initialState: AdminUserState = {
@@ -70,7 +70,6 @@ export const userSlice = createSlice({
         },
     },
     extraReducers: (builder) => {
-        // ✅ FETCH USERS (KHÔNG PHÂN TRANG)
         builder
             .addCase(fetchUsers.pending, (state) => {
                 state.loading = true;
@@ -85,7 +84,6 @@ export const userSlice = createSlice({
                 state.error = action.payload as string;
             });
 
-        // ✅ FETCH USERS (CÓ PHÂN TRANG + FILTER)
         builder
             .addCase(fetchUsersQuery.pending, (state) => {
                 state.loading = true;
@@ -101,7 +99,6 @@ export const userSlice = createSlice({
                 state.error = action.payload as string;
             });
 
-        // ✅ FETCH DETAIL
         builder
             .addCase(fetchUserDetail.pending, (state) => {
                 state.loading = true;
@@ -116,7 +113,6 @@ export const userSlice = createSlice({
                 state.error = action.payload as string;
             });
 
-        // ✅ CREATE USER
         builder
             .addCase(createUser.pending, (state) => {
                 state.loading = true;
@@ -131,7 +127,6 @@ export const userSlice = createSlice({
                 state.error = action.payload as string;
             });
 
-        // ✅ UPDATE USER
         builder
             .addCase(updateUser.pending, (state) => {
                 state.loading = true;
@@ -150,7 +145,6 @@ export const userSlice = createSlice({
                 state.error = action.payload as string;
             });
 
-        // ✅ DELETE USER
         builder
             .addCase(deleteUser.pending, (state) => {
                 state.loading = true;

@@ -25,7 +25,7 @@ interface StockSymbolsState {
     symbolsList: string[];
     stocksFullList: StockItem[];
     stocksSymbolList: string[];
-    candleData: Candle[]; // chỉ là 1 mảng dữ liệu nến
+    candleData: Candle[]; 
     loading: boolean;
     error: string | null;
 }
@@ -52,7 +52,6 @@ export const stockSymbolsSlice = createSlice({
         },
     },
     extraReducers: (builder) => {
-        // ===== SYMBOL LIST =====
         builder
             .addCase(fetchStockSymbols.pending, (state) => {
                 state.loading = true;
@@ -69,7 +68,6 @@ export const stockSymbolsSlice = createSlice({
                 state.error = action.payload as string;
             });
 
-        // ===== STOCKS FULL LIST =====
         builder
             .addCase(fetchStocks.pending, (state) => {
                 state.loading = true;
@@ -99,7 +97,6 @@ export const stockSymbolsSlice = createSlice({
                 state.error = action.payload as string;
             });
 
-        // ===== CANDLE DATA =====
         builder
             .addCase(fetchStockCandleData.pending, (state) => {
                 state.loading = true;
@@ -107,7 +104,7 @@ export const stockSymbolsSlice = createSlice({
             })
             .addCase(fetchStockCandleData.fulfilled, (state, action) => {
                 state.loading = false;
-                state.candleData = action.payload; // gán trực tiếp mảng Candle[]
+                state.candleData = action.payload;
             })
             .addCase(fetchStockCandleData.rejected, (state, action) => {
                 state.loading = false;

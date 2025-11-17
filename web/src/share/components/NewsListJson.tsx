@@ -40,7 +40,7 @@
 //         if (symbol) dispatch(fetchNewsFromJson(symbol));
 //     }, [symbol]);
 
-//     //   2️⃣ Khi đã có dữ liệu JSON → gửi về NestJS để lưu DB
+//     //   2️Khi đã có dữ liệu JSON → gửi về NestJS để lưu DB
 //     useEffect(() => {
 //         const importToNest = async () => {
 //             if (!symbol || !jsonData?.length) return;
@@ -49,15 +49,15 @@
 //                     page: 1,
 //                     limit: 10,
 //                 });
-//                 console.log(`✅ Đã gửi dữ liệu ${symbol} về NestJS để lưu DB`);
+//                 console.log(`Đã gửi dữ liệu ${symbol} về NestJS để lưu DB`);
 //             } catch (err: any) {
-//                 console.error("❌ Lỗi gửi dữ liệu về NestJS:", err.message);
+//                 console.error("Lỗi gửi dữ liệu về NestJS:", err.message);
 //             }
 //         };
 //         importToNest();
 //     }, [symbol, jsonData]);
 
-//     // 🧮 Tính phần trăm thay đổi giá
+//     // Tính phần trăm thay đổi giá
 //     const latestCandle = candleData[candleData.length - 1];
 //     const prevCandle = candleData[candleData.length - 2];
 //     const price = latestCandle?.close || 0;
@@ -176,7 +176,6 @@ import { useParams, useRouter } from "next/navigation";
 import { api } from "@/utils/axiosInstance";
 import { StockIndex } from "../enum";
 
-// 🕓 format "YYYY-MM-DD HH:mm:ss" → "DD/MM HH:mm"
 function formatDate(dateStr?: string) {
     if (!dateStr) return "";
     const date = new Date(dateStr);
@@ -201,24 +200,21 @@ export default function NewsListJson() {
     const params = useParams();
     const symbol = String(params.stock || "").toUpperCase();
 
-    /** ✅ State riêng cho VNINDEX paging */
     const [page, setPage] = useState(1);
     const limit = 10;
     const [isFetchingMore, setIsFetchingMore] = useState(false);
 
-    /** ✅ 1️⃣ Lấy dữ liệu khởi tạo */
     useEffect(() => {
         if (!symbol) return;
 
         if (symbol === StockIndex?.VNINDEX) {
-            setPage(1); // reset khi đổi symbol
+            setPage(1);
             dispatch(fetchAllNewsForVNINDEX({ page: 1, limit }));
         } else {
             dispatch(fetchNewsFromJson(symbol));
         }
     }, [symbol]);
 
-    /** ✅ 2️⃣ Chỉ gửi dữ liệu về Nest khi KHÔNG phải VNINDEX */
     useEffect(() => {
         const importToNest = async () => {
             if (symbol === StockIndex?.VNINDEX || !jsonData?.length) return;
@@ -227,15 +223,14 @@ export default function NewsListJson() {
                     page: 1,
                     limit: 10,
                 });
-                console.log(`✅ Đã gửi dữ liệu ${symbol} về NestJS để lưu DB`);
+                console.log(`Đã gửi dữ liệu ${symbol} về NestJS để lưu DB`);
             } catch (err: any) {
-                console.error("❌ Lỗi gửi dữ liệu về NestJS:", err.message);
+                console.error("Lỗi gửi dữ liệu về NestJS:", err.message);
             }
         };
         importToNest();
     }, [symbol, jsonData]);
 
-    /** ✅ 3️⃣ Infinite scroll cho VNINDEX */
     useEffect(() => {
         if (symbol !== StockIndex?.VNINDEX) return;
 
@@ -254,7 +249,6 @@ export default function NewsListJson() {
                 dispatch(fetchAllNewsForVNINDEX({ page: nextPage, limit }))
                     .unwrap()
                     .then((res) => {
-                        // nối dữ liệu mới vào list cũ
                         if (res?.data?.length) {
                             // cập nhật redux từ ngoài slice → an toàn: gộp trong reducer
                             // hoặc nếu slice không hỗ trợ gộp, có thể xử lý tại component
@@ -269,7 +263,6 @@ export default function NewsListJson() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, [symbol, page, vnindexList, vnindexMeta, isFetchingMore]);
 
-    // 🧮 Tính phần trăm thay đổi giá
     const latestCandle = candleData[candleData.length - 1];
     const prevCandle = candleData[candleData.length - 2];
     const price = latestCandle?.close || 0;
@@ -297,7 +290,6 @@ export default function NewsListJson() {
                         key={item.news_id}
                         className="group min-h-[9rem] flex items-start gap-4 rounded-lg border border-transparent hover:border-gray-200 hover:bg-gray-50 p-3 transition-all duration-200 cursor-pointer hover:shadow-md"
                     >
-                        {/* Ảnh đại diện */}
                         <div className="relative w-[7.5rem] aspect-[4/3] flex-shrink-0 rounded overflow-hidden bg-gray-100">
                             {item.news_image_url ? (
                                 <Image
@@ -313,7 +305,6 @@ export default function NewsListJson() {
                             )}
                         </div>
 
-                        {/* Nội dung */}
                         <div className="flex-1">
                             <div className="flex items-center text-sm mb-1">
                                 <span className="font-semibold text-[#111164] mr-2">
@@ -372,7 +363,6 @@ export default function NewsListJson() {
                     </div>
                 ))}
 
-                {/* ✅ Loading ở cuối khi VNINDEX đang tải thêm */}
                 {symbol === StockIndex?.VNINDEX && isFetchingMore && (
                     <div className="flex justify-center py-4 text-sm text-gray-500">
                         Đang tải thêm tin tức...

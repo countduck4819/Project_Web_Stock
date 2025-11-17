@@ -117,8 +117,8 @@ export class BaseServices<Entity extends BaseEntities> {
         for (const [key, value] of Object.entries(searchFilters)) {
           if (value !== undefined && value !== null && value !== '') {
             const paramKey = `search_${key}`;
-            searchExprs.push(`${alias}.${key} LIKE :${paramKey}`);
-            searchParams[paramKey] = `%${value}%`;
+            searchExprs.push(`LOWER(${alias}.${key}) LIKE :${paramKey}`);
+            searchParams[paramKey] = `%${(value as any).toLowerCase()}%`;
           }
         }
 

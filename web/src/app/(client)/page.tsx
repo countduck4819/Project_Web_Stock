@@ -4,7 +4,6 @@ import LeftSidebar from "@/share/components/home/LeftSidebar";
 import StockRecommendationTabs from "@/share/components/home/StockRecommendationTabs";
 import { useEffect, useRef, useState } from "react";
 
-// ✅ Mapping symbol mới (VNINDEX đổi sang HOSE:VNINDEX)
 const SYMBOL_MAP: Record<string, string> = {
     VNINDEX: "HOSE:VNINDEX",
     HNXINDEX: "HNX:HNXINDEX",
@@ -37,9 +36,8 @@ const MOCK_INDICES = [
 export default function Page() {
     const containerRef = useRef<HTMLDivElement | null>(null);
     const [tvReady, setTvReady] = useState(false);
-    const [current, setCurrent] = useState<string>("HNXINDEX"); // default hiển thị HNXINDEX
+    const [current, setCurrent] = useState<string>("HNXINDEX");
 
-    // 🧩 Load script TradingView 1 lần
     useEffect(() => {
         if (window.TradingView) {
             setTvReady(true);
@@ -52,19 +50,15 @@ export default function Page() {
         document.body.appendChild(script);
     }, []);
 
-    // ✅ Hàm tạo widget mỗi khi đổi symbol
     const createWidget = (symbolKey: string) => {
         if (!tvReady || !window.TradingView || !containerRef.current) return;
         const tvSymbol = SYMBOL_MAP[symbolKey] || symbolKey;
 
-        // Xoá chart cũ trước khi tạo cái mới
         containerRef.current.innerHTML = "";
 
-        // Gán id mới để phá cache widget
         const newId = `tv-container-${symbolKey}-${Date.now()}`;
         containerRef.current.id = newId;
 
-        // Tạo widget mới
         new window.TradingView.widget({
             symbol: tvSymbol,
             interval: "D",
@@ -88,12 +82,10 @@ export default function Page() {
         });
     };
 
-    // Tạo widget lần đầu
     useEffect(() => {
         if (tvReady) createWidget(current);
     }, [tvReady]);
 
-    // Khi đổi current → recreate chart
     useEffect(() => {
         if (tvReady) createWidget(current);
     }, [current]);

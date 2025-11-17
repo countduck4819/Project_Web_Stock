@@ -1,0 +1,13 @@
+import { BaseResI } from './base';
+
+export interface StockPredictionI {
+  ticker: string;
+  lastClosePrice: number;
+  predictedPrice: number;
+  chartPath?: string | null;
+  predictedOn: Date;
+}
+
+export interface StockPredictionReqI extends StockPredictionI {}
+
+export interface StockPredictionResI extends BaseResI, StockPredictionI {}

@@ -223,6 +223,7 @@ export interface Column<T> {
         actions?: {
             onEditClick?: (item: T) => void;
             onDeleteClick?: (item: T) => void;
+            onPreview?: (src: string) => void;
         }
     ) => React.ReactNode;
 }
@@ -271,6 +272,7 @@ export function TableCustom<T>({
     const [filters, setFilters] = useState<Record<string, string>>({});
     const [page, setPage] = useState(meta?.page || 1);
     const [limit, setLimit] = useState(meta?.limit || 10);
+    const [previewImage, setPreviewImage] = useState<string | null>(null);
 
     useEffect(() => {
         onFilterChange?.(filters);
@@ -359,6 +361,8 @@ export function TableCustom<T>({
                                                 ? col.render(item, {
                                                       onEditClick,
                                                       onDeleteClick,
+                                                      onPreview: (src) =>
+                                                          setPreviewImage(src), // ⭐ THÊM
                                                   })
                                                 : (item[
                                                       col.key as keyof T
@@ -396,6 +400,21 @@ export function TableCustom<T>({
                     setLimit={setLimit}
                 />
             </div>
+
+            {previewImage && (
+                <div
+                    onClick={() => setPreviewImage(null)}
+                    className="fixed inset-0 bg-black/70 flex items-center justify-center z-[999]"
+                >
+                    <div className="relative w-[80%] h-[80%] bg-black rounded-lg overflow-hidden">
+                        <img
+                            src={previewImage}
+                            alt="preview"
+                            className="w-full h-full object-contain"
+                        />
+                    </div>
+                </div>
+            )}
         </div>
     );
 }

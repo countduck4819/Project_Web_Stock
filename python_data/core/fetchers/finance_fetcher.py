@@ -52,17 +52,17 @@ def _fetch_from_api(symbol: str, period: str = "quarter"):
             print(f"⚠️ Không có dữ liệu ratio cho {symbol}")
             return {}
 
-        # ✅ Nếu là MultiIndex, gộp các tầng lại thành chuỗi
+        # Nếu là MultiIndex, gộp các tầng lại thành chuỗi
         if isinstance(df.columns, pd.MultiIndex):
             df.columns = [
                 " ".join([str(c) for c in col if c and c != "nan"]).strip()
                 for col in df.columns.values
             ]
 
-        # ✅ Lấy 10 dòng gần nhất (quý mới nhất)
+        # Lấy 10 dòng gần nhất (quý mới nhất)
         df = df.head(10)
 
-        # ✅ Chuyển toàn bộ giá trị sang JSON-safe (float hoặc str)
+        # Chuyển toàn bộ giá trị sang JSON-safe (float hoặc str)
         def safe_value(x):
             if pd.isna(x):
                 return None
@@ -84,7 +84,7 @@ def _fetch_from_api(symbol: str, period: str = "quarter"):
         return data
 
     except Exception as e:
-        print(f"❌ Lỗi fetch_finance({symbol}): {e}")
+        print(f"Lỗi fetch_finance({symbol}): {e}")
         traceback.print_exc()
         return {}
 
@@ -93,9 +93,9 @@ def _fetch_from_api(symbol: str, period: str = "quarter"):
 def fetch_finance(symbol: str, period: str = "quarter"):
     """
     Lấy bảng chỉ số tài chính (finance.ratio)
-    ✅ Cache 1 năm 1 lần
-    ✅ Lưu trong data/finance/<symbol>_ratio.json
-    ✅ Chỉ giữ 10 bản ghi gần nhất
+    Cache 1 năm 1 lần
+    Lưu trong data/finance/<symbol>_ratio.json
+    Chỉ giữ 10 bản ghi gần nhất
     """
     symbol = symbol.upper()
     cache_file = f"{symbol}_ratio_{period}.json"
@@ -106,13 +106,12 @@ def fetch_finance(symbol: str, period: str = "quarter"):
 
     # Chỉ fetch lại khi sang năm mới hoặc chưa có cache
     if not cached or (last_year and current_year > last_year):
-        print(f"📅 Cập nhật mới ratio cho {symbol} ({current_year})")
+        print(f"Cập nhật mới ratio cho {symbol} ({current_year})")
         data = _fetch_from_api(symbol, period)
         if data:
             save_json(cache_file, data)
             return data
-        print("⚠️ API lỗi hoặc rỗng, fallback dùng cache cũ (nếu có)")
+        print("API lỗi hoặc rỗng, fallback dùng cache cũ (nếu có)")
         return cached or {}
 
-    print(f"✅ Dùng cache ratio cũ cho {symbol}")
     return cached

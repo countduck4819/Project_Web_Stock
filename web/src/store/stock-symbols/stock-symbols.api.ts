@@ -52,7 +52,7 @@ export const fetchStockCandleData = createAsyncThunk(
                 volume: +d.volume || 0,
             }));
 
-            return data; // chỉ trả về mảng Candle[]
+            return data;
         } catch {
             return rejectWithValue("Không thể tải dữ liệu biểu đồ");
         }

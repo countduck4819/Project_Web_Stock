@@ -12,6 +12,10 @@ import { StocksModule } from './modules/Stocks/stocks.module';
 import { NewsModule } from './modules/News/news.module';
 import { StockRecommendationsModule } from './modules/StockRecommendation/stock-recommendations.module';
 import { ScheduleModule } from '@nestjs/schedule';
+import { AiStockModule } from './modules/AiStock/ai-stock.module';
+import { StockPredictionModule } from './modules/StockPrediction/stock-prediction.module';
+import { PremiumOrdersModule } from './modules/PremiumOrders/premium-orders.module';
+// import { PayOSModule } from './modules/PayOS/payos.module';
 @Module({
   imports: [
     DatabaseModule,
@@ -22,7 +26,11 @@ import { ScheduleModule } from '@nestjs/schedule';
     StocksModule,
     NewsModule,
     StockRecommendationsModule,
+    AiStockModule,
+    StockPredictionModule,
     ScheduleModule.forRoot(),
+    // PayOSModule,
+    PremiumOrdersModule,
   ],
   controllers: [],
   providers: [

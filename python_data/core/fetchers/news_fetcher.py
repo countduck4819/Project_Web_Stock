@@ -5,14 +5,10 @@ import os, time, json, traceback, pandas as pd, re, unicodedata
 
 _last_call = 0
 
-# ✅ Đường dẫn thư mục cache
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 CACHE_DIR = os.path.abspath(os.path.join(BASE_DIR, "../../data/news"))
 os.makedirs(CACHE_DIR, exist_ok=True)
 
-# =====================================================
-# 🧠 Utils
-# =====================================================
 def save_json(filename, data):
     """Lưu file JSON format đẹp"""
     path = os.path.join(CACHE_DIR, filename)
@@ -66,10 +62,6 @@ def slugify(text: str):
     text = re.sub(r"[^a-zA-Z0-9]+", "-", text)
     return text.strip("-").lower()
 
-
-# =====================================================
-# 📰 Fetch logic
-# =====================================================
 def _fetch_from_api(symbol: str, limit: int = 300):
     """Gọi vnstock.Company.news()"""
     global _last_call
@@ -79,15 +71,15 @@ def _fetch_from_api(symbol: str, limit: int = 300):
     _last_call = time.time()
 
     try:
-        print(f"📰 Fetching news for {symbol}")
+        print(f"Fetching news for {symbol}")
         company = Company(symbol=symbol, source="VCI")
         df = company.news()
 
         if df is None or df.empty:
-            print(f"⚠️ Không có dữ liệu news cho {symbol}")
+            print(f"Không có dữ liệu news cho {symbol}")
             return {}
 
-        # ✅ Ưu tiên 'public_date', fallback 'publish_time'
+        # Ưu tiên 'public_date', fallback 'publish_time'
         if "public_date" in df.columns:
             df["public_date"] = df["public_date"].apply(_safe_date)
             df = df.sort_values("public_date", ascending=False)
@@ -99,7 +91,7 @@ def _fetch_from_api(symbol: str, limit: int = 300):
 
         df = df.head(limit)
 
-        # ✅ Convert từng dòng
+        # Convert từng dòng
         records = []
         for _, row in df.iterrows():
             title = str(row.get("news_title", "")).strip()
@@ -124,25 +116,21 @@ def _fetch_from_api(symbol: str, limit: int = 300):
             "updated_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         }
 
-        print(f"✅ Lấy {len(records)} bài cho {symbol}")
+        print(f"Lấy {len(records)} bài cho {symbol}")
         return data
 
     except Exception as e:
-        print(f"❌ Lỗi fetch_news({symbol}): {e}")
+        print(f"Lỗi fetch_news({symbol}): {e}")
         traceback.print_exc()
         return {}
 
-
-# =====================================================
-# ⚡ Public fetcher (có cache)
-# =====================================================
 @lru_cache(maxsize=32)
 def fetch_news(symbol: str):
     """
     Lấy tin tức doanh nghiệp:
-    ✅ Lưu local: data/news/<symbol>_news.json
-    ✅ Cập nhật lại khi qua ngày mới & sau 17h
-    ✅ Giữ đúng ngày + giờ public_date
+    Lưu local: data/news/<symbol>_news.json
+    Cập nhật lại khi qua ngày mới & sau 17h
+    Giữ đúng ngày + giờ public_date
     """
     symbol = symbol.upper()
     cache_file = f"{symbol}_news.json"
@@ -154,10 +142,10 @@ def fetch_news(symbol: str):
 
     need_update = False
     if not cached:
-        print(f"🆕 Không có cache cho {symbol}")
+        print(f"Không có cache cho {symbol}")
         need_update = True
     elif today > str(last_update)[:10] and current_hour >= 17:
-        print(f"🌇 Sang ngày mới ({today}) → cập nhật news {symbol}")
+        print(f"Sang ngày mới ({today}) → cập nhật news {symbol}")
         need_update = True
 
     if need_update:
@@ -165,8 +153,8 @@ def fetch_news(symbol: str):
         if data and data.get("data"):
             save_json(cache_file, data)
             return data
-        print("⚠️ API lỗi hoặc rỗng, fallback cache cũ")
+        print("API lỗi hoặc rỗng, fallback cache cũ")
         return cached or {}
 
-    print(f"✅ Dùng cache cũ cho {symbol}")
+    print(f"Dùng cache cũ cho {symbol}")
     return cached

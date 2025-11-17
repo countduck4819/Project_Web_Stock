@@ -30,7 +30,7 @@
 
 //     const [theme, setTheme] = useState<"light" | "dark">("dark");
 
-//     // ✅ Lấy thông tin công ty từ Redux
+//     // Lấy thông tin công ty từ Redux
 //     const { stocksFullList } = useAppSelector((state) => state.stockSymbols);
 //     const company = useMemo(() => {
 //         const found = stocksFullList.find((s) => s.symbol === symbol);
@@ -40,7 +40,7 @@
 //     useEffect(() => {
 //         if (!symbol || !containerRef.current) return;
 
-//         // 🎨 Màu sắc
+//         //  Màu sắc
 //         const isDark = theme === "dark";
 //         const bg = isDark ? "#0e1117" : "#ffffff";
 //         const text = isDark ? "#e5e7eb" : "#1a1a1a";
@@ -63,7 +63,7 @@
 //         });
 //         chartRef.current = chart;
 
-//         // ✅ Candlestick
+//         //  Candlestick
 //         const candleSeries = chart.addSeries(CandlestickSeries, {
 //             upColor: up,
 //             downColor: down,
@@ -73,7 +73,7 @@
 //             wickDownColor: down,
 //         });
 
-//         // ✅ Volume
+//         //  Volume
 //         const volumeSeries = chart.addSeries(HistogramSeries, {
 //             priceScaleId: "",
 //             color: up,
@@ -82,7 +82,7 @@
 //             scaleMargins: { top: 0.82, bottom: 0 },
 //         });
 
-//         // ✅ Tooltip
+//         //  Tooltip
 //         const tooltip = document.createElement("div");
 //         tooltip.className =
 //             "absolute bg-gray-900/90 text-white text-xs px-2 py-1 rounded shadow pointer-events-none";
@@ -90,7 +90,7 @@
 //         tooltipRef.current = tooltip;
 //         containerRef.current.appendChild(tooltip);
 
-//         // 📈 Fetch dữ liệu từ API Python
+//         //  Fetch dữ liệu từ API Python
 //         const fetchData = async () => {
 //             try {
 //                 const res = await fetch(
@@ -254,7 +254,6 @@ interface Candle {
     volume: number;
 }
 
-/** 🔧 Utility: sort ASC + unique theo time */
 const normalizeData = <T extends { time: string }>(arr: T[]): T[] => {
     const sorted = [...arr].sort((a, b) =>
         a.time > b.time ? 1 : a.time < b.time ? -1 : 0
@@ -262,7 +261,6 @@ const normalizeData = <T extends { time: string }>(arr: T[]): T[] => {
     return sorted.filter((v, i, a) => i === 0 || a[i - 1].time !== v.time);
 };
 
-/** 📈 Hàm tính MA */
 function calcMA(data: Candle[], length: number) {
     const result: { time: string; value: number }[] = [];
     for (let i = length - 1; i < data.length; i++) {
@@ -464,7 +462,6 @@ export default function TradingViewWidgetPro({ symbol }: { symbol?: string }) {
                     : "border-gray-200 bg-white"
             } shadow-lg overflow-hidden transition-all`}
         >
-            {/* Header giữ nguyên giao diện */}
             <div className="absolute top-3 left-5 z-10 flex items-center justify-between w-[calc(100%-2.5rem)]">
                 <div>
                     <div
@@ -488,7 +485,6 @@ export default function TradingViewWidgetPro({ symbol }: { symbol?: string }) {
                 </button>
             </div>
 
-            {/* Chart giữ nguyên */}
             <div ref={containerRef} className="min-h-[30rem] w-full relative" />
         </div>
     );
@@ -545,7 +541,7 @@ export default function TradingViewWidgetPro({ symbol }: { symbol?: string }) {
 //     const tooltipRef = useRef<HTMLDivElement | null>(null);
 //     const [theme, setTheme] = useState<"light" | "dark">("dark");
 
-//     // ✅ Lấy thông tin công ty từ Redux
+//     //  Lấy thông tin công ty từ Redux
 //     const { stocksFullList } = useAppSelector((state) => state.stockSymbols);
 //     const company = useMemo(() => {
 //         const found = stocksFullList.find((s) => s.symbol === symbol);
@@ -577,7 +573,7 @@ export default function TradingViewWidgetPro({ symbol }: { symbol?: string }) {
 //         });
 //         chartRef.current = chart;
 
-//         // ✅ Candlestick
+//         // Candlestick
 //         const candleSeries = chart.addSeries(CandlestickSeries, {
 //             upColor: up,
 //             downColor: down,
@@ -587,7 +583,7 @@ export default function TradingViewWidgetPro({ symbol }: { symbol?: string }) {
 //             wickDownColor: down,
 //         });
 
-//         // ✅ Volume
+//         //  Volume
 //         const volumeSeries = chart.addSeries(HistogramSeries, {
 //             priceScaleId: "",
 //             priceLineVisible: false,
@@ -612,7 +608,7 @@ export default function TradingViewWidgetPro({ symbol }: { symbol?: string }) {
 //             },
 //         });
 
-//         // ✅ Tooltip
+//         //  Tooltip
 //         const tooltip = document.createElement("div");
 //         tooltip.className =
 //             "absolute bg-gray-900/90 text-white text-xs px-2 py-1 rounded shadow pointer-events-none";
@@ -620,7 +616,7 @@ export default function TradingViewWidgetPro({ symbol }: { symbol?: string }) {
 //         tooltipRef.current = tooltip;
 //         containerRef.current.appendChild(tooltip);
 
-//         // 📈 Fetch dữ liệu từ API Python
+//         //  Fetch dữ liệu từ API Python
 //         const fetchData = async () => {
 //             try {
 //                 const res = await fetch(

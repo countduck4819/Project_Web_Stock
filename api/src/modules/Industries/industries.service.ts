@@ -37,12 +37,11 @@ export class IndustryService
     return this.getJsonData('stocks_by_industries.json');
   }
 
-  /** ✅ Ghi đè lại find() → paginate riêng + đúng kiểu trả về */
+  /** Ghi đè lại find() → paginate riêng + đúng kiểu trả về */
   async find(query: Record<string, any>): Promise<any> {
     const page = Number(query.page) || 1;
     const limit = Number(query.limit) || 10;
     const { page: _p, limit: _l, search, ...condition } = query;
-
     const searchFilters = search ? { name: search } : undefined;
     const result = await this.paginateWithModifiedAt(
       condition,
@@ -71,7 +70,7 @@ export class IndustryService
     } as any; // ép kiểu
   }
 
-  /** ✅ Phân trang riêng có modifiedAt */
+  /** Phân trang riêng có modifiedAt */
   private async paginateWithModifiedAt(
     condition: Record<string, any> = {},
     page = 1,
@@ -96,8 +95,8 @@ export class IndustryService
       for (const [key, value] of Object.entries(searchFilters)) {
         if (value) {
           const paramKey = `search_${key}`;
-          exprs.push(`${alias}.${key} LIKE :${paramKey}`);
-          params[paramKey] = `%${value}%`;
+          exprs.push(`LOWER(${alias}.${key}) LIKE :${paramKey}`);
+          params[paramKey] = `%${(value as any).toLowerCase()}%`;
         }
       }
       if (exprs.length > 0) query.andWhere(`(${exprs.join(' OR ')})`, params);
@@ -171,9 +170,9 @@ export class IndustryService
     const toAdd = names.filter((n) => !existingNames.has(n));
     if (toAdd.length > 0) {
       await this.industryRepository.insert(toAdd.map((n) => ({ name: n })));
-      this.logger.log(`➕ Đã thêm ${toAdd.length} ngành mới`);
+      this.logger.log(`Đã thêm ${toAdd.length} ngành mới`);
     }
 
-    this.logger.log('✅ Đồng bộ industries.json → DB hoàn tất (chỉ thêm mới)');
+    this.logger.log('Đồng bộ industries.json → DB hoàn tất (chỉ thêm mới)');
   }
 }

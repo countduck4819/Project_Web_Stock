@@ -41,7 +41,7 @@ api.interceptors.response.use(
     (response) => {
         const data = response?.data;
         if (data === 0 || data === null || data === undefined) {
-            toast.error("⚠️ API trả về dữ liệu rỗng hoặc không hợp lệ!");
+            toast.error("API trả về dữ liệu rỗng hoặc không hợp lệ!");
             return Promise.reject("API trả về dữ liệu rỗng hoặc không hợp lệ!");
         }
         return response;
@@ -60,7 +60,7 @@ api.interceptors.response.use(
         if (typeof msg === "object") msg = JSON.stringify(msg);
 
         if (status === 0) {
-            toast.error("🚨 Không kết nối được máy chủ!");
+            toast.error("Không kết nối được máy chủ!");
             return Promise.reject(msg);
         }
 

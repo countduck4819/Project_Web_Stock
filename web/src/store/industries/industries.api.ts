@@ -12,7 +12,6 @@ export const fetchIndustriesQuery = createAsyncThunk(
         { rejectWithValue }
     ) => {
         try {
-            // 🔥 Tách filters ra rồi gộp phẳng vào
             const { filters = {}, ...rest } = params;
             const queryParams = { ...rest, ...filters };
 

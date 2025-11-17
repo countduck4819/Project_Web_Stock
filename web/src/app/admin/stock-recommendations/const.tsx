@@ -141,7 +141,6 @@ export function useStockRecFields(): CrudField[] {
         };
     }, []);
 
-    // ✅ Dùng useMemo tránh re-render
     return useMemo(
         () => [
             {
@@ -152,7 +151,6 @@ export function useStockRecFields(): CrudField[] {
                 options: stockOptions,
                 placeholder: "Tìm hoặc chọn mã cổ phiếu",
                 isEditMode: true,
-                // ✅ Khi chọn mã → gọi Redux fetch giá và auto-fill
                 onSelect: async (stockId, updateForm) => {
                     try {
                         const selected = stockOptions.find(
@@ -160,7 +158,6 @@ export function useStockRecFields(): CrudField[] {
                         );
                         if (!selected?.code) return;
 
-                        // Gọi redux thunk để lấy dữ liệu nến
                         const res = await dispatch(
                             fetchStockCandleData(selected.code)
                         ).unwrap();
@@ -178,7 +175,7 @@ export function useStockRecFields(): CrudField[] {
                             stopLossPrice: stopLoss,
                         });
                     } catch (err) {
-                        console.error("❌ Lỗi lấy dữ liệu giá:", err);
+                        console.error("Lỗi lấy dữ liệu giá:", err);
                     }
                 },
             },

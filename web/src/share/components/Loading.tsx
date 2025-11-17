@@ -1,4 +1,4 @@
-import React from "react";
+"use client";
 import "@/css/loading.css";
 function Loading() {
     return (

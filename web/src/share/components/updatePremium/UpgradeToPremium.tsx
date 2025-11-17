@@ -25,7 +25,7 @@ export default function UpgradeToPremium({
                 </p>
 
                 <Link
-                    href="/pricing"
+                    href="/nang-cap-hoi-vien"
                     className="mt-4 px-5 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg transition"
                 >
                     Nâng cấp ngay

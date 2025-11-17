@@ -61,7 +61,6 @@ export const stockRecommendationsSlice = createSlice({
         },
     },
     extraReducers: (builder) => {
-        // 📜 Fetch list (pagination)
         builder
             .addCase(fetchStockRecsQuery.pending, (state) => {
                 state.loading = true;
@@ -77,17 +76,14 @@ export const stockRecommendationsSlice = createSlice({
                 state.error = action.payload as string;
             });
 
-        // 🔍 Fetch detail
         builder.addCase(fetchStockRecDetail.fulfilled, (state, action) => {
             state.selected = action.payload;
         });
 
-        // ➕ Create
         builder.addCase(createStockRec.fulfilled, (state, action) => {
             state.list.unshift(action.payload);
         });
 
-        // ✏️ Update
         builder.addCase(updateStockRec.fulfilled, (state, action) => {
             const updated = action.payload;
             state.list = state.list.map((item) =>
@@ -95,7 +91,6 @@ export const stockRecommendationsSlice = createSlice({
             );
         });
 
-        // 🗑️ Delete
         builder.addCase(deleteStockRec.fulfilled, (state, action) => {
             state.list = state.list.filter((i) => i.id !== action.payload);
         });

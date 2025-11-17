@@ -1,47 +1,27 @@
 "use client";
-
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 
-import { fetchStockRecsQuery } from "@/store/stock-recommendations/stock-recommendations.api";
 import ExpertRecommendations from "./ExpertRecommendations";
 import AIRecommendations from "./AIRecommendations";
 
-import { useAppDispatch, useAppSelector } from "@/redux/hooks";
 import { useAuth } from "@/auth/AuthProvider";
 import { canAccess } from "@/lib/utils";
-import { Role } from "@/share/enum";
 import UpgradeToPremium from "../updatePremium/UpgradeToPremium";
+import { AccountType } from "@/store/users/user.reducer";
+import { Role } from "@/share/enum";
 
 export default function StockRecommendationTabs() {
-    const dispatch = useAppDispatch();
     const { user } = useAuth();
 
-    const { list, loading } = useAppSelector(
-        (state) => state.stockRecommendations
-    );
-
     const [activeTab, setActiveTab] = useState("expert");
-
-    useEffect(() => {
-        dispatch(fetchStockRecsQuery({ page: 1, limit: 10 }));
-    }, [dispatch]);
-
     const handleTabChange = (val: string) => {
         setActiveTab(val);
-
-        dispatch(
-            fetchStockRecsQuery({
-                page: 1,
-                limit: 10,
-                ...(val === "ai" ? { filters: { source: "AI" } } : {}),
-            })
-        );
     };
 
-    const canSeeContent = canAccess(user, Role.Premium);
-
+    const canSeeContent = canAccess(user, Role.User, AccountType.PREMIUM);
+    console.log(user);
     return (
         <div className="w-full px-4 py-6">
             <Tabs
@@ -86,6 +66,7 @@ export default function StockRecommendationTabs() {
                 </div>
 
                 <div className="mt-6">
+                    {/* EXPERT */}
                     <TabsContent value="expert">
                         <AnimatePresence mode="wait">
                             {canSeeContent ? (
@@ -96,10 +77,7 @@ export default function StockRecommendationTabs() {
                                     exit={{ opacity: 0, y: -8 }}
                                     transition={{ duration: 0.25 }}
                                 >
-                                    <ExpertRecommendations
-                                        data={list as any}
-                                        loading={loading}
-                                    />
+                                    <ExpertRecommendations />
                                 </motion.div>
                             ) : (
                                 <motion.div
@@ -115,6 +93,7 @@ export default function StockRecommendationTabs() {
                         </AnimatePresence>
                     </TabsContent>
 
+                    {/* AI */}
                     <TabsContent value="ai">
                         <AnimatePresence mode="wait">
                             {canSeeContent ? (
@@ -126,10 +105,7 @@ export default function StockRecommendationTabs() {
                                     transition={{ duration: 0.25 }}
                                 >
                                     <div className="bg-white border border-gray-200 rounded-lg p-5">
-                                        <AIRecommendations
-                                            data={list}
-                                            loading={loading}
-                                        />
+                                        <AIRecommendations />
                                     </div>
                                 </motion.div>
                             ) : (

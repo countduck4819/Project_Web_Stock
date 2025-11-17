@@ -16,9 +16,9 @@
 #         file_path = os.path.join(EXPORT_DIR, filename)
 #         with open(file_path, "w", encoding="utf-8") as f:
 #             json.dump(data, f, ensure_ascii=False, indent=2, default=str)
-#         print(f"✅ Saved {filename} ({len(data)} records) at {time.strftime('%Y-%m-%d %H:%M:%S')}")
+#         print(f"Saved {filename} ({len(data)} records) at {time.strftime('%Y-%m-%d %H:%M:%S')}")
 #     except Exception as e:
-#         print(f"❌ Lỗi khi lưu {filename}:", e)
+#         print(f"Lỗi khi lưu {filename}:", e)
 
 
 # # ---------- Fetch Functions ----------
@@ -101,7 +101,7 @@
 
 # def scheduled_export():
 #     """Tự động cập nhật tất cả file mỗi 1 tiếng"""
-#     print("⏳ Bắt đầu cập nhật dữ liệu...")
+#     print("Bắt đầu cập nhật dữ liệu...")
 #     datasets = {
 #         "vnindex.json": fetch_vnindex(),
 #         "listing.json": fetch_listing(),
@@ -110,7 +110,7 @@
 #     for filename, data in datasets.items():
 #         if data:
 #             save_json(filename, data)
-#     print("✅ Hoàn tất cập nhật tất cả dữ liệu.")
+#     print("Hoàn tất cập nhật tất cả dữ liệu.")
 
 
 # def schedule_loop():

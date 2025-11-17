@@ -121,10 +121,10 @@
 //             ma10Series.setData(calcMA(data, 10));
 //             ma50Series.setData(calcMA(data, 50));
 
-//             // ✅ Fit khung hình sau khi set xong data
+//             // Fit khung hình sau khi set xong data
 //             chart.timeScale().fitContent();
 
-//             // 🟡 Tooltip crosshair
+//             // Tooltip crosshair
 //             chart.subscribeCrosshairMove((param) => {
 //                 if (!param?.time || !param.seriesData.size) {
 //                     setHoverInfo(null);

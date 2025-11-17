@@ -43,3 +43,9 @@ export enum StockRecommendationStatus {
   STOP_LOSS = 'STOP_LOSS',
   CLOSED = 'CLOSED',
 }
+
+export enum PremiumOrderStatus {
+  PENDING = 'PENDING',
+  PAID = 'PAID',
+  CANCEL = 'CANCEL',
+}

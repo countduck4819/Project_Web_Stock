@@ -37,13 +37,13 @@ def scheduled_export():
 
     for filename, data in datasets.items():
         if not data:
-            print(f"⚠️ Không có dữ liệu cho {filename}, bỏ qua.")
+            print(f"Không có dữ liệu cho {filename}, bỏ qua.")
             continue
 
-        # ✅ Nếu là file dữ liệu tổng hợp → lưu thẳng trong data/
+        # Nếu là file dữ liệu tổng hợp → lưu thẳng trong data/
         save_json(filename, data)
 
-    print("✅ Hoàn tất cập nhật tất cả dữ liệu.\n")
+    print("Hoàn tất cập nhật tất cả dữ liệu.\n")
 
 def schedule_loop():
     scheduled_export()  # chạy ngay khi start

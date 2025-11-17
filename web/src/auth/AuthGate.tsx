@@ -6,11 +6,11 @@ import { usePathname, useRouter } from "next/navigation";
 import Loading from "@/share/components/Loading";
 import { publicRouters } from "@/share/const/const";
 
-const publicRoutes = ["/", ...publicRouters];
+const publicRoutes = ["/", ...publicRouters, "/nang-cap-hoi-vien"];
 
 export default function AuthGate({ children }: { children: React.ReactNode }) {
     const { user, loading, isAuthenticated } = useAuth();
-    console.log(user)
+    console.log(user);
     const router = useRouter();
     const pathname = usePathname();
     useEffect(() => {

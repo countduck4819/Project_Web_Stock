@@ -6,8 +6,6 @@ import { DataSource } from 'typeorm';
 import { StockEntity } from './stocks.entities';
 import { StockService } from './stocks.service';
 
-
-
 @Module({
   imports: [DatabaseModule],
   controllers: [StockController],
