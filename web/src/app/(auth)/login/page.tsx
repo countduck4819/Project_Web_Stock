@@ -114,16 +114,21 @@ export default function Login() {
                             </div>
 
                             <div className="flex justify-center items-center mt-5 space-x-3">
+                                {/* <SocialLoginButton
+                                    href={`${process.env.NEXT_PUBLIC_API_BASE_URL}/auth/google`}
+                                    icon={<FaGoogle size={25} />}
+                                    variant="google"
+                                /> */}
                                 <SocialLoginButton
                                     href={`${process.env.NEXT_PUBLIC_API_BASE_URL}/auth/google`}
                                     icon={<FaGoogle size={25} />}
                                     variant="google"
                                 />
-                                <SocialLoginButton
+                                {/* <SocialLoginButton
                                     href={`${process.env.NEXT_PUBLIC_API_BASE_URL}/auth/facebook`}
                                     icon={<FaFacebook size={30} />}
                                     variant="facebook"
-                                />
+                                /> */}
                             </div>
                         </form>
                     </Form>

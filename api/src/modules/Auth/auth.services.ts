@@ -2,6 +2,7 @@ import {
   AuthServiceI,
   HttpStatusCode,
   ResponseCode,
+  UserRole,
   UsersRepository,
 } from 'src/shared';
 import { BaseServices } from '../Base/base.services';
@@ -189,20 +190,18 @@ export class AuthService
   }
 
   async socialLogin(profile: any) {
-    const { email, name, avatar, provider, providerId } = profile;
+    const { email, name, avatar } = profile;
 
-    let user = await this.userRepository.findOne({
-      where: { email },
-    });
+    let user = await this.userRepository.findOne({ where: { email } });
 
     if (!user) {
       user = await this.userRepository.save({
         email,
-        username: name || email,
         fullName: name,
+        username: email,
         avatar,
+        password: '', // không dùng password
         address: '',
-        password: '',
       });
     }
 
@@ -221,21 +220,17 @@ export class AuthService
       expiresIn: '7d',
     });
 
-    const hashedRefreshToken = await bcrypt.hash(refreshToken, 10);
     await this.userRepository.update(user.id, {
-      refreshToken: hashedRefreshToken,
+      refreshToken: await bcrypt.hash(refreshToken, 10),
     });
 
     return {
       status: 200,
       code: 'SUCCESS',
-      message: `Đăng nhập qua ${provider} thành công`,
+      message: 'Đăng nhập Google thành công',
       data: {
         user,
-        tokens: {
-          accessToken,
-          refreshToken,
-        },
+        tokens: { accessToken, refreshToken },
       },
     };
   }

@@ -13,7 +13,8 @@ import { PassportModule } from '@nestjs/passport';
 import { JwtStrategy } from './jwt.strategy';
 import { JwtAuthGuard } from './jwt-auth.guard';
 import { GoogleStrategy } from './google.strategy';
-import { FacebookStrategy } from './facebook.strategy';
+import { GoogleAuthGuard } from 'src/shared/guard/google-guard.guard';
+// import { FacebookStrategy } from './facebook.strategy';
 
 @Module({
   imports: [
@@ -39,9 +40,10 @@ import { FacebookStrategy } from './facebook.strategy';
       provide: JwtAuthGuardToken,
       useClass: JwtAuthGuard,
     },
+    // FacebookStrategy,
     GoogleStrategy,
-    FacebookStrategy,
+    GoogleAuthGuard,
   ],
-  exports: [JwtStrategyToken, JwtAuthGuardToken,AuthServiceToken],
+  exports: [JwtStrategyToken, JwtAuthGuardToken, AuthServiceToken],
 })
 export class AuthModule {}

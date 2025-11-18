@@ -18,6 +18,7 @@ import { Public } from 'src/shared/decorator/is-public.decorator';
 import { AuthGuard } from '@nestjs/passport';
 import { ApiBearerAuth, ApiBody } from '@nestjs/swagger';
 import type { FastifyRequest } from 'fastify';
+import { GoogleAuthGuard } from 'src/shared/guard/google-guard.guard';
 
 @ApiBearerAuth()
 @Controller('/auth')
@@ -70,18 +71,60 @@ export class AuthController {
     return this.authService.logout(userId);
   }
 
+  // @Get('google')
+  // @Public()
+  // @UseGuards(AuthGuard('google'))
+  // async googleLogin() {
+  //   // Passport sẽ tự redirect tới Google OAuth
+  // }
+  //  @Get('google/callback')
+  // @Public()
+  // @UseGuards(AuthGuard('google'))
+  // async googleCallback(@Req() req) {
+  //   return this.authService.socialLogin(req.user);
+  // }
+  // @Get('google')
+  // @Public()
+  // googleLogin() {
+  //   return { message: 'Google login, dùng /api/auth/google (express)' };
+  // }
+
+  // @Get('google/callback')
+  // @Public()
+  // googleCallback() {
+  //   return { message: 'Google callback, dùng express router' };
+  // }
+
   @Get('google')
   @Public()
-  @UseGuards(AuthGuard('google'))
+  @UseGuards(GoogleAuthGuard)
   async googleLogin() {
-    // Passport sẽ tự redirect tới Google OAuth
+    return { msg: 'Redirecting to Google...' };
   }
 
   @Get('google/callback')
   @Public()
-  @UseGuards(AuthGuard('google'))
-  async googleCallback(@Req() req) {
-    return this.authService.socialLogin(req.user);
+  @UseGuards(GoogleAuthGuard)
+  async googleCallback(@Req() req, @Res() res) {
+    const loginResult = await this.authService.socialLogin(req.user);
+
+    // Set cookie (giống login bằng password)
+    res.cookie('accessToken', loginResult.data.tokens.accessToken, {
+      httpOnly: false,
+      path: '/',
+      sameSite: 'lax',
+    });
+
+    res.cookie('refreshToken', loginResult.data.tokens.refreshToken, {
+      httpOnly: false,
+      path: '/',
+      sameSite: 'lax',
+    });
+    const redirectUrl = process.env.DOMAIN_WEB || 'http://localhost:7000';
+
+    res.status(302);
+    res.header('Location', redirectUrl);
+    res.send();
   }
 
   // --- FACEBOOK AUTH ---
