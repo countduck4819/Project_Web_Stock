@@ -20,7 +20,8 @@ import { GoogleAuthGuard } from 'src/shared/guard/google-guard.guard';
   imports: [
     DatabaseModule,
     UserModule,
-    PassportModule,
+    // PassportModule,
+    PassportModule.register({ session: false }),
     JwtModule.register({
       secret: process.env.JWT_SECRET || 'countduck4819',
       signOptions: { expiresIn: '1h' },

@@ -317,12 +317,9 @@
 
 
 
-
-
 from vnstock import Quote
 from datetime import datetime, timedelta
-from functools import lru_cache
-import os, time, json, traceback, pandas as pd
+import os, time, json, pandas as pd
 
 _last_call = 0
 
@@ -362,7 +359,7 @@ def _fetch_from_api(symbol: str, start: str, end: str):
     start_dt = pd.to_datetime(start)
     end_dt = pd.to_datetime(end)
     quote = Quote(symbol=symbol, source="VCI")
-    print(f"🔗 API URL: cài mã mới",symbol)
+    print(f"🔗 API URL: cài mã mới", symbol)
     df = quote.history(
         start=start_dt.strftime("%Y-%m-%d"),
         end=end_dt.strftime("%Y-%m-%d"),
@@ -402,14 +399,13 @@ def get_last_trading_day():
     today = datetime.today()
     wd = today.weekday()
 
-    if wd == 5:
+    if wd == 5:  # Saturday
         return (today - timedelta(days=1)).strftime("%Y-%m-%d")
-    if wd == 6:
+    if wd == 6:  # Sunday
         return (today - timedelta(days=2)).strftime("%Y-%m-%d")
     return today.strftime("%Y-%m-%d")
 
 
-@lru_cache(maxsize=32)
 def fetch_stock(symbol: str, start: str, end: str):
     symbol = symbol.upper()
     cache_file = f"{symbol}.json"
@@ -427,35 +423,47 @@ def fetch_stock(symbol: str, start: str, end: str):
             cached_data = None
 
     need_update = False
+
+    # Không có cache → fetch luôn
     if not cached_data:
         print(f"🆕 Không có cache cho {symbol}, cần fetch mới.")
         need_update = True
-    elif today > last_cached_date and current_hour >= 17:
-        print(f"🌇 Sang ngày mới ({today}), sau 17h → cập nhật {symbol}.")
-        need_update = True
 
-    weekday = datetime.today().weekday()  # 5=Sat, 6=Sun
+    # Tính ngày giao dịch gần nhất
     last_trading_day = get_last_trading_day()
 
+    # Nếu cache chưa có ngày giao dịch gần nhất → cần update
+    if last_cached_date and last_cached_date < last_trading_day:
+        print(f"📉 Cache thiếu ngày {last_trading_day} → cần cập nhật.")
+        # Chỉ update sau 17h để chắc chắn dữ liệu có sẵn
+        if current_hour >= 17:
+            need_update = True
+        else:
+            need_update = False
+            print(f"⏱ Chưa đến 17h → không cập nhật, dùng cache.")
+
+    # Thứ 7 & CN → không update nếu cache đã đủ đến thứ 6
+    weekday = datetime.today().weekday()
     if weekday >= 5:
-        if last_cached_date and last_cached_date >= last_trading_day:
+        if last_cached_date >= last_trading_day:
             print(f"📆 Cuối tuần và cache đã đủ đến {last_trading_day} → KHÔNG cập nhật.")
             need_update = False
         else:
-            print(f"📆 Cuối tuần nhưng cache thiếu → vẫn cập nhật 1 lần.")
+            print(f"📆 Cuối tuần nhưng cache thiếu → cập nhật 1 lần.")
             need_update = True
 
+    # Fetch nếu cần
     if need_update:
         data = _fetch_from_api(symbol, start, end)
         if data:
             save_json(cache_file, data)
             return data
         else:
-            print(f"⚠️ API lỗi hoặc rỗng, fallback dùng cache cũ (nếu có).")
+            print(f"⚠️ API rỗng → fallback cache.")
             return cached_data or []
 
+    print(f"📂 Dùng cache cũ cho {symbol} (đến {last_cached_date})")
     return cached_data
-
 
 
 

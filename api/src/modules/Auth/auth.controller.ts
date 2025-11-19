@@ -71,30 +71,6 @@ export class AuthController {
     return this.authService.logout(userId);
   }
 
-  // @Get('google')
-  // @Public()
-  // @UseGuards(AuthGuard('google'))
-  // async googleLogin() {
-  //   // Passport sẽ tự redirect tới Google OAuth
-  // }
-  //  @Get('google/callback')
-  // @Public()
-  // @UseGuards(AuthGuard('google'))
-  // async googleCallback(@Req() req) {
-  //   return this.authService.socialLogin(req.user);
-  // }
-  // @Get('google')
-  // @Public()
-  // googleLogin() {
-  //   return { message: 'Google login, dùng /api/auth/google (express)' };
-  // }
-
-  // @Get('google/callback')
-  // @Public()
-  // googleCallback() {
-  //   return { message: 'Google callback, dùng express router' };
-  // }
-
   @Get('google')
   @Public()
   @UseGuards(GoogleAuthGuard)
@@ -126,6 +102,35 @@ export class AuthController {
     res.header('Location', redirectUrl);
     res.send();
   }
+
+  // auth.controller.ts - GIỮ NGUYÊN
+  // @Get('google')
+  // @Public()
+  // @UseGuards(GoogleAuthGuard)
+  // async googleLogin() {
+  //   // Passport tự redirect
+  // }
+
+  // @Get('google/callback')
+  // @Public()
+  // @UseGuards(GoogleAuthGuard)
+  // async googleCallback(@Req() req, @Res() res) {
+  //   const loginResult = await this.authService.socialLogin(req.user);
+
+  //   res.cookie('accessToken', loginResult.data.tokens.accessToken, {
+  //     httpOnly: false,
+  //     path: '/',
+  //     sameSite: 'lax',
+  //   });
+
+  //   res.cookie('refreshToken', loginResult.data.tokens.refreshToken, {
+  //     httpOnly: false,
+  //     path: '/',
+  //     sameSite: 'lax',
+  //   });
+
+  //   return res.redirect(process.env.DOMAIN_WEB || 'http://localhost:7000');
+  // }
 
   // --- FACEBOOK AUTH ---
   @Get('facebook')
