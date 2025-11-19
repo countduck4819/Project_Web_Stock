@@ -1,20 +1,23 @@
-FROM python:3.10-slim
+FROM node:20-alpine AS builder
 
 WORKDIR /app
 
-RUN apt-get update && apt-get install -y \
-    build-essential \
-    python3-dev \
-    liblapack-dev \
-    libblas-dev \
-    gfortran \
-    && rm -rf /var/lib/apt/lists/*
+# Copy toàn bộ project root (quan trọng để copy thư mục predict_xgboost_and_lstm)
+COPY .. /app
 
-COPY requirements.txt .
-RUN pip install --upgrade pip && pip install --no-cache-dir -r requirements.txt
+# Cài npm trong folder api
+WORKDIR /app/api
+RUN npm install
+RUN npm run build
 
-COPY . .
+FROM node:20-alpine AS runner
+WORKDIR /app
 
-EXPOSE 6060
+COPY --from=builder /app/api/dist ./dist
+COPY --from=builder /app/predict_xgboost_and_lstm ./predict_xgboost_and_lstm
 
-CMD ["python", "server.py"]
+# Copy file .env nếu bạn muốn load từ file
+# COPY --from=builder /app/.env .env
+
+EXPOSE 3000
+CMD ["node", "dist/main.js"]
