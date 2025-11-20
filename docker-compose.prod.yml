@@ -1,0 +1,58 @@
+version: "3.9"
+
+services:
+    fireant_db:
+        image: postgres:16
+        container_name: fireant_db
+        environment:
+            POSTGRES_USER: countduck
+            POSTGRES_PASSWORD: countduck
+            POSTGRES_DB: fireant_stock
+        volumes:
+            - ./db:/var/lib/postgresql/data
+        networks:
+            - fireant_net
+
+    fireant_python:
+        build: ./python_data
+        container_name: fireant_python
+        working_dir: /fireant/python
+        networks:
+            - fireant_net
+        expose:
+            - "6060"
+        env_file:
+            - .env
+
+    fireant_api:
+        build: ./api
+        container_name: fireant_api
+        working_dir: /fireant/api
+        depends_on:
+            - fireant_db
+            - fireant_python
+        networks:
+            - fireant_net
+        expose:
+            - "3000"
+        env_file:
+            - .env
+        command: ["npm", "run", "start:prod"]
+
+    fireant_web:
+        build: ./web
+        container_name: fireant_web
+        working_dir: /fireant/web
+        depends_on:
+            - fireant_api
+        networks:
+            - fireant_net
+        ports:
+            - "80:3000"
+        env_file:
+            - .env
+        command: ["npm", "run", "start"]
+
+networks:
+    fireant_net:
+        driver: bridge

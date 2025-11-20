@@ -76,83 +76,75 @@
 #             - TZ=Asia/Ho_Chi_Minh
 # volumes:
 #     fireant_pip_cache:
+version: "3.9"
 
 services:
-    db:
-        container_name: fireant_db
+    fireant_db:
         image: postgres:16
+        container_name: fireant_db
         environment:
-            - POSTGRES_USER=countduck
-            - POSTGRES_PASSWORD=countduck
-            - POSTGRES_DB=fireant_stock
+            POSTGRES_USER: countduck
+            POSTGRES_PASSWORD: countduck
+            POSTGRES_DB: fireant_stock
         ports:
             - "5000:5432"
         volumes:
             - ./db:/var/lib/postgresql/data
+        networks:
+            - fireant_net
 
-    api:
+    fireant_python:
+        image: python:3.11-slim
+        container_name: fireant_python
+        working_dir: /fireant/python
+        volumes:
+            - ./python_data:/fireant/python
+            - ./data:/fireant/python/data
+        command: bash -c "pip install -r requirements.txt && python server.py"
+        environment:
+            TZ: Asia/Ho_Chi_Minh
+        ports:
+            - "6060:6060"
+        networks:
+            - fireant_net
+        env_file:
+            - .env
+
+    fireant_api:
+        image: node:22.9.0
         container_name: fireant_api
-        build: ./api # nâng cấp (thay image)
         working_dir: /fireant/api
         volumes:
             - ./api:/fireant/api
             - ./data:/fireant/data
             - ./predict_xgboost_and_lstm:/fireant/predict_xgboost_and_lstm
+        command: ["npm", "run", "start:dev"]
         ports:
             - "3000:3000"
         depends_on:
-            - db
-        command: ["npm", "run", "start:dev"]
+            - fireant_db
+            - fireant_python
+        networks:
+            - fireant_net
         env_file:
             - .env
 
-    web:
+    fireant_web:
+        image: node:22.9.0
         container_name: fireant_web
-        build: ./web # nâng cấp (thay image)
         working_dir: /fireant/web
         volumes:
             - ./web:/fireant/web
+        command: ["npm", "run", "dev"]
         ports:
             - "7000:7000"
-        command: ["npm", "run", "dev"]
         depends_on:
-            - api
+            - fireant_api
+        networks:
+            - fireant_net
         env_file:
             - .env
 
-    ngrok:
-        container_name: fireant_ngrok
-        image: ngrok/ngrok:latest
-        restart: unless-stopped
-        command:
-            - "start"
-            - "--all"
-            - "--config"
-            - "/etc/ngrok.yml"
-        volumes:
-            - ./ngrok.yml:/etc/ngrok.yml
-        ports:
-            - "4040:4040"
-        depends_on:
-            - api
-
-    python_data:
-        container_name: fireant_python
-        build: ./python_data # nâng cấp (thay image)
-        working_dir: /fireant/python
-        volumes:
-            - ./python_data:/fireant/python
-            - ./data/:/fireant/python/data/
-            - fireant_pip_cache:/usr/local/lib/python3.11/site-packages
-        ports:
-            - "6060:6060"
-        dns:
-            - 8.8.8.8
-            - 1.1.1.1
-        environment:
-            - FLASK_APP=server.py
-            - FLASK_ENV=development
-            - TZ=Asia/Ho_Chi_Minh
-
-volumes:
-    fireant_pip_cache:
+networks:
+    fireant_net:
+        driver: bridge

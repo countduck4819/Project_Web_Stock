@@ -1,10 +1,11 @@
 FROM node:22.9.0
 
-WORKDIR /fireant/api
-
+WORKDIR /app
 COPY package*.json ./
-RUN npm install
+RUN npm install --production
 
 COPY . .
 
-CMD ["npm", "run", "start:dev"]
+RUN npm run build
+
+CMD ["npm", "run", "start:prod"]
