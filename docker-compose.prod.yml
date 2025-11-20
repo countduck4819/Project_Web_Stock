@@ -4,6 +4,7 @@ services:
     fireant_db:
         image: postgres:16
         container_name: fireant_db
+        restart: always
         environment:
             POSTGRES_USER: countduck
             POSTGRES_PASSWORD: countduck
@@ -16,6 +17,7 @@ services:
     fireant_python:
         build: ./python_data
         container_name: fireant_python
+        restart: always
         working_dir: /fireant/python
         networks:
             - fireant_net
@@ -27,6 +29,7 @@ services:
     fireant_api:
         build: ./api
         container_name: fireant_api
+        restart: always
         working_dir: /fireant/api
         depends_on:
             - fireant_db
@@ -42,13 +45,14 @@ services:
     fireant_web:
         build: ./web
         container_name: fireant_web
+        restart: always
         working_dir: /fireant/web
         depends_on:
             - fireant_api
         networks:
             - fireant_net
         ports:
-            - "80:3000"
+            - "7000:3000"
         env_file:
             - .env
         command: ["npm", "run", "start"]
