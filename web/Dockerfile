@@ -2,15 +2,13 @@ FROM node:22.9.0
 
 WORKDIR /fireant/web
 
-# copy package.json
 COPY package*.json ./
-
 RUN npm install
 
-# copy toàn bộ source web
-COPY . .
+# ⭐ COPY ENV vào trước khi build
+COPY .env .env
 
-# build
+COPY . .
 RUN npm run build
 
 CMD ["npm", "run", "start"]
