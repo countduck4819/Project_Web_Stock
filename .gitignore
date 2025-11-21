@@ -60,8 +60,8 @@ python_data/*.egg-info/
 # ==========================
 # DATA EXPORTS (data/, db/)
 # ==========================
-# data/*.json
-# !data/industries_for_code.json   # giữ lại nếu cần ví dụ
+data/*.json
+!data/industries_for_code.json   # giữ lại nếu cần ví dụ
 db/*.sqlite
 db/*.db
 db/__pycache__/
@@ -76,8 +76,8 @@ db/__pycache__/
 docker-compose.override.yml
 
 db/
-
-data/finance
-data/news
-data/stocks
+data/
+# data/finance
+# data/news
+# data/stocks
 
