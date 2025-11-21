@@ -14,7 +14,7 @@ yarn-error.log*
 *.env.local
 *.env.development
 *.env.production
-
+# */*/.env
 # OS / IDE
 .DS_Store
 Thumbs.db
@@ -80,3 +80,4 @@ db/
 data/finance
 data/news
 data/stocks
+

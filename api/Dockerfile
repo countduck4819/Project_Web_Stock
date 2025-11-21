@@ -9,8 +9,9 @@ COPY package*.json ./
 RUN npm install -g @nestjs/cli
 RUN npm install
 
-COPY ../.env .env
 # Copy toàn bộ source vào container
+COPY .env .env
+
 COPY . .
 
 # Build code NestJS
