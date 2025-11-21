@@ -60,7 +60,7 @@ async function bootstrap() {
     origin: [
       'http://localhost:7000',
       'http://localhost:3000',
-      'https://fireant.io.vn',
+      'http://fireant.io.vn',
     ],
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
