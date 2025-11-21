@@ -6,7 +6,7 @@ COPY package*.json ./
 RUN npm install
 
 # ⭐ COPY ENV vào trước khi build
-COPY .env .env
+COPY ../.env .env
 
 COPY . .
 RUN npm run build
