@@ -21,10 +21,11 @@ services:
         working_dir: /fireant/python
         networks:
             - fireant_net
-        expose:
-            - "6060"
+        ports:
+            - "6060:6060"
         env_file:
             - .env
+        command: ["python", "server.py"]
 
     fireant_api:
         build: ./api
@@ -36,11 +37,11 @@ services:
             - fireant_python
         networks:
             - fireant_net
-        expose:
-            - "3000"
+        ports:
+            - "3000:3000"
         env_file:
             - .env
-        command: ["npm", "run", "start:prod"]
+        command: ["npm", "run", "start:prod"] # chạy bản dist
 
     fireant_web:
         build: ./web
@@ -52,7 +53,7 @@ services:
         networks:
             - fireant_net
         ports:
-            - "7000:3000"
+            - "7000:3000" # 7000 => public
         env_file:
             - .env
         command: ["npm", "run", "start"]
