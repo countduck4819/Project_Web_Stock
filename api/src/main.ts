@@ -57,7 +57,11 @@ async function bootstrap() {
   await app.register(multipart);
 
   await app.register(fastifyCors, {
-    origin: ['http://localhost:7000', 'http://localhost:3000'],
+    origin: [
+      'http://localhost:7000',
+      'http://localhost:3000',
+      'https://fireant.io.vn',
+    ],
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true,
