@@ -4,7 +4,7 @@ from functools import lru_cache
 import os, time, json, traceback, pandas as pd, re, unicodedata
 
 _last_call = 0
-
+MAX_SLUG_LEN = 80 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 CACHE_DIR = os.path.abspath(os.path.join(BASE_DIR, "../../data/news"))
 os.makedirs(CACHE_DIR, exist_ok=True)
@@ -95,7 +95,21 @@ def _fetch_from_api(symbol: str, limit: int = 300):
         records = []
         for _, row in df.iterrows():
             title = str(row.get("news_title", "")).strip()
-            slug = slugify(title) or f"news-{row.get('news_id', '')}"
+            raw_slug = slugify(title)
+            news_id = str(row.get("news_id", "")).strip()
+
+            if raw_slug:
+                # gộp id + slug trước
+                if news_id:
+                    combined = f"{news_id}-{raw_slug}"
+                else:
+                    combined = raw_slug
+            else:
+                # không có title thì fallback
+                combined = f"news-{news_id}" if news_id else "news"
+
+            # cắt tổng thể để không vượt MAX_SLUG_LEN
+            slug = combined[:MAX_SLUG_LEN].rstrip("-")
 
             records.append({
                 "news_id": str(row.get("news_id", "")),

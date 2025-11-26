@@ -7,6 +7,7 @@ import Loading from "@/share/components/Loading";
 import { SECTORS } from "@/const/const";
 import RightPanel from "./RightPanel";
 import { useRouter } from "next/navigation";
+import { cn } from "@/lib/utils";
 
 export default function MarketHeatmap() {
     const dispatch = useAppDispatch();
@@ -130,10 +131,16 @@ export default function MarketHeatmap() {
             {loading ? (
                 <Loading />
             ) : (
-                <section className="relative grid grid-cols-[1fr_20rem] space-x-[1.5rem] bg-[#fff] text-white">
-                    <div className="sticky top-[3.5rem] max-h-[calc(100vh-3.5rem)]">
+                <section
+                    style={{ minHeight: "calc(100vh - 5rem)" }}
+                    className={cn(
+                        "relative grid grid-cols-[1fr_20rem] space-x-[1.5rem] bg-[#fff] text-white"
+                    )}
+                >
+                    <div className="sticky left-0 top-[4rem] max-h-[calc(100vh-5rem)]">
                         <div className="relative bg-white rounded-lg overflow-hidden h-full border border-gray-200 ">
                             <ReactECharts
+                                className="p-0"
                                 option={option}
                                 style={{ height: "100%", width: "100%" }}
                                 onEvents={{
