@@ -147,7 +147,6 @@ export class NewsService
   }
 
   async findBySlug(slug: string) {
-    console.log(slug);
     const news = await this.newsRepository.findOne({ where: { slug } });
 
     if (!news) {

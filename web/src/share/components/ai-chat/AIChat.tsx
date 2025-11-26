@@ -351,7 +351,6 @@ export default function AIChat() {
     const dispatch = useAppDispatch();
     const { user } = useAuth();
     const router = useRouter();
-    console.log(user);
 
     const { messages, loading } = useAppSelector((s) => s.aiChat);
 
@@ -632,7 +631,7 @@ export default function AIChat() {
                             ref={boxRef}
                             className="flex-1 overflow-y-auto p-3 space-y-3"
                         >
-                            {messages.map((msg, i) =>
+                            {messages.map((msg: any, i: number) =>
                                 msg.sender === "user" ? (
                                     <div key={i} className="text-right">
                                         <span className="inline-block bg-blue-600 text-white px-3 py-2 rounded-lg">

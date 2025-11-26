@@ -14,6 +14,7 @@ import { FormButton } from "@/share/components/FormButtom";
 import { FaGoogle } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { api } from "@/utils/axiosInstance";
+import Link from "next/link";
 
 const loginSchema = z.object({
     email: z.string().email("Email không hợp lệ"),
@@ -43,7 +44,7 @@ export default function Login() {
                 }
             );
             const data = await res.json();
-            if (!res.ok) throw new Error(data?.message || "Đăng nhập thất bại");
+            if (!data?.code) throw new Error(data?.message || "Đăng nhập thất bại");
 
             // const accessMaxAge = 60 * 15;
 
@@ -135,12 +136,12 @@ export default function Login() {
 
                     <p className="text-center text-sm text-gray-500 mt-6">
                         Chưa có tài khoản?{" "}
-                        <a
+                        <Link
                             href="/register"
                             className="text-[#7C3AED] font-medium hover:underline"
                         >
                             Đăng ký ngay
-                        </a>
+                        </Link>
                     </p>
                 </div>
             </div>

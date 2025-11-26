@@ -22,14 +22,14 @@ export const stockPredictionColumns: Column<StockPrediction>[] = [
             item.chartPath ? (
                 <div
                     className="w-16 h-12 relative border rounded overflow-hidden bg-white cursor-pointer"
-                    onClick={() => actions?.onPreview?.(item.chartPath!)}
+                    onClick={() => actions?.onPreview?.(`/${item.chartPath}`!)}
                 >
                     <Image
-                        src={item.chartPath}
-                        alt={`chart-${item.ticker}`}
+                        src={`/${item.chartPath}`}
+                        alt={`/charts/${item.ticker}`}
                         fill
-                        sizes="64px"
-                        className="object-cover"
+                        unoptimized
+                        className="object-cover w-full h-auto"
                     />
                 </div>
             ) : (

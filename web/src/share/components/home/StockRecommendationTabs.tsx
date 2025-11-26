@@ -21,7 +21,6 @@ export default function StockRecommendationTabs() {
     };
 
     const canSeeContent = canAccess(user, Role.User, AccountType.PREMIUM);
-    console.log(user);
     return (
         <div className="w-full px-4 py-6">
             <Tabs

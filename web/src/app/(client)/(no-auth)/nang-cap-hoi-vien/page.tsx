@@ -19,7 +19,6 @@ export default function CheckoutPremiumPage() {
         const res = await api.post("/premium-orders", {
             userId: Number(user.id),
         });
-        console.log(res.data?.data)
 
         const checkoutUrl =
             res.data?.data?.payLink?.checkoutUrl || res.data?.checkoutUrl;

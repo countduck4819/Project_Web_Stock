@@ -435,8 +435,13 @@ def fetch_stock(symbol: str, start: str, end: str):
     # Nếu cache chưa có ngày giao dịch gần nhất → cần update
     if last_cached_date and last_cached_date < last_trading_day:
         print(f"📉 Cache thiếu ngày {last_trading_day} → cần cập nhật.")
+        print(f"📉 Cache thiếu ngày {last_trading_day} → cần cập nhật.")
+        today = datetime.today().date()
+        last_date = datetime.strptime(cached_data[-1]["time"], "%Y-%m-%d").date()
+
+        diff = (today - last_date).days
         # Chỉ update sau 17h để chắc chắn dữ liệu có sẵn
-        if current_hour >= 17:
+        if diff > 1 or current_hour >= 17:
             need_update = True
         else:
             need_update = False

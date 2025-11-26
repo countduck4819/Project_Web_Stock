@@ -35,11 +35,9 @@ export class StockRecommendationsService
     query: Record<string, any>,
   ): Promise<BaseResDataI<StockRecommendationResI[] | null>> {
     try {
-      console.log(query)
       const page = Number(query.page) || 1;
       const limit = Number(query.limit) || 10;
       const { page: _p, limit: _l, search, ...condition } = query;
-      console.log(search)
       const qb = this.recommendationRepo
         .createQueryBuilder('rec')
         .leftJoinAndSelect('rec.stock', 'stock')

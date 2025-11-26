@@ -138,7 +138,6 @@ export default function MarketHeatmap() {
                                 style={{ height: "100%", width: "100%" }}
                                 onEvents={{
                                     click: (params: any) => {
-                                        console.log(params);
                                         if (params?.data?.symbol) {
                                             router.push(
                                                 `/ma-chung-khoan/${params.data.symbol}`

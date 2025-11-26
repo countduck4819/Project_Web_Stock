@@ -9,6 +9,7 @@ import {
     User,
     Settings,
     Crown,
+    ShieldCheck,
 } from "lucide-react";
 import { useAuth } from "@/auth/AuthProvider";
 import SearchBox from "../components/SearchBox";
@@ -35,6 +36,7 @@ export default function Header() {
                             width={120}
                             height={20}
                             alt="fireant"
+                            unoptimized
                             className="w-[8rem] h-[8rem]"
                         />
                     </Link>
@@ -121,13 +123,26 @@ export default function Header() {
 
                                 <div className="mt-2 flex flex-col space-y-1">
                                     <DropdownMenu.Item asChild>
-                                        <Link
-                                            href="/upgrade"
-                                            className="flex items-center gap-2 px-2 py-2 rounded-md hover:bg-gray-50"
-                                        >
-                                            <Crown size={16} /> Nâng cấp / Gia
-                                            hạn
-                                        </Link>
+                                        {user?.role === Role?.Admin ? (
+                                            <Link
+                                                href="/admin"
+                                                className="flex items-center gap-2 px-2 py-2 rounded-md hover:bg-gray-50"
+                                            >
+                                                <ShieldCheck size={16} /> Admin
+                                            </Link>
+                                        ) : user?.role === Role?.User &&
+                                          user?.accountType ===
+                                              AccountType?.FREE ? (
+                                            <Link
+                                                href="/nang-cap-hoi-vien"
+                                                className="flex items-center gap-2 px-2 py-2 rounded-md hover:bg-gray-50"
+                                            >
+                                                <Crown size={16} /> Nâng cấp /
+                                                Gia hạn
+                                            </Link>
+                                        ) : (
+                                            <></>
+                                        )}
                                     </DropdownMenu.Item>
 
                                     <DropdownMenu.Item asChild>

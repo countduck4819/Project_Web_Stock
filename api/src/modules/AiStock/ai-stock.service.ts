@@ -143,47 +143,147 @@ export class AiStockService
     return { title, summary: title, link };
   }
 
+  //   async askStockAi(
+  //     body: AiStockAskReqI,
+  //   ): Promise<BaseResDataI<AiStockAskResI>> {
+  //     const { userId, question } = body;
+
+  //     const symbol = this.detectSymbol(question);
+  //     /** CASE A — NO SYMBOL → trả HTML + lưu lịch sử */
+  //     if (!symbol) {
+  //       const answerHtml = `
+  //         <p><b>Không tìm thấy mã cổ phiếu</b> trong câu hỏi.</p>
+  //         <p>Vui lòng nhập mã như <b>VCB</b>, <b>FPT</b>, <b>SSI</b>.</p>
+  //       `;
+
+  //       await this.aiStockRepository.save({
+  //         userId,
+  //         question,
+  //         symbol: null,
+  //         answer: answerHtml,
+  //       });
+
+  //       return {
+  //         status: HttpStatusCode.OK,
+  //         code: ResponseCode.SUCCESS,
+  //         message: 'AI trả lời thành công',
+  //         data: {
+  //           symbol: null,
+  //           answer: answerHtml,
+  //         },
+  //       };
+  //     }
+
+  //     /** CASE B — CÓ SYMBOL */
+  //     const [priceData, financeData, newsList] = await Promise.all([
+  //       this.fetchPrice(symbol),
+  //       this.fetchFinance(symbol),
+  //       this.fetchNews(symbol),
+  //     ]);
+  //     console.log('1', newsList);
+  //     const latestNews = newsList[0] || null;
+  //     const newsSnippet = await this.buildNewsSnippet(latestNews);
+  //     console.log('2', newsSnippet);
+  //     const lastCandle = Array.isArray(priceData)
+  //       ? priceData[priceData.length - 1]
+  //       : null;
+
+  //     const newsText = newsSnippet
+  //       ? `
+  // Tiêu đề: ${newsSnippet.title}
+  // Tóm tắt: ${newsSnippet.summary}
+  // Link: ${newsSnippet.link}
+  //     `.trim()
+  //       : 'Không có tin tức.';
+
+  //     /** Build AI context */
+  //     const context = `
+  // DỮ LIỆU CỔ PHIẾU: ${symbol}
+
+  // [GIÁ GẦN NHẤT]
+  // ${lastCandle ? JSON.stringify(lastCandle) : 'Không có dữ liệu giá.'}
+
+  // [CHỈ SỐ TÀI CHÍNH]
+  // ${financeData ? JSON.stringify(financeData) : 'Không có dữ liệu tài chính.'}
+
+  // [TIN TỨC MỚI NHẤT]
+  // ${newsText}
+
+  // - Trả lời HTML.
+  // - Dùng <p>, <b>, <i>, <br>, <ul>, <li>, <a>.
+  //     `.trim();
+
+  //     const ai = await this.groq.chat.completions.create({
+  //       model: 'llama-3.3-70b-versatile',
+  //       messages: [
+  //         {
+  //           role: 'system',
+  //           content: `${`
+  // Bạn là AI chuyên gia chứng khoán Việt Nam.
+  // Bạn CHỈ được trả lời các câu hỏi liên quan đến:
+  // - chứng khoán
+  // - cổ phiếu
+  // - tài chính doanh nghiệp
+  // - thị trường
+  // - phân tích kỹ thuật / cơ bản
+  // - kinh tế
+
+  // NẾU câu hỏi KHÔNG liên quan đến chứng khoán → trả lời đúng mẫu sau:
+
+  // "<p><b>Xin lỗi!</b> Tôi chỉ hỗ trợ các câu hỏi liên quan đến chứng khoán, cổ phiếu và tài chính. Vui lòng đặt câu hỏi phù hợp.</p>"
+
+  // TUYỆT ĐỐI KHÔNG trả lời linh tinh về các chủ đề khác.
+  // `}`,
+  //         },
+  //         { role: 'user', content: context },
+  //         { role: 'user', content: question },
+  //       ],
+  //       temperature: 0.25,
+  //     });
+
+  //     const answerHtml = ai.choices[0].message.content;
+
+  //     /** Save history */
+  //     await this.aiStockRepository.save({
+  //       userId,
+  //       question,
+  //       symbol,
+  //       answer: answerHtml,
+  //     });
+
+  //     return {
+  //       status: HttpStatusCode.OK,
+  //       code: ResponseCode.SUCCESS,
+  //       message: 'AI trả lời thành công',
+  //       data: {
+  //         symbol,
+  //         answer: answerHtml,
+  //       },
+  //     };
+  //   }
   async askStockAi(
     body: AiStockAskReqI,
   ): Promise<BaseResDataI<AiStockAskResI>> {
     const { userId, question } = body;
 
     const symbol = this.detectSymbol(question);
-    /** CASE A — NO SYMBOL → trả HTML + lưu lịch sử */
-    if (!symbol) {
-      const answerHtml = `
-        <p><b>Không tìm thấy mã cổ phiếu</b> trong câu hỏi.</p>
-        <p>Vui lòng nhập mã như <b>VCB</b>, <b>FPT</b>, <b>SSI</b>.</p>
-      `;
-
-      await this.aiStockRepository.save({
-        userId,
-        question,
-        symbol: null,
-        answer: answerHtml,
-      });
-
-      return {
-        status: HttpStatusCode.OK,
-        code: ResponseCode.SUCCESS,
-        message: 'AI trả lời thành công',
-        data: {
-          symbol: null,
-          answer: answerHtml,
-        },
-      };
-    }
 
     /** CASE B — CÓ SYMBOL */
-    const [priceData, financeData, newsList] = await Promise.all([
-      this.fetchPrice(symbol),
-      this.fetchFinance(symbol),
-      this.fetchNews(symbol),
-    ]);
-    console.log('1', newsList);
+    // Nếu không có symbol → trả về data rỗng để không bị lỗi
+    const [priceData, financeData, newsList] = symbol
+      ? await Promise.all([
+          this.fetchPrice(symbol),
+          this.fetchFinance(symbol),
+          this.fetchNews(symbol),
+        ])
+      : [null, null, []];
+
     const latestNews = newsList[0] || null;
-    const newsSnippet = await this.buildNewsSnippet(latestNews);
-    console.log('2', newsSnippet);
+
+    const newsSnippet = latestNews
+      ? await this.buildNewsSnippet(latestNews)
+      : null;
+
     const lastCandle = Array.isArray(priceData)
       ? priceData[priceData.length - 1]
       : null;
@@ -193,12 +293,12 @@ export class AiStockService
 Tiêu đề: ${newsSnippet.title}
 Tóm tắt: ${newsSnippet.summary}
 Link: ${newsSnippet.link}
-    `.trim()
+  `.trim()
       : 'Không có tin tức.';
 
     /** Build AI context */
     const context = `
-DỮ LIỆU CỔ PHIẾU: ${symbol}
+DỮ LIỆU CỔ PHIẾU: ${symbol || 'Không tìm thấy mã'}
 
 [GIÁ GẦN NHẤT]
 ${lastCandle ? JSON.stringify(lastCandle) : 'Không có dữ liệu giá.'}
@@ -211,7 +311,7 @@ ${newsText}
 
 - Trả lời HTML.
 - Dùng <p>, <b>, <i>, <br>, <ul>, <li>, <a>.
-    `.trim();
+  `.trim();
 
     const ai = await this.groq.chat.completions.create({
       model: 'llama-3.3-70b-versatile',
@@ -227,10 +327,14 @@ Bạn CHỈ được trả lời các câu hỏi liên quan đến:
 - thị trường
 - phân tích kỹ thuật / cơ bản
 - kinh tế
-
+- kinh doanh
+- đầu tư vàng, bất động sản, crypto
+- các công cụ tài chính
+- các chỉ số tài chính
+- gdp, lạm phát, lãi suất
 NẾU câu hỏi KHÔNG liên quan đến chứng khoán → trả lời đúng mẫu sau:
 
-"<p><b>Xin lỗi!</b> Tôi chỉ hỗ trợ các câu hỏi liên quan đến chứng khoán, cổ phiếu và tài chính. Vui lòng đặt câu hỏi phù hợp.</p>"
+"<p><b>Xin lỗi!</b> Tôi chỉ hỗ trợ các câu hỏi liên quan đến chứng khoán, cổ phiếu, tài chính và kinh tế. Vui lòng đặt câu hỏi phù hợp.</p>"
 
 TUYỆT ĐỐI KHÔNG trả lời linh tinh về các chủ đề khác.
 `}`,
@@ -247,7 +351,7 @@ TUYỆT ĐỐI KHÔNG trả lời linh tinh về các chủ đề khác.
     await this.aiStockRepository.save({
       userId,
       question,
-      symbol,
+      symbol: symbol || null,
       answer: answerHtml,
     });
 

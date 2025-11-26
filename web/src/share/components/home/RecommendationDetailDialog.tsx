@@ -23,7 +23,6 @@ export default function RecommendationDetailDialog({
     item: any;
     price: number | undefined;
 }) {
-    console.log("test");
     if (!item) return null;
 
     // LẤY CANDLE ĐỂ TÍNH CHANGE & %

@@ -10,12 +10,14 @@ const publicRoutes = ["/", ...publicRouters, "/nang-cap-hoi-vien"];
 
 export default function AuthGate({ children }: { children: React.ReactNode }) {
     const { user, loading, isAuthenticated } = useAuth();
-    console.log(user);
     const router = useRouter();
     const pathname = usePathname();
     useEffect(() => {
         if (loading) return;
-        const isPublic = publicRoutes.includes(pathname);
+        const isPublic = publicRoutes.some((route) => {
+            if (route === "/") return pathname === "/";
+            return pathname.startsWith(route);
+        });
         if (!isAuthenticated && !isPublic) router.replace("/login");
         if (isAuthenticated && pathname === "/login") router.replace("/");
     }, [loading, isAuthenticated, pathname]);

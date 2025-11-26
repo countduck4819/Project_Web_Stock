@@ -16,7 +16,6 @@ export default function AdminStocksPage() {
     const [page, setPage] = useState(1);
     const [limit, setLimit] = useState(10);
     const [filters, setFilters] = useState<Record<string, string>>({});
-    console.log("filters", filters);
     useEffect(() => {
         dispatch(fetchStocksQuery({ page, limit, ...filters }));
     }, [dispatch, page, limit, filters]);
