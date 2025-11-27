@@ -14,11 +14,26 @@ services:
         networks:
             - fireant_net
 
+    # fireant_python:
+    #     build: ./python_data
+    #     container_name: fireant_python
+    #     restart: always
+    #     working_dir: /fireant/python
+    #     networks:
+    #         - fireant_net
+    #     ports:
+    #         - "6060:6060"
+    #     env_file:
+    #         - .env
+    #     command: ["python", "server.py"]
     fireant_python:
         build: ./python_data
         container_name: fireant_python
         restart: always
         working_dir: /fireant/python
+        volumes:
+            - ./python_data:/fireant/python
+            - ./data:/fireant/python/data
         networks:
             - fireant_net
         ports:
