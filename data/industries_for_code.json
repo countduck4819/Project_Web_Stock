@@ -48,18 +48,6 @@
     "icb_code4": "1357"
   },
   {
-    "symbol": "ASA",
-    "organ_name": "Công ty Cổ phần ASA",
-    "icb_name3": "Hàng cá nhân",
-    "icb_name2": "Hàng cá nhân & Gia dụng",
-    "icb_name4": "Hàng cá nhân",
-    "com_type_code": "CT",
-    "icb_code1": "3000",
-    "icb_code2": "3700",
-    "icb_code3": "3760",
-    "icb_code4": "3767"
-  },
-  {
     "symbol": "AFX",
     "organ_name": "Công ty Cổ phần Xuất Nhập khẩu Nông sản Thực phẩm An Giang",
     "icb_name3": "Phân phối thực phẩm & dược phẩm",
@@ -132,16 +120,16 @@
     "icb_code4": "8633"
   },
   {
-    "symbol": "BBH",
-    "organ_name": "Công ty Cổ phần Bao bì Hoàng Thạch",
-    "icb_name3": "Hàng công nghiệp",
-    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
-    "icb_name4": "Containers & Đóng gói",
+    "symbol": "ASA",
+    "organ_name": "Công ty Cổ phần ASA",
+    "icb_name3": "Hàng cá nhân",
+    "icb_name2": "Hàng cá nhân & Gia dụng",
+    "icb_name4": "Hàng cá nhân",
     "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2700",
-    "icb_code3": "2720",
-    "icb_code4": "2723"
+    "icb_code1": "3000",
+    "icb_code2": "3700",
+    "icb_code3": "3760",
+    "icb_code4": "3767"
   },
   {
     "symbol": "APP",
@@ -240,16 +228,16 @@
     "icb_code4": "3573"
   },
   {
-    "symbol": "BHP",
-    "organ_name": "Công ty Cổ phần Bia Hà Nội - Hải Phòng",
-    "icb_name3": "Bia và đồ uống",
-    "icb_name2": "Thực phẩm và đồ uống",
-    "icb_name4": "Sản xuất bia",
+    "symbol": "BBH",
+    "organ_name": "Công ty Cổ phần Bao bì Hoàng Thạch",
+    "icb_name3": "Hàng công nghiệp",
+    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
+    "icb_name4": "Containers & Đóng gói",
     "com_type_code": "CT",
-    "icb_code1": "3000",
-    "icb_code2": "3500",
-    "icb_code3": "3530",
-    "icb_code4": "3533"
+    "icb_code1": "2000",
+    "icb_code2": "2700",
+    "icb_code3": "2720",
+    "icb_code4": "2723"
   },
   {
     "symbol": "A32",
@@ -264,16 +252,16 @@
     "icb_code4": "3765"
   },
   {
-    "symbol": "BID",
-    "organ_name": "Ngân hàng Thương mại Cổ phần Đầu tư và Phát triển Việt Nam",
-    "icb_name3": "Ngân hàng",
-    "icb_name2": "Ngân hàng",
-    "icb_name4": "Ngân hàng",
-    "com_type_code": "NH",
-    "icb_code1": "8301",
-    "icb_code2": "8300",
-    "icb_code3": "8350",
-    "icb_code4": "8355"
+    "symbol": "BHP",
+    "organ_name": "Công ty Cổ phần Bia Hà Nội - Hải Phòng",
+    "icb_name3": "Bia và đồ uống",
+    "icb_name2": "Thực phẩm và đồ uống",
+    "icb_name4": "Sản xuất bia",
+    "com_type_code": "CT",
+    "icb_code1": "3000",
+    "icb_code2": "3500",
+    "icb_code3": "3530",
+    "icb_code4": "3533"
   },
   {
     "symbol": "BCR",
@@ -298,6 +286,18 @@
     "icb_code2": "5500",
     "icb_code3": "5550",
     "icb_code4": "5557"
+  },
+  {
+    "symbol": "BID",
+    "organ_name": "Ngân hàng Thương mại Cổ phần Đầu tư và Phát triển Việt Nam",
+    "icb_name3": "Ngân hàng",
+    "icb_name2": "Ngân hàng",
+    "icb_name4": "Ngân hàng",
+    "com_type_code": "NH",
+    "icb_code1": "8301",
+    "icb_code2": "8300",
+    "icb_code3": "8350",
+    "icb_code4": "8355"
   },
   {
     "symbol": "BMG",
@@ -372,18 +372,6 @@
     "icb_code4": "2353"
   },
   {
-    "symbol": "BVN",
-    "organ_name": "Công ty Cổ phần Bông Việt Nam",
-    "icb_name3": "Hàng cá nhân",
-    "icb_name2": "Hàng cá nhân & Gia dụng",
-    "icb_name4": "Hàng cá nhân",
-    "com_type_code": "CT",
-    "icb_code1": "3000",
-    "icb_code2": "3700",
-    "icb_code3": "3760",
-    "icb_code4": "3767"
-  },
-  {
     "symbol": "BSP",
     "organ_name": "Công ty Cổ phần Bia Sài Gòn - Phú Thọ",
     "icb_name3": "Bia và đồ uống",
@@ -420,16 +408,16 @@
     "icb_code4": "5759"
   },
   {
-    "symbol": "TS3",
-    "organ_name": "Công ty Cổ phần Trường Sơn 532",
-    "icb_name3": "Xây dựng và Vật liệu",
-    "icb_name2": "Xây dựng và Vật liệu",
-    "icb_name4": "Xây dựng",
+    "symbol": "BVN",
+    "organ_name": "Công ty Cổ phần Bông Việt Nam",
+    "icb_name3": "Hàng cá nhân",
+    "icb_name2": "Hàng cá nhân & Gia dụng",
+    "icb_name4": "Hàng cá nhân",
     "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2300",
-    "icb_code3": "2350",
-    "icb_code4": "2357"
+    "icb_code1": "3000",
+    "icb_code2": "3700",
+    "icb_code3": "3760",
+    "icb_code4": "3767"
   },
   {
     "symbol": "BTD",
@@ -442,6 +430,18 @@
     "icb_code2": "2300",
     "icb_code3": "2350",
     "icb_code4": "2353"
+  },
+  {
+    "symbol": "TS3",
+    "organ_name": "Công ty Cổ phần Trường Sơn 532",
+    "icb_name3": "Xây dựng và Vật liệu",
+    "icb_name2": "Xây dựng và Vật liệu",
+    "icb_name4": "Xây dựng",
+    "com_type_code": "CT",
+    "icb_code1": "2000",
+    "icb_code2": "2300",
+    "icb_code3": "2350",
+    "icb_code4": "2357"
   },
   {
     "symbol": "BHK",
@@ -610,6 +610,18 @@
     "icb_code2": "2300",
     "icb_code3": "2350",
     "icb_code4": "2357"
+  },
+  {
+    "symbol": "YTC",
+    "organ_name": "Công ty Cổ phần Xuất nhập khẩu Y tế Thành phố Hồ Chí Minh",
+    "icb_name3": "Thiết bị và Dịch vụ Y tế",
+    "icb_name2": "Y tế",
+    "icb_name4": "Dụng cụ y tế",
+    "com_type_code": "CT",
+    "icb_code1": "4000",
+    "icb_code2": "4500",
+    "icb_code3": "4530",
+    "icb_code4": "4537"
   },
   {
     "symbol": "BCM",
@@ -4368,18 +4380,6 @@
     "icb_code4": "2357"
   },
   {
-    "symbol": "HU6",
-    "organ_name": "Công ty Cổ phần Đầu tư Phát triển Nhà và Đô thị HUD6",
-    "icb_name3": "Bất động sản",
-    "icb_name2": "Bất động sản",
-    "icb_name4": "Bất động sản",
-    "com_type_code": "CT",
-    "icb_code1": "8000",
-    "icb_code2": "8600",
-    "icb_code3": "8630",
-    "icb_code4": "8633"
-  },
-  {
     "symbol": "NO1",
     "organ_name": "Công ty Cổ phần Tâp đoàn 911",
     "icb_name3": "Công nghiệp nặng",
@@ -4404,18 +4404,6 @@
     "icb_code4": "3353"
   },
   {
-    "symbol": "HNP",
-    "organ_name": "Công ty Cổ phần Hanel Xốp Nhựa",
-    "icb_name3": "Hóa chất",
-    "icb_name2": "Hóa chất",
-    "icb_name4": "Nhựa, cao su & sợi",
-    "com_type_code": "CT",
-    "icb_code1": "1000",
-    "icb_code2": "1300",
-    "icb_code3": "1350",
-    "icb_code4": "1353"
-  },
-  {
     "symbol": "HVA",
     "organ_name": "Công ty Cổ phần Đầu tư HVA",
     "icb_name3": "Dịch vụ tài chính",
@@ -4426,6 +4414,18 @@
     "icb_code2": "8700",
     "icb_code3": "8770",
     "icb_code4": "8775"
+  },
+  {
+    "symbol": "HNP",
+    "organ_name": "Công ty Cổ phần Hanel Xốp Nhựa",
+    "icb_name3": "Hóa chất",
+    "icb_name2": "Hóa chất",
+    "icb_name4": "Nhựa, cao su & sợi",
+    "com_type_code": "CT",
+    "icb_code1": "1000",
+    "icb_code2": "1300",
+    "icb_code3": "1350",
+    "icb_code4": "1353"
   },
   {
     "symbol": "HVH",
@@ -4464,6 +4464,18 @@
     "icb_code4": "2353"
   },
   {
+    "symbol": "IBC",
+    "organ_name": "Công ty Cổ phần Đầu tư APAX Holdings",
+    "icb_name3": "Dịch vụ tài chính",
+    "icb_name2": "Dịch vụ tài chính",
+    "icb_name4": "Tài chính đặc biệt",
+    "com_type_code": "CT",
+    "icb_code1": "8000",
+    "icb_code2": "8700",
+    "icb_code3": "8770",
+    "icb_code4": "8775"
+  },
+  {
     "symbol": "HAH",
     "organ_name": "Công ty Cổ phần Vận tải và Xếp dỡ Hải An",
     "icb_name3": "Vận tải",
@@ -4500,18 +4512,6 @@
     "icb_code4": "1357"
   },
   {
-    "symbol": "IBC",
-    "organ_name": "Công ty Cổ phần Đầu tư APAX Holdings",
-    "icb_name3": "Dịch vụ tài chính",
-    "icb_name2": "Dịch vụ tài chính",
-    "icb_name4": "Tài chính đặc biệt",
-    "com_type_code": "CT",
-    "icb_code1": "8000",
-    "icb_code2": "8700",
-    "icb_code3": "8770",
-    "icb_code4": "8775"
-  },
-  {
     "symbol": "ICF",
     "organ_name": "Công ty Cổ phần Đầu tư - Thương mại - Thuỷ sản",
     "icb_name3": "Sản xuất thực phẩm",
@@ -4522,6 +4522,18 @@
     "icb_code2": "3500",
     "icb_code3": "3570",
     "icb_code4": "3573"
+  },
+  {
+    "symbol": "ICG",
+    "organ_name": "Công ty Cổ phần Xây dựng Sông Hồng",
+    "icb_name3": "Xây dựng và Vật liệu",
+    "icb_name2": "Xây dựng và Vật liệu",
+    "icb_name4": "Xây dựng",
+    "com_type_code": "CT",
+    "icb_code1": "2000",
+    "icb_code2": "2300",
+    "icb_code3": "2350",
+    "icb_code4": "2357"
   },
   {
     "symbol": "CKA",
@@ -4536,8 +4548,8 @@
     "icb_code4": "2757"
   },
   {
-    "symbol": "ICG",
-    "organ_name": "Công ty Cổ phần Xây dựng Sông Hồng",
+    "symbol": "ICI",
+    "organ_name": "Công ty Cổ phần Đầu tư và Xây dựng Công nghiệp",
     "icb_name3": "Xây dựng và Vật liệu",
     "icb_name2": "Xây dựng và Vật liệu",
     "icb_name4": "Xây dựng",
@@ -4560,16 +4572,16 @@
     "icb_code4": "4577"
   },
   {
-    "symbol": "ICI",
-    "organ_name": "Công ty Cổ phần Đầu tư và Xây dựng Công nghiệp",
-    "icb_name3": "Xây dựng và Vật liệu",
-    "icb_name2": "Xây dựng và Vật liệu",
-    "icb_name4": "Xây dựng",
+    "symbol": "IDI",
+    "organ_name": "Công ty Cổ phần Đầu tư và Phát triển Đa Quốc Gia I.D.I",
+    "icb_name3": "Sản xuất thực phẩm",
+    "icb_name2": "Thực phẩm và đồ uống",
+    "icb_name4": "Nuôi trồng nông & hải sản",
     "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2300",
-    "icb_code3": "2350",
-    "icb_code4": "2357"
+    "icb_code1": "3000",
+    "icb_code2": "3500",
+    "icb_code3": "3570",
+    "icb_code4": "3573"
   },
   {
     "symbol": "AGM",
@@ -4632,18 +4644,6 @@
     "icb_code4": "2353"
   },
   {
-    "symbol": "IDI",
-    "organ_name": "Công ty Cổ phần Đầu tư và Phát triển Đa Quốc Gia I.D.I",
-    "icb_name3": "Sản xuất thực phẩm",
-    "icb_name2": "Thực phẩm và đồ uống",
-    "icb_name4": "Nuôi trồng nông & hải sản",
-    "com_type_code": "CT",
-    "icb_code1": "3000",
-    "icb_code2": "3500",
-    "icb_code3": "3570",
-    "icb_code4": "3573"
-  },
-  {
     "symbol": "IDC",
     "organ_name": "Tổng Công ty IDICO - CTCP",
     "icb_name3": "Bất động sản",
@@ -4680,18 +4680,6 @@
     "icb_code4": "8633"
   },
   {
-    "symbol": "APS",
-    "organ_name": "Công ty Cổ phần Chứng khoán Châu Á - Thái Bình Dương",
-    "icb_name3": "Dịch vụ tài chính",
-    "icb_name2": "Dịch vụ tài chính",
-    "icb_name4": "Môi giới chứng khoán",
-    "com_type_code": "CK",
-    "icb_code1": "8000",
-    "icb_code2": "8700",
-    "icb_code3": "8770",
-    "icb_code4": "8777"
-  },
-  {
     "symbol": "IFS",
     "organ_name": "Công ty Cổ phần Thực phẩm Quốc tế",
     "icb_name3": "Bia và đồ uống",
@@ -4704,16 +4692,16 @@
     "icb_code4": "3537"
   },
   {
-    "symbol": "FDC",
-    "organ_name": "Công ty Cổ phần Ngoại thương và Phát triển Đầu tư Thành phố Hồ Chí Minh",
-    "icb_name3": "Bất động sản",
-    "icb_name2": "Bất động sản",
-    "icb_name4": "Bất động sản",
-    "com_type_code": "CT",
+    "symbol": "APS",
+    "organ_name": "Công ty Cổ phần Chứng khoán Châu Á - Thái Bình Dương",
+    "icb_name3": "Dịch vụ tài chính",
+    "icb_name2": "Dịch vụ tài chính",
+    "icb_name4": "Môi giới chứng khoán",
+    "com_type_code": "CK",
     "icb_code1": "8000",
-    "icb_code2": "8600",
-    "icb_code3": "8630",
-    "icb_code4": "8633"
+    "icb_code2": "8700",
+    "icb_code3": "8770",
+    "icb_code4": "8777"
   },
   {
     "symbol": "IHK",
@@ -4728,16 +4716,16 @@
     "icb_code4": "5557"
   },
   {
-    "symbol": "HSV",
-    "organ_name": "Công ty Cổ phần Tập đoàn HSV Việt Nam",
-    "icb_name3": "Kim loại",
-    "icb_name2": "Tài nguyên Cơ bản",
-    "icb_name4": "Thép và sản phẩm thép",
+    "symbol": "FDC",
+    "organ_name": "Công ty Cổ phần Ngoại thương và Phát triển Đầu tư Thành phố Hồ Chí Minh",
+    "icb_name3": "Bất động sản",
+    "icb_name2": "Bất động sản",
+    "icb_name4": "Bất động sản",
     "com_type_code": "CT",
-    "icb_code1": "1000",
-    "icb_code2": "1700",
-    "icb_code3": "1750",
-    "icb_code4": "1757"
+    "icb_code1": "8000",
+    "icb_code2": "8600",
+    "icb_code3": "8630",
+    "icb_code4": "8633"
   },
   {
     "symbol": "ILA",
@@ -4752,6 +4740,18 @@
     "icb_code4": "2353"
   },
   {
+    "symbol": "HSV",
+    "organ_name": "Công ty Cổ phần Tập đoàn HSV Việt Nam",
+    "icb_name3": "Kim loại",
+    "icb_name2": "Tài nguyên Cơ bản",
+    "icb_name4": "Thép và sản phẩm thép",
+    "com_type_code": "CT",
+    "icb_code1": "1000",
+    "icb_code2": "1700",
+    "icb_code3": "1750",
+    "icb_code4": "1757"
+  },
+  {
     "symbol": "IBD",
     "organ_name": "Công ty Cổ phần In Tổng hợp Bình Dương",
     "icb_name3": "Truyền thông",
@@ -4762,6 +4762,18 @@
     "icb_code2": "5500",
     "icb_code3": "5550",
     "icb_code4": "5557"
+  },
+  {
+    "symbol": "DDG",
+    "organ_name": "Công ty Cổ phần Đầu tư Công nghiệp Xuất nhập khẩu Đông Dương",
+    "icb_name3": "Nước & Khí đốt",
+    "icb_name2": "Điện, nước & xăng dầu khí đốt",
+    "icb_name4": "Phân phối xăng dầu & khí đốt",
+    "com_type_code": "CT",
+    "icb_code1": "7000",
+    "icb_code2": "7500",
+    "icb_code3": "7570",
+    "icb_code4": "7573"
   },
   {
     "symbol": "C69",
@@ -4788,16 +4800,16 @@
     "icb_code4": "3763"
   },
   {
-    "symbol": "DDG",
-    "organ_name": "Công ty Cổ phần Đầu tư Công nghiệp Xuất nhập khẩu Đông Dương",
-    "icb_name3": "Nước & Khí đốt",
-    "icb_name2": "Điện, nước & xăng dầu khí đốt",
-    "icb_name4": "Phân phối xăng dầu & khí đốt",
+    "symbol": "INN",
+    "organ_name": "Công ty Cổ phần Bao bì và In Nông nghiệp",
+    "icb_name3": "Hàng công nghiệp",
+    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
+    "icb_name4": "Containers & Đóng gói",
     "com_type_code": "CT",
-    "icb_code1": "7000",
-    "icb_code2": "7500",
-    "icb_code3": "7570",
-    "icb_code4": "7573"
+    "icb_code1": "2000",
+    "icb_code2": "2700",
+    "icb_code3": "2720",
+    "icb_code4": "2723"
   },
   {
     "symbol": "HNR",
@@ -4836,8 +4848,8 @@
     "icb_code4": "8633"
   },
   {
-    "symbol": "INN",
-    "organ_name": "Công ty Cổ phần Bao bì và In Nông nghiệp",
+    "symbol": "ILS",
+    "organ_name": "Công ty Cổ phần Đầu tư Thương mại và Dịch vụ Quốc tế",
     "icb_name3": "Hàng công nghiệp",
     "icb_name2": "Hàng & Dịch vụ Công nghiệp",
     "icb_name4": "Containers & Đóng gói",
@@ -4858,18 +4870,6 @@
     "icb_code2": "3700",
     "icb_code3": "3760",
     "icb_code4": "3763"
-  },
-  {
-    "symbol": "ILS",
-    "organ_name": "Công ty Cổ phần Đầu tư Thương mại và Dịch vụ Quốc tế",
-    "icb_name3": "Hàng công nghiệp",
-    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
-    "icb_name4": "Containers & Đóng gói",
-    "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2700",
-    "icb_code3": "2720",
-    "icb_code4": "2723"
   },
   {
     "symbol": "CDN",
@@ -4932,18 +4932,6 @@
     "icb_code4": "4577"
   },
   {
-    "symbol": "VMK",
-    "organ_name": "Công ty Cổ phần Vimarko",
-    "icb_name3": "Xây dựng và Vật liệu",
-    "icb_name2": "Xây dựng và Vật liệu",
-    "icb_name4": "Vật liệu xây dựng & Nội thất",
-    "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2300",
-    "icb_code3": "2350",
-    "icb_code4": "2353"
-  },
-  {
     "symbol": "IPA",
     "organ_name": "Công ty Cổ phần Tập đoàn Đầu tư I.P.A",
     "icb_name3": "Tư vấn & Hỗ trợ Kinh doanh",
@@ -4954,6 +4942,18 @@
     "icb_code2": "2700",
     "icb_code3": "2790",
     "icb_code4": "2791"
+  },
+  {
+    "symbol": "VMK",
+    "organ_name": "Công ty Cổ phần Vimarko",
+    "icb_name3": "Xây dựng và Vật liệu",
+    "icb_name2": "Xây dựng và Vật liệu",
+    "icb_name4": "Vật liệu xây dựng & Nội thất",
+    "com_type_code": "CT",
+    "icb_code1": "2000",
+    "icb_code2": "2300",
+    "icb_code3": "2350",
+    "icb_code4": "2353"
   },
   {
     "symbol": "ISG",
@@ -6960,6 +6960,18 @@
     "icb_code4": "1353"
   },
   {
+    "symbol": "HU6",
+    "organ_name": "Công ty Cổ phần Đầu tư Phát triển Nhà và Đô thị HUD6",
+    "icb_name3": "Bất động sản",
+    "icb_name2": "Bất động sản",
+    "icb_name4": "Bất động sản",
+    "com_type_code": "CT",
+    "icb_code1": "8000",
+    "icb_code2": "8600",
+    "icb_code3": "8630",
+    "icb_code4": "8633"
+  },
+  {
     "symbol": "ACB",
     "organ_name": "Ngân hàng Thương mại Cổ phần Á Châu",
     "icb_name3": "Ngân hàng",
@@ -7236,6 +7248,18 @@
     "icb_code4": "3763"
   },
   {
+    "symbol": "MEF",
+    "organ_name": "Công ty Cổ phần MEINFA",
+    "icb_name3": "Thiết bị và Dịch vụ Y tế",
+    "icb_name2": "Y tế",
+    "icb_name4": "Dụng cụ y tế",
+    "com_type_code": "CT",
+    "icb_code1": "4000",
+    "icb_code2": "4500",
+    "icb_code3": "4530",
+    "icb_code4": "4537"
+  },
+  {
     "symbol": "HSL",
     "organ_name": "Công ty Cổ phần Đầu tư Phát triển Thực phẩm Hồng Hà",
     "icb_name3": "Sản xuất thực phẩm",
@@ -7284,18 +7308,6 @@
     "icb_code4": "2357"
   },
   {
-    "symbol": "MEF",
-    "organ_name": "Công ty Cổ phần MEINFA",
-    "icb_name3": "Thiết bị và Dịch vụ Y tế",
-    "icb_name2": "Y tế",
-    "icb_name4": "Dụng cụ y tế",
-    "com_type_code": "CT",
-    "icb_code1": "4000",
-    "icb_code2": "4500",
-    "icb_code3": "4530",
-    "icb_code4": "4537"
-  },
-  {
     "symbol": "IME",
     "organ_name": "Công ty Cổ phần Cơ khí và Xây lắp Công nghiệp",
     "icb_name3": "Công nghiệp nặng",
@@ -7332,18 +7344,6 @@
     "icb_code4": "5753"
   },
   {
-    "symbol": "CDG",
-    "organ_name": "Công ty Cổ phần Cầu Đuống",
-    "icb_name3": "Xây dựng và Vật liệu",
-    "icb_name2": "Xây dựng và Vật liệu",
-    "icb_name4": "Vật liệu xây dựng & Nội thất",
-    "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2300",
-    "icb_code3": "2350",
-    "icb_code4": "2353"
-  },
-  {
     "symbol": "MFS",
     "organ_name": "Công ty Cổ phần Dịch vụ kỹ thuật Mobifone",
     "icb_name3": "Viễn thông di động",
@@ -7354,6 +7354,18 @@
     "icb_code2": "6500",
     "icb_code3": "6570",
     "icb_code4": "6575"
+  },
+  {
+    "symbol": "CDG",
+    "organ_name": "Công ty Cổ phần Cầu Đuống",
+    "icb_name3": "Xây dựng và Vật liệu",
+    "icb_name2": "Xây dựng và Vật liệu",
+    "icb_name4": "Vật liệu xây dựng & Nội thất",
+    "com_type_code": "CT",
+    "icb_code1": "2000",
+    "icb_code2": "2300",
+    "icb_code3": "2350",
+    "icb_code4": "2353"
   },
   {
     "symbol": "GEX",
@@ -8496,6 +8508,18 @@
     "icb_code4": "3573"
   },
   {
+    "symbol": "MPT",
+    "organ_name": "Công ty Cổ phần Tập đoàn MPT",
+    "icb_name3": "Hàng cá nhân",
+    "icb_name2": "Hàng cá nhân & Gia dụng",
+    "icb_name4": "Hàng May mặc",
+    "com_type_code": "CT",
+    "icb_code1": "3000",
+    "icb_code2": "3700",
+    "icb_code3": "3760",
+    "icb_code4": "3763"
+  },
+  {
     "symbol": "CCI",
     "organ_name": "Công ty Cổ phần Đầu tư Phát triển Công nghiệp Thương mại Củ Chi",
     "icb_name3": "Nước & Khí đốt",
@@ -8520,18 +8544,6 @@
     "icb_code4": "8633"
   },
   {
-    "symbol": "MPT",
-    "organ_name": "Công ty Cổ phần Tập đoàn MPT",
-    "icb_name3": "Hàng cá nhân",
-    "icb_name2": "Hàng cá nhân & Gia dụng",
-    "icb_name4": "Hàng May mặc",
-    "com_type_code": "CT",
-    "icb_code1": "3000",
-    "icb_code2": "3700",
-    "icb_code3": "3760",
-    "icb_code4": "3763"
-  },
-  {
     "symbol": "MPY",
     "organ_name": "Công ty Cổ phần Môi trường đô thị Phú Yên",
     "icb_name3": "Tư vấn & Hỗ trợ Kinh doanh",
@@ -8542,6 +8554,18 @@
     "icb_code2": "2700",
     "icb_code3": "2790",
     "icb_code4": "2799"
+  },
+  {
+    "symbol": "MCH",
+    "organ_name": "Công ty Cổ phần Hàng Tiêu Dùng MaSan",
+    "icb_name3": "Sản xuất thực phẩm",
+    "icb_name2": "Thực phẩm và đồ uống",
+    "icb_name4": "Thực phẩm",
+    "com_type_code": "CT",
+    "icb_code1": "3000",
+    "icb_code2": "3500",
+    "icb_code3": "3570",
+    "icb_code4": "3577"
   },
   {
     "symbol": "DXP",
@@ -8566,18 +8590,6 @@
     "icb_code2": "2700",
     "icb_code3": "2790",
     "icb_code4": "2799"
-  },
-  {
-    "symbol": "MCH",
-    "organ_name": "Công ty Cổ phần Hàng Tiêu Dùng MaSan",
-    "icb_name3": "Sản xuất thực phẩm",
-    "icb_name2": "Thực phẩm và đồ uống",
-    "icb_name4": "Thực phẩm",
-    "com_type_code": "CT",
-    "icb_code1": "3000",
-    "icb_code2": "3500",
-    "icb_code3": "3570",
-    "icb_code4": "3577"
   },
   {
     "symbol": "HUG",
@@ -8772,6 +8784,18 @@
     "icb_code4": "4577"
   },
   {
+    "symbol": "MWG",
+    "organ_name": "Công ty Cổ phần Đầu tư Thế Giới Di Động",
+    "icb_name3": "Bán lẻ",
+    "icb_name2": "Bán lẻ",
+    "icb_name4": "Phân phối hàng chuyên dụng",
+    "com_type_code": "CT",
+    "icb_code1": "5000",
+    "icb_code2": "5300",
+    "icb_code3": "5370",
+    "icb_code4": "5379"
+  },
+  {
     "symbol": "HDW",
     "organ_name": "Công ty Cổ phần Kinh doanh Nước sạch Hải Dương",
     "icb_name3": "Nước & Khí đốt",
@@ -8820,16 +8844,16 @@
     "icb_code4": "2777"
   },
   {
-    "symbol": "MWG",
-    "organ_name": "Công ty Cổ phần Đầu tư Thế Giới Di Động",
-    "icb_name3": "Bán lẻ",
-    "icb_name2": "Bán lẻ",
-    "icb_name4": "Phân phối hàng chuyên dụng",
+    "symbol": "NJC",
+    "organ_name": "Công ty Cổ phần May Nam Định",
+    "icb_name3": "Hàng cá nhân",
+    "icb_name2": "Hàng cá nhân & Gia dụng",
+    "icb_name4": "Hàng May mặc",
     "com_type_code": "CT",
-    "icb_code1": "5000",
-    "icb_code2": "5300",
-    "icb_code3": "5370",
-    "icb_code4": "5379"
+    "icb_code1": "3000",
+    "icb_code2": "3700",
+    "icb_code3": "3760",
+    "icb_code4": "3763"
   },
   {
     "symbol": "ITS",
@@ -8854,18 +8878,6 @@
     "icb_code2": "2300",
     "icb_code3": "2350",
     "icb_code4": "2357"
-  },
-  {
-    "symbol": "EVS",
-    "organ_name": "Công ty Cổ phần Chứng khoán EVS",
-    "icb_name3": "Dịch vụ tài chính",
-    "icb_name2": "Dịch vụ tài chính",
-    "icb_name4": "Môi giới chứng khoán",
-    "com_type_code": "CK",
-    "icb_code1": "8000",
-    "icb_code2": "8700",
-    "icb_code3": "8770",
-    "icb_code4": "8777"
   },
   {
     "symbol": "NDP",
@@ -8904,18 +8916,6 @@
     "icb_code4": "2733"
   },
   {
-    "symbol": "NJC",
-    "organ_name": "Công ty Cổ phần May Nam Định",
-    "icb_name3": "Hàng cá nhân",
-    "icb_name2": "Hàng cá nhân & Gia dụng",
-    "icb_name4": "Hàng May mặc",
-    "com_type_code": "CT",
-    "icb_code1": "3000",
-    "icb_code2": "3700",
-    "icb_code3": "3760",
-    "icb_code4": "3763"
-  },
-  {
     "symbol": "NAC",
     "organ_name": "Công ty Cổ phần Tư vấn Xây dựng Tổng hợp",
     "icb_name3": "Xây dựng và Vật liệu",
@@ -8926,6 +8926,18 @@
     "icb_code2": "2300",
     "icb_code3": "2350",
     "icb_code4": "2357"
+  },
+  {
+    "symbol": "VET",
+    "organ_name": "Công ty Cổ phần Thuốc Thú y Trung ương NAVETCO",
+    "icb_name3": "Hóa chất",
+    "icb_name2": "Hóa chất",
+    "icb_name4": "Sản phẩm hóa dầu, Nông dược & Hóa chất khác",
+    "com_type_code": "CT",
+    "icb_code1": "1000",
+    "icb_code2": "1300",
+    "icb_code3": "1350",
+    "icb_code4": "1357"
   },
   {
     "symbol": "NAB",
@@ -8952,6 +8964,18 @@
     "icb_code4": "2777"
   },
   {
+    "symbol": "NBB",
+    "organ_name": "Công ty Cổ phần Đầu tư Năm Bảy Bảy",
+    "icb_name3": "Bất động sản",
+    "icb_name2": "Bất động sản",
+    "icb_name4": "Bất động sản",
+    "com_type_code": "CT",
+    "icb_code1": "8000",
+    "icb_code2": "8600",
+    "icb_code3": "8630",
+    "icb_code4": "8633"
+  },
+  {
     "symbol": "BAB",
     "organ_name": "Ngân hàng Thương mại Cổ phần Bắc Á",
     "icb_name3": "Ngân hàng",
@@ -8962,6 +8986,18 @@
     "icb_code2": "8300",
     "icb_code3": "8350",
     "icb_code4": "8355"
+  },
+  {
+    "symbol": "NBP",
+    "organ_name": "Công ty Cổ phần Nhiệt Điện Ninh Bình",
+    "icb_name3": "Sản xuất & Phân phối Điện",
+    "icb_name2": "Điện, nước & xăng dầu khí đốt",
+    "icb_name4": "Sản xuất & Phân phối Điện",
+    "com_type_code": "CT",
+    "icb_code1": "7000",
+    "icb_code2": "7500",
+    "icb_code3": "7530",
+    "icb_code4": "7535"
   },
   {
     "symbol": "NAS",
@@ -9000,28 +9036,28 @@
     "icb_code4": "2353"
   },
   {
-    "symbol": "VET",
-    "organ_name": "Công ty Cổ phần Thuốc Thú y Trung ương NAVETCO",
-    "icb_name3": "Hóa chất",
-    "icb_name2": "Hóa chất",
-    "icb_name4": "Sản phẩm hóa dầu, Nông dược & Hóa chất khác",
+    "symbol": "NCS",
+    "organ_name": "Công ty Cổ phần Suất ăn Hàng không Nội Bài",
+    "icb_name3": "Sản xuất thực phẩm",
+    "icb_name2": "Thực phẩm và đồ uống",
+    "icb_name4": "Thực phẩm",
     "com_type_code": "CT",
-    "icb_code1": "1000",
-    "icb_code2": "1300",
-    "icb_code3": "1350",
-    "icb_code4": "1357"
+    "icb_code1": "3000",
+    "icb_code2": "3500",
+    "icb_code3": "3570",
+    "icb_code4": "3577"
   },
   {
-    "symbol": "NBB",
-    "organ_name": "Công ty Cổ phần Đầu tư Năm Bảy Bảy",
-    "icb_name3": "Bất động sản",
-    "icb_name2": "Bất động sản",
-    "icb_name4": "Bất động sản",
+    "symbol": "NDF",
+    "organ_name": "Công ty Cổ phần Chế biến thực phẩm nông sản xuất khẩu Nam Định",
+    "icb_name3": "Sản xuất thực phẩm",
+    "icb_name2": "Thực phẩm và đồ uống",
+    "icb_name4": "Thực phẩm",
     "com_type_code": "CT",
-    "icb_code1": "8000",
-    "icb_code2": "8600",
-    "icb_code3": "8630",
-    "icb_code4": "8633"
+    "icb_code1": "3000",
+    "icb_code2": "3500",
+    "icb_code3": "3570",
+    "icb_code4": "3577"
   },
   {
     "symbol": "NBC",
@@ -9046,6 +9082,18 @@
     "icb_code2": "3700",
     "icb_code3": "3760",
     "icb_code4": "3767"
+  },
+  {
+    "symbol": "HND",
+    "organ_name": "Công ty Cổ phần Nhiệt điện Hải Phòng",
+    "icb_name3": "Sản xuất & Phân phối Điện",
+    "icb_name2": "Điện, nước & xăng dầu khí đốt",
+    "icb_name4": "Sản xuất & Phân phối Điện",
+    "com_type_code": "CT",
+    "icb_code1": "7000",
+    "icb_code2": "7500",
+    "icb_code3": "7530",
+    "icb_code4": "7535"
   },
   {
     "symbol": "DGW",
@@ -9096,20 +9144,20 @@
     "icb_code4": "5557"
   },
   {
-    "symbol": "NBP",
-    "organ_name": "Công ty Cổ phần Nhiệt Điện Ninh Bình",
-    "icb_name3": "Sản xuất & Phân phối Điện",
+    "symbol": "NBW",
+    "organ_name": "Công ty Cổ phần Cấp nước Nhà Bè",
+    "icb_name3": "Nước & Khí đốt",
     "icb_name2": "Điện, nước & xăng dầu khí đốt",
-    "icb_name4": "Sản xuất & Phân phối Điện",
+    "icb_name4": "Nước",
     "com_type_code": "CT",
     "icb_code1": "7000",
     "icb_code2": "7500",
-    "icb_code3": "7530",
-    "icb_code4": "7535"
+    "icb_code3": "7570",
+    "icb_code4": "7577"
   },
   {
-    "symbol": "NBW",
-    "organ_name": "Công ty Cổ phần Cấp nước Nhà Bè",
+    "symbol": "NDW",
+    "organ_name": "Công ty Cổ phần Cấp nước Nam Định",
     "icb_name3": "Nước & Khí đốt",
     "icb_name2": "Điện, nước & xăng dầu khí đốt",
     "icb_name4": "Nước",
@@ -9144,6 +9192,18 @@
     "icb_code4": "2737"
   },
   {
+    "symbol": "NED",
+    "organ_name": "Công ty Cổ phần Đầu tư và Phát triển Điện Tây Bắc",
+    "icb_name3": "Xây dựng và Vật liệu",
+    "icb_name2": "Xây dựng và Vật liệu",
+    "icb_name4": "Xây dựng",
+    "com_type_code": "CT",
+    "icb_code1": "2000",
+    "icb_code2": "2300",
+    "icb_code3": "2350",
+    "icb_code4": "2357"
+  },
+  {
     "symbol": "HPW",
     "organ_name": "Công ty Cổ phần Cấp nước Hải Phòng",
     "icb_name3": "Nước & Khí đốt",
@@ -9156,16 +9216,16 @@
     "icb_code4": "7577"
   },
   {
-    "symbol": "NCS",
-    "organ_name": "Công ty Cổ phần Suất ăn Hàng không Nội Bài",
-    "icb_name3": "Sản xuất thực phẩm",
-    "icb_name2": "Thực phẩm và đồ uống",
-    "icb_name4": "Thực phẩm",
+    "symbol": "NFC",
+    "organ_name": "Công ty Cổ phần Phân lân Ninh Bình",
+    "icb_name3": "Hóa chất",
+    "icb_name2": "Hóa chất",
+    "icb_name4": "Sản phẩm hóa dầu, Nông dược & Hóa chất khác",
     "com_type_code": "CT",
-    "icb_code1": "3000",
-    "icb_code2": "3500",
-    "icb_code3": "3570",
-    "icb_code4": "3577"
+    "icb_code1": "1000",
+    "icb_code2": "1300",
+    "icb_code3": "1350",
+    "icb_code4": "1357"
   },
   {
     "symbol": "NCT",
@@ -9192,16 +9252,16 @@
     "icb_code4": "2799"
   },
   {
-    "symbol": "NDF",
-    "organ_name": "Công ty Cổ phần Chế biến thực phẩm nông sản xuất khẩu Nam Định",
+    "symbol": "NGC",
+    "organ_name": "Công ty Cổ phần Chế biến Thủy sản Xuất khẩu Ngô Quyền",
     "icb_name3": "Sản xuất thực phẩm",
     "icb_name2": "Thực phẩm và đồ uống",
-    "icb_name4": "Thực phẩm",
+    "icb_name4": "Nuôi trồng nông & hải sản",
     "com_type_code": "CT",
     "icb_code1": "3000",
     "icb_code2": "3500",
     "icb_code3": "3570",
-    "icb_code4": "3577"
+    "icb_code4": "3573"
   },
   {
     "symbol": "KDM",
@@ -9216,16 +9276,16 @@
     "icb_code4": "2357"
   },
   {
-    "symbol": "HND",
-    "organ_name": "Công ty Cổ phần Nhiệt điện Hải Phòng",
-    "icb_name3": "Sản xuất & Phân phối Điện",
-    "icb_name2": "Điện, nước & xăng dầu khí đốt",
-    "icb_name4": "Sản xuất & Phân phối Điện",
+    "symbol": "NHH",
+    "organ_name": "Công ty Cổ phần Nhựa Hà Nội",
+    "icb_name3": "Hóa chất",
+    "icb_name2": "Hóa chất",
+    "icb_name4": "Nhựa, cao su & sợi",
     "com_type_code": "CT",
-    "icb_code1": "7000",
-    "icb_code2": "7500",
-    "icb_code3": "7530",
-    "icb_code4": "7535"
+    "icb_code1": "1000",
+    "icb_code2": "1300",
+    "icb_code3": "1350",
+    "icb_code4": "1353"
   },
   {
     "symbol": "NDN",
@@ -9240,6 +9300,18 @@
     "icb_code4": "8633"
   },
   {
+    "symbol": "NHP",
+    "organ_name": "Công ty Cổ phần Sản xuất Xuất nhập khẩu NHP",
+    "icb_name3": "Hàng công nghiệp",
+    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
+    "icb_name4": "Containers & Đóng gói",
+    "com_type_code": "CT",
+    "icb_code1": "2000",
+    "icb_code2": "2700",
+    "icb_code3": "2720",
+    "icb_code4": "2723"
+  },
+  {
     "symbol": "HGM",
     "organ_name": "Công ty Cổ phần Cơ khí và Khoáng sản Hà Giang",
     "icb_name3": "Khai khoáng",
@@ -9250,18 +9322,6 @@
     "icb_code2": "1700",
     "icb_code3": "1770",
     "icb_code4": "1775"
-  },
-  {
-    "symbol": "NDW",
-    "organ_name": "Công ty Cổ phần Cấp nước Nam Định",
-    "icb_name3": "Nước & Khí đốt",
-    "icb_name2": "Điện, nước & xăng dầu khí đốt",
-    "icb_name4": "Nước",
-    "com_type_code": "CT",
-    "icb_code1": "7000",
-    "icb_code2": "7500",
-    "icb_code3": "7570",
-    "icb_code4": "7577"
   },
   {
     "symbol": "ICC",
@@ -9288,16 +9348,16 @@
     "icb_code4": "8777"
   },
   {
-    "symbol": "NED",
-    "organ_name": "Công ty Cổ phần Đầu tư và Phát triển Điện Tây Bắc",
-    "icb_name3": "Xây dựng và Vật liệu",
-    "icb_name2": "Xây dựng và Vật liệu",
-    "icb_name4": "Xây dựng",
+    "symbol": "NLS",
+    "organ_name": "Công ty Cổ phần Cấp thoát nước Lạng Sơn",
+    "icb_name3": "Nước & Khí đốt",
+    "icb_name2": "Điện, nước & xăng dầu khí đốt",
+    "icb_name4": "Nước",
     "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2300",
-    "icb_code3": "2350",
-    "icb_code4": "2357"
+    "icb_code1": "7000",
+    "icb_code2": "7500",
+    "icb_code3": "7570",
+    "icb_code4": "7577"
   },
   {
     "symbol": "NET",
@@ -9348,28 +9408,16 @@
     "icb_code4": "5337"
   },
   {
-    "symbol": "NFC",
-    "organ_name": "Công ty Cổ phần Phân lân Ninh Bình",
-    "icb_name3": "Hóa chất",
-    "icb_name2": "Hóa chất",
-    "icb_name4": "Sản phẩm hóa dầu, Nông dược & Hóa chất khác",
+    "symbol": "NNC",
+    "organ_name": "Công ty Cổ phần Đá Núi Nhỏ",
+    "icb_name3": "Xây dựng và Vật liệu",
+    "icb_name2": "Xây dựng và Vật liệu",
+    "icb_name4": "Vật liệu xây dựng & Nội thất",
     "com_type_code": "CT",
-    "icb_code1": "1000",
-    "icb_code2": "1300",
-    "icb_code3": "1350",
-    "icb_code4": "1357"
-  },
-  {
-    "symbol": "NGC",
-    "organ_name": "Công ty Cổ phần Chế biến Thủy sản Xuất khẩu Ngô Quyền",
-    "icb_name3": "Sản xuất thực phẩm",
-    "icb_name2": "Thực phẩm và đồ uống",
-    "icb_name4": "Nuôi trồng nông & hải sản",
-    "com_type_code": "CT",
-    "icb_code1": "3000",
-    "icb_code2": "3500",
-    "icb_code3": "3570",
-    "icb_code4": "3573"
+    "icb_code1": "2000",
+    "icb_code2": "2300",
+    "icb_code3": "2350",
+    "icb_code4": "2353"
   },
   {
     "symbol": "VCE",
@@ -9384,28 +9432,16 @@
     "icb_code4": "2357"
   },
   {
-    "symbol": "NHH",
-    "organ_name": "Công ty Cổ phần Nhựa Hà Nội",
-    "icb_name3": "Hóa chất",
-    "icb_name2": "Hóa chất",
-    "icb_name4": "Nhựa, cao su & sợi",
-    "com_type_code": "CT",
-    "icb_code1": "1000",
-    "icb_code2": "1300",
-    "icb_code3": "1350",
-    "icb_code4": "1353"
-  },
-  {
-    "symbol": "NHP",
-    "organ_name": "Công ty Cổ phần Sản xuất Xuất nhập khẩu NHP",
-    "icb_name3": "Hàng công nghiệp",
+    "symbol": "NOS",
+    "organ_name": "Công ty Cổ phần Vận tải Biển và Thương mại Phương Đông",
+    "icb_name3": "Vận tải",
     "icb_name2": "Hàng & Dịch vụ Công nghiệp",
-    "icb_name4": "Containers & Đóng gói",
+    "icb_name4": "Vận tải Thủy",
     "com_type_code": "CT",
     "icb_code1": "2000",
     "icb_code2": "2700",
-    "icb_code3": "2720",
-    "icb_code4": "2723"
+    "icb_code3": "2770",
+    "icb_code4": "2773"
   },
   {
     "symbol": "NHV",
@@ -9430,6 +9466,18 @@
     "icb_code2": "3700",
     "icb_code3": "3740",
     "icb_code4": "3747"
+  },
+  {
+    "symbol": "NS2",
+    "organ_name": "Công ty Cổ phần Nước sạch số 2 Hà Nội",
+    "icb_name3": "Nước & Khí đốt",
+    "icb_name2": "Điện, nước & xăng dầu khí đốt",
+    "icb_name4": "Nước",
+    "com_type_code": "CT",
+    "icb_code1": "7000",
+    "icb_code2": "7500",
+    "icb_code3": "7570",
+    "icb_code4": "7577"
   },
   {
     "symbol": "CSV",
@@ -9492,6 +9540,18 @@
     "icb_code4": "3763"
   },
   {
+    "symbol": "NSC",
+    "organ_name": "Công ty Cổ phần Tập đoàn Giống cây trồng Việt Nam",
+    "icb_name3": "Sản xuất thực phẩm",
+    "icb_name2": "Thực phẩm và đồ uống",
+    "icb_name4": "Nuôi trồng nông & hải sản",
+    "com_type_code": "CT",
+    "icb_code1": "3000",
+    "icb_code2": "3500",
+    "icb_code3": "3570",
+    "icb_code4": "3573"
+  },
+  {
     "symbol": "IN4",
     "organ_name": "Công ty Cổ phần In số 4",
     "icb_name3": "Truyền thông",
@@ -9516,16 +9576,16 @@
     "icb_code4": "3573"
   },
   {
-    "symbol": "NLS",
-    "organ_name": "Công ty Cổ phần Cấp thoát nước Lạng Sơn",
-    "icb_name3": "Nước & Khí đốt",
-    "icb_name2": "Điện, nước & xăng dầu khí đốt",
-    "icb_name4": "Nước",
+    "symbol": "NST",
+    "organ_name": "Công ty Cổ phần Ngân Sơn",
+    "icb_name3": "Thuốc lá",
+    "icb_name2": "Hàng cá nhân & Gia dụng",
+    "icb_name4": "Thuốc lá",
     "com_type_code": "CT",
-    "icb_code1": "7000",
-    "icb_code2": "7500",
-    "icb_code3": "7570",
-    "icb_code4": "7577"
+    "icb_code1": "3000",
+    "icb_code2": "3700",
+    "icb_code3": "3780",
+    "icb_code4": "3785"
   },
   {
     "symbol": "LAI",
@@ -9552,28 +9612,52 @@
     "icb_code4": "8355"
   },
   {
-    "symbol": "NNC",
-    "organ_name": "Công ty Cổ phần Đá Núi Nhỏ",
-    "icb_name3": "Xây dựng và Vật liệu",
-    "icb_name2": "Xây dựng và Vật liệu",
-    "icb_name4": "Vật liệu xây dựng & Nội thất",
+    "symbol": "NT2",
+    "organ_name": "Công ty Cổ phần Điện lực Dầu khí Nhơn Trạch 2",
+    "icb_name3": "Sản xuất & Phân phối Điện",
+    "icb_name2": "Điện, nước & xăng dầu khí đốt",
+    "icb_name4": "Sản xuất & Phân phối Điện",
     "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2300",
-    "icb_code3": "2350",
-    "icb_code4": "2353"
+    "icb_code1": "7000",
+    "icb_code2": "7500",
+    "icb_code3": "7530",
+    "icb_code4": "7535"
   },
   {
-    "symbol": "NOS",
-    "organ_name": "Công ty Cổ phần Vận tải Biển và Thương mại Phương Đông",
-    "icb_name3": "Vận tải",
-    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
-    "icb_name4": "Vận tải Thủy",
+    "symbol": "NTB",
+    "organ_name": "Công ty Cổ phần Đầu tư Xây dựng và Khai thác Công trình giao thông 584",
+    "icb_name3": "Bất động sản",
+    "icb_name2": "Bất động sản",
+    "icb_name4": "Bất động sản",
     "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2700",
-    "icb_code3": "2770",
-    "icb_code4": "2773"
+    "icb_code1": "8000",
+    "icb_code2": "8600",
+    "icb_code3": "8630",
+    "icb_code4": "8633"
+  },
+  {
+    "symbol": "NTC",
+    "organ_name": "Công ty Cổ phần Khu Công nghiệp Nam Tân Uyên",
+    "icb_name3": "Bất động sản",
+    "icb_name2": "Bất động sản",
+    "icb_name4": "Bất động sản",
+    "com_type_code": "CT",
+    "icb_code1": "8000",
+    "icb_code2": "8600",
+    "icb_code3": "8630",
+    "icb_code4": "8633"
+  },
+  {
+    "symbol": "NTT",
+    "organ_name": "Công ty Cổ phần Dệt - May Nha Trang",
+    "icb_name3": "Hàng cá nhân",
+    "icb_name2": "Hàng cá nhân & Gia dụng",
+    "icb_name4": "Hàng May mặc",
+    "com_type_code": "CT",
+    "icb_code1": "3000",
+    "icb_code2": "3700",
+    "icb_code3": "3760",
+    "icb_code4": "3763"
   },
   {
     "symbol": "NVL",
@@ -9624,16 +9708,16 @@
     "icb_code4": "1357"
   },
   {
-    "symbol": "NS2",
-    "organ_name": "Công ty Cổ phần Nước sạch số 2 Hà Nội",
-    "icb_name3": "Nước & Khí đốt",
-    "icb_name2": "Điện, nước & xăng dầu khí đốt",
-    "icb_name4": "Nước",
+    "symbol": "NTL",
+    "organ_name": "Công ty Cổ phần Phát triển Đô thị Từ Liêm",
+    "icb_name3": "Bất động sản",
+    "icb_name2": "Bất động sản",
+    "icb_name4": "Bất động sản",
     "com_type_code": "CT",
-    "icb_code1": "7000",
-    "icb_code2": "7500",
-    "icb_code3": "7570",
-    "icb_code4": "7577"
+    "icb_code1": "8000",
+    "icb_code2": "8600",
+    "icb_code3": "8630",
+    "icb_code4": "8633"
   },
   {
     "symbol": "HNF",
@@ -9672,16 +9756,16 @@
     "icb_code4": "7577"
   },
   {
-    "symbol": "NSC",
-    "organ_name": "Công ty Cổ phần Tập đoàn Giống cây trồng Việt Nam",
-    "icb_name3": "Sản xuất thực phẩm",
-    "icb_name2": "Thực phẩm và đồ uống",
-    "icb_name4": "Nuôi trồng nông & hải sản",
+    "symbol": "NUE",
+    "organ_name": "Công ty Cổ phần Môi trường Đô thị Nha Trang",
+    "icb_name3": "Tư vấn & Hỗ trợ Kinh doanh",
+    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
+    "icb_name4": "Chất thải & Môi trường",
     "com_type_code": "CT",
-    "icb_code1": "3000",
-    "icb_code2": "3500",
-    "icb_code3": "3570",
-    "icb_code4": "3573"
+    "icb_code1": "2000",
+    "icb_code2": "2700",
+    "icb_code3": "2790",
+    "icb_code4": "2799"
   },
   {
     "symbol": "DM7",
@@ -9708,16 +9792,16 @@
     "icb_code4": "2357"
   },
   {
-    "symbol": "NST",
-    "organ_name": "Công ty Cổ phần Ngân Sơn",
-    "icb_name3": "Thuốc lá",
-    "icb_name2": "Hàng cá nhân & Gia dụng",
-    "icb_name4": "Thuốc lá",
+    "symbol": "NTW",
+    "organ_name": "Công ty Cổ phần Cấp nước Nhơn Trạch",
+    "icb_name3": "Nước & Khí đốt",
+    "icb_name2": "Điện, nước & xăng dầu khí đốt",
+    "icb_name4": "Nước",
     "com_type_code": "CT",
-    "icb_code1": "3000",
-    "icb_code2": "3700",
-    "icb_code3": "3780",
-    "icb_code4": "3785"
+    "icb_code1": "7000",
+    "icb_code2": "7500",
+    "icb_code3": "7570",
+    "icb_code4": "7577"
   },
   {
     "symbol": "PSH",
@@ -9730,18 +9814,6 @@
     "icb_code2": "7500",
     "icb_code3": "7570",
     "icb_code4": "7573"
-  },
-  {
-    "symbol": "NT2",
-    "organ_name": "Công ty Cổ phần Điện lực Dầu khí Nhơn Trạch 2",
-    "icb_name3": "Sản xuất & Phân phối Điện",
-    "icb_name2": "Điện, nước & xăng dầu khí đốt",
-    "icb_name4": "Sản xuất & Phân phối Điện",
-    "com_type_code": "CT",
-    "icb_code1": "7000",
-    "icb_code2": "7500",
-    "icb_code3": "7530",
-    "icb_code4": "7535"
   },
   {
     "symbol": "IRC",
@@ -9768,8 +9840,8 @@
     "icb_code4": "8777"
   },
   {
-    "symbol": "NTB",
-    "organ_name": "Công ty Cổ phần Đầu tư Xây dựng và Khai thác Công trình giao thông 584",
+    "symbol": "NVT",
+    "organ_name": "Công ty Cổ phần Bất động sản Du lịch Ninh Vân Bay",
     "icb_name3": "Bất động sản",
     "icb_name2": "Bất động sản",
     "icb_name4": "Bất động sản",
@@ -9792,28 +9864,40 @@
     "icb_code4": "2357"
   },
   {
-    "symbol": "NTC",
-    "organ_name": "Công ty Cổ phần Khu Công nghiệp Nam Tân Uyên",
-    "icb_name3": "Bất động sản",
-    "icb_name2": "Bất động sản",
-    "icb_name4": "Bất động sản",
+    "symbol": "NWT",
+    "organ_name": "Công ty Cổ phần Vận tải Newway",
+    "icb_name3": "Du lịch & Giải trí",
+    "icb_name2": "Du lịch và Giải trí",
+    "icb_name4": "Vận tải hành khách & Du lịch",
     "com_type_code": "CT",
-    "icb_code1": "8000",
-    "icb_code2": "8600",
-    "icb_code3": "8630",
-    "icb_code4": "8633"
+    "icb_code1": "5000",
+    "icb_code2": "5700",
+    "icb_code3": "5750",
+    "icb_code4": "5759"
   },
   {
-    "symbol": "NTT",
-    "organ_name": "Công ty Cổ phần Dệt - May Nha Trang",
-    "icb_name3": "Hàng cá nhân",
-    "icb_name2": "Hàng cá nhân & Gia dụng",
-    "icb_name4": "Hàng May mặc",
+    "symbol": "OCH",
+    "organ_name": "Công ty Cổ phần One Capital Hospitality",
+    "icb_name3": "Sản xuất thực phẩm",
+    "icb_name2": "Thực phẩm và đồ uống",
+    "icb_name4": "Thực phẩm",
     "com_type_code": "CT",
     "icb_code1": "3000",
-    "icb_code2": "3700",
-    "icb_code3": "3760",
-    "icb_code4": "3763"
+    "icb_code2": "3500",
+    "icb_code3": "3570",
+    "icb_code4": "3577"
+  },
+  {
+    "symbol": "EVS",
+    "organ_name": "Công ty Cổ phần Chứng khoán EVS",
+    "icb_name3": "Dịch vụ tài chính",
+    "icb_name2": "Dịch vụ tài chính",
+    "icb_name4": "Môi giới chứng khoán",
+    "com_type_code": "CK",
+    "icb_code1": "8000",
+    "icb_code2": "8700",
+    "icb_code3": "8770",
+    "icb_code4": "8777"
   },
   {
     "symbol": "LMH",
@@ -9828,16 +9912,28 @@
     "icb_code4": "8633"
   },
   {
-    "symbol": "NTL",
-    "organ_name": "Công ty Cổ phần Phát triển Đô thị Từ Liêm",
-    "icb_name3": "Bất động sản",
-    "icb_name2": "Bất động sản",
-    "icb_name4": "Bất động sản",
+    "symbol": "OGC",
+    "organ_name": "Công ty Cổ phần Tập đoàn Đại Dương",
+    "icb_name3": "Dịch vụ tài chính",
+    "icb_name2": "Dịch vụ tài chính",
+    "icb_name4": "Tài chính đặc biệt",
     "com_type_code": "CT",
     "icb_code1": "8000",
-    "icb_code2": "8600",
-    "icb_code3": "8630",
-    "icb_code4": "8633"
+    "icb_code2": "8700",
+    "icb_code3": "8770",
+    "icb_code4": "8775"
+  },
+  {
+    "symbol": "ONE",
+    "organ_name": "Công ty Cổ phần Công nghệ ONE",
+    "icb_name3": "Thiết bị và Phần cứng",
+    "icb_name2": "Công nghệ Thông tin",
+    "icb_name4": "Phần cứng",
+    "com_type_code": "CT",
+    "icb_code1": "9000",
+    "icb_code2": "9500",
+    "icb_code3": "9570",
+    "icb_code4": "9572"
   },
   {
     "symbol": "KVC",
@@ -9852,18 +9948,6 @@
     "icb_code4": "1757"
   },
   {
-    "symbol": "NUE",
-    "organ_name": "Công ty Cổ phần Môi trường Đô thị Nha Trang",
-    "icb_name3": "Tư vấn & Hỗ trợ Kinh doanh",
-    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
-    "icb_name4": "Chất thải & Môi trường",
-    "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2700",
-    "icb_code3": "2790",
-    "icb_code4": "2799"
-  },
-  {
     "symbol": "KPF",
     "organ_name": "Công ty Cổ phần Đầu tư Tài sản KOJI",
     "icb_name3": "Xây dựng và Vật liệu",
@@ -9876,28 +9960,28 @@
     "icb_code4": "2353"
   },
   {
-    "symbol": "NTW",
-    "organ_name": "Công ty Cổ phần Cấp nước Nhơn Trạch",
-    "icb_name3": "Nước & Khí đốt",
-    "icb_name2": "Điện, nước & xăng dầu khí đốt",
-    "icb_name4": "Nước",
+    "symbol": "ONW",
+    "organ_name": "Công ty Cổ phần Dịch vụ Một Thế giới",
+    "icb_name3": "Du lịch & Giải trí",
+    "icb_name2": "Du lịch và Giải trí",
+    "icb_name4": "Dịch vụ giải trí",
     "com_type_code": "CT",
-    "icb_code1": "7000",
-    "icb_code2": "7500",
-    "icb_code3": "7570",
-    "icb_code4": "7577"
+    "icb_code1": "5000",
+    "icb_code2": "5700",
+    "icb_code3": "5750",
+    "icb_code4": "5755"
   },
   {
-    "symbol": "NVT",
-    "organ_name": "Công ty Cổ phần Bất động sản Du lịch Ninh Vân Bay",
-    "icb_name3": "Bất động sản",
-    "icb_name2": "Bất động sản",
-    "icb_name4": "Bất động sản",
+    "symbol": "OPC",
+    "organ_name": "Công ty Cổ phần Dược Phẩm OPC",
+    "icb_name3": "Dược phẩm",
+    "icb_name2": "Y tế",
+    "icb_name4": "Dược phẩm",
     "com_type_code": "CT",
-    "icb_code1": "8000",
-    "icb_code2": "8600",
-    "icb_code3": "8630",
-    "icb_code4": "8633"
+    "icb_code1": "4000",
+    "icb_code2": "4500",
+    "icb_code3": "4570",
+    "icb_code4": "4577"
   },
   {
     "symbol": "MTA",
@@ -9922,18 +10006,6 @@
     "icb_code2": "4500",
     "icb_code3": "4570",
     "icb_code4": "4577"
-  },
-  {
-    "symbol": "NWT",
-    "organ_name": "Công ty Cổ phần Vận tải Newway",
-    "icb_name3": "Du lịch & Giải trí",
-    "icb_name2": "Du lịch và Giải trí",
-    "icb_name4": "Vận tải hành khách & Du lịch",
-    "com_type_code": "CT",
-    "icb_code1": "5000",
-    "icb_code2": "5700",
-    "icb_code3": "5750",
-    "icb_code4": "5759"
   },
   {
     "symbol": "MEL",
@@ -9972,78 +10044,6 @@
     "icb_code4": "8355"
   },
   {
-    "symbol": "OCH",
-    "organ_name": "Công ty Cổ phần One Capital Hospitality",
-    "icb_name3": "Sản xuất thực phẩm",
-    "icb_name2": "Thực phẩm và đồ uống",
-    "icb_name4": "Thực phẩm",
-    "com_type_code": "CT",
-    "icb_code1": "3000",
-    "icb_code2": "3500",
-    "icb_code3": "3570",
-    "icb_code4": "3577"
-  },
-  {
-    "symbol": "OGC",
-    "organ_name": "Công ty Cổ phần Tập đoàn Đại Dương",
-    "icb_name3": "Dịch vụ tài chính",
-    "icb_name2": "Dịch vụ tài chính",
-    "icb_name4": "Tài chính đặc biệt",
-    "com_type_code": "CT",
-    "icb_code1": "8000",
-    "icb_code2": "8700",
-    "icb_code3": "8770",
-    "icb_code4": "8775"
-  },
-  {
-    "symbol": "ONE",
-    "organ_name": "Công ty Cổ phần Công nghệ ONE",
-    "icb_name3": "Thiết bị và Phần cứng",
-    "icb_name2": "Công nghệ Thông tin",
-    "icb_name4": "Phần cứng",
-    "com_type_code": "CT",
-    "icb_code1": "9000",
-    "icb_code2": "9500",
-    "icb_code3": "9570",
-    "icb_code4": "9572"
-  },
-  {
-    "symbol": "ONW",
-    "organ_name": "Công ty Cổ phần Dịch vụ Một Thế giới",
-    "icb_name3": "Du lịch & Giải trí",
-    "icb_name2": "Du lịch và Giải trí",
-    "icb_name4": "Dịch vụ giải trí",
-    "com_type_code": "CT",
-    "icb_code1": "5000",
-    "icb_code2": "5700",
-    "icb_code3": "5750",
-    "icb_code4": "5755"
-  },
-  {
-    "symbol": "OPC",
-    "organ_name": "Công ty Cổ phần Dược Phẩm OPC",
-    "icb_name3": "Dược phẩm",
-    "icb_name2": "Y tế",
-    "icb_name4": "Dược phẩm",
-    "com_type_code": "CT",
-    "icb_code1": "4000",
-    "icb_code2": "4500",
-    "icb_code3": "4570",
-    "icb_code4": "4577"
-  },
-  {
-    "symbol": "MSB",
-    "organ_name": "Ngân hàng Thương mại Cổ phần Hàng Hải Việt Nam",
-    "icb_name3": "Ngân hàng",
-    "icb_name2": "Ngân hàng",
-    "icb_name4": "Ngân hàng",
-    "com_type_code": "NH",
-    "icb_code1": "8301",
-    "icb_code2": "8300",
-    "icb_code3": "8350",
-    "icb_code4": "8355"
-  },
-  {
     "symbol": "PAI",
     "organ_name": "Công ty Cổ phần Công nghê thông tin, Viễn thông và Tự động hóa Dầu khí",
     "icb_name3": "Viễn thông cố định",
@@ -10054,18 +10054,6 @@
     "icb_code2": "6500",
     "icb_code3": "6530",
     "icb_code4": "6535"
-  },
-  {
-    "symbol": "MNB",
-    "organ_name": "Tổng Công ty May Nhà Bè - Công ty Cổ phần",
-    "icb_name3": "Hàng cá nhân",
-    "icb_name2": "Hàng cá nhân & Gia dụng",
-    "icb_name4": "Hàng May mặc",
-    "com_type_code": "CT",
-    "icb_code1": "3000",
-    "icb_code2": "3700",
-    "icb_code3": "3760",
-    "icb_code4": "3763"
   },
   {
     "symbol": "PCC",
@@ -10080,18 +10068,6 @@
     "icb_code4": "2357"
   },
   {
-    "symbol": "HHB",
-    "organ_name": "Công ty Cổ Phần Bia Hà Nội - Hồng Hà",
-    "icb_name3": "Bia và đồ uống",
-    "icb_name2": "Thực phẩm và đồ uống",
-    "icb_name4": "Sản xuất bia",
-    "com_type_code": "CT",
-    "icb_code1": "3000",
-    "icb_code2": "3500",
-    "icb_code3": "3530",
-    "icb_code4": "3533"
-  },
-  {
     "symbol": "PCG",
     "organ_name": "Công ty Cổ phần Đầu tư Phát triển Gas Đô thị",
     "icb_name3": "Nước & Khí đốt",
@@ -10104,16 +10080,16 @@
     "icb_code4": "7573"
   },
   {
-    "symbol": "HC1",
-    "organ_name": "Công ty Cổ phần Xây dựng số 1 Hà Nội",
-    "icb_name3": "Xây dựng và Vật liệu",
-    "icb_name2": "Xây dựng và Vật liệu",
-    "icb_name4": "Xây dựng",
-    "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2300",
-    "icb_code3": "2350",
-    "icb_code4": "2357"
+    "symbol": "MSB",
+    "organ_name": "Ngân hàng Thương mại Cổ phần Hàng Hải Việt Nam",
+    "icb_name3": "Ngân hàng",
+    "icb_name2": "Ngân hàng",
+    "icb_name4": "Ngân hàng",
+    "com_type_code": "NH",
+    "icb_code1": "8301",
+    "icb_code2": "8300",
+    "icb_code3": "8350",
+    "icb_code4": "8355"
   },
   {
     "symbol": "PCM",
@@ -10128,6 +10104,30 @@
     "icb_code4": "2353"
   },
   {
+    "symbol": "MNB",
+    "organ_name": "Tổng Công ty May Nhà Bè - Công ty Cổ phần",
+    "icb_name3": "Hàng cá nhân",
+    "icb_name2": "Hàng cá nhân & Gia dụng",
+    "icb_name4": "Hàng May mặc",
+    "com_type_code": "CT",
+    "icb_code1": "3000",
+    "icb_code2": "3700",
+    "icb_code3": "3760",
+    "icb_code4": "3763"
+  },
+  {
+    "symbol": "HHB",
+    "organ_name": "Công ty Cổ Phần Bia Hà Nội - Hồng Hà",
+    "icb_name3": "Bia và đồ uống",
+    "icb_name2": "Thực phẩm và đồ uống",
+    "icb_name4": "Sản xuất bia",
+    "com_type_code": "CT",
+    "icb_code1": "3000",
+    "icb_code2": "3500",
+    "icb_code3": "3530",
+    "icb_code4": "3533"
+  },
+  {
     "symbol": "PDB",
     "organ_name": "Công ty Cổ phần Tập đoàn Đầu tư DIN Capital",
     "icb_name3": "Xây dựng và Vật liệu",
@@ -10140,16 +10140,16 @@
     "icb_code4": "2353"
   },
   {
-    "symbol": "ORS",
-    "organ_name": "Công ty Cổ phần Chứng khoán Tiên Phong",
-    "icb_name3": "Dịch vụ tài chính",
-    "icb_name2": "Dịch vụ tài chính",
-    "icb_name4": "Môi giới chứng khoán",
-    "com_type_code": "CK",
-    "icb_code1": "8000",
-    "icb_code2": "8700",
-    "icb_code3": "8770",
-    "icb_code4": "8777"
+    "symbol": "HC1",
+    "organ_name": "Công ty Cổ phần Xây dựng số 1 Hà Nội",
+    "icb_name3": "Xây dựng và Vật liệu",
+    "icb_name2": "Xây dựng và Vật liệu",
+    "icb_name4": "Xây dựng",
+    "com_type_code": "CT",
+    "icb_code1": "2000",
+    "icb_code2": "2300",
+    "icb_code3": "2350",
+    "icb_code4": "2357"
   },
   {
     "symbol": "PDC",
@@ -10164,6 +10164,18 @@
     "icb_code4": "5759"
   },
   {
+    "symbol": "ORS",
+    "organ_name": "Công ty Cổ phần Chứng khoán Tiên Phong",
+    "icb_name3": "Dịch vụ tài chính",
+    "icb_name2": "Dịch vụ tài chính",
+    "icb_name4": "Môi giới chứng khoán",
+    "com_type_code": "CK",
+    "icb_code1": "8000",
+    "icb_code2": "8700",
+    "icb_code3": "8770",
+    "icb_code4": "8777"
+  },
+  {
     "symbol": "PDN",
     "organ_name": "Công ty Cổ phần Cảng Đồng Nai",
     "icb_name3": "Vận tải",
@@ -10174,18 +10186,6 @@
     "icb_code2": "2700",
     "icb_code3": "2770",
     "icb_code4": "2777"
-  },
-  {
-    "symbol": "PDR",
-    "organ_name": "Công ty Cổ phần Phát triển Bất động sản Phát Đạt",
-    "icb_name3": "Bất động sản",
-    "icb_name2": "Bất động sản",
-    "icb_name4": "Bất động sản",
-    "com_type_code": "CT",
-    "icb_code1": "8000",
-    "icb_code2": "8600",
-    "icb_code3": "8630",
-    "icb_code4": "8633"
   },
   {
     "symbol": "PAP",
@@ -10272,6 +10272,18 @@
     "icb_code4": "2357"
   },
   {
+    "symbol": "PDR",
+    "organ_name": "Công ty Cổ phần Phát triển Bất động sản Phát Đạt",
+    "icb_name3": "Bất động sản",
+    "icb_name2": "Bất động sản",
+    "icb_name4": "Bất động sản",
+    "com_type_code": "CT",
+    "icb_code1": "8000",
+    "icb_code2": "8600",
+    "icb_code3": "8630",
+    "icb_code4": "8633"
+  },
+  {
     "symbol": "PEN",
     "organ_name": "Công ty Cổ phần Xây lắp III Petrolimex",
     "icb_name3": "Xây dựng và Vật liệu",
@@ -10308,18 +10320,6 @@
     "icb_code4": "7573"
   },
   {
-    "symbol": "PGT",
-    "organ_name": "Công ty Cổ phần PGT Holdings",
-    "icb_name3": "Du lịch & Giải trí",
-    "icb_name2": "Du lịch và Giải trí",
-    "icb_name4": "Vận tải hành khách & Du lịch",
-    "com_type_code": "CT",
-    "icb_code1": "5000",
-    "icb_code2": "5700",
-    "icb_code3": "5750",
-    "icb_code4": "5759"
-  },
-  {
     "symbol": "MRF",
     "organ_name": "Công ty Cổ phần MERUFA",
     "icb_name3": "Thiết bị và Dịch vụ Y tế",
@@ -10332,16 +10332,16 @@
     "icb_code4": "4535"
   },
   {
-    "symbol": "PHS",
-    "organ_name": "Công ty Cổ phần Chứng khoán Phú Hưng",
-    "icb_name3": "Dịch vụ tài chính",
-    "icb_name2": "Dịch vụ tài chính",
-    "icb_name4": "Môi giới chứng khoán",
-    "com_type_code": "CK",
-    "icb_code1": "8000",
-    "icb_code2": "8700",
-    "icb_code3": "8770",
-    "icb_code4": "8777"
+    "symbol": "PGT",
+    "organ_name": "Công ty Cổ phần PGT Holdings",
+    "icb_name3": "Du lịch & Giải trí",
+    "icb_name2": "Du lịch và Giải trí",
+    "icb_name4": "Vận tải hành khách & Du lịch",
+    "com_type_code": "CT",
+    "icb_code1": "5000",
+    "icb_code2": "5700",
+    "icb_code3": "5750",
+    "icb_code4": "5759"
   },
   {
     "symbol": "L63",
@@ -10356,28 +10356,16 @@
     "icb_code4": "2757"
   },
   {
-    "symbol": "PID",
-    "organ_name": "Công ty Cổ phần Trang trí nội thất Dầu khí",
-    "icb_name3": "Xây dựng và Vật liệu",
-    "icb_name2": "Xây dựng và Vật liệu",
-    "icb_name4": "Vật liệu xây dựng & Nội thất",
-    "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2300",
-    "icb_code3": "2350",
-    "icb_code4": "2353"
-  },
-  {
-    "symbol": "PIS",
-    "organ_name": "Tổng Công ty Pisico Bình Định - Công ty Cổ phần",
-    "icb_name3": "Lâm nghiệp và Giấy",
-    "icb_name2": "Tài nguyên Cơ bản",
-    "icb_name4": "Lâm sản và Chế biến gỗ",
-    "com_type_code": "CT",
-    "icb_code1": "1000",
-    "icb_code2": "1700",
-    "icb_code3": "1730",
-    "icb_code4": "1733"
+    "symbol": "PHS",
+    "organ_name": "Công ty Cổ phần Chứng khoán Phú Hưng",
+    "icb_name3": "Dịch vụ tài chính",
+    "icb_name2": "Dịch vụ tài chính",
+    "icb_name4": "Môi giới chứng khoán",
+    "com_type_code": "CK",
+    "icb_code1": "8000",
+    "icb_code2": "8700",
+    "icb_code3": "8770",
+    "icb_code4": "8777"
   },
   {
     "symbol": "PDV",
@@ -10390,18 +10378,6 @@
     "icb_code2": "2700",
     "icb_code3": "2770",
     "icb_code4": "2773"
-  },
-  {
-    "symbol": "EIN",
-    "organ_name": "Công ty Cổ phần Đầu tư - Thương Mại - Dịch vụ Điện lực",
-    "icb_name3": "Du lịch & Giải trí",
-    "icb_name2": "Du lịch và Giải trí",
-    "icb_name4": "Khách sạn",
-    "com_type_code": "CT",
-    "icb_code1": "5000",
-    "icb_code2": "5700",
-    "icb_code3": "5750",
-    "icb_code4": "5753"
   },
   {
     "symbol": "PEC",
@@ -10428,16 +10404,16 @@
     "icb_code4": "0573"
   },
   {
-    "symbol": "PIT",
-    "organ_name": "Công ty Cổ phần Xuất nhập khẩu Petrolimex",
-    "icb_name3": "Bán lẻ",
-    "icb_name2": "Bán lẻ",
-    "icb_name4": "Bán lẻ phức hợp",
+    "symbol": "PID",
+    "organ_name": "Công ty Cổ phần Trang trí nội thất Dầu khí",
+    "icb_name3": "Xây dựng và Vật liệu",
+    "icb_name2": "Xây dựng và Vật liệu",
+    "icb_name4": "Vật liệu xây dựng & Nội thất",
     "com_type_code": "CT",
-    "icb_code1": "5000",
-    "icb_code2": "5300",
-    "icb_code3": "5370",
-    "icb_code4": "5373"
+    "icb_code1": "2000",
+    "icb_code2": "2300",
+    "icb_code3": "2350",
+    "icb_code4": "2353"
   },
   {
     "symbol": "HCM",
@@ -10452,16 +10428,16 @@
     "icb_code4": "8777"
   },
   {
-    "symbol": "PJC",
-    "organ_name": "Công ty Cổ phần Thương mại và Vận tải Petrolimex Hà Nội",
-    "icb_name3": "Nước & Khí đốt",
-    "icb_name2": "Điện, nước & xăng dầu khí đốt",
-    "icb_name4": "Phân phối xăng dầu & khí đốt",
+    "symbol": "PIS",
+    "organ_name": "Tổng Công ty Pisico Bình Định - Công ty Cổ phần",
+    "icb_name3": "Lâm nghiệp và Giấy",
+    "icb_name2": "Tài nguyên Cơ bản",
+    "icb_name4": "Lâm sản và Chế biến gỗ",
     "com_type_code": "CT",
-    "icb_code1": "7000",
-    "icb_code2": "7500",
-    "icb_code3": "7570",
-    "icb_code4": "7573"
+    "icb_code1": "1000",
+    "icb_code2": "1700",
+    "icb_code3": "1730",
+    "icb_code4": "1733"
   },
   {
     "symbol": "PCF",
@@ -10596,16 +10572,28 @@
     "icb_code4": "2777"
   },
   {
-    "symbol": "PLE",
-    "organ_name": "Công ty Cổ phần Tư vấn Xây dựng Petrolimex",
-    "icb_name3": "Xây dựng và Vật liệu",
-    "icb_name2": "Xây dựng và Vật liệu",
-    "icb_name4": "Xây dựng",
+    "symbol": "EIN",
+    "organ_name": "Công ty Cổ phần Đầu tư - Thương Mại - Dịch vụ Điện lực",
+    "icb_name3": "Du lịch & Giải trí",
+    "icb_name2": "Du lịch và Giải trí",
+    "icb_name4": "Khách sạn",
     "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2300",
-    "icb_code3": "2350",
-    "icb_code4": "2357"
+    "icb_code1": "5000",
+    "icb_code2": "5700",
+    "icb_code3": "5750",
+    "icb_code4": "5753"
+  },
+  {
+    "symbol": "PIT",
+    "organ_name": "Công ty Cổ phần Xuất nhập khẩu Petrolimex",
+    "icb_name3": "Bán lẻ",
+    "icb_name2": "Bán lẻ",
+    "icb_name4": "Bán lẻ phức hợp",
+    "com_type_code": "CT",
+    "icb_code1": "5000",
+    "icb_code2": "5300",
+    "icb_code3": "5370",
+    "icb_code4": "5373"
   },
   {
     "symbol": "PFL",
@@ -10656,6 +10644,18 @@
     "icb_code4": "1353"
   },
   {
+    "symbol": "PJC",
+    "organ_name": "Công ty Cổ phần Thương mại và Vận tải Petrolimex Hà Nội",
+    "icb_name3": "Nước & Khí đốt",
+    "icb_name2": "Điện, nước & xăng dầu khí đốt",
+    "icb_name4": "Phân phối xăng dầu & khí đốt",
+    "com_type_code": "CT",
+    "icb_code1": "7000",
+    "icb_code2": "7500",
+    "icb_code3": "7570",
+    "icb_code4": "7573"
+  },
+  {
     "symbol": "PBC",
     "organ_name": "Công ty Cổ phần Dược Phẩm Trung ương 1 - Pharbaco",
     "icb_name3": "Dược phẩm",
@@ -10668,20 +10668,8 @@
     "icb_code4": "4577"
   },
   {
-    "symbol": "PNP",
-    "organ_name": "Công ty Cổ phần Tân Cảng – Phú Hữu",
-    "icb_name3": "Vận tải",
-    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
-    "icb_name4": "Vận tải Thủy",
-    "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2700",
-    "icb_code3": "2770",
-    "icb_code4": "2773"
-  },
-  {
-    "symbol": "NHA",
-    "organ_name": "Tổng Công ty Đầu tư Phát triển Nhà và Đô thị Nam Hà Nội",
+    "symbol": "PLE",
+    "organ_name": "Công ty Cổ phần Tư vấn Xây dựng Petrolimex",
     "icb_name3": "Xây dựng và Vật liệu",
     "icb_name2": "Xây dựng và Vật liệu",
     "icb_name4": "Xây dựng",
@@ -10692,8 +10680,8 @@
     "icb_code4": "2357"
   },
   {
-    "symbol": "PNT",
-    "organ_name": "Công ty Cổ phần Kỹ thuật Xây dựng Phú Nhuận",
+    "symbol": "NHA",
+    "organ_name": "Tổng Công ty Đầu tư Phát triển Nhà và Đô thị Nam Hà Nội",
     "icb_name3": "Xây dựng và Vật liệu",
     "icb_name2": "Xây dựng và Vật liệu",
     "icb_name4": "Xây dựng",
@@ -10716,16 +10704,16 @@
     "icb_code4": "2353"
   },
   {
-    "symbol": "POM",
-    "organ_name": "Công ty Cổ phần Thép Pomina",
-    "icb_name3": "Kim loại",
-    "icb_name2": "Tài nguyên Cơ bản",
-    "icb_name4": "Thép và sản phẩm thép",
+    "symbol": "PNP",
+    "organ_name": "Công ty Cổ phần Tân Cảng – Phú Hữu",
+    "icb_name3": "Vận tải",
+    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
+    "icb_name4": "Vận tải Thủy",
     "com_type_code": "CT",
-    "icb_code1": "1000",
-    "icb_code2": "1700",
-    "icb_code3": "1750",
-    "icb_code4": "1757"
+    "icb_code1": "2000",
+    "icb_code2": "2700",
+    "icb_code3": "2770",
+    "icb_code4": "2773"
   },
   {
     "symbol": "PHH",
@@ -10752,16 +10740,16 @@
     "icb_code4": "1353"
   },
   {
-    "symbol": "POT",
-    "organ_name": "Công ty Cổ phần Thiết bị Bưu điện",
-    "icb_name3": "Thiết bị và Phần cứng",
-    "icb_name2": "Công nghệ Thông tin",
-    "icb_name4": "Phần cứng",
+    "symbol": "PNT",
+    "organ_name": "Công ty Cổ phần Kỹ thuật Xây dựng Phú Nhuận",
+    "icb_name3": "Xây dựng và Vật liệu",
+    "icb_name2": "Xây dựng và Vật liệu",
+    "icb_name4": "Xây dựng",
     "com_type_code": "CT",
-    "icb_code1": "9000",
-    "icb_code2": "9500",
-    "icb_code3": "9570",
-    "icb_code4": "9572"
+    "icb_code1": "2000",
+    "icb_code2": "2300",
+    "icb_code3": "2350",
+    "icb_code4": "2357"
   },
   {
     "symbol": "NNT",
@@ -10776,28 +10764,28 @@
     "icb_code4": "7577"
   },
   {
-    "symbol": "PPE",
-    "organ_name": "Công ty Cổ phần Tư vấn Đầu tư PP Enterprise",
-    "icb_name3": "Tư vấn & Hỗ trợ Kinh doanh",
-    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
-    "icb_name4": "Tư vấn & Hỗ trợ KD",
+    "symbol": "POM",
+    "organ_name": "Công ty Cổ phần Thép Pomina",
+    "icb_name3": "Kim loại",
+    "icb_name2": "Tài nguyên Cơ bản",
+    "icb_name4": "Thép và sản phẩm thép",
     "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2700",
-    "icb_code3": "2790",
-    "icb_code4": "2791"
+    "icb_code1": "1000",
+    "icb_code2": "1700",
+    "icb_code3": "1750",
+    "icb_code4": "1757"
   },
   {
-    "symbol": "PPS",
-    "organ_name": "Công ty Cổ phần Dịch vụ Kỹ thuật Điện lực Dầu khí Việt Nam",
-    "icb_name3": "Tư vấn & Hỗ trợ Kinh doanh",
-    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
-    "icb_name4": "Tư vấn & Hỗ trợ KD",
+    "symbol": "POT",
+    "organ_name": "Công ty Cổ phần Thiết bị Bưu điện",
+    "icb_name3": "Thiết bị và Phần cứng",
+    "icb_name2": "Công nghệ Thông tin",
+    "icb_name4": "Phần cứng",
     "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2700",
-    "icb_code3": "2790",
-    "icb_code4": "2791"
+    "icb_code1": "9000",
+    "icb_code2": "9500",
+    "icb_code3": "9570",
+    "icb_code4": "9572"
   },
   {
     "symbol": "MHL",
@@ -10824,16 +10812,16 @@
     "icb_code4": "2757"
   },
   {
-    "symbol": "PRO",
-    "organ_name": "Công ty Cổ phần Procimex Việt Nam",
-    "icb_name3": "Sản xuất thực phẩm",
-    "icb_name2": "Thực phẩm và đồ uống",
-    "icb_name4": "Thực phẩm",
+    "symbol": "PPE",
+    "organ_name": "Công ty Cổ phần Tư vấn Đầu tư PP Enterprise",
+    "icb_name3": "Tư vấn & Hỗ trợ Kinh doanh",
+    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
+    "icb_name4": "Tư vấn & Hỗ trợ KD",
     "com_type_code": "CT",
-    "icb_code1": "3000",
-    "icb_code2": "3500",
-    "icb_code3": "3570",
-    "icb_code4": "3577"
+    "icb_code1": "2000",
+    "icb_code2": "2700",
+    "icb_code3": "2790",
+    "icb_code4": "2791"
   },
   {
     "symbol": "PIA",
@@ -10872,16 +10860,16 @@
     "icb_code4": "7535"
   },
   {
-    "symbol": "PSB",
-    "organ_name": "Công ty Cổ phần Đầu tư Dầu khí Sao Mai Bến Đình",
-    "icb_name3": "Xây dựng và Vật liệu",
-    "icb_name2": "Xây dựng và Vật liệu",
-    "icb_name4": "Xây dựng",
+    "symbol": "PPS",
+    "organ_name": "Công ty Cổ phần Dịch vụ Kỹ thuật Điện lực Dầu khí Việt Nam",
+    "icb_name3": "Tư vấn & Hỗ trợ Kinh doanh",
+    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
+    "icb_name4": "Tư vấn & Hỗ trợ KD",
     "com_type_code": "CT",
     "icb_code1": "2000",
-    "icb_code2": "2300",
-    "icb_code3": "2350",
-    "icb_code4": "2357"
+    "icb_code2": "2700",
+    "icb_code3": "2790",
+    "icb_code4": "2791"
   },
   {
     "symbol": "NDC",
@@ -10896,40 +10884,28 @@
     "icb_code4": "4577"
   },
   {
-    "symbol": "BT1",
-    "organ_name": "Công ty Cổ phần Bảo vệ thực vật 1 Trung ương",
-    "icb_name3": "Hóa chất",
-    "icb_name2": "Hóa chất",
-    "icb_name4": "Sản phẩm hóa dầu, Nông dược & Hóa chất khác",
+    "symbol": "PRO",
+    "organ_name": "Công ty Cổ phần Procimex Việt Nam",
+    "icb_name3": "Sản xuất thực phẩm",
+    "icb_name2": "Thực phẩm và đồ uống",
+    "icb_name4": "Thực phẩm",
     "com_type_code": "CT",
-    "icb_code1": "1000",
-    "icb_code2": "1300",
-    "icb_code3": "1350",
-    "icb_code4": "1357"
+    "icb_code1": "3000",
+    "icb_code2": "3500",
+    "icb_code3": "3570",
+    "icb_code4": "3577"
   },
   {
-    "symbol": "PSP",
-    "organ_name": "Công ty Cổ phần Cảng Dịch vụ Dầu khí Đình Vũ",
-    "icb_name3": "Vận tải",
-    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
-    "icb_name4": "Dịch vụ vận tải",
+    "symbol": "PSB",
+    "organ_name": "Công ty Cổ phần Đầu tư Dầu khí Sao Mai Bến Đình",
+    "icb_name3": "Xây dựng và Vật liệu",
+    "icb_name2": "Xây dựng và Vật liệu",
+    "icb_name4": "Xây dựng",
     "com_type_code": "CT",
     "icb_code1": "2000",
-    "icb_code2": "2700",
-    "icb_code3": "2770",
-    "icb_code4": "2779"
-  },
-  {
-    "symbol": "GCB",
-    "organ_name": "Công ty Cổ phần PETEC Bình Định",
-    "icb_name3": "Nước & Khí đốt",
-    "icb_name2": "Điện, nước & xăng dầu khí đốt",
-    "icb_name4": "Phân phối xăng dầu & khí đốt",
-    "com_type_code": "CT",
-    "icb_code1": "7000",
-    "icb_code2": "7500",
-    "icb_code3": "7570",
-    "icb_code4": "7573"
+    "icb_code2": "2300",
+    "icb_code3": "2350",
+    "icb_code4": "2357"
   },
   {
     "symbol": "HNG",
@@ -10956,16 +10932,16 @@
     "icb_code4": "8637"
   },
   {
-    "symbol": "PTC",
-    "organ_name": "Công ty Cổ phần Đầu tư ICAPITAL",
-    "icb_name3": "Xây dựng và Vật liệu",
-    "icb_name2": "Xây dựng và Vật liệu",
-    "icb_name4": "Xây dựng",
+    "symbol": "BT1",
+    "organ_name": "Công ty Cổ phần Bảo vệ thực vật 1 Trung ương",
+    "icb_name3": "Hóa chất",
+    "icb_name2": "Hóa chất",
+    "icb_name4": "Sản phẩm hóa dầu, Nông dược & Hóa chất khác",
     "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2300",
-    "icb_code3": "2350",
-    "icb_code4": "2357"
+    "icb_code1": "1000",
+    "icb_code2": "1300",
+    "icb_code3": "1350",
+    "icb_code4": "1357"
   },
   {
     "symbol": "PJT",
@@ -10980,16 +10956,16 @@
     "icb_code4": "2773"
   },
   {
-    "symbol": "PTG",
-    "organ_name": "Công ty Cổ phần May Xuất Khẩu Phan Thiết",
-    "icb_name3": "Hàng cá nhân",
-    "icb_name2": "Hàng cá nhân & Gia dụng",
-    "icb_name4": "Hàng May mặc",
-    "com_type_code": "CT",
-    "icb_code1": "3000",
-    "icb_code2": "3700",
-    "icb_code3": "3760",
-    "icb_code4": "3763"
+    "symbol": "PSI",
+    "organ_name": "Công ty Cổ phần Chứng khoán Dầu khí",
+    "icb_name3": "Dịch vụ tài chính",
+    "icb_name2": "Dịch vụ tài chính",
+    "icb_name4": "Môi giới chứng khoán",
+    "com_type_code": "CK",
+    "icb_code1": "8000",
+    "icb_code2": "8700",
+    "icb_code3": "8770",
+    "icb_code4": "8777"
   },
   {
     "symbol": "PLA",
@@ -11016,16 +10992,16 @@
     "icb_code4": "2777"
   },
   {
-    "symbol": "POS",
-    "organ_name": "Công ty Cổ phần Vận hành và Xây lắp PTSC",
-    "icb_name3": "Thiết bị, Dịch vụ và Phân phối Dầu khí",
-    "icb_name2": "Dầu khí",
-    "icb_name4": "Thiết bị và Dịch vụ Dầu khí",
+    "symbol": "PSP",
+    "organ_name": "Công ty Cổ phần Cảng Dịch vụ Dầu khí Đình Vũ",
+    "icb_name3": "Vận tải",
+    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
+    "icb_name4": "Dịch vụ vận tải",
     "com_type_code": "CT",
-    "icb_code1": "0001",
-    "icb_code2": "0500",
-    "icb_code3": "0570",
-    "icb_code4": "0573"
+    "icb_code1": "2000",
+    "icb_code2": "2700",
+    "icb_code3": "2770",
+    "icb_code4": "2779"
   },
   {
     "symbol": "PJS",
@@ -11040,16 +11016,16 @@
     "icb_code4": "7577"
   },
   {
-    "symbol": "DAT",
-    "organ_name": "Công ty Cổ phần Đầu tư Du lịch và Phát triển Thủy sản",
-    "icb_name3": "Sản xuất thực phẩm",
-    "icb_name2": "Thực phẩm và đồ uống",
-    "icb_name4": "Nuôi trồng nông & hải sản",
+    "symbol": "GCB",
+    "organ_name": "Công ty Cổ phần PETEC Bình Định",
+    "icb_name3": "Nước & Khí đốt",
+    "icb_name2": "Điện, nước & xăng dầu khí đốt",
+    "icb_name4": "Phân phối xăng dầu & khí đốt",
     "com_type_code": "CT",
-    "icb_code1": "3000",
-    "icb_code2": "3500",
-    "icb_code3": "3570",
-    "icb_code4": "3573"
+    "icb_code1": "7000",
+    "icb_code2": "7500",
+    "icb_code3": "7570",
+    "icb_code4": "7573"
   },
   {
     "symbol": "PMP",
@@ -11160,16 +11136,16 @@
     "icb_code4": "3767"
   },
   {
-    "symbol": "PVB",
-    "organ_name": "Công ty Cổ phần Bọc ống Dầu khí Việt Nam",
-    "icb_name3": "Thiết bị, Dịch vụ và Phân phối Dầu khí",
-    "icb_name2": "Dầu khí",
-    "icb_name4": "Thiết bị và Dịch vụ Dầu khí",
+    "symbol": "PTC",
+    "organ_name": "Công ty Cổ phần Đầu tư ICAPITAL",
+    "icb_name3": "Xây dựng và Vật liệu",
+    "icb_name2": "Xây dựng và Vật liệu",
+    "icb_name4": "Xây dựng",
     "com_type_code": "CT",
-    "icb_code1": "0001",
-    "icb_code2": "0500",
-    "icb_code3": "0570",
-    "icb_code4": "0573"
+    "icb_code1": "2000",
+    "icb_code2": "2300",
+    "icb_code3": "2350",
+    "icb_code4": "2357"
   },
   {
     "symbol": "PHC",
@@ -11184,16 +11160,16 @@
     "icb_code4": "2357"
   },
   {
-    "symbol": "PVG",
-    "organ_name": "Công ty Cổ phần Kinh doanh LPG Việt Nam",
-    "icb_name3": "Nước & Khí đốt",
-    "icb_name2": "Điện, nước & xăng dầu khí đốt",
-    "icb_name4": "Phân phối xăng dầu & khí đốt",
+    "symbol": "PTD",
+    "organ_name": "Công ty Cổ phần Thiết kế - Xây dựng - Thương mại Phúc Thịnh",
+    "icb_name3": "Xây dựng và Vật liệu",
+    "icb_name2": "Xây dựng và Vật liệu",
+    "icb_name4": "Xây dựng",
     "com_type_code": "CT",
-    "icb_code1": "7000",
-    "icb_code2": "7500",
-    "icb_code3": "7570",
-    "icb_code4": "7573"
+    "icb_code1": "2000",
+    "icb_code2": "2300",
+    "icb_code3": "2350",
+    "icb_code4": "2357"
   },
   {
     "symbol": "CRV",
@@ -11232,16 +11208,16 @@
     "icb_code4": "2353"
   },
   {
-    "symbol": "PVS",
-    "organ_name": "Tổng Công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam",
-    "icb_name3": "Thiết bị, Dịch vụ và Phân phối Dầu khí",
-    "icb_name2": "Dầu khí",
-    "icb_name4": "Thiết bị và Dịch vụ Dầu khí",
+    "symbol": "PTG",
+    "organ_name": "Công ty Cổ phần May Xuất Khẩu Phan Thiết",
+    "icb_name3": "Hàng cá nhân",
+    "icb_name2": "Hàng cá nhân & Gia dụng",
+    "icb_name4": "Hàng May mặc",
     "com_type_code": "CT",
-    "icb_code1": "0001",
-    "icb_code2": "0500",
-    "icb_code3": "0570",
-    "icb_code4": "0573"
+    "icb_code1": "3000",
+    "icb_code2": "3700",
+    "icb_code3": "3760",
+    "icb_code4": "3763"
   },
   {
     "symbol": "NVB",
@@ -11268,6 +11244,18 @@
     "icb_code4": "7577"
   },
   {
+    "symbol": "PTL",
+    "organ_name": "Công ty Cổ phần Victory Group",
+    "icb_name3": "Bất động sản",
+    "icb_name2": "Bất động sản",
+    "icb_name4": "Bất động sản",
+    "com_type_code": "CT",
+    "icb_code1": "8000",
+    "icb_code2": "8600",
+    "icb_code3": "8630",
+    "icb_code4": "8633"
+  },
+  {
     "symbol": "POV",
     "organ_name": "Công ty Cổ phần Xăng dầu Dầu khí Vũng Áng",
     "icb_name3": "Nước & Khí đốt",
@@ -11278,18 +11266,6 @@
     "icb_code2": "7500",
     "icb_code3": "7570",
     "icb_code4": "7573"
-  },
-  {
-    "symbol": "PVV",
-    "organ_name": "Công ty Cổ phần Vinaconex 39",
-    "icb_name3": "Xây dựng và Vật liệu",
-    "icb_name2": "Xây dựng và Vật liệu",
-    "icb_name4": "Xây dựng",
-    "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2300",
-    "icb_code3": "2350",
-    "icb_code4": "2357"
   },
   {
     "symbol": "DNA",
@@ -11316,16 +11292,16 @@
     "icb_code4": "3763"
   },
   {
-    "symbol": "PVX",
-    "organ_name": "Tổng Công ty Cổ phần Xây lắp Dầu khí Việt Nam",
-    "icb_name3": "Xây dựng và Vật liệu",
-    "icb_name2": "Xây dựng và Vật liệu",
-    "icb_name4": "Xây dựng",
+    "symbol": "POS",
+    "organ_name": "Công ty Cổ phần Vận hành và Xây lắp PTSC",
+    "icb_name3": "Thiết bị, Dịch vụ và Phân phối Dầu khí",
+    "icb_name2": "Dầu khí",
+    "icb_name4": "Thiết bị và Dịch vụ Dầu khí",
     "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2300",
-    "icb_code3": "2350",
-    "icb_code4": "2357"
+    "icb_code1": "0001",
+    "icb_code2": "0500",
+    "icb_code3": "0570",
+    "icb_code4": "0573"
   },
   {
     "symbol": "LBM",
@@ -11340,16 +11316,16 @@
     "icb_code4": "2353"
   },
   {
-    "symbol": "PXL",
-    "organ_name": "Công ty Cổ phần Đầu tư Khu Công Nghiệp Dầu khí Long Sơn",
-    "icb_name3": "Bất động sản",
-    "icb_name2": "Bất động sản",
-    "icb_name4": "Bất động sản",
+    "symbol": "DAT",
+    "organ_name": "Công ty Cổ phần Đầu tư Du lịch và Phát triển Thủy sản",
+    "icb_name3": "Sản xuất thực phẩm",
+    "icb_name2": "Thực phẩm và đồ uống",
+    "icb_name4": "Nuôi trồng nông & hải sản",
     "com_type_code": "CT",
-    "icb_code1": "8000",
-    "icb_code2": "8600",
-    "icb_code3": "8630",
-    "icb_code4": "8633"
+    "icb_code1": "3000",
+    "icb_code2": "3500",
+    "icb_code3": "3570",
+    "icb_code4": "3573"
   },
   {
     "symbol": "PPC",
@@ -11364,28 +11340,28 @@
     "icb_code4": "7535"
   },
   {
-    "symbol": "PXT",
-    "organ_name": "Công ty Cổ phần Xây lắp Đường ống Bể chứa Dầu khí",
-    "icb_name3": "Xây dựng và Vật liệu",
-    "icb_name2": "Xây dựng và Vật liệu",
-    "icb_name4": "Xây dựng",
+    "symbol": "PVB",
+    "organ_name": "Công ty Cổ phần Bọc ống Dầu khí Việt Nam",
+    "icb_name3": "Thiết bị, Dịch vụ và Phân phối Dầu khí",
+    "icb_name2": "Dầu khí",
+    "icb_name4": "Thiết bị và Dịch vụ Dầu khí",
     "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2300",
-    "icb_code3": "2350",
-    "icb_code4": "2357"
+    "icb_code1": "0001",
+    "icb_code2": "0500",
+    "icb_code3": "0570",
+    "icb_code4": "0573"
   },
   {
-    "symbol": "QBS",
-    "organ_name": "Công ty Cổ phần Xuất nhập khẩu Quảng Bình",
-    "icb_name3": "Hóa chất",
-    "icb_name2": "Hóa chất",
-    "icb_name4": "Sản phẩm hóa dầu, Nông dược & Hóa chất khác",
+    "symbol": "PVG",
+    "organ_name": "Công ty Cổ phần Kinh doanh LPG Việt Nam",
+    "icb_name3": "Nước & Khí đốt",
+    "icb_name2": "Điện, nước & xăng dầu khí đốt",
+    "icb_name4": "Phân phối xăng dầu & khí đốt",
     "com_type_code": "CT",
-    "icb_code1": "1000",
-    "icb_code2": "1300",
-    "icb_code3": "1350",
-    "icb_code4": "1357"
+    "icb_code1": "7000",
+    "icb_code2": "7500",
+    "icb_code3": "7570",
+    "icb_code4": "7573"
   },
   {
     "symbol": "PPI",
@@ -11400,16 +11376,16 @@
     "icb_code4": "8633"
   },
   {
-    "symbol": "QHD",
-    "organ_name": "Công ty Cổ phần Que hàn điện Việt Đức",
-    "icb_name3": "Hàng công nghiệp",
-    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
-    "icb_name4": "Công nghiệp phức hợp",
+    "symbol": "PVS",
+    "organ_name": "Tổng Công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam",
+    "icb_name3": "Thiết bị, Dịch vụ và Phân phối Dầu khí",
+    "icb_name2": "Dầu khí",
+    "icb_name4": "Thiết bị và Dịch vụ Dầu khí",
     "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2700",
-    "icb_code3": "2720",
-    "icb_code4": "2727"
+    "icb_code1": "0001",
+    "icb_code2": "0500",
+    "icb_code3": "0570",
+    "icb_code4": "0573"
   },
   {
     "symbol": "NXT",
@@ -11422,6 +11398,18 @@
     "icb_code2": "2300",
     "icb_code3": "2350",
     "icb_code4": "2353"
+  },
+  {
+    "symbol": "PVV",
+    "organ_name": "Công ty Cổ phần Vinaconex 39",
+    "icb_name3": "Xây dựng và Vật liệu",
+    "icb_name2": "Xây dựng và Vật liệu",
+    "icb_name4": "Xây dựng",
+    "com_type_code": "CT",
+    "icb_code1": "2000",
+    "icb_code2": "2300",
+    "icb_code3": "2350",
+    "icb_code4": "2357"
   },
   {
     "symbol": "PTP",
@@ -11448,40 +11436,28 @@
     "icb_code4": "2779"
   },
   {
-    "symbol": "QHW",
-    "organ_name": "Công ty Cổ phần Nước khoáng Quảng Ninh",
-    "icb_name3": "Bia và đồ uống",
-    "icb_name2": "Thực phẩm và đồ uống",
-    "icb_name4": "Đồ uống & giải khát",
-    "com_type_code": "CT",
-    "icb_code1": "3000",
-    "icb_code2": "3500",
-    "icb_code3": "3530",
-    "icb_code4": "3537"
-  },
-  {
-    "symbol": "QNC",
-    "organ_name": "Công ty Cổ phần Xi măng và Xây dựng Quảng Ninh",
+    "symbol": "PVX",
+    "organ_name": "Tổng Công ty Cổ phần Xây lắp Dầu khí Việt Nam",
     "icb_name3": "Xây dựng và Vật liệu",
     "icb_name2": "Xây dựng và Vật liệu",
-    "icb_name4": "Vật liệu xây dựng & Nội thất",
+    "icb_name4": "Xây dựng",
     "com_type_code": "CT",
     "icb_code1": "2000",
     "icb_code2": "2300",
     "icb_code3": "2350",
-    "icb_code4": "2353"
+    "icb_code4": "2357"
   },
   {
-    "symbol": "CQN",
-    "organ_name": "Công ty Cổ phần Cảng Quảng Ninh",
-    "icb_name3": "Vận tải",
-    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
-    "icb_name4": "Kho bãi, hậu cần và bảo dưỡng",
+    "symbol": "PXL",
+    "organ_name": "Công ty Cổ phần Đầu tư Khu Công Nghiệp Dầu khí Long Sơn",
+    "icb_name3": "Bất động sản",
+    "icb_name2": "Bất động sản",
+    "icb_name4": "Bất động sản",
     "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2700",
-    "icb_code3": "2770",
-    "icb_code4": "2777"
+    "icb_code1": "8000",
+    "icb_code2": "8600",
+    "icb_code3": "8630",
+    "icb_code4": "8633"
   },
   {
     "symbol": "PSE",
@@ -11496,16 +11472,16 @@
     "icb_code4": "1357"
   },
   {
-    "symbol": "QNS",
-    "organ_name": "Công ty Cổ phần Đường Quảng Ngãi",
-    "icb_name3": "Sản xuất thực phẩm",
-    "icb_name2": "Thực phẩm và đồ uống",
-    "icb_name4": "Thực phẩm",
+    "symbol": "PXT",
+    "organ_name": "Công ty Cổ phần Xây lắp Đường ống Bể chứa Dầu khí",
+    "icb_name3": "Xây dựng và Vật liệu",
+    "icb_name2": "Xây dựng và Vật liệu",
+    "icb_name4": "Xây dựng",
     "com_type_code": "CT",
-    "icb_code1": "3000",
-    "icb_code2": "3500",
-    "icb_code3": "3570",
-    "icb_code4": "3577"
+    "icb_code1": "2000",
+    "icb_code2": "2300",
+    "icb_code3": "2350",
+    "icb_code4": "2357"
   },
   {
     "symbol": "PSG",
@@ -11520,28 +11496,28 @@
     "icb_code4": "2357"
   },
   {
-    "symbol": "QNW",
-    "organ_name": "Công ty Cổ phần Cấp thoát nước và xây dựng Quảng Ngãi",
-    "icb_name3": "Nước & Khí đốt",
-    "icb_name2": "Điện, nước & xăng dầu khí đốt",
-    "icb_name4": "Nước",
+    "symbol": "QBS",
+    "organ_name": "Công ty Cổ phần Xuất nhập khẩu Quảng Bình",
+    "icb_name3": "Hóa chất",
+    "icb_name2": "Hóa chất",
+    "icb_name4": "Sản phẩm hóa dầu, Nông dược & Hóa chất khác",
     "com_type_code": "CT",
-    "icb_code1": "7000",
-    "icb_code2": "7500",
-    "icb_code3": "7570",
-    "icb_code4": "7577"
+    "icb_code1": "1000",
+    "icb_code2": "1300",
+    "icb_code3": "1350",
+    "icb_code4": "1357"
   },
   {
-    "symbol": "PSI",
-    "organ_name": "Công ty Cổ phần Chứng khoán Dầu khí",
-    "icb_name3": "Dịch vụ tài chính",
-    "icb_name2": "Dịch vụ tài chính",
-    "icb_name4": "Môi giới chứng khoán",
-    "com_type_code": "CK",
-    "icb_code1": "8000",
-    "icb_code2": "8700",
-    "icb_code3": "8770",
-    "icb_code4": "8777"
+    "symbol": "QHD",
+    "organ_name": "Công ty Cổ phần Que hàn điện Việt Đức",
+    "icb_name3": "Hàng công nghiệp",
+    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
+    "icb_name4": "Công nghiệp phức hợp",
+    "com_type_code": "CT",
+    "icb_code1": "2000",
+    "icb_code2": "2700",
+    "icb_code3": "2720",
+    "icb_code4": "2727"
   },
   {
     "symbol": "PSL",
@@ -11556,28 +11532,16 @@
     "icb_code4": "3573"
   },
   {
-    "symbol": "QTC",
-    "organ_name": "Công ty Cổ phần Công trình Giao thông Vận tải Quảng Nam",
-    "icb_name3": "Xây dựng và Vật liệu",
-    "icb_name2": "Xây dựng và Vật liệu",
-    "icb_name4": "Xây dựng",
-    "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2300",
-    "icb_code3": "2350",
-    "icb_code4": "2357"
-  },
-  {
-    "symbol": "RAL",
-    "organ_name": "Công ty Cổ phần Bóng đèn Phích nước Rạng Đông",
-    "icb_name3": "Hàng gia dụng",
-    "icb_name2": "Hàng cá nhân & Gia dụng",
-    "icb_name4": "Thiết bị gia dụng",
+    "symbol": "QHW",
+    "organ_name": "Công ty Cổ phần Nước khoáng Quảng Ninh",
+    "icb_name3": "Bia và đồ uống",
+    "icb_name2": "Thực phẩm và đồ uống",
+    "icb_name4": "Đồ uống & giải khát",
     "com_type_code": "CT",
     "icb_code1": "3000",
-    "icb_code2": "3700",
-    "icb_code3": "3720",
-    "icb_code4": "3726"
+    "icb_code2": "3500",
+    "icb_code3": "3530",
+    "icb_code4": "3537"
   },
   {
     "symbol": "PSD",
@@ -11592,16 +11556,16 @@
     "icb_code4": "5379"
   },
   {
-    "symbol": "RCC",
-    "organ_name": "Công ty Cổ phần Tổng Công ty Công trình Đường sắt Việt Nam",
+    "symbol": "QNC",
+    "organ_name": "Công ty Cổ phần Xi măng và Xây dựng Quảng Ninh",
     "icb_name3": "Xây dựng và Vật liệu",
     "icb_name2": "Xây dựng và Vật liệu",
-    "icb_name4": "Xây dựng",
+    "icb_name4": "Vật liệu xây dựng & Nội thất",
     "com_type_code": "CT",
     "icb_code1": "2000",
     "icb_code2": "2300",
     "icb_code3": "2350",
-    "icb_code4": "2357"
+    "icb_code4": "2353"
   },
   {
     "symbol": "NTF",
@@ -11640,16 +11604,16 @@
     "icb_code4": "2357"
   },
   {
-    "symbol": "SAP",
-    "organ_name": "Công ty Cổ phần In Sách Giáo khoa TP.Hồ Chí Minh",
-    "icb_name3": "Truyền thông",
-    "icb_name2": "Truyền thông",
-    "icb_name4": "Sách, ấn bản & sản phẩm văn hóa",
+    "symbol": "CQN",
+    "organ_name": "Công ty Cổ phần Cảng Quảng Ninh",
+    "icb_name3": "Vận tải",
+    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
+    "icb_name4": "Kho bãi, hậu cần và bảo dưỡng",
     "com_type_code": "CT",
-    "icb_code1": "5000",
-    "icb_code2": "5500",
-    "icb_code3": "5550",
-    "icb_code4": "5557"
+    "icb_code1": "2000",
+    "icb_code2": "2700",
+    "icb_code3": "2770",
+    "icb_code4": "2777"
   },
   {
     "symbol": "KSF",
@@ -11664,16 +11628,28 @@
     "icb_code4": "8633"
   },
   {
-    "symbol": "PTD",
-    "organ_name": "Công ty Cổ phần Thiết kế - Xây dựng - Thương mại Phúc Thịnh",
-    "icb_name3": "Xây dựng và Vật liệu",
-    "icb_name2": "Xây dựng và Vật liệu",
-    "icb_name4": "Xây dựng",
+    "symbol": "QNS",
+    "organ_name": "Công ty Cổ phần Đường Quảng Ngãi",
+    "icb_name3": "Sản xuất thực phẩm",
+    "icb_name2": "Thực phẩm và đồ uống",
+    "icb_name4": "Thực phẩm",
     "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2300",
-    "icb_code3": "2350",
-    "icb_code4": "2357"
+    "icb_code1": "3000",
+    "icb_code2": "3500",
+    "icb_code3": "3570",
+    "icb_code4": "3577"
+  },
+  {
+    "symbol": "QNW",
+    "organ_name": "Công ty Cổ phần Cấp thoát nước và xây dựng Quảng Ngãi",
+    "icb_name3": "Nước & Khí đốt",
+    "icb_name2": "Điện, nước & xăng dầu khí đốt",
+    "icb_name4": "Nước",
+    "com_type_code": "CT",
+    "icb_code1": "7000",
+    "icb_code2": "7500",
+    "icb_code3": "7570",
+    "icb_code4": "7577"
   },
   {
     "symbol": "PMT",
@@ -11688,16 +11664,16 @@
     "icb_code4": "9578"
   },
   {
-    "symbol": "REE",
-    "organ_name": "Công ty Cổ phần Cơ điện Lạnh",
-    "icb_name3": "Sản xuất & Phân phối Điện",
-    "icb_name2": "Điện, nước & xăng dầu khí đốt",
-    "icb_name4": "Sản xuất & Phân phối Điện",
+    "symbol": "QTC",
+    "organ_name": "Công ty Cổ phần Công trình Giao thông Vận tải Quảng Nam",
+    "icb_name3": "Xây dựng và Vật liệu",
+    "icb_name2": "Xây dựng và Vật liệu",
+    "icb_name4": "Xây dựng",
     "com_type_code": "CT",
-    "icb_code1": "7000",
-    "icb_code2": "7500",
-    "icb_code3": "7530",
-    "icb_code4": "7535"
+    "icb_code1": "2000",
+    "icb_code2": "2300",
+    "icb_code3": "2350",
+    "icb_code4": "2357"
   },
   {
     "symbol": "PTH",
@@ -11724,16 +11700,28 @@
     "icb_code4": "7535"
   },
   {
-    "symbol": "PTL",
-    "organ_name": "Công ty Cổ phần Victory Group",
-    "icb_name3": "Bất động sản",
-    "icb_name2": "Bất động sản",
-    "icb_name4": "Bất động sản",
+    "symbol": "RAL",
+    "organ_name": "Công ty Cổ phần Bóng đèn Phích nước Rạng Đông",
+    "icb_name3": "Hàng gia dụng",
+    "icb_name2": "Hàng cá nhân & Gia dụng",
+    "icb_name4": "Thiết bị gia dụng",
     "com_type_code": "CT",
-    "icb_code1": "8000",
-    "icb_code2": "8600",
-    "icb_code3": "8630",
-    "icb_code4": "8633"
+    "icb_code1": "3000",
+    "icb_code2": "3700",
+    "icb_code3": "3720",
+    "icb_code4": "3726"
+  },
+  {
+    "symbol": "RCC",
+    "organ_name": "Công ty Cổ phần Tổng Công ty Công trình Đường sắt Việt Nam",
+    "icb_name3": "Xây dựng và Vật liệu",
+    "icb_name2": "Xây dựng và Vật liệu",
+    "icb_name4": "Xây dựng",
+    "com_type_code": "CT",
+    "icb_code1": "2000",
+    "icb_code2": "2300",
+    "icb_code3": "2350",
+    "icb_code4": "2357"
   },
   {
     "symbol": "PTM",
@@ -11832,6 +11820,18 @@
     "icb_code4": "1733"
   },
   {
+    "symbol": "REE",
+    "organ_name": "Công ty Cổ phần Cơ điện Lạnh",
+    "icb_name3": "Sản xuất & Phân phối Điện",
+    "icb_name2": "Điện, nước & xăng dầu khí đốt",
+    "icb_name4": "Sản xuất & Phân phối Điện",
+    "com_type_code": "CT",
+    "icb_code1": "7000",
+    "icb_code2": "7500",
+    "icb_code3": "7530",
+    "icb_code4": "7535"
+  },
+  {
     "symbol": "PV2",
     "organ_name": "Công ty Cổ phần Đầu tư PV2",
     "icb_name3": "Bất động sản",
@@ -11916,18 +11916,6 @@
     "icb_code4": "3537"
   },
   {
-    "symbol": "S74",
-    "organ_name": "Công ty Cổ phần Sông Đà 7.04",
-    "icb_name3": "Xây dựng và Vật liệu",
-    "icb_name2": "Xây dựng và Vật liệu",
-    "icb_name4": "Xây dựng",
-    "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2300",
-    "icb_code3": "2350",
-    "icb_code4": "2357"
-  },
-  {
     "symbol": "PVC",
     "organ_name": "Tổng Công ty Hóa chất và Dịch vụ Dầu khí - Công ty Cổ phần",
     "icb_name3": "Thiết bị, Dịch vụ và Phân phối Dầu khí",
@@ -12000,18 +11988,6 @@
     "icb_code4": "7577"
   },
   {
-    "symbol": "S99",
-    "organ_name": "Công ty Cổ phần SCI",
-    "icb_name3": "Xây dựng và Vật liệu",
-    "icb_name2": "Xây dựng và Vật liệu",
-    "icb_name4": "Xây dựng",
-    "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2300",
-    "icb_code3": "2350",
-    "icb_code4": "2357"
-  },
-  {
     "symbol": "PVM",
     "organ_name": "Công ty Cổ phần Máy - Thiết bị Dầu khí",
     "icb_name3": "Tư vấn & Hỗ trợ Kinh doanh",
@@ -12034,18 +12010,6 @@
     "icb_code2": "2300",
     "icb_code3": "2350",
     "icb_code4": "2357"
-  },
-  {
-    "symbol": "BSQ",
-    "organ_name": "Công ty Cổ phần Bia Sài Gòn - Quảng Ngãi",
-    "icb_name3": "Bia và đồ uống",
-    "icb_name2": "Thực phẩm và đồ uống",
-    "icb_name4": "Sản xuất bia",
-    "com_type_code": "CT",
-    "icb_code1": "3000",
-    "icb_code2": "3500",
-    "icb_code3": "3530",
-    "icb_code4": "3533"
   },
   {
     "symbol": "PVE",
@@ -12084,16 +12048,28 @@
     "icb_code4": "8536"
   },
   {
-    "symbol": "VNB",
-    "organ_name": "Công ty Cổ phần Sách Việt Nam",
-    "icb_name3": "Truyền thông",
-    "icb_name2": "Truyền thông",
-    "icb_name4": "Sách, ấn bản & sản phẩm văn hóa",
+    "symbol": "S74",
+    "organ_name": "Công ty Cổ phần Sông Đà 7.04",
+    "icb_name3": "Xây dựng và Vật liệu",
+    "icb_name2": "Xây dựng và Vật liệu",
+    "icb_name4": "Xây dựng",
     "com_type_code": "CT",
-    "icb_code1": "5000",
-    "icb_code2": "5500",
-    "icb_code3": "5550",
-    "icb_code4": "5557"
+    "icb_code1": "2000",
+    "icb_code2": "2300",
+    "icb_code3": "2350",
+    "icb_code4": "2357"
+  },
+  {
+    "symbol": "S99",
+    "organ_name": "Công ty Cổ phần SCI",
+    "icb_name3": "Xây dựng và Vật liệu",
+    "icb_name2": "Xây dựng và Vật liệu",
+    "icb_name4": "Xây dựng",
+    "com_type_code": "CT",
+    "icb_code1": "2000",
+    "icb_code2": "2300",
+    "icb_code3": "2350",
+    "icb_code4": "2357"
   },
   {
     "symbol": "NLG",
@@ -12192,16 +12168,16 @@
     "icb_code4": "7535"
   },
   {
-    "symbol": "SBA",
-    "organ_name": "Công ty Cổ phần Sông Ba",
-    "icb_name3": "Sản xuất & Phân phối Điện",
-    "icb_name2": "Điện, nước & xăng dầu khí đốt",
-    "icb_name4": "Sản xuất & Phân phối Điện",
+    "symbol": "BSQ",
+    "organ_name": "Công ty Cổ phần Bia Sài Gòn - Quảng Ngãi",
+    "icb_name3": "Bia và đồ uống",
+    "icb_name2": "Thực phẩm và đồ uống",
+    "icb_name4": "Sản xuất bia",
     "com_type_code": "CT",
-    "icb_code1": "7000",
-    "icb_code2": "7500",
-    "icb_code3": "7530",
-    "icb_code4": "7535"
+    "icb_code1": "3000",
+    "icb_code2": "3500",
+    "icb_code3": "3530",
+    "icb_code4": "3533"
   },
   {
     "symbol": "PVY",
@@ -12288,18 +12264,6 @@
     "icb_code4": "2353"
   },
   {
-    "symbol": "SBL",
-    "organ_name": "Công ty Cổ phần Bia Sài Gòn - Bạc Liêu",
-    "icb_name3": "Bia và đồ uống",
-    "icb_name2": "Thực phẩm và đồ uống",
-    "icb_name4": "Sản xuất bia",
-    "com_type_code": "CT",
-    "icb_code1": "3000",
-    "icb_code2": "3500",
-    "icb_code3": "3530",
-    "icb_code4": "3533"
-  },
-  {
     "symbol": "PXI",
     "organ_name": "Công ty Cổ phần Xây dựng Công nghiệp và Dân dụng Dầu khí",
     "icb_name3": "Xây dựng và Vật liệu",
@@ -12372,6 +12336,18 @@
     "icb_code4": "3533"
   },
   {
+    "symbol": "SAP",
+    "organ_name": "Công ty Cổ phần In Sách Giáo khoa TP.Hồ Chí Minh",
+    "icb_name3": "Truyền thông",
+    "icb_name2": "Truyền thông",
+    "icb_name4": "Sách, ấn bản & sản phẩm văn hóa",
+    "com_type_code": "CT",
+    "icb_code1": "5000",
+    "icb_code2": "5500",
+    "icb_code3": "5550",
+    "icb_code4": "5557"
+  },
+  {
     "symbol": "CSI",
     "organ_name": "Công ty Cổ phần Chứng khoán Kiến thiết Việt Nam",
     "icb_name3": "Dịch vụ tài chính",
@@ -12432,40 +12408,52 @@
     "icb_code4": "8633"
   },
   {
-    "symbol": "SD3",
-    "organ_name": "Công ty Cổ phần Sông Đà 3",
-    "icb_name3": "Xây dựng và Vật liệu",
-    "icb_name2": "Xây dựng và Vật liệu",
-    "icb_name4": "Xây dựng",
+    "symbol": "VNB",
+    "organ_name": "Công ty Cổ phần Sách Việt Nam",
+    "icb_name3": "Truyền thông",
+    "icb_name2": "Truyền thông",
+    "icb_name4": "Sách, ấn bản & sản phẩm văn hóa",
     "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2300",
-    "icb_code3": "2350",
-    "icb_code4": "2357"
+    "icb_code1": "5000",
+    "icb_code2": "5500",
+    "icb_code3": "5550",
+    "icb_code4": "5557"
   },
   {
-    "symbol": "SD5",
-    "organ_name": "Công ty Cổ phần Sông Đà 5",
-    "icb_name3": "Xây dựng và Vật liệu",
-    "icb_name2": "Xây dựng và Vật liệu",
-    "icb_name4": "Xây dựng",
+    "symbol": "SBA",
+    "organ_name": "Công ty Cổ phần Sông Ba",
+    "icb_name3": "Sản xuất & Phân phối Điện",
+    "icb_name2": "Điện, nước & xăng dầu khí đốt",
+    "icb_name4": "Sản xuất & Phân phối Điện",
     "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2300",
-    "icb_code3": "2350",
-    "icb_code4": "2357"
+    "icb_code1": "7000",
+    "icb_code2": "7500",
+    "icb_code3": "7530",
+    "icb_code4": "7535"
   },
   {
-    "symbol": "SDC",
-    "organ_name": "Công ty Cổ phần Tư vấn Sông Đà",
-    "icb_name3": "Tư vấn & Hỗ trợ Kinh doanh",
-    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
-    "icb_name4": "Tư vấn & Hỗ trợ KD",
+    "symbol": "SBL",
+    "organ_name": "Công ty Cổ phần Bia Sài Gòn - Bạc Liêu",
+    "icb_name3": "Bia và đồ uống",
+    "icb_name2": "Thực phẩm và đồ uống",
+    "icb_name4": "Sản xuất bia",
     "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2700",
-    "icb_code3": "2790",
-    "icb_code4": "2791"
+    "icb_code1": "3000",
+    "icb_code2": "3500",
+    "icb_code3": "3530",
+    "icb_code4": "3533"
+  },
+  {
+    "symbol": "SBT",
+    "organ_name": "Công ty Cổ phần Thành Thành Công - Biên Hòa",
+    "icb_name3": "Sản xuất thực phẩm",
+    "icb_name2": "Thực phẩm và đồ uống",
+    "icb_name4": "Thực phẩm",
+    "com_type_code": "CT",
+    "icb_code1": "3000",
+    "icb_code2": "3500",
+    "icb_code3": "3570",
+    "icb_code4": "3577"
   },
   {
     "symbol": "MQN",
@@ -12504,6 +12492,18 @@
     "icb_code4": "2777"
   },
   {
+    "symbol": "SD3",
+    "organ_name": "Công ty Cổ phần Sông Đà 3",
+    "icb_name3": "Xây dựng và Vật liệu",
+    "icb_name2": "Xây dựng và Vật liệu",
+    "icb_name4": "Xây dựng",
+    "com_type_code": "CT",
+    "icb_code1": "2000",
+    "icb_code2": "2300",
+    "icb_code3": "2350",
+    "icb_code4": "2357"
+  },
+  {
     "symbol": "QNT",
     "organ_name": "Công ty Cổ phần Tư vấn và Đầu tư Phát triển Quảng Nam",
     "icb_name3": "Xây dựng và Vật liệu",
@@ -12540,16 +12540,28 @@
     "icb_code4": "2799"
   },
   {
-    "symbol": "SGT",
-    "organ_name": "Công ty Cổ phần Công nghệ Viễn thông Sài Gòn",
-    "icb_name3": "Phần mềm & Dịch vụ Máy tính",
-    "icb_name2": "Công nghệ Thông tin",
-    "icb_name4": "Internet",
+    "symbol": "SD5",
+    "organ_name": "Công ty Cổ phần Sông Đà 5",
+    "icb_name3": "Xây dựng và Vật liệu",
+    "icb_name2": "Xây dựng và Vật liệu",
+    "icb_name4": "Xây dựng",
     "com_type_code": "CT",
-    "icb_code1": "9000",
-    "icb_code2": "9500",
-    "icb_code3": "9530",
-    "icb_code4": "9535"
+    "icb_code1": "2000",
+    "icb_code2": "2300",
+    "icb_code3": "2350",
+    "icb_code4": "2357"
+  },
+  {
+    "symbol": "SDC",
+    "organ_name": "Công ty Cổ phần Tư vấn Sông Đà",
+    "icb_name3": "Tư vấn & Hỗ trợ Kinh doanh",
+    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
+    "icb_name4": "Tư vấn & Hỗ trợ KD",
+    "com_type_code": "CT",
+    "icb_code1": "2000",
+    "icb_code2": "2700",
+    "icb_code3": "2790",
+    "icb_code4": "2791"
   },
   {
     "symbol": "QPH",
@@ -12660,18 +12672,6 @@
     "icb_code4": "1353"
   },
   {
-    "symbol": "SHN",
-    "organ_name": "Công ty Cổ phần Đầu tư Tổng hợp Hà Nội",
-    "icb_name3": "Khai khoáng",
-    "icb_name2": "Tài nguyên Cơ bản",
-    "icb_name4": "Khai thác Than",
-    "com_type_code": "CT",
-    "icb_code1": "1000",
-    "icb_code2": "1700",
-    "icb_code3": "1770",
-    "icb_code4": "1771"
-  },
-  {
     "symbol": "PNG",
     "organ_name": "Công ty Cổ phần Thương Mại Phú Nhuận",
     "icb_name3": "Du lịch & Giải trí",
@@ -12708,28 +12708,16 @@
     "icb_code4": "2777"
   },
   {
-    "symbol": "SJ1",
-    "organ_name": "Công ty Cổ phần Nông nghiệp Hùng Hậu",
-    "icb_name3": "Sản xuất thực phẩm",
-    "icb_name2": "Thực phẩm và đồ uống",
-    "icb_name4": "Nuôi trồng nông & hải sản",
+    "symbol": "SGT",
+    "organ_name": "Công ty Cổ phần Công nghệ Viễn thông Sài Gòn",
+    "icb_name3": "Phần mềm & Dịch vụ Máy tính",
+    "icb_name2": "Công nghệ Thông tin",
+    "icb_name4": "Internet",
     "com_type_code": "CT",
-    "icb_code1": "3000",
-    "icb_code2": "3500",
-    "icb_code3": "3570",
-    "icb_code4": "3573"
-  },
-  {
-    "symbol": "SIG",
-    "organ_name": "Công ty Cổ phần Đầu tư và Thương mại Sông Đà",
-    "icb_name3": "Xây dựng và Vật liệu",
-    "icb_name2": "Xây dựng và Vật liệu",
-    "icb_name4": "Xây dựng",
-    "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2300",
-    "icb_code3": "2350",
-    "icb_code4": "2357"
+    "icb_code1": "9000",
+    "icb_code2": "9500",
+    "icb_code3": "9530",
+    "icb_code4": "9535"
   },
   {
     "symbol": "RBC",
@@ -12744,16 +12732,16 @@
     "icb_code4": "1353"
   },
   {
-    "symbol": "SHE",
-    "organ_name": "Công ty Cổ phần Phát triển Năng Lượng Sơn Hà",
-    "icb_name3": "Hàng gia dụng",
-    "icb_name2": "Hàng cá nhân & Gia dụng",
-    "icb_name4": "Đồ gia dụng lâu bền",
+    "symbol": "SHN",
+    "organ_name": "Công ty Cổ phần Đầu tư Tổng hợp Hà Nội",
+    "icb_name3": "Khai khoáng",
+    "icb_name2": "Tài nguyên Cơ bản",
+    "icb_name4": "Khai thác Than",
     "com_type_code": "CT",
-    "icb_code1": "3000",
-    "icb_code2": "3700",
-    "icb_code3": "3720",
-    "icb_code4": "3722"
+    "icb_code1": "1000",
+    "icb_code2": "1700",
+    "icb_code3": "1770",
+    "icb_code4": "1771"
   },
   {
     "symbol": "S12",
@@ -12804,16 +12792,16 @@
     "icb_code4": "3533"
   },
   {
-    "symbol": "NSL",
-    "organ_name": "Công ty Cổ phần Cấp nước Sơn La",
-    "icb_name3": "Nước & Khí đốt",
-    "icb_name2": "Điện, nước & xăng dầu khí đốt",
-    "icb_name4": "Nước",
+    "symbol": "SJ1",
+    "organ_name": "Công ty Cổ phần Nông nghiệp Hùng Hậu",
+    "icb_name3": "Sản xuất thực phẩm",
+    "icb_name2": "Thực phẩm và đồ uống",
+    "icb_name4": "Nuôi trồng nông & hải sản",
     "com_type_code": "CT",
-    "icb_code1": "7000",
-    "icb_code2": "7500",
-    "icb_code3": "7570",
-    "icb_code4": "7577"
+    "icb_code1": "3000",
+    "icb_code2": "3500",
+    "icb_code3": "3570",
+    "icb_code4": "3573"
   },
   {
     "symbol": "TDT",
@@ -12840,16 +12828,16 @@
     "icb_code4": "3533"
   },
   {
-    "symbol": "SPH",
-    "organ_name": "Công ty Cổ phần Xuất Nhập khẩu Thủy sản Hà Nội",
-    "icb_name3": "Sản xuất thực phẩm",
-    "icb_name2": "Thực phẩm và đồ uống",
-    "icb_name4": "Nuôi trồng nông & hải sản",
+    "symbol": "SIG",
+    "organ_name": "Công ty Cổ phần Đầu tư và Thương mại Sông Đà",
+    "icb_name3": "Xây dựng và Vật liệu",
+    "icb_name2": "Xây dựng và Vật liệu",
+    "icb_name4": "Xây dựng",
     "com_type_code": "CT",
-    "icb_code1": "3000",
-    "icb_code2": "3500",
-    "icb_code3": "3570",
-    "icb_code4": "3573"
+    "icb_code1": "2000",
+    "icb_code2": "2300",
+    "icb_code3": "2350",
+    "icb_code4": "2357"
   },
   {
     "symbol": "XLV",
@@ -12864,28 +12852,16 @@
     "icb_code4": "2357"
   },
   {
-    "symbol": "SPI",
-    "organ_name": "Công ty Cổ phần Spiral Galaxy",
-    "icb_name3": "Khai khoáng",
-    "icb_name2": "Tài nguyên Cơ bản",
-    "icb_name4": "Khai khoáng",
+    "symbol": "SHE",
+    "organ_name": "Công ty Cổ phần Phát triển Năng Lượng Sơn Hà",
+    "icb_name3": "Hàng gia dụng",
+    "icb_name2": "Hàng cá nhân & Gia dụng",
+    "icb_name4": "Đồ gia dụng lâu bền",
     "com_type_code": "CT",
-    "icb_code1": "1000",
-    "icb_code2": "1700",
-    "icb_code3": "1770",
-    "icb_code4": "1775"
-  },
-  {
-    "symbol": "SRF",
-    "organ_name": "Công ty Cổ phần Searefico",
-    "icb_name3": "Công nghiệp nặng",
-    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
-    "icb_name4": "Máy công nghiệp",
-    "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2700",
-    "icb_code3": "2750",
-    "icb_code4": "2757"
+    "icb_code1": "3000",
+    "icb_code2": "3700",
+    "icb_code3": "3720",
+    "icb_code4": "3722"
   },
   {
     "symbol": "SAF",
@@ -12900,6 +12876,18 @@
     "icb_code4": "3577"
   },
   {
+    "symbol": "NSL",
+    "organ_name": "Công ty Cổ phần Cấp nước Sơn La",
+    "icb_name3": "Nước & Khí đốt",
+    "icb_name2": "Điện, nước & xăng dầu khí đốt",
+    "icb_name4": "Nước",
+    "com_type_code": "CT",
+    "icb_code1": "7000",
+    "icb_code2": "7500",
+    "icb_code3": "7570",
+    "icb_code4": "7577"
+  },
+  {
     "symbol": "SGN",
     "organ_name": "Công ty Cổ phần Phục vụ mặt đất Sài Gòn",
     "icb_name3": "Vận tải",
@@ -12912,16 +12900,16 @@
     "icb_code4": "2777"
   },
   {
-    "symbol": "STC",
-    "organ_name": "Công ty Cổ phần Sách và Thiết bị trường học Thành phố Hồ Chí Minh",
-    "icb_name3": "Truyền thông",
-    "icb_name2": "Truyền thông",
-    "icb_name4": "Sách, ấn bản & sản phẩm văn hóa",
+    "symbol": "SPH",
+    "organ_name": "Công ty Cổ phần Xuất Nhập khẩu Thủy sản Hà Nội",
+    "icb_name3": "Sản xuất thực phẩm",
+    "icb_name2": "Thực phẩm và đồ uống",
+    "icb_name4": "Nuôi trồng nông & hải sản",
     "com_type_code": "CT",
-    "icb_code1": "5000",
-    "icb_code2": "5500",
-    "icb_code3": "5550",
-    "icb_code4": "5557"
+    "icb_code1": "3000",
+    "icb_code2": "3500",
+    "icb_code3": "3570",
+    "icb_code4": "3573"
   },
   {
     "symbol": "SAL",
@@ -12948,6 +12936,18 @@
     "icb_code4": "4577"
   },
   {
+    "symbol": "SPI",
+    "organ_name": "Công ty Cổ phần Spiral Galaxy",
+    "icb_name3": "Khai khoáng",
+    "icb_name2": "Tài nguyên Cơ bản",
+    "icb_name4": "Khai khoáng",
+    "com_type_code": "CT",
+    "icb_code1": "1000",
+    "icb_code2": "1700",
+    "icb_code3": "1770",
+    "icb_code4": "1775"
+  },
+  {
     "symbol": "SAM",
     "organ_name": "Công ty Cổ phần SAM Holdings",
     "icb_name3": "Thiết bị và Phần cứng",
@@ -12958,18 +12958,6 @@
     "icb_code2": "9500",
     "icb_code3": "9570",
     "icb_code4": "9578"
-  },
-  {
-    "symbol": "STL",
-    "organ_name": "Công ty Cổ phần Sông Đà - Thăng Long",
-    "icb_name3": "Bất động sản",
-    "icb_name2": "Bất động sản",
-    "icb_name4": "Bất động sản",
-    "com_type_code": "CT",
-    "icb_code1": "8000",
-    "icb_code2": "8600",
-    "icb_code3": "8630",
-    "icb_code4": "8633"
   },
   {
     "symbol": "RIC",
@@ -13008,28 +12996,16 @@
     "icb_code4": "1357"
   },
   {
-    "symbol": "STS",
-    "organ_name": "Công ty Cổ phần Dịch vụ vận tải Sài Gòn",
-    "icb_name3": "Vận tải",
+    "symbol": "SRF",
+    "organ_name": "Công ty Cổ phần Searefico",
+    "icb_name3": "Công nghiệp nặng",
     "icb_name2": "Hàng & Dịch vụ Công nghiệp",
-    "icb_name4": "Dịch vụ vận tải",
+    "icb_name4": "Máy công nghiệp",
     "com_type_code": "CT",
     "icb_code1": "2000",
     "icb_code2": "2700",
-    "icb_code3": "2770",
-    "icb_code4": "2779"
-  },
-  {
-    "symbol": "STT",
-    "organ_name": "Công ty Cổ phần Vận chuyển Sài Gòn Tourist",
-    "icb_name3": "Du lịch & Giải trí",
-    "icb_name2": "Du lịch và Giải trí",
-    "icb_name4": "Vận tải hành khách & Du lịch",
-    "com_type_code": "CT",
-    "icb_code1": "5000",
-    "icb_code2": "5700",
-    "icb_code3": "5750",
-    "icb_code4": "5759"
+    "icb_code3": "2750",
+    "icb_code4": "2757"
   },
   {
     "symbol": "APT",
@@ -13104,6 +13080,18 @@
     "icb_code4": "1733"
   },
   {
+    "symbol": "STC",
+    "organ_name": "Công ty Cổ phần Sách và Thiết bị trường học Thành phố Hồ Chí Minh",
+    "icb_name3": "Truyền thông",
+    "icb_name2": "Truyền thông",
+    "icb_name4": "Sách, ấn bản & sản phẩm văn hóa",
+    "com_type_code": "CT",
+    "icb_code1": "5000",
+    "icb_code2": "5500",
+    "icb_code3": "5550",
+    "icb_code4": "5557"
+  },
+  {
     "symbol": "SAB",
     "organ_name": "Tổng Công ty Cổ phần Bia - Rượu - Nước Giải khát Sài Gòn",
     "icb_name3": "Bia và đồ uống",
@@ -13116,16 +13104,40 @@
     "icb_code4": "3533"
   },
   {
-    "symbol": "SBT",
-    "organ_name": "Công ty Cổ phần Thành Thành Công - Biên Hòa",
-    "icb_name3": "Sản xuất thực phẩm",
-    "icb_name2": "Thực phẩm và đồ uống",
-    "icb_name4": "Thực phẩm",
+    "symbol": "STL",
+    "organ_name": "Công ty Cổ phần Sông Đà - Thăng Long",
+    "icb_name3": "Bất động sản",
+    "icb_name2": "Bất động sản",
+    "icb_name4": "Bất động sản",
     "com_type_code": "CT",
-    "icb_code1": "3000",
-    "icb_code2": "3500",
-    "icb_code3": "3570",
-    "icb_code4": "3577"
+    "icb_code1": "8000",
+    "icb_code2": "8600",
+    "icb_code3": "8630",
+    "icb_code4": "8633"
+  },
+  {
+    "symbol": "STS",
+    "organ_name": "Công ty Cổ phần Dịch vụ vận tải Sài Gòn",
+    "icb_name3": "Vận tải",
+    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
+    "icb_name4": "Dịch vụ vận tải",
+    "com_type_code": "CT",
+    "icb_code1": "2000",
+    "icb_code2": "2700",
+    "icb_code3": "2770",
+    "icb_code4": "2779"
+  },
+  {
+    "symbol": "STT",
+    "organ_name": "Công ty Cổ phần Vận chuyển Sài Gòn Tourist",
+    "icb_name3": "Du lịch & Giải trí",
+    "icb_name2": "Du lịch và Giải trí",
+    "icb_name4": "Vận tải hành khách & Du lịch",
+    "com_type_code": "CT",
+    "icb_code1": "5000",
+    "icb_code2": "5700",
+    "icb_code3": "5750",
+    "icb_code4": "5759"
   },
   {
     "symbol": "SBD",
@@ -13188,18 +13200,6 @@
     "icb_code4": "2353"
   },
   {
-    "symbol": "SVN",
-    "organ_name": "Công ty Cổ phần Tập đoàn Vexilla Việt Nam",
-    "icb_name3": "Xây dựng và Vật liệu",
-    "icb_name2": "Xây dựng và Vật liệu",
-    "icb_name4": "Xây dựng",
-    "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2300",
-    "icb_code3": "2350",
-    "icb_code4": "2357"
-  },
-  {
     "symbol": "PGI",
     "organ_name": "Tổng Công ty Cổ phần Bảo hiểm Petrolimex",
     "icb_name3": "Bảo hiểm phi nhân thọ",
@@ -13234,30 +13234,6 @@
     "icb_code2": "2300",
     "icb_code3": "2350",
     "icb_code4": "2357"
-  },
-  {
-    "symbol": "SWC",
-    "organ_name": "Tổng Công ty Cổ phần Đường Sông Miền Nam",
-    "icb_name3": "Vận tải",
-    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
-    "icb_name4": "Vận tải Thủy",
-    "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2700",
-    "icb_code3": "2770",
-    "icb_code4": "2773"
-  },
-  {
-    "symbol": "SZE",
-    "organ_name": "Công ty Cổ phần Môi trường Sonadezi",
-    "icb_name3": "Tư vấn & Hỗ trợ Kinh doanh",
-    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
-    "icb_name4": "Chất thải & Môi trường",
-    "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2700",
-    "icb_code3": "2790",
-    "icb_code4": "2799"
   },
   {
     "symbol": "SC5",
@@ -13296,6 +13272,18 @@
     "icb_code4": "2357"
   },
   {
+    "symbol": "RTB",
+    "organ_name": "Công ty Cổ phần Cao su Tân Biên",
+    "icb_name3": "Hóa chất",
+    "icb_name2": "Hóa chất",
+    "icb_name4": "Nhựa, cao su & sợi",
+    "com_type_code": "CT",
+    "icb_code1": "1000",
+    "icb_code2": "1300",
+    "icb_code3": "1350",
+    "icb_code4": "1353"
+  },
+  {
     "symbol": "SCD",
     "organ_name": "Công ty Cổ phần Nước giải khát Chương Dương",
     "icb_name3": "Bia và đồ uống",
@@ -13306,6 +13294,18 @@
     "icb_code2": "3500",
     "icb_code3": "3530",
     "icb_code4": "3537"
+  },
+  {
+    "symbol": "SVN",
+    "organ_name": "Công ty Cổ phần Tập đoàn Vexilla Việt Nam",
+    "icb_name3": "Xây dựng và Vật liệu",
+    "icb_name2": "Xây dựng và Vật liệu",
+    "icb_name4": "Xây dựng",
+    "com_type_code": "CT",
+    "icb_code1": "2000",
+    "icb_code2": "2300",
+    "icb_code3": "2350",
+    "icb_code4": "2357"
   },
   {
     "symbol": "PMG",
@@ -13356,6 +13356,18 @@
     "icb_code4": "8633"
   },
   {
+    "symbol": "SWC",
+    "organ_name": "Tổng Công ty Cổ phần Đường Sông Miền Nam",
+    "icb_name3": "Vận tải",
+    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
+    "icb_name4": "Vận tải Thủy",
+    "com_type_code": "CT",
+    "icb_code1": "2000",
+    "icb_code2": "2700",
+    "icb_code3": "2770",
+    "icb_code4": "2773"
+  },
+  {
     "symbol": "SCJ",
     "organ_name": "Công ty Cổ phần Xi măng Sài Sơn",
     "icb_name3": "Xây dựng và Vật liệu",
@@ -13402,6 +13414,18 @@
     "icb_code2": "2300",
     "icb_code3": "2350",
     "icb_code4": "2357"
+  },
+  {
+    "symbol": "SZE",
+    "organ_name": "Công ty Cổ phần Môi trường Sonadezi",
+    "icb_name3": "Tư vấn & Hỗ trợ Kinh doanh",
+    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
+    "icb_name4": "Chất thải & Môi trường",
+    "com_type_code": "CT",
+    "icb_code1": "2000",
+    "icb_code2": "2700",
+    "icb_code3": "2790",
+    "icb_code4": "2799"
   },
   {
     "symbol": "SDT",
@@ -13668,18 +13692,6 @@
     "icb_code4": "2723"
   },
   {
-    "symbol": "RTB",
-    "organ_name": "Công ty Cổ phần Cao su Tân Biên",
-    "icb_name3": "Hóa chất",
-    "icb_name2": "Hóa chất",
-    "icb_name4": "Nhựa, cao su & sợi",
-    "com_type_code": "CT",
-    "icb_code1": "1000",
-    "icb_code2": "1300",
-    "icb_code3": "1350",
-    "icb_code4": "1353"
-  },
-  {
     "symbol": "SGD",
     "organ_name": "Công ty Cổ phần Sách Giáo dục tại Thành phố Hồ Chí Minh",
     "icb_name3": "Truyền thông",
@@ -13764,42 +13776,6 @@
     "icb_code4": "8777"
   },
   {
-    "symbol": "TCR",
-    "organ_name": "Công ty Cổ phần Công nghiệp Gốm sứ TAICERA",
-    "icb_name3": "Xây dựng và Vật liệu",
-    "icb_name2": "Xây dựng và Vật liệu",
-    "icb_name4": "Vật liệu xây dựng & Nội thất",
-    "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2300",
-    "icb_code3": "2350",
-    "icb_code4": "2353"
-  },
-  {
-    "symbol": "G36",
-    "organ_name": "Tổng Công ty 36 - Công ty Cổ phần",
-    "icb_name3": "Xây dựng và Vật liệu",
-    "icb_name2": "Xây dựng và Vật liệu",
-    "icb_name4": "Xây dựng",
-    "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2300",
-    "icb_code3": "2350",
-    "icb_code4": "2357"
-  },
-  {
-    "symbol": "VCP",
-    "organ_name": "Công ty Cổ phần Xây dựng và Năng lượng VCP",
-    "icb_name3": "Sản xuất & Phân phối Điện",
-    "icb_name2": "Điện, nước & xăng dầu khí đốt",
-    "icb_name4": "Sản xuất & Phân phối Điện",
-    "com_type_code": "CT",
-    "icb_code1": "7000",
-    "icb_code2": "7500",
-    "icb_code3": "7530",
-    "icb_code4": "7535"
-  },
-  {
     "symbol": "SHA",
     "organ_name": "Công ty Cổ phần Sơn Hà Sài Gòn",
     "icb_name3": "Kim loại",
@@ -13848,16 +13824,28 @@
     "icb_code4": "3573"
   },
   {
-    "symbol": "TDH",
-    "organ_name": "Công ty Cổ phần Phát triển Nhà Thủ Đức",
-    "icb_name3": "Bất động sản",
-    "icb_name2": "Bất động sản",
-    "icb_name4": "Bất động sản",
+    "symbol": "TCR",
+    "organ_name": "Công ty Cổ phần Công nghiệp Gốm sứ TAICERA",
+    "icb_name3": "Xây dựng và Vật liệu",
+    "icb_name2": "Xây dựng và Vật liệu",
+    "icb_name4": "Vật liệu xây dựng & Nội thất",
     "com_type_code": "CT",
-    "icb_code1": "8000",
-    "icb_code2": "8600",
-    "icb_code3": "8630",
-    "icb_code4": "8633"
+    "icb_code1": "2000",
+    "icb_code2": "2300",
+    "icb_code3": "2350",
+    "icb_code4": "2353"
+  },
+  {
+    "symbol": "G36",
+    "organ_name": "Tổng Công ty 36 - Công ty Cổ phần",
+    "icb_name3": "Xây dựng và Vật liệu",
+    "icb_name2": "Xây dựng và Vật liệu",
+    "icb_name4": "Xây dựng",
+    "com_type_code": "CT",
+    "icb_code1": "2000",
+    "icb_code2": "2300",
+    "icb_code3": "2350",
+    "icb_code4": "2357"
   },
   {
     "symbol": "SIP",
@@ -13896,16 +13884,16 @@
     "icb_code4": "5557"
   },
   {
-    "symbol": "TDW",
-    "organ_name": "Công ty Cổ phần Cấp nước Thủ Đức",
-    "icb_name3": "Nước & Khí đốt",
+    "symbol": "VCP",
+    "organ_name": "Công ty Cổ phần Xây dựng và Năng lượng VCP",
+    "icb_name3": "Sản xuất & Phân phối Điện",
     "icb_name2": "Điện, nước & xăng dầu khí đốt",
-    "icb_name4": "Nước",
+    "icb_name4": "Sản xuất & Phân phối Điện",
     "com_type_code": "CT",
     "icb_code1": "7000",
     "icb_code2": "7500",
-    "icb_code3": "7570",
-    "icb_code4": "7577"
+    "icb_code3": "7530",
+    "icb_code4": "7535"
   },
   {
     "symbol": "SEP",
@@ -13918,6 +13906,18 @@
     "icb_code2": "1300",
     "icb_code3": "1350",
     "icb_code4": "1353"
+  },
+  {
+    "symbol": "TDH",
+    "organ_name": "Công ty Cổ phần Phát triển Nhà Thủ Đức",
+    "icb_name3": "Bất động sản",
+    "icb_name2": "Bất động sản",
+    "icb_name4": "Bất động sản",
+    "com_type_code": "CT",
+    "icb_code1": "8000",
+    "icb_code2": "8600",
+    "icb_code3": "8630",
+    "icb_code4": "8633"
   },
   {
     "symbol": "SPC",
@@ -13956,16 +13956,16 @@
     "icb_code4": "7573"
   },
   {
-    "symbol": "MTB",
-    "organ_name": "Công ty Cổ phần Môi trường và Công trình đô thị tỉnh Thái Bình",
-    "icb_name3": "Tư vấn & Hỗ trợ Kinh doanh",
-    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
-    "icb_name4": "Chất thải & Môi trường",
+    "symbol": "TDW",
+    "organ_name": "Công ty Cổ phần Cấp nước Thủ Đức",
+    "icb_name3": "Nước & Khí đốt",
+    "icb_name2": "Điện, nước & xăng dầu khí đốt",
+    "icb_name4": "Nước",
     "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2700",
-    "icb_code3": "2790",
-    "icb_code4": "2799"
+    "icb_code1": "7000",
+    "icb_code2": "7500",
+    "icb_code3": "7570",
+    "icb_code4": "7577"
   },
   {
     "symbol": "SFI",
@@ -13978,18 +13978,6 @@
     "icb_code2": "2700",
     "icb_code3": "2770",
     "icb_code4": "2773"
-  },
-  {
-    "symbol": "BTB",
-    "organ_name": "Công ty Cổ phần Bia Hà Nội - Thái Bình",
-    "icb_name3": "Bia và đồ uống",
-    "icb_name2": "Thực phẩm và đồ uống",
-    "icb_name4": "Sản xuất bia",
-    "com_type_code": "CT",
-    "icb_code1": "3000",
-    "icb_code2": "3500",
-    "icb_code3": "3530",
-    "icb_code4": "3533"
   },
   {
     "symbol": "SGC",
@@ -14014,6 +14002,18 @@
     "icb_code2": "8600",
     "icb_code3": "8630",
     "icb_code4": "8633"
+  },
+  {
+    "symbol": "MTB",
+    "organ_name": "Công ty Cổ phần Môi trường và Công trình đô thị tỉnh Thái Bình",
+    "icb_name3": "Tư vấn & Hỗ trợ Kinh doanh",
+    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
+    "icb_name4": "Chất thải & Môi trường",
+    "com_type_code": "CT",
+    "icb_code1": "2000",
+    "icb_code2": "2700",
+    "icb_code3": "2790",
+    "icb_code4": "2799"
   },
   {
     "symbol": "SMC",
@@ -14064,18 +14064,6 @@
     "icb_code4": "8633"
   },
   {
-    "symbol": "TQN",
-    "organ_name": "Công ty Cổ phần Thông Quảng Ninh",
-    "icb_name3": "Lâm nghiệp và Giấy",
-    "icb_name2": "Tài nguyên Cơ bản",
-    "icb_name4": "Lâm sản và Chế biến gỗ",
-    "com_type_code": "CT",
-    "icb_code1": "1000",
-    "icb_code2": "1700",
-    "icb_code3": "1730",
-    "icb_code4": "1733"
-  },
-  {
     "symbol": "SBR",
     "organ_name": "Công ty Cổ phần Cao su Sông Bé",
     "icb_name3": "Hóa chất",
@@ -14098,6 +14086,18 @@
     "icb_code2": "2700",
     "icb_code3": "2770",
     "icb_code4": "2773"
+  },
+  {
+    "symbol": "BTB",
+    "organ_name": "Công ty Cổ phần Bia Hà Nội - Thái Bình",
+    "icb_name3": "Bia và đồ uống",
+    "icb_name2": "Thực phẩm và đồ uống",
+    "icb_name4": "Sản xuất bia",
+    "com_type_code": "CT",
+    "icb_code1": "3000",
+    "icb_code2": "3500",
+    "icb_code3": "3530",
+    "icb_code4": "3533"
   },
   {
     "symbol": "TPS",
@@ -14134,18 +14134,6 @@
     "icb_code2": "3700",
     "icb_code3": "3760",
     "icb_code4": "3763"
-  },
-  {
-    "symbol": "THW",
-    "organ_name": "Công ty Cổ phần Cấp nước Tân Hòa",
-    "icb_name3": "Nước & Khí đốt",
-    "icb_name2": "Điện, nước & xăng dầu khí đốt",
-    "icb_name4": "Nước",
-    "com_type_code": "CT",
-    "icb_code1": "7000",
-    "icb_code2": "7500",
-    "icb_code3": "7570",
-    "icb_code4": "7577"
   },
   {
     "symbol": "SHP",
@@ -14194,6 +14182,18 @@
     "icb_code2": "5300",
     "icb_code3": "5370",
     "icb_code4": "5379"
+  },
+  {
+    "symbol": "TQN",
+    "organ_name": "Công ty Cổ phần Thông Quảng Ninh",
+    "icb_name3": "Lâm nghiệp và Giấy",
+    "icb_name2": "Tài nguyên Cơ bản",
+    "icb_name4": "Lâm sản và Chế biến gỗ",
+    "com_type_code": "CT",
+    "icb_code1": "1000",
+    "icb_code2": "1700",
+    "icb_code3": "1730",
+    "icb_code4": "1733"
   },
   {
     "symbol": "SII",
@@ -14304,16 +14304,16 @@
     "icb_code4": "5759"
   },
   {
-    "symbol": "MBS",
-    "organ_name": "Công ty Cổ phần Chứng khoán MB",
-    "icb_name3": "Dịch vụ tài chính",
-    "icb_name2": "Dịch vụ tài chính",
-    "icb_name4": "Môi giới chứng khoán",
-    "com_type_code": "CK",
-    "icb_code1": "8000",
-    "icb_code2": "8700",
-    "icb_code3": "8770",
-    "icb_code4": "8777"
+    "symbol": "THW",
+    "organ_name": "Công ty Cổ phần Cấp nước Tân Hòa",
+    "icb_name3": "Nước & Khí đốt",
+    "icb_name2": "Điện, nước & xăng dầu khí đốt",
+    "icb_name4": "Nước",
+    "com_type_code": "CT",
+    "icb_code1": "7000",
+    "icb_code2": "7500",
+    "icb_code3": "7570",
+    "icb_code4": "7577"
   },
   {
     "symbol": "SKN",
@@ -14352,18 +14352,6 @@
     "icb_code4": "7535"
   },
   {
-    "symbol": "TCJ",
-    "organ_name": "Công ty Cổ phần Tô Châu",
-    "icb_name3": "Sản xuất thực phẩm",
-    "icb_name2": "Thực phẩm và đồ uống",
-    "icb_name4": "Nuôi trồng nông & hải sản",
-    "com_type_code": "CT",
-    "icb_code1": "3000",
-    "icb_code2": "3500",
-    "icb_code3": "3570",
-    "icb_code4": "3573"
-  },
-  {
     "symbol": "SMT",
     "organ_name": "Công ty Cổ phần SAMETEL",
     "icb_name3": "Thiết bị và Phần cứng",
@@ -14400,18 +14388,6 @@
     "icb_code4": "5557"
   },
   {
-    "symbol": "GDA",
-    "organ_name": "Công ty Cổ phần Tôn Đông Á",
-    "icb_name3": "Kim loại",
-    "icb_name2": "Tài nguyên Cơ bản",
-    "icb_name4": "Thép và sản phẩm thép",
-    "com_type_code": "CT",
-    "icb_code1": "1000",
-    "icb_code2": "1700",
-    "icb_code3": "1750",
-    "icb_code4": "1757"
-  },
-  {
     "symbol": "SNZ",
     "organ_name": "Tổng Công ty Cổ phần Phát triển Khu Công nghiệp",
     "icb_name3": "Xây dựng và Vật liệu",
@@ -14436,16 +14412,16 @@
     "icb_code4": "2357"
   },
   {
-    "symbol": "TPC",
-    "organ_name": "Công ty Cổ phần Nhựa Tân Đại Hưng",
-    "icb_name3": "Hóa chất",
-    "icb_name2": "Hóa chất",
-    "icb_name4": "Nhựa, cao su & sợi",
-    "com_type_code": "CT",
-    "icb_code1": "1000",
-    "icb_code2": "1300",
-    "icb_code3": "1350",
-    "icb_code4": "1353"
+    "symbol": "MBS",
+    "organ_name": "Công ty Cổ phần Chứng khoán MB",
+    "icb_name3": "Dịch vụ tài chính",
+    "icb_name2": "Dịch vụ tài chính",
+    "icb_name4": "Môi giới chứng khoán",
+    "com_type_code": "CK",
+    "icb_code1": "8000",
+    "icb_code2": "8700",
+    "icb_code3": "8770",
+    "icb_code4": "8777"
   },
   {
     "symbol": "SVD",
@@ -14496,8 +14472,8 @@
     "icb_code4": "3573"
   },
   {
-    "symbol": "THP",
-    "organ_name": "Công ty Cổ phần Thủy sản và Thương mại Thuận Phước",
+    "symbol": "TCJ",
+    "organ_name": "Công ty Cổ phần Tô Châu",
     "icb_name3": "Sản xuất thực phẩm",
     "icb_name2": "Thực phẩm và đồ uống",
     "icb_name4": "Nuôi trồng nông & hải sản",
@@ -14544,6 +14520,18 @@
     "icb_code4": "7535"
   },
   {
+    "symbol": "GDA",
+    "organ_name": "Công ty Cổ phần Tôn Đông Á",
+    "icb_name3": "Kim loại",
+    "icb_name2": "Tài nguyên Cơ bản",
+    "icb_name4": "Thép và sản phẩm thép",
+    "com_type_code": "CT",
+    "icb_code1": "1000",
+    "icb_code2": "1700",
+    "icb_code3": "1750",
+    "icb_code4": "1757"
+  },
+  {
     "symbol": "SRA",
     "organ_name": "Công ty Cổ phần SARA Việt Nam",
     "icb_name3": "Thiết bị và Dịch vụ Y tế",
@@ -14578,6 +14566,18 @@
     "icb_code2": "3300",
     "icb_code3": "3350",
     "icb_code4": "3357"
+  },
+  {
+    "symbol": "TPC",
+    "organ_name": "Công ty Cổ phần Nhựa Tân Đại Hưng",
+    "icb_name3": "Hóa chất",
+    "icb_name2": "Hóa chất",
+    "icb_name4": "Nhựa, cao su & sợi",
+    "com_type_code": "CT",
+    "icb_code1": "1000",
+    "icb_code2": "1300",
+    "icb_code3": "1350",
+    "icb_code4": "1353"
   },
   {
     "symbol": "TSG",
@@ -14640,16 +14640,16 @@
     "icb_code4": "2773"
   },
   {
-    "symbol": "TSB",
-    "organ_name": "Công ty Cổ phần Ắc quy Tia Sáng",
-    "icb_name3": "Điện tử & Thiết bị điện",
-    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
-    "icb_name4": "Hàng điện & điện tử",
+    "symbol": "THP",
+    "organ_name": "Công ty Cổ phần Thủy sản và Thương mại Thuận Phước",
+    "icb_name3": "Sản xuất thực phẩm",
+    "icb_name2": "Thực phẩm và đồ uống",
+    "icb_name4": "Nuôi trồng nông & hải sản",
     "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2700",
-    "icb_code3": "2730",
-    "icb_code4": "2733"
+    "icb_code1": "3000",
+    "icb_code2": "3500",
+    "icb_code3": "3570",
+    "icb_code4": "3573"
   },
   {
     "symbol": "AST",
@@ -14760,18 +14760,6 @@
     "icb_code4": "2723"
   },
   {
-    "symbol": "TST",
-    "organ_name": "Công ty Cổ phần Dịch vụ Kỹ thuật Viễn thông",
-    "icb_name3": "Phần mềm & Dịch vụ Máy tính",
-    "icb_name2": "Công nghệ Thông tin",
-    "icb_name4": "Dịch vụ Máy tính",
-    "com_type_code": "CT",
-    "icb_code1": "9000",
-    "icb_code2": "9500",
-    "icb_code3": "9530",
-    "icb_code4": "9533"
-  },
-  {
     "symbol": "STW",
     "organ_name": "Công ty Cổ phần Cấp nước Sóc Trăng",
     "icb_name3": "Nước & Khí đốt",
@@ -14784,28 +14772,40 @@
     "icb_code4": "7577"
   },
   {
-    "symbol": "TTA",
-    "organ_name": "Công ty Cổ phần Đầu tư Xây dựng và Phát triển Trường Thành",
-    "icb_name3": "Sản xuất & Phân phối Điện",
-    "icb_name2": "Điện, nước & xăng dầu khí đốt",
-    "icb_name4": "Sản xuất & Phân phối Điện",
+    "symbol": "TAR",
+    "organ_name": "Công ty Cổ phần Nông nghiệp Công nghệ cao Trung An",
+    "icb_name3": "Sản xuất thực phẩm",
+    "icb_name2": "Thực phẩm và đồ uống",
+    "icb_name4": "Nuôi trồng nông & hải sản",
     "com_type_code": "CT",
-    "icb_code1": "7000",
-    "icb_code2": "7500",
-    "icb_code3": "7530",
-    "icb_code4": "7535"
+    "icb_code1": "3000",
+    "icb_code2": "3500",
+    "icb_code3": "3570",
+    "icb_code4": "3573"
   },
   {
-    "symbol": "TTB",
-    "organ_name": "Công ty Cổ phần TTBGROUP",
-    "icb_name3": "Xây dựng và Vật liệu",
-    "icb_name2": "Xây dựng và Vật liệu",
-    "icb_name4": "Vật liệu xây dựng & Nội thất",
+    "symbol": "TSB",
+    "organ_name": "Công ty Cổ phần Ắc quy Tia Sáng",
+    "icb_name3": "Điện tử & Thiết bị điện",
+    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
+    "icb_name4": "Hàng điện & điện tử",
     "com_type_code": "CT",
     "icb_code1": "2000",
-    "icb_code2": "2300",
-    "icb_code3": "2350",
-    "icb_code4": "2353"
+    "icb_code2": "2700",
+    "icb_code3": "2730",
+    "icb_code4": "2733"
+  },
+  {
+    "symbol": "TST",
+    "organ_name": "Công ty Cổ phần Dịch vụ Kỹ thuật Viễn thông",
+    "icb_name3": "Phần mềm & Dịch vụ Máy tính",
+    "icb_name2": "Công nghệ Thông tin",
+    "icb_name4": "Dịch vụ Máy tính",
+    "com_type_code": "CT",
+    "icb_code1": "9000",
+    "icb_code2": "9500",
+    "icb_code3": "9530",
+    "icb_code4": "9533"
   },
   {
     "symbol": "SVC",
@@ -14832,16 +14832,16 @@
     "icb_code4": "7577"
   },
   {
-    "symbol": "TV1",
-    "organ_name": "Công ty Cổ phần Tư vấn Xây dựng Điện 1",
-    "icb_name3": "Tư vấn & Hỗ trợ Kinh doanh",
-    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
-    "icb_name4": "Tư vấn & Hỗ trợ KD",
+    "symbol": "TTA",
+    "organ_name": "Công ty Cổ phần Đầu tư Xây dựng và Phát triển Trường Thành",
+    "icb_name3": "Sản xuất & Phân phối Điện",
+    "icb_name2": "Điện, nước & xăng dầu khí đốt",
+    "icb_name4": "Sản xuất & Phân phối Điện",
     "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2700",
-    "icb_code3": "2790",
-    "icb_code4": "2791"
+    "icb_code1": "7000",
+    "icb_code2": "7500",
+    "icb_code3": "7530",
+    "icb_code4": "7535"
   },
   {
     "symbol": "SVG",
@@ -14880,18 +14880,6 @@
     "icb_code4": "2723"
   },
   {
-    "symbol": "TVA",
-    "organ_name": "Công ty cổ phần Sứ Viglacera Thanh Trì",
-    "icb_name3": "Xây dựng và Vật liệu",
-    "icb_name2": "Xây dựng và Vật liệu",
-    "icb_name4": "Vật liệu xây dựng & Nội thất",
-    "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2300",
-    "icb_code3": "2350",
-    "icb_code4": "2353"
-  },
-  {
     "symbol": "SVT",
     "organ_name": "Công ty Cổ phần Công nghệ Sài Gòn Viễn Đông",
     "icb_name3": "Bán lẻ",
@@ -14904,16 +14892,16 @@
     "icb_code4": "5377"
   },
   {
-    "symbol": "TXM",
-    "organ_name": "Công ty Cổ phần VICEM Thạch cao Xi Măng",
-    "icb_name3": "Xây dựng và Vật liệu",
-    "icb_name2": "Xây dựng và Vật liệu",
-    "icb_name4": "Vật liệu xây dựng & Nội thất",
+    "symbol": "TVD",
+    "organ_name": "Công ty Cổ phần Than Vàng Danh - Vinacomin",
+    "icb_name3": "Khai khoáng",
+    "icb_name2": "Tài nguyên Cơ bản",
+    "icb_name4": "Khai thác Than",
     "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2300",
-    "icb_code3": "2350",
-    "icb_code4": "2353"
+    "icb_code1": "1000",
+    "icb_code2": "1700",
+    "icb_code3": "1770",
+    "icb_code4": "1771"
   },
   {
     "symbol": "SZL",
@@ -14926,18 +14914,6 @@
     "icb_code2": "8600",
     "icb_code3": "8630",
     "icb_code4": "8633"
-  },
-  {
-    "symbol": "TYA",
-    "organ_name": "Công ty Cổ phần Dây và Cáp điện Taya Việt Nam",
-    "icb_name3": "Điện tử & Thiết bị điện",
-    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
-    "icb_name4": "Hàng điện & điện tử",
-    "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2700",
-    "icb_code3": "2730",
-    "icb_code4": "2733"
   },
   {
     "symbol": "TA6",
@@ -14962,6 +14938,30 @@
     "icb_code2": "2300",
     "icb_code3": "2350",
     "icb_code4": "2357"
+  },
+  {
+    "symbol": "TXM",
+    "organ_name": "Công ty Cổ phần VICEM Thạch cao Xi Măng",
+    "icb_name3": "Xây dựng và Vật liệu",
+    "icb_name2": "Xây dựng và Vật liệu",
+    "icb_name4": "Vật liệu xây dựng & Nội thất",
+    "com_type_code": "CT",
+    "icb_code1": "2000",
+    "icb_code2": "2300",
+    "icb_code3": "2350",
+    "icb_code4": "2353"
+  },
+  {
+    "symbol": "TYA",
+    "organ_name": "Công ty Cổ phần Dây và Cáp điện Taya Việt Nam",
+    "icb_name3": "Điện tử & Thiết bị điện",
+    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
+    "icb_name4": "Hàng điện & điện tử",
+    "com_type_code": "CT",
+    "icb_code1": "2000",
+    "icb_code2": "2700",
+    "icb_code3": "2730",
+    "icb_code4": "2733"
   },
   {
     "symbol": "UCT",
@@ -15048,18 +15048,6 @@
     "icb_code4": "1357"
   },
   {
-    "symbol": "VAV",
-    "organ_name": "Công ty Cổ phần VIWACO",
-    "icb_name3": "Nước & Khí đốt",
-    "icb_name2": "Điện, nước & xăng dầu khí đốt",
-    "icb_name4": "Nước",
-    "com_type_code": "CT",
-    "icb_code1": "7000",
-    "icb_code2": "7500",
-    "icb_code3": "7570",
-    "icb_code4": "7577"
-  },
-  {
     "symbol": "TBC",
     "organ_name": "Công ty Cổ phần Thủy điện Thác Bà",
     "icb_name3": "Sản xuất & Phân phối Điện",
@@ -15096,16 +15084,16 @@
     "icb_code4": "3763"
   },
   {
-    "symbol": "VCG",
-    "organ_name": "Tổng Công ty Cổ phần Xuất nhập khẩu và Xây dựng Việt Nam",
-    "icb_name3": "Xây dựng và Vật liệu",
-    "icb_name2": "Xây dựng và Vật liệu",
-    "icb_name4": "Xây dựng",
+    "symbol": "VAV",
+    "organ_name": "Công ty Cổ phần VIWACO",
+    "icb_name3": "Nước & Khí đốt",
+    "icb_name2": "Điện, nước & xăng dầu khí đốt",
+    "icb_name4": "Nước",
     "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2300",
-    "icb_code3": "2350",
-    "icb_code4": "2357"
+    "icb_code1": "7000",
+    "icb_code2": "7500",
+    "icb_code3": "7570",
+    "icb_code4": "7577"
   },
   {
     "symbol": "TBX",
@@ -15192,18 +15180,6 @@
     "icb_code4": "3573"
   },
   {
-    "symbol": "CLM",
-    "organ_name": "Công ty Cổ phần Xuất nhập khẩu Than - Vinacomin",
-    "icb_name3": "Khai khoáng",
-    "icb_name2": "Tài nguyên Cơ bản",
-    "icb_name4": "Khai thác Than",
-    "com_type_code": "CT",
-    "icb_code1": "1000",
-    "icb_code2": "1700",
-    "icb_code3": "1770",
-    "icb_code4": "1771"
-  },
-  {
     "symbol": "TTD",
     "organ_name": "Công ty Cổ phần Bệnh viện Tim Tâm Đức",
     "icb_name3": "Thiết bị và Dịch vụ Y tế",
@@ -15216,16 +15192,16 @@
     "icb_code4": "4533"
   },
   {
-    "symbol": "VCI",
-    "organ_name": "Công ty Cổ phần Chứng khoán Vietcap",
-    "icb_name3": "Dịch vụ tài chính",
-    "icb_name2": "Dịch vụ tài chính",
-    "icb_name4": "Môi giới chứng khoán",
-    "com_type_code": "CK",
-    "icb_code1": "8000",
-    "icb_code2": "8700",
-    "icb_code3": "8770",
-    "icb_code4": "8777"
+    "symbol": "VCG",
+    "organ_name": "Tổng Công ty Cổ phần Xuất nhập khẩu và Xây dựng Việt Nam",
+    "icb_name3": "Xây dựng và Vật liệu",
+    "icb_name2": "Xây dựng và Vật liệu",
+    "icb_name4": "Xây dựng",
+    "com_type_code": "CT",
+    "icb_code1": "2000",
+    "icb_code2": "2300",
+    "icb_code3": "2350",
+    "icb_code4": "2357"
   },
   {
     "symbol": "TCW",
@@ -15286,6 +15262,18 @@
     "icb_code2": "7500",
     "icb_code3": "7570",
     "icb_code4": "7573"
+  },
+  {
+    "symbol": "CLM",
+    "organ_name": "Công ty Cổ phần Xuất nhập khẩu Than - Vinacomin",
+    "icb_name3": "Khai khoáng",
+    "icb_name2": "Tài nguyên Cơ bản",
+    "icb_name4": "Khai thác Than",
+    "com_type_code": "CT",
+    "icb_code1": "1000",
+    "icb_code2": "1700",
+    "icb_code3": "1770",
+    "icb_code4": "1771"
   },
   {
     "symbol": "TDM",
@@ -15432,6 +15420,18 @@
     "icb_code4": "5337"
   },
   {
+    "symbol": "VCI",
+    "organ_name": "Công ty Cổ phần Chứng khoán Vietcap",
+    "icb_name3": "Dịch vụ tài chính",
+    "icb_name2": "Dịch vụ tài chính",
+    "icb_name4": "Môi giới chứng khoán",
+    "com_type_code": "CK",
+    "icb_code1": "8000",
+    "icb_code2": "8700",
+    "icb_code3": "8770",
+    "icb_code4": "8777"
+  },
+  {
     "symbol": "TLP",
     "organ_name": "Tổng Công ty Thương mại Xuất nhập khẩu Thanh Lễ - CTCP",
     "icb_name3": "Nước & Khí đốt",
@@ -15466,18 +15466,6 @@
     "icb_code2": "3500",
     "icb_code3": "3530",
     "icb_code4": "3533"
-  },
-  {
-    "symbol": "VFS",
-    "organ_name": "Công ty Cổ phần Chứng khoán Nhất Việt",
-    "icb_name3": "Dịch vụ tài chính",
-    "icb_name2": "Dịch vụ tài chính",
-    "icb_name4": "Môi giới chứng khoán",
-    "com_type_code": "CK",
-    "icb_code1": "8000",
-    "icb_code2": "8700",
-    "icb_code3": "8770",
-    "icb_code4": "8777"
   },
   {
     "symbol": "THD",
@@ -15516,18 +15504,6 @@
     "icb_code4": "3767"
   },
   {
-    "symbol": "TAR",
-    "organ_name": "Công ty Cổ phần Nông nghiệp Công nghệ cao Trung An",
-    "icb_name3": "Sản xuất thực phẩm",
-    "icb_name2": "Thực phẩm và đồ uống",
-    "icb_name4": "Nuôi trồng nông & hải sản",
-    "com_type_code": "CT",
-    "icb_code1": "3000",
-    "icb_code2": "3500",
-    "icb_code3": "3570",
-    "icb_code4": "3573"
-  },
-  {
     "symbol": "TID",
     "organ_name": "Công ty Cổ phần Tổng Công ty Tín Nghĩa",
     "icb_name3": "Bất động sản",
@@ -15540,16 +15516,16 @@
     "icb_code4": "8633"
   },
   {
-    "symbol": "VIB",
-    "organ_name": "Ngân hàng Thương mại Cổ phần Quốc tế Việt Nam",
-    "icb_name3": "Ngân hàng",
-    "icb_name2": "Ngân hàng",
-    "icb_name4": "Ngân hàng",
-    "com_type_code": "NH",
-    "icb_code1": "8301",
-    "icb_code2": "8300",
-    "icb_code3": "8350",
-    "icb_code4": "8355"
+    "symbol": "VFS",
+    "organ_name": "Công ty Cổ phần Chứng khoán Nhất Việt",
+    "icb_name3": "Dịch vụ tài chính",
+    "icb_name2": "Dịch vụ tài chính",
+    "icb_name4": "Môi giới chứng khoán",
+    "com_type_code": "CK",
+    "icb_code1": "8000",
+    "icb_code2": "8700",
+    "icb_code3": "8770",
+    "icb_code4": "8777"
   },
   {
     "symbol": "THS",
@@ -15658,6 +15634,18 @@
     "icb_code2": "8600",
     "icb_code3": "8630",
     "icb_code4": "8633"
+  },
+  {
+    "symbol": "VIB",
+    "organ_name": "Ngân hàng Thương mại Cổ phần Quốc tế Việt Nam",
+    "icb_name3": "Ngân hàng",
+    "icb_name2": "Ngân hàng",
+    "icb_name4": "Ngân hàng",
+    "com_type_code": "NH",
+    "icb_code1": "8301",
+    "icb_code2": "8300",
+    "icb_code3": "8350",
+    "icb_code4": "8355"
   },
   {
     "symbol": "TIP",
@@ -15828,18 +15816,6 @@
     "icb_code4": "2357"
   },
   {
-    "symbol": "TVT",
-    "organ_name": "Tổng Công ty Việt Thắng - CTCP",
-    "icb_name3": "Hàng cá nhân",
-    "icb_name2": "Hàng cá nhân & Gia dụng",
-    "icb_name4": "Hàng May mặc",
-    "com_type_code": "CT",
-    "icb_code1": "3000",
-    "icb_code2": "3700",
-    "icb_code3": "3760",
-    "icb_code4": "3763"
-  },
-  {
     "symbol": "TLI",
     "organ_name": "Công ty Cổ phần May Quốc tế Thắng Lợi",
     "icb_name3": "Hàng cá nhân",
@@ -15864,16 +15840,16 @@
     "icb_code4": "5373"
   },
   {
-    "symbol": "SB1",
-    "organ_name": "Công ty Cổ phần Bia Sài Gòn - Nghệ Tĩnh",
-    "icb_name3": "Bia và đồ uống",
-    "icb_name2": "Thực phẩm và đồ uống",
-    "icb_name4": "Sản xuất bia",
+    "symbol": "PVO",
+    "organ_name": "Công ty Cổ phần Dầu nhờn PV Oil",
+    "icb_name3": "Hóa chất",
+    "icb_name2": "Hóa chất",
+    "icb_name4": "Sản phẩm hóa dầu, Nông dược & Hóa chất khác",
     "com_type_code": "CT",
-    "icb_code1": "3000",
-    "icb_code2": "3500",
-    "icb_code3": "3530",
-    "icb_code4": "3533"
+    "icb_code1": "1000",
+    "icb_code2": "1300",
+    "icb_code3": "1350",
+    "icb_code4": "1357"
   },
   {
     "symbol": "TOT",
@@ -15912,16 +15888,16 @@
     "icb_code4": "3577"
   },
   {
-    "symbol": "PVO",
-    "organ_name": "Công ty Cổ phần Dầu nhờn PV Oil",
-    "icb_name3": "Hóa chất",
-    "icb_name2": "Hóa chất",
-    "icb_name4": "Sản phẩm hóa dầu, Nông dược & Hóa chất khác",
+    "symbol": "DVM",
+    "organ_name": "Công ty Cổ phần Dược liệu Việt Nam",
+    "icb_name3": "Dược phẩm",
+    "icb_name2": "Y tế",
+    "icb_name4": "Dược phẩm",
     "com_type_code": "CT",
-    "icb_code1": "1000",
-    "icb_code2": "1300",
-    "icb_code3": "1350",
-    "icb_code4": "1357"
+    "icb_code1": "4000",
+    "icb_code2": "4500",
+    "icb_code3": "4570",
+    "icb_code4": "4577"
   },
   {
     "symbol": "TMC",
@@ -15982,18 +15958,6 @@
     "icb_code2": "2300",
     "icb_code3": "2350",
     "icb_code4": "2357"
-  },
-  {
-    "symbol": "VTD",
-    "organ_name": "Công ty Cổ phần Vietourist Holdings",
-    "icb_name3": "Du lịch & Giải trí",
-    "icb_name2": "Du lịch và Giải trí",
-    "icb_name4": "Vận tải hành khách & Du lịch",
-    "com_type_code": "CT",
-    "icb_code1": "5000",
-    "icb_code2": "5700",
-    "icb_code3": "5750",
-    "icb_code4": "5759"
   },
   {
     "symbol": "VTR",
@@ -16152,8 +16116,32 @@
     "icb_code4": "2777"
   },
   {
+    "symbol": "VLC",
+    "organ_name": "Tổng Công ty Chăn nuôi Việt Nam - Công ty Cổ phần",
+    "icb_name3": "Sản xuất thực phẩm",
+    "icb_name2": "Thực phẩm và đồ uống",
+    "icb_name4": "Nuôi trồng nông & hải sản",
+    "com_type_code": "CT",
+    "icb_code1": "3000",
+    "icb_code2": "3500",
+    "icb_code3": "3570",
+    "icb_code4": "3573"
+  },
+  {
     "symbol": "TNT",
     "organ_name": "Công ty Cổ phần Tập đoàn TNT",
+    "icb_name3": "Xây dựng và Vật liệu",
+    "icb_name2": "Xây dựng và Vật liệu",
+    "icb_name4": "Vật liệu xây dựng & Nội thất",
+    "com_type_code": "CT",
+    "icb_code1": "2000",
+    "icb_code2": "2300",
+    "icb_code3": "2350",
+    "icb_code4": "2353"
+  },
+  {
+    "symbol": "TTB",
+    "organ_name": "Công ty Cổ phần TTBGROUP",
     "icb_name3": "Xây dựng và Vật liệu",
     "icb_name2": "Xây dựng và Vật liệu",
     "icb_name4": "Vật liệu xây dựng & Nội thất",
@@ -16200,6 +16188,18 @@
     "icb_code4": "1733"
   },
   {
+    "symbol": "TVM",
+    "organ_name": "Công ty Cổ phần Tư vấn đầu tư Mỏ và công nghiệp - Vinacomin",
+    "icb_name3": "Tư vấn & Hỗ trợ Kinh doanh",
+    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
+    "icb_name4": "Tư vấn & Hỗ trợ KD",
+    "com_type_code": "CT",
+    "icb_code1": "2000",
+    "icb_code2": "2700",
+    "icb_code3": "2790",
+    "icb_code4": "2791"
+  },
+  {
     "symbol": "HUB",
     "organ_name": "Công ty Cổ phần Xây lắp Thừa Thiên Huế",
     "icb_name3": "Xây dựng và Vật liệu",
@@ -16236,8 +16236,8 @@
     "icb_code4": "2353"
   },
   {
-    "symbol": "TV2",
-    "organ_name": "Công ty Cổ phần Tư vấn Xây dựng Điện 2",
+    "symbol": "TV1",
+    "organ_name": "Công ty Cổ phần Tư vấn Xây dựng Điện 1",
     "icb_name3": "Tư vấn & Hỗ trợ Kinh doanh",
     "icb_name2": "Hàng & Dịch vụ Công nghiệp",
     "icb_name4": "Tư vấn & Hỗ trợ KD",
@@ -16248,8 +16248,8 @@
     "icb_code4": "2791"
   },
   {
-    "symbol": "TV4",
-    "organ_name": "Công ty Cổ phần Tư vấn Xây dựng Điện 4",
+    "symbol": "TV2",
+    "organ_name": "Công ty Cổ phần Tư vấn Xây dựng Điện 2",
     "icb_name3": "Tư vấn & Hỗ trợ Kinh doanh",
     "icb_name2": "Hàng & Dịch vụ Công nghiệp",
     "icb_name4": "Tư vấn & Hỗ trợ KD",
@@ -16272,6 +16272,18 @@
     "icb_code4": "4577"
   },
   {
+    "symbol": "VIF",
+    "organ_name": "Tổng Công ty Lâm nghiệp Việt Nam - Công ty Cổ phần",
+    "icb_name3": "Lâm nghiệp và Giấy",
+    "icb_name2": "Tài nguyên Cơ bản",
+    "icb_name4": "Lâm sản và Chế biến gỗ",
+    "com_type_code": "CT",
+    "icb_code1": "1000",
+    "icb_code2": "1700",
+    "icb_code3": "1730",
+    "icb_code4": "1733"
+  },
+  {
     "symbol": "TR1",
     "organ_name": "Công ty Cổ phần Vận Tải 1 Traco",
     "icb_name3": "Vận tải",
@@ -16284,52 +16296,52 @@
     "icb_code4": "2777"
   },
   {
-    "symbol": "VGL",
-    "organ_name": "Công ty Cổ phần Mạ kẽm công nghiệp Vingal-Vnsteel",
-    "icb_name3": "Kim loại",
-    "icb_name2": "Tài nguyên Cơ bản",
-    "icb_name4": "Thép và sản phẩm thép",
+    "symbol": "VHE",
+    "organ_name": "Công ty Cổ phần Dược liệu và Thực phẩm Việt Nam",
+    "icb_name3": "Dược phẩm",
+    "icb_name2": "Y tế",
+    "icb_name4": "Dược phẩm",
     "com_type_code": "CT",
-    "icb_code1": "1000",
-    "icb_code2": "1700",
-    "icb_code3": "1750",
-    "icb_code4": "1757"
+    "icb_code1": "4000",
+    "icb_code2": "4500",
+    "icb_code3": "4570",
+    "icb_code4": "4577"
   },
   {
-    "symbol": "GVT",
-    "organ_name": "Công ty Cổ phần Giấy Việt Trì",
-    "icb_name3": "Lâm nghiệp và Giấy",
-    "icb_name2": "Tài nguyên Cơ bản",
-    "icb_name4": "Sản xuất giấy",
+    "symbol": "VHD",
+    "organ_name": "Công ty Cổ phần Đầu tư phát triển nhà và đô thị VINAHUD",
+    "icb_name3": "Bất động sản",
+    "icb_name2": "Bất động sản",
+    "icb_name4": "Bất động sản",
     "com_type_code": "CT",
-    "icb_code1": "1000",
-    "icb_code2": "1700",
-    "icb_code3": "1730",
-    "icb_code4": "1737"
-  },
-  {
-    "symbol": "TVD",
-    "organ_name": "Công ty Cổ phần Than Vàng Danh - Vinacomin",
-    "icb_name3": "Khai khoáng",
-    "icb_name2": "Tài nguyên Cơ bản",
-    "icb_name4": "Khai thác Than",
-    "com_type_code": "CT",
-    "icb_code1": "1000",
-    "icb_code2": "1700",
-    "icb_code3": "1770",
-    "icb_code4": "1771"
-  },
-  {
-    "symbol": "TVS",
-    "organ_name": "Công ty Cổ phần Chứng khoán Thiên Việt",
-    "icb_name3": "Dịch vụ tài chính",
-    "icb_name2": "Dịch vụ tài chính",
-    "icb_name4": "Môi giới chứng khoán",
-    "com_type_code": "CK",
     "icb_code1": "8000",
-    "icb_code2": "8700",
-    "icb_code3": "8770",
-    "icb_code4": "8777"
+    "icb_code2": "8600",
+    "icb_code3": "8630",
+    "icb_code4": "8633"
+  },
+  {
+    "symbol": "TV4",
+    "organ_name": "Công ty Cổ phần Tư vấn Xây dựng Điện 4",
+    "icb_name3": "Tư vấn & Hỗ trợ Kinh doanh",
+    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
+    "icb_name4": "Tư vấn & Hỗ trợ KD",
+    "com_type_code": "CT",
+    "icb_code1": "2000",
+    "icb_code2": "2700",
+    "icb_code3": "2790",
+    "icb_code4": "2791"
+  },
+  {
+    "symbol": "TVA",
+    "organ_name": "Công ty cổ phần Sứ Viglacera Thanh Trì",
+    "icb_name3": "Xây dựng và Vật liệu",
+    "icb_name2": "Xây dựng và Vật liệu",
+    "icb_name4": "Vật liệu xây dựng & Nội thất",
+    "com_type_code": "CT",
+    "icb_code1": "2000",
+    "icb_code2": "2300",
+    "icb_code3": "2350",
+    "icb_code4": "2353"
   },
   {
     "symbol": "TRS",
@@ -16354,6 +16366,18 @@
     "icb_code2": "2300",
     "icb_code3": "2350",
     "icb_code4": "2353"
+  },
+  {
+    "symbol": "TVS",
+    "organ_name": "Công ty Cổ phần Chứng khoán Thiên Việt",
+    "icb_name3": "Dịch vụ tài chính",
+    "icb_name2": "Dịch vụ tài chính",
+    "icb_name4": "Môi giới chứng khoán",
+    "com_type_code": "CK",
+    "icb_code1": "8000",
+    "icb_code2": "8700",
+    "icb_code3": "8770",
+    "icb_code4": "8777"
   },
   {
     "symbol": "TVB",
@@ -16416,6 +16440,18 @@
     "icb_code4": "8637"
   },
   {
+    "symbol": "VGL",
+    "organ_name": "Công ty Cổ phần Mạ kẽm công nghiệp Vingal-Vnsteel",
+    "icb_name3": "Kim loại",
+    "icb_name2": "Tài nguyên Cơ bản",
+    "icb_name4": "Thép và sản phẩm thép",
+    "com_type_code": "CT",
+    "icb_code1": "1000",
+    "icb_code2": "1700",
+    "icb_code3": "1750",
+    "icb_code4": "1757"
+  },
+  {
     "symbol": "UDJ",
     "organ_name": "Công ty Cổ phần Phát triển Đô thị",
     "icb_name3": "Xây dựng và Vật liệu",
@@ -16452,6 +16488,18 @@
     "icb_code4": "2353"
   },
   {
+    "symbol": "GVT",
+    "organ_name": "Công ty Cổ phần Giấy Việt Trì",
+    "icb_name3": "Lâm nghiệp và Giấy",
+    "icb_name2": "Tài nguyên Cơ bản",
+    "icb_name4": "Sản xuất giấy",
+    "com_type_code": "CT",
+    "icb_code1": "1000",
+    "icb_code2": "1700",
+    "icb_code3": "1730",
+    "icb_code4": "1737"
+  },
+  {
     "symbol": "VPS",
     "organ_name": "Công ty Cổ phần Thuốc sát trùng Việt Nam",
     "icb_name3": "Hóa chất",
@@ -16462,18 +16510,6 @@
     "icb_code2": "1300",
     "icb_code3": "1350",
     "icb_code4": "1357"
-  },
-  {
-    "symbol": "VSN",
-    "organ_name": "Công ty Cổ phần Việt Nam Kỹ Nghệ Súc Sản",
-    "icb_name3": "Sản xuất thực phẩm",
-    "icb_name2": "Thực phẩm và đồ uống",
-    "icb_name4": "Thực phẩm",
-    "com_type_code": "CT",
-    "icb_code1": "3000",
-    "icb_code2": "3500",
-    "icb_code3": "3570",
-    "icb_code4": "3577"
   },
   {
     "symbol": "UEM",
@@ -16510,6 +16546,18 @@
     "icb_code2": "2300",
     "icb_code3": "2350",
     "icb_code4": "2353"
+  },
+  {
+    "symbol": "VSN",
+    "organ_name": "Công ty Cổ phần Việt Nam Kỹ Nghệ Súc Sản",
+    "icb_name3": "Sản xuất thực phẩm",
+    "icb_name2": "Thực phẩm và đồ uống",
+    "icb_name4": "Thực phẩm",
+    "com_type_code": "CT",
+    "icb_code1": "3000",
+    "icb_code2": "3500",
+    "icb_code3": "3570",
+    "icb_code4": "3577"
   },
   {
     "symbol": "TQW",
@@ -17256,16 +17304,16 @@
     "icb_code4": "1357"
   },
   {
-    "symbol": "VMD",
-    "organ_name": "Công ty Cổ phần Y Dược phẩm Vimedimex",
-    "icb_name3": "Dược phẩm",
-    "icb_name2": "Y tế",
-    "icb_name4": "Dược phẩm",
+    "symbol": "VMG",
+    "organ_name": "Công ty Cổ phần Thương mại và Dịch vụ Dầu khí Vũng Tàu",
+    "icb_name3": "Nước & Khí đốt",
+    "icb_name2": "Điện, nước & xăng dầu khí đốt",
+    "icb_name4": "Phân phối xăng dầu & khí đốt",
     "com_type_code": "CT",
-    "icb_code1": "4000",
-    "icb_code2": "4500",
-    "icb_code3": "4570",
-    "icb_code4": "4577"
+    "icb_code1": "7000",
+    "icb_code2": "7500",
+    "icb_code3": "7570",
+    "icb_code4": "7573"
   },
   {
     "symbol": "VGP",
@@ -17280,16 +17328,16 @@
     "icb_code4": "2777"
   },
   {
-    "symbol": "VMG",
-    "organ_name": "Công ty Cổ phần Thương mại và Dịch vụ Dầu khí Vũng Tàu",
-    "icb_name3": "Nước & Khí đốt",
-    "icb_name2": "Điện, nước & xăng dầu khí đốt",
-    "icb_name4": "Phân phối xăng dầu & khí đốt",
+    "symbol": "MGC",
+    "organ_name": "Công ty Cổ phần Địa chất mỏ - TKV",
+    "icb_name3": "Khai khoáng",
+    "icb_name2": "Tài nguyên Cơ bản",
+    "icb_name4": "Khai khoáng",
     "com_type_code": "CT",
-    "icb_code1": "7000",
-    "icb_code2": "7500",
-    "icb_code3": "7570",
-    "icb_code4": "7573"
+    "icb_code1": "1000",
+    "icb_code2": "1700",
+    "icb_code3": "1770",
+    "icb_code4": "1775"
   },
   {
     "symbol": "VFR",
@@ -17304,16 +17352,16 @@
     "icb_code4": "2773"
   },
   {
-    "symbol": "MGC",
-    "organ_name": "Công ty Cổ phần Địa chất mỏ - TKV",
-    "icb_name3": "Khai khoáng",
-    "icb_name2": "Tài nguyên Cơ bản",
-    "icb_name4": "Khai khoáng",
+    "symbol": "TVT",
+    "organ_name": "Tổng Công ty Việt Thắng - CTCP",
+    "icb_name3": "Hàng cá nhân",
+    "icb_name2": "Hàng cá nhân & Gia dụng",
+    "icb_name4": "Hàng May mặc",
     "com_type_code": "CT",
-    "icb_code1": "1000",
-    "icb_code2": "1700",
-    "icb_code3": "1770",
-    "icb_code4": "1775"
+    "icb_code1": "3000",
+    "icb_code2": "3700",
+    "icb_code3": "3760",
+    "icb_code4": "3763"
   },
   {
     "symbol": "VGS",
@@ -17328,16 +17376,16 @@
     "icb_code4": "1757"
   },
   {
-    "symbol": "VMA",
-    "organ_name": "Công ty Cổ phần Công nghiệp Ô tô - Vinacomin",
-    "icb_name3": "Ô tô và phụ tùng",
-    "icb_name2": "Ô tô và phụ tùng",
-    "icb_name4": "Sản xuất ô tô",
+    "symbol": "SB1",
+    "organ_name": "Công ty Cổ phần Bia Sài Gòn - Nghệ Tĩnh",
+    "icb_name3": "Bia và đồ uống",
+    "icb_name2": "Thực phẩm và đồ uống",
+    "icb_name4": "Sản xuất bia",
     "com_type_code": "CT",
     "icb_code1": "3000",
-    "icb_code2": "3300",
-    "icb_code3": "3350",
-    "icb_code4": "3353"
+    "icb_code2": "3500",
+    "icb_code3": "3530",
+    "icb_code4": "3533"
   },
   {
     "symbol": "VUA",
@@ -17400,16 +17448,16 @@
     "icb_code4": "2727"
   },
   {
-    "symbol": "VGV",
-    "organ_name": "Tổng Công ty Tư vấn Xây dựng Việt Nam - CTCP",
-    "icb_name3": "Bất động sản",
-    "icb_name2": "Bất động sản",
-    "icb_name4": "Bất động sản",
+    "symbol": "VMA",
+    "organ_name": "Công ty Cổ phần Công nghiệp Ô tô - Vinacomin",
+    "icb_name3": "Ô tô và phụ tùng",
+    "icb_name2": "Ô tô và phụ tùng",
+    "icb_name4": "Sản xuất ô tô",
     "com_type_code": "CT",
-    "icb_code1": "8000",
-    "icb_code2": "8600",
-    "icb_code3": "8630",
-    "icb_code4": "8633"
+    "icb_code1": "3000",
+    "icb_code2": "3300",
+    "icb_code3": "3350",
+    "icb_code4": "3353"
   },
   {
     "symbol": "VHH",
@@ -17424,52 +17472,16 @@
     "icb_code4": "2353"
   },
   {
-    "symbol": "VIF",
-    "organ_name": "Tổng Công ty Lâm nghiệp Việt Nam - Công ty Cổ phần",
-    "icb_name3": "Lâm nghiệp và Giấy",
-    "icb_name2": "Tài nguyên Cơ bản",
-    "icb_name4": "Lâm sản và Chế biến gỗ",
+    "symbol": "VTD",
+    "organ_name": "Công ty Cổ phần Vietourist Holdings",
+    "icb_name3": "Du lịch & Giải trí",
+    "icb_name2": "Du lịch và Giải trí",
+    "icb_name4": "Vận tải hành khách & Du lịch",
     "com_type_code": "CT",
-    "icb_code1": "1000",
-    "icb_code2": "1700",
-    "icb_code3": "1730",
-    "icb_code4": "1733"
-  },
-  {
-    "symbol": "DVM",
-    "organ_name": "Công ty Cổ phần Dược liệu Việt Nam",
-    "icb_name3": "Dược phẩm",
-    "icb_name2": "Y tế",
-    "icb_name4": "Dược phẩm",
-    "com_type_code": "CT",
-    "icb_code1": "4000",
-    "icb_code2": "4500",
-    "icb_code3": "4570",
-    "icb_code4": "4577"
-  },
-  {
-    "symbol": "VLC",
-    "organ_name": "Tổng Công ty Chăn nuôi Việt Nam - Công ty Cổ phần",
-    "icb_name3": "Sản xuất thực phẩm",
-    "icb_name2": "Thực phẩm và đồ uống",
-    "icb_name4": "Nuôi trồng nông & hải sản",
-    "com_type_code": "CT",
-    "icb_code1": "3000",
-    "icb_code2": "3500",
-    "icb_code3": "3570",
-    "icb_code4": "3573"
-  },
-  {
-    "symbol": "TVM",
-    "organ_name": "Công ty Cổ phần Tư vấn đầu tư Mỏ và công nghiệp - Vinacomin",
-    "icb_name3": "Tư vấn & Hỗ trợ Kinh doanh",
-    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
-    "icb_name4": "Tư vấn & Hỗ trợ KD",
-    "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2700",
-    "icb_code3": "2790",
-    "icb_code4": "2791"
+    "icb_code1": "5000",
+    "icb_code2": "5700",
+    "icb_code3": "5750",
+    "icb_code4": "5759"
   },
   {
     "symbol": "VHL",
@@ -17484,18 +17496,6 @@
     "icb_code4": "2353"
   },
   {
-    "symbol": "VHE",
-    "organ_name": "Công ty Cổ phần Dược liệu và Thực phẩm Việt Nam",
-    "icb_name3": "Dược phẩm",
-    "icb_name2": "Y tế",
-    "icb_name4": "Dược phẩm",
-    "com_type_code": "CT",
-    "icb_code1": "4000",
-    "icb_code2": "4500",
-    "icb_code3": "4570",
-    "icb_code4": "4577"
-  },
-  {
     "symbol": "VIG",
     "organ_name": "Công ty Cổ phần Chứng khoán Đầu tư Tài chính Việt Nam",
     "icb_name3": "Dịch vụ tài chính",
@@ -17506,18 +17506,6 @@
     "icb_code2": "8700",
     "icb_code3": "8770",
     "icb_code4": "8777"
-  },
-  {
-    "symbol": "VHD",
-    "organ_name": "Công ty Cổ phần Đầu tư phát triển nhà và đô thị VINAHUD",
-    "icb_name3": "Bất động sản",
-    "icb_name2": "Bất động sản",
-    "icb_name4": "Bất động sản",
-    "com_type_code": "CT",
-    "icb_code1": "8000",
-    "icb_code2": "8600",
-    "icb_code3": "8630",
-    "icb_code4": "8633"
   },
   {
     "symbol": "VIC",
@@ -17604,28 +17592,28 @@
     "icb_code4": "5751"
   },
   {
-    "symbol": "GVR",
-    "organ_name": "Tập đoàn Công nghiệp Cao su Việt Nam - Công ty Cổ phần",
-    "icb_name3": "Hóa chất",
-    "icb_name2": "Hóa chất",
-    "icb_name4": "Nhựa, cao su & sợi",
+    "symbol": "VGV",
+    "organ_name": "Tổng Công ty Tư vấn Xây dựng Việt Nam - CTCP",
+    "icb_name3": "Bất động sản",
+    "icb_name2": "Bất động sản",
+    "icb_name4": "Bất động sản",
     "com_type_code": "CT",
-    "icb_code1": "1000",
-    "icb_code2": "1300",
-    "icb_code3": "1350",
-    "icb_code4": "1353"
+    "icb_code1": "8000",
+    "icb_code2": "8600",
+    "icb_code3": "8630",
+    "icb_code4": "8633"
   },
   {
-    "symbol": "VNH",
-    "organ_name": "Công ty Cổ phần Đầu tư Việt Việt Nhật",
-    "icb_name3": "Sản xuất thực phẩm",
-    "icb_name2": "Thực phẩm và đồ uống",
-    "icb_name4": "Nuôi trồng nông & hải sản",
+    "symbol": "VMD",
+    "organ_name": "Công ty Cổ phần Y Dược phẩm Vimedimex",
+    "icb_name3": "Dược phẩm",
+    "icb_name2": "Y tế",
+    "icb_name4": "Dược phẩm",
     "com_type_code": "CT",
-    "icb_code1": "3000",
-    "icb_code2": "3500",
-    "icb_code3": "3570",
-    "icb_code4": "3573"
+    "icb_code1": "4000",
+    "icb_code2": "4500",
+    "icb_code3": "4570",
+    "icb_code4": "4577"
   },
   {
     "symbol": "VGT",
@@ -17638,18 +17626,6 @@
     "icb_code2": "3700",
     "icb_code3": "3760",
     "icb_code4": "3763"
-  },
-  {
-    "symbol": "MVN",
-    "organ_name": "Tổng Công ty Hàng hải Việt Nam - CTCP",
-    "icb_name3": "Vận tải",
-    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
-    "icb_name4": "Vận tải Thủy",
-    "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2700",
-    "icb_code3": "2770",
-    "icb_code4": "2773"
   },
   {
     "symbol": "VIM",
@@ -17724,6 +17700,18 @@
     "icb_code4": "2737"
   },
   {
+    "symbol": "VNH",
+    "organ_name": "Công ty Cổ phần Đầu tư Việt Việt Nhật",
+    "icb_name3": "Sản xuất thực phẩm",
+    "icb_name2": "Thực phẩm và đồ uống",
+    "icb_name4": "Nuôi trồng nông & hải sản",
+    "com_type_code": "CT",
+    "icb_code1": "3000",
+    "icb_code2": "3500",
+    "icb_code3": "3570",
+    "icb_code4": "3573"
+  },
+  {
     "symbol": "VMT",
     "organ_name": "Công ty Cổ phần Giao nhận Vận tải Miền Trung",
     "icb_name3": "Vận tải",
@@ -17736,16 +17724,16 @@
     "icb_code4": "2779"
   },
   {
-    "symbol": "DVN",
-    "organ_name": "Tổng Công ty Dược Việt Nam - CTCP",
-    "icb_name3": "Dược phẩm",
-    "icb_name2": "Y tế",
-    "icb_name4": "Dược phẩm",
+    "symbol": "MVN",
+    "organ_name": "Tổng Công ty Hàng hải Việt Nam - CTCP",
+    "icb_name3": "Vận tải",
+    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
+    "icb_name4": "Vận tải Thủy",
     "com_type_code": "CT",
-    "icb_code1": "4000",
-    "icb_code2": "4500",
-    "icb_code3": "4570",
-    "icb_code4": "4577"
+    "icb_code1": "2000",
+    "icb_code2": "2700",
+    "icb_code3": "2770",
+    "icb_code4": "2773"
   },
   {
     "symbol": "VIP",
@@ -17820,6 +17808,30 @@
     "icb_code4": "7577"
   },
   {
+    "symbol": "DVN",
+    "organ_name": "Tổng Công ty Dược Việt Nam - CTCP",
+    "icb_name3": "Dược phẩm",
+    "icb_name2": "Y tế",
+    "icb_name4": "Dược phẩm",
+    "com_type_code": "CT",
+    "icb_code1": "4000",
+    "icb_code2": "4500",
+    "icb_code3": "4570",
+    "icb_code4": "4577"
+  },
+  {
+    "symbol": "GVR",
+    "organ_name": "Tập đoàn Công nghiệp Cao su Việt Nam - Công ty Cổ phần",
+    "icb_name3": "Hóa chất",
+    "icb_name2": "Hóa chất",
+    "icb_name4": "Nhựa, cao su & sợi",
+    "com_type_code": "CT",
+    "icb_code1": "1000",
+    "icb_code2": "1300",
+    "icb_code3": "1350",
+    "icb_code4": "1353"
+  },
+  {
     "symbol": "VNY",
     "organ_name": "Công ty Cổ phần Thuốc thú y Trung ương I",
     "icb_name3": "Hóa chất",
@@ -17832,42 +17844,6 @@
     "icb_code4": "1357"
   },
   {
-    "symbol": "VNX",
-    "organ_name": "Công ty Cổ phần Quảng cáo và Hội chợ Thương mại Vinexad",
-    "icb_name3": "Truyền thông",
-    "icb_name2": "Truyền thông",
-    "icb_name4": "Dịch vụ truyền thông",
-    "com_type_code": "CT",
-    "icb_code1": "5000",
-    "icb_code2": "5500",
-    "icb_code3": "5550",
-    "icb_code4": "5555"
-  },
-  {
-    "symbol": "VOS",
-    "organ_name": "Công ty Cổ phần Vận tải Biển Việt Nam",
-    "icb_name3": "Vận tải",
-    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
-    "icb_name4": "Vận tải Thủy",
-    "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2700",
-    "icb_code3": "2770",
-    "icb_code4": "2773"
-  },
-  {
-    "symbol": "VPC",
-    "organ_name": "Công ty Cổ phần Đầu tư và Phát triển Năng lượng Việt Nam",
-    "icb_name3": "Xây dựng và Vật liệu",
-    "icb_name2": "Xây dựng và Vật liệu",
-    "icb_name4": "Xây dựng",
-    "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2300",
-    "icb_code3": "2350",
-    "icb_code4": "2357"
-  },
-  {
     "symbol": "VMC",
     "organ_name": "Công ty Cổ phần VIMECO",
     "icb_name3": "Xây dựng và Vật liệu",
@@ -17878,6 +17854,18 @@
     "icb_code2": "2300",
     "icb_code3": "2350",
     "icb_code4": "2357"
+  },
+  {
+    "symbol": "VNX",
+    "organ_name": "Công ty Cổ phần Quảng cáo và Hội chợ Thương mại Vinexad",
+    "icb_name3": "Truyền thông",
+    "icb_name2": "Truyền thông",
+    "icb_name4": "Dịch vụ truyền thông",
+    "com_type_code": "CT",
+    "icb_code1": "5000",
+    "icb_code2": "5500",
+    "icb_code3": "5550",
+    "icb_code4": "5555"
   },
   {
     "symbol": "VMS",
@@ -17904,8 +17892,8 @@
     "icb_code4": "6575"
   },
   {
-    "symbol": "VPA",
-    "organ_name": "Công ty Cổ phần Vận tải Hóa dầu VP",
+    "symbol": "VOS",
+    "organ_name": "Công ty Cổ phần Vận tải Biển Việt Nam",
     "icb_name3": "Vận tải",
     "icb_name2": "Hàng & Dịch vụ Công nghiệp",
     "icb_name4": "Vận tải Thủy",
@@ -17962,6 +17950,18 @@
     "icb_code2": "5700",
     "icb_code3": "5750",
     "icb_code4": "5751"
+  },
+  {
+    "symbol": "VPC",
+    "organ_name": "Công ty Cổ phần Đầu tư và Phát triển Năng lượng Việt Nam",
+    "icb_name3": "Xây dựng và Vật liệu",
+    "icb_name2": "Xây dựng và Vật liệu",
+    "icb_name4": "Xây dựng",
+    "com_type_code": "CT",
+    "icb_code1": "2000",
+    "icb_code2": "2300",
+    "icb_code3": "2350",
+    "icb_code4": "2357"
   },
   {
     "symbol": "VNC",
@@ -18048,6 +18048,18 @@
     "icb_code4": "2779"
   },
   {
+    "symbol": "VPA",
+    "organ_name": "Công ty Cổ phần Vận tải Hóa dầu VP",
+    "icb_name3": "Vận tải",
+    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
+    "icb_name4": "Vận tải Thủy",
+    "com_type_code": "CT",
+    "icb_code1": "2000",
+    "icb_code2": "2700",
+    "icb_code3": "2770",
+    "icb_code4": "2773"
+  },
+  {
     "symbol": "BMV",
     "organ_name": "Công ty Cổ phần Bột mỳ Vinafood 1",
     "icb_name3": "Sản xuất thực phẩm",
@@ -18108,18 +18120,6 @@
     "icb_code4": "8633"
   },
   {
-    "symbol": "VTM",
-    "organ_name": "Công ty Cổ phần Vận tải và Đưa đón thợ mỏ - Vinacomin",
-    "icb_name3": "Du lịch & Giải trí",
-    "icb_name2": "Du lịch và Giải trí",
-    "icb_name4": "Vận tải hành khách & Du lịch",
-    "com_type_code": "CT",
-    "icb_code1": "5000",
-    "icb_code2": "5700",
-    "icb_code3": "5750",
-    "icb_code4": "5759"
-  },
-  {
     "symbol": "VNL",
     "organ_name": "Công ty Cổ phần Logistics Vinalink",
     "icb_name3": "Vận tải",
@@ -18130,18 +18130,6 @@
     "icb_code2": "2700",
     "icb_code3": "2770",
     "icb_code4": "2779"
-  },
-  {
-    "symbol": "VTP",
-    "organ_name": "Tổng Công ty Cổ phần Bưu chính Viettel",
-    "icb_name3": "Vận tải",
-    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
-    "icb_name4": "Chuyển phát nhanh",
-    "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2700",
-    "icb_code3": "2770",
-    "icb_code4": "2771"
   },
   {
     "symbol": "VLG",
@@ -18240,6 +18228,30 @@
     "icb_code4": "2779"
   },
   {
+    "symbol": "VTM",
+    "organ_name": "Công ty Cổ phần Vận tải và Đưa đón thợ mỏ - Vinacomin",
+    "icb_name3": "Du lịch & Giải trí",
+    "icb_name2": "Du lịch và Giải trí",
+    "icb_name4": "Vận tải hành khách & Du lịch",
+    "com_type_code": "CT",
+    "icb_code1": "5000",
+    "icb_code2": "5700",
+    "icb_code3": "5750",
+    "icb_code4": "5759"
+  },
+  {
+    "symbol": "VTP",
+    "organ_name": "Tổng Công ty Cổ phần Bưu chính Viettel",
+    "icb_name3": "Vận tải",
+    "icb_name2": "Hàng & Dịch vụ Công nghiệp",
+    "icb_name4": "Chuyển phát nhanh",
+    "com_type_code": "CT",
+    "icb_code1": "2000",
+    "icb_code2": "2700",
+    "icb_code3": "2770",
+    "icb_code4": "2771"
+  },
+  {
     "symbol": "VXT",
     "organ_name": "Công ty Cổ phần Kho vận và dịch vụ thương mại",
     "icb_name3": "Tư vấn & Hỗ trợ Kinh doanh",
@@ -18264,18 +18276,6 @@
     "icb_code4": "3577"
   },
   {
-    "symbol": "DFC",
-    "organ_name": "Công ty Cổ phần Xích líp Đông Anh",
-    "icb_name3": "Kim loại",
-    "icb_name2": "Tài nguyên Cơ bản",
-    "icb_name4": "Thép và sản phẩm thép",
-    "com_type_code": "CT",
-    "icb_code1": "1000",
-    "icb_code2": "1700",
-    "icb_code3": "1750",
-    "icb_code4": "1757"
-  },
-  {
     "symbol": "VSA",
     "organ_name": "Công ty Cổ phần Đại lý Hàng hải Việt Nam",
     "icb_name3": "Vận tải",
@@ -18298,18 +18298,6 @@
     "icb_code2": "8300",
     "icb_code3": "8350",
     "icb_code4": "8355"
-  },
-  {
-    "symbol": "XMC",
-    "organ_name": "Công ty cổ phần Đầu tư và Xây dựng Xuân Mai",
-    "icb_name3": "Xây dựng và Vật liệu",
-    "icb_name2": "Xây dựng và Vật liệu",
-    "icb_name4": "Vật liệu xây dựng & Nội thất",
-    "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2300",
-    "icb_code3": "2350",
-    "icb_code4": "2353"
   },
   {
     "symbol": "VPG",
@@ -18468,18 +18456,6 @@
     "icb_code4": "2777"
   },
   {
-    "symbol": "XMD",
-    "organ_name": "Công ty Cổ phần Xuân Mai - Đạo Tú",
-    "icb_name3": "Xây dựng và Vật liệu",
-    "icb_name2": "Xây dựng và Vật liệu",
-    "icb_name4": "Vật liệu xây dựng & Nội thất",
-    "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2300",
-    "icb_code3": "2350",
-    "icb_code4": "2353"
-  },
-  {
     "symbol": "VSG",
     "organ_name": "Công ty Cổ phần Container Phía Nam",
     "icb_name3": "Vận tải",
@@ -18564,16 +18540,16 @@
     "icb_code4": "9578"
   },
   {
-    "symbol": "CQT",
-    "organ_name": "Công ty Cổ phần Xi măng Quán Triều VVMI",
-    "icb_name3": "Xây dựng và Vật liệu",
-    "icb_name2": "Xây dựng và Vật liệu",
-    "icb_name4": "Vật liệu xây dựng & Nội thất",
+    "symbol": "DFC",
+    "organ_name": "Công ty Cổ phần Xích líp Đông Anh",
+    "icb_name3": "Kim loại",
+    "icb_name2": "Tài nguyên Cơ bản",
+    "icb_name4": "Thép và sản phẩm thép",
     "com_type_code": "CT",
-    "icb_code1": "2000",
-    "icb_code2": "2300",
-    "icb_code3": "2350",
-    "icb_code4": "2353"
+    "icb_code1": "1000",
+    "icb_code2": "1700",
+    "icb_code3": "1750",
+    "icb_code4": "1757"
   },
   {
     "symbol": "VTE",
@@ -18600,16 +18576,16 @@
     "icb_code4": "3763"
   },
   {
-    "symbol": "XPH",
-    "organ_name": "Công ty Cổ phần Xà phòng Hà Nội",
-    "icb_name3": "Hàng cá nhân",
-    "icb_name2": "Hàng cá nhân & Gia dụng",
-    "icb_name4": "Hàng cá nhân",
+    "symbol": "XMC",
+    "organ_name": "Công ty cổ phần Đầu tư và Xây dựng Xuân Mai",
+    "icb_name3": "Xây dựng và Vật liệu",
+    "icb_name2": "Xây dựng và Vật liệu",
+    "icb_name4": "Vật liệu xây dựng & Nội thất",
     "com_type_code": "CT",
-    "icb_code1": "3000",
-    "icb_code2": "3700",
-    "icb_code3": "3760",
-    "icb_code4": "3767"
+    "icb_code1": "2000",
+    "icb_code2": "2300",
+    "icb_code3": "2350",
+    "icb_code4": "2353"
   },
   {
     "symbol": "VGI",
@@ -18672,18 +18648,6 @@
     "icb_code4": "2791"
   },
   {
-    "symbol": "XHC",
-    "organ_name": "Công ty Cổ phần Xuân Hòa Việt Nam",
-    "icb_name3": "Hàng gia dụng",
-    "icb_name2": "Hàng cá nhân & Gia dụng",
-    "icb_name4": "Thiết bị gia dụng",
-    "com_type_code": "CT",
-    "icb_code1": "3000",
-    "icb_code2": "3700",
-    "icb_code3": "3720",
-    "icb_code4": "3726"
-  },
-  {
     "symbol": "VTO",
     "organ_name": "Công ty Cổ phần Vận tải Xăng dầu VITACO",
     "icb_name3": "Vận tải",
@@ -18694,18 +18658,6 @@
     "icb_code2": "2700",
     "icb_code3": "2770",
     "icb_code4": "2773"
-  },
-  {
-    "symbol": "XMP",
-    "organ_name": "Công ty Cổ phần Thủy điện Xuân Minh",
-    "icb_name3": "Sản xuất & Phân phối Điện",
-    "icb_name2": "Điện, nước & xăng dầu khí đốt",
-    "icb_name4": "Sản xuất & Phân phối Điện",
-    "com_type_code": "CT",
-    "icb_code1": "7000",
-    "icb_code2": "7500",
-    "icb_code3": "7530",
-    "icb_code4": "7535"
   },
   {
     "symbol": "VTQ",
@@ -18778,18 +18730,6 @@
     "icb_code2": "2700",
     "icb_code3": "2770",
     "icb_code4": "2779"
-  },
-  {
-    "symbol": "YBM",
-    "organ_name": "Công ty Cổ phần Khoáng sản Công nghiệp Yên Bái",
-    "icb_name3": "Khai khoáng",
-    "icb_name2": "Tài nguyên Cơ bản",
-    "icb_name4": "Khai khoáng",
-    "com_type_code": "CT",
-    "icb_code1": "1000",
-    "icb_code2": "1700",
-    "icb_code3": "1770",
-    "icb_code4": "1775"
   },
   {
     "symbol": "CLH",
@@ -18948,28 +18888,16 @@
     "icb_code4": "2353"
   },
   {
-    "symbol": "YEG",
-    "organ_name": "Công ty Cổ phần Tập đoàn Yeah1",
-    "icb_name3": "Truyền thông",
-    "icb_name2": "Truyền thông",
-    "icb_name4": "Giải trí & Truyền thông",
+    "symbol": "XMP",
+    "organ_name": "Công ty Cổ phần Thủy điện Xuân Minh",
+    "icb_name3": "Sản xuất & Phân phối Điện",
+    "icb_name2": "Điện, nước & xăng dầu khí đốt",
+    "icb_name4": "Sản xuất & Phân phối Điện",
     "com_type_code": "CT",
-    "icb_code1": "5000",
-    "icb_code2": "5500",
-    "icb_code3": "5550",
-    "icb_code4": "5553"
-  },
-  {
-    "symbol": "YTC",
-    "organ_name": "Công ty Cổ phần Xuất nhập khẩu Y tế Thành phố Hồ Chí Minh",
-    "icb_name3": "Thiết bị và Dịch vụ Y tế",
-    "icb_name2": "Y tế",
-    "icb_name4": "Dụng cụ y tế",
-    "com_type_code": "CT",
-    "icb_code1": "4000",
-    "icb_code2": "4500",
-    "icb_code3": "4530",
-    "icb_code4": "4537"
+    "icb_code1": "7000",
+    "icb_code2": "7500",
+    "icb_code3": "7530",
+    "icb_code4": "7535"
   },
   {
     "symbol": "YBC",
@@ -18982,5 +18910,77 @@
     "icb_code2": "2300",
     "icb_code3": "2350",
     "icb_code4": "2353"
+  },
+  {
+    "symbol": "YBM",
+    "organ_name": "Công ty Cổ phần Khoáng sản Công nghiệp Yên Bái",
+    "icb_name3": "Khai khoáng",
+    "icb_name2": "Tài nguyên Cơ bản",
+    "icb_name4": "Khai khoáng",
+    "com_type_code": "CT",
+    "icb_code1": "1000",
+    "icb_code2": "1700",
+    "icb_code3": "1770",
+    "icb_code4": "1775"
+  },
+  {
+    "symbol": "XMD",
+    "organ_name": "Công ty Cổ phần Xuân Mai - Đạo Tú",
+    "icb_name3": "Xây dựng và Vật liệu",
+    "icb_name2": "Xây dựng và Vật liệu",
+    "icb_name4": "Vật liệu xây dựng & Nội thất",
+    "com_type_code": "CT",
+    "icb_code1": "2000",
+    "icb_code2": "2300",
+    "icb_code3": "2350",
+    "icb_code4": "2353"
+  },
+  {
+    "symbol": "CQT",
+    "organ_name": "Công ty Cổ phần Xi măng Quán Triều VVMI",
+    "icb_name3": "Xây dựng và Vật liệu",
+    "icb_name2": "Xây dựng và Vật liệu",
+    "icb_name4": "Vật liệu xây dựng & Nội thất",
+    "com_type_code": "CT",
+    "icb_code1": "2000",
+    "icb_code2": "2300",
+    "icb_code3": "2350",
+    "icb_code4": "2353"
+  },
+  {
+    "symbol": "XPH",
+    "organ_name": "Công ty Cổ phần Xà phòng Hà Nội",
+    "icb_name3": "Hàng cá nhân",
+    "icb_name2": "Hàng cá nhân & Gia dụng",
+    "icb_name4": "Hàng cá nhân",
+    "com_type_code": "CT",
+    "icb_code1": "3000",
+    "icb_code2": "3700",
+    "icb_code3": "3760",
+    "icb_code4": "3767"
+  },
+  {
+    "symbol": "XHC",
+    "organ_name": "Công ty Cổ phần Xuân Hòa Việt Nam",
+    "icb_name3": "Hàng gia dụng",
+    "icb_name2": "Hàng cá nhân & Gia dụng",
+    "icb_name4": "Thiết bị gia dụng",
+    "com_type_code": "CT",
+    "icb_code1": "3000",
+    "icb_code2": "3700",
+    "icb_code3": "3720",
+    "icb_code4": "3726"
+  },
+  {
+    "symbol": "YEG",
+    "organ_name": "Công ty Cổ phần Tập đoàn Yeah1",
+    "icb_name3": "Truyền thông",
+    "icb_name2": "Truyền thông",
+    "icb_name4": "Giải trí & Truyền thông",
+    "com_type_code": "CT",
+    "icb_code1": "5000",
+    "icb_code2": "5500",
+    "icb_code3": "5550",
+    "icb_code4": "5553"
   }
 ]
