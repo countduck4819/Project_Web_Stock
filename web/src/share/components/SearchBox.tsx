@@ -1,6 +1,165 @@
+// "use client";
+
+// import { useEffect, useState, useMemo, useCallback } from "react";
+// import { useRouter } from "next/navigation";
+// import { Search } from "lucide-react";
+
+// import { useAppDispatch, useAppSelector } from "@/redux/hooks";
+// import { fetchStocks } from "@/store/stock-symbols/stock-symbols.api";
+
+// import { Input } from "@/components/ui/input";
+// import {
+//     Popover,
+//     PopoverTrigger,
+//     PopoverContent,
+// } from "@/components/ui/popover";
+
+// export default function SearchBox() {
+//     const router = useRouter();
+//     const dispatch = useAppDispatch();
+
+//     const { stocksFullList, loading } = useAppSelector(
+//         (state) => state.stockSymbols
+//     );
+
+//     const [open, setOpen] = useState(false);
+//     const [value, setValue] = useState("");
+//     const [history, setHistory] = useState<string[]>([]);
+//     const [hasOpened, setHasOpened] = useState(true);
+
+//     useEffect(() => {
+//         if (!stocksFullList?.length) dispatch(fetchStocks());
+//         const saved = JSON.parse(
+//             localStorage.getItem("search-history") || "[]"
+//         );
+//         if (Array.isArray(saved)) setHistory(saved);
+//     }, [dispatch, stocksFullList?.length]);
+
+//     const filtered = useMemo(() => {
+//         const term = value.trim().toLowerCase();
+
+//         if (term === "") {
+//             return history
+//                 .slice(0, 10)
+//                 .map((code) => stocksFullList.find((s) => s.symbol === code))
+//                 .filter(Boolean);
+//         }
+
+//         const results = [];
+//         for (let i = 0; i < stocksFullList.length && results.length < 30; i++) {
+//             const item = stocksFullList[i];
+//             if (
+//                 item &&
+//                 item.symbol &&
+//                 item.organ_name &&
+//                 (item.symbol.toLowerCase().includes(term) ||
+//                     item.organ_name.toLowerCase().includes(term))
+//             ) {
+//                 results.push(item);
+//             }
+//         }
+//         return results;
+//     }, [value, stocksFullList, history]);
+
+//     const handleSelect = useCallback(
+//         (code: string) => {
+//             const updated = [code, ...history.filter((i) => i !== code)].slice(
+//                 0,
+//                 10
+//             );
+//             localStorage.setItem("search-history", JSON.stringify(updated));
+//             setHistory(updated);
+//             setOpen(false);
+//             setValue("");
+//             router.push(`/ma-chung-khoan/${code}`);
+//         },
+//         [history, router]
+//     );
+
+//     // Tối ưu onChange
+//     const handleChange = useCallback(
+//         (e: React.ChangeEvent<HTMLInputElement>) => {
+//             const newValue = e.target.value;
+//             setValue(newValue);
+//             if (!open && newValue) {
+//                 setOpen(true);
+//             }
+//         },
+//         [open]
+//     );
+
+//     const handleFocus = useCallback(() => {
+//         setOpen(true);
+//     }, []);
+
+//     return (
+//         <Popover open={open} onOpenChange={setOpen}>
+//             <PopoverTrigger asChild>
+//                 <div className="relative w-[20rem]">
+//                     <Input
+//                         value={value}
+//                         onChange={handleChange}
+//                         onFocus={handleFocus}
+//                         placeholder="Nhập mã hoặc tên công ty..."
+//                         className="pr-8"
+//                         autoComplete="off"
+//                     />
+//                     <Search className="absolute right-2 top-1/2 size-4 -translate-y-1/2 text-gray-500 pointer-events-none" />
+//                 </div>
+//             </PopoverTrigger>
+
+//             {hasOpened && (
+//                 <PopoverContent
+//                     align="start"
+//                     sideOffset={6}
+//                     className="p-0 w-[20rem] rounded-lg shadow-lg overflow-hidden"
+//                     onPointerDownOutside={(e) => e.preventDefault()}
+//                 >
+//                     <div className="border-b px-3 py-2 font-medium text-sm">
+//                         {value ? "Kết quả tìm kiếm" : "Mã gần đây"}
+//                     </div>
+
+//                     <div className="max-h-[300px] overflow-auto">
+//                         {loading ? (
+//                             <div className="px-3 py-3 text-sm text-gray-500">
+//                                 Đang tải danh sách...
+//                             </div>
+//                         ) : filtered.length === 0 ? (
+//                             <div className="px-3 py-3 text-sm text-gray-500">
+//                                 {value
+//                                     ? "Không tìm thấy mã phù hợp"
+//                                     : "Chưa có lịch sử tìm kiếm"}
+//                             </div>
+//                         ) : (
+//                             filtered.map((item) =>
+//                                 item ? (
+//                                     <button
+//                                         key={item.symbol}
+//                                         onMouseDown={(e) => {
+//                                             e.preventDefault();
+//                                             handleSelect(item.symbol);
+//                                         }}
+//                                         className="w-full text-left px-3 py-2 hover:bg-blue-50 active:bg-blue-100 focus:outline-none"
+//                                     >
+//                                         <div className="font-semibold text-sm">
+//                                             {item.symbol}
+//                                         </div>
+//                                         <div className="text-xs text-gray-500 truncate">
+//                                             {item.organ_name}
+//                                         </div>
+//                                     </button>
+//                                 ) : null
+//                             )
+//                         )}
+//                     </div>
+//                 </PopoverContent>
+//             )}
+//         </Popover>
+//     );
+// }
 "use client";
 
-import { useEffect, useState, useMemo, useCallback } from "react";
+import { useEffect, useState, useMemo, useCallback, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { Search } from "lucide-react";
 
@@ -8,11 +167,6 @@ import { useAppDispatch, useAppSelector } from "@/redux/hooks";
 import { fetchStocks } from "@/store/stock-symbols/stock-symbols.api";
 
 import { Input } from "@/components/ui/input";
-import {
-    Popover,
-    PopoverTrigger,
-    PopoverContent,
-} from "@/components/ui/popover";
 
 export default function SearchBox() {
     const router = useRouter();
@@ -25,7 +179,20 @@ export default function SearchBox() {
     const [open, setOpen] = useState(false);
     const [value, setValue] = useState("");
     const [history, setHistory] = useState<string[]>([]);
-    const [hasOpened, setHasOpened] = useState(true);
+
+    const boxRef = useRef<HTMLDivElement>(null);
+
+    // bắt outside click
+    useEffect(() => {
+        function handleClickOutside(e: any) {
+            if (boxRef.current && !boxRef.current.contains(e.target)) {
+                setOpen(false);
+            }
+        }
+        document.addEventListener("mousedown", handleClickOutside);
+        return () =>
+            document.removeEventListener("mousedown", handleClickOutside);
+    }, []);
 
     useEffect(() => {
         if (!stocksFullList?.length) dispatch(fetchStocks());
@@ -76,46 +243,25 @@ export default function SearchBox() {
         [history, router]
     );
 
-    // Tối ưu onChange
-    const handleChange = useCallback(
-        (e: React.ChangeEvent<HTMLInputElement>) => {
-            const newValue = e.target.value;
-            setValue(newValue);
-            if (!open && newValue) {
-                setOpen(true);
-            }
-        },
-        [open]
-    );
-
-    const handleFocus = useCallback(() => {
-        setOpen(true);
-    }, []);
-
     return (
-        <Popover open={open} onOpenChange={setOpen}>
-            <PopoverTrigger asChild>
-                <div className="relative w-[20rem]">
-                    <Input
-                        value={value}
-                        onChange={handleChange}
-                        onFocus={handleFocus}
-                        placeholder="Nhập mã hoặc tên công ty..."
-                        className="pr-8"
-                        autoComplete="off"
-                    />
-                    <Search className="absolute right-2 top-1/2 size-4 -translate-y-1/2 text-gray-500 pointer-events-none" />
-                </div>
-            </PopoverTrigger>
+        <div ref={boxRef} className="relative w-[20rem]">
+            <Input
+                value={value}
+                onChange={(e) => {
+                    setValue(e.target.value);
+                    setOpen(true);
+                }}
+                onFocus={() => setOpen(true)}
+                placeholder="Nhập mã hoặc tên công ty..."
+                className="pr-8"
+                autoComplete="off"
+            />
+            <Search className="absolute right-2 top-1/2 size-4 -translate-y-1/2 text-gray-500 pointer-events-none" />
 
-            {hasOpened && (
-                <PopoverContent
-                    align="start"
-                    sideOffset={6}
-                    className="p-0 w-[300px] rounded-lg shadow-lg overflow-hidden"
-                    onOpenAutoFocus={(e) => e.preventDefault()}
-                >
-                    <div className="border-b px-3 py-2 font-medium text-sm">
+            {/* Drop-down thủ công */}
+            {open && (
+                <div className="absolute mt-2 left-0 z-50 w-[20rem] p-0 rounded-lg shadow-lg overflow-hidden bg-white border border-gray-200">
+                    <div className="border-b px-3 py-2 font-medium text-sm bg-gray-50">
                         {value ? "Kết quả tìm kiếm" : "Mã gần đây"}
                     </div>
 
@@ -135,10 +281,9 @@ export default function SearchBox() {
                                 item ? (
                                     <button
                                         key={item.symbol}
-                                        onMouseDown={(e) => {
-                                            e.preventDefault();
-                                            handleSelect(item.symbol);
-                                        }}
+                                        onClick={() =>
+                                            handleSelect(item.symbol)
+                                        }
                                         className="w-full text-left px-3 py-2 hover:bg-blue-50 active:bg-blue-100 focus:outline-none"
                                     >
                                         <div className="font-semibold text-sm">
@@ -152,8 +297,8 @@ export default function SearchBox() {
                             )
                         )}
                     </div>
-                </PopoverContent>
+                </div>
             )}
-        </Popover>
+        </div>
     );
 }
