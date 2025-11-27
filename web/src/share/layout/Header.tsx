@@ -32,7 +32,7 @@ export default function Header() {
                 <div className="flex items-center gap-6">
                     <Link href="/" className="font-bold text-lg">
                         <Image
-                            src="/fireant.webp"
+                            src="/img/fireant.webp"
                             width={120}
                             height={20}
                             alt="fireant"

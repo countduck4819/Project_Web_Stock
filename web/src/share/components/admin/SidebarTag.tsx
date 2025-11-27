@@ -42,7 +42,7 @@ export default function SidebarTag() {
                         {state === "expanded" ? (
                             <Link href="/" className="font-bold text-lg">
                                 <Image
-                                    src="/fireant.webp"
+                                    src="/img/fireant.webp"
                                     width={120}
                                     height={20}
                                     alt="fireant"
