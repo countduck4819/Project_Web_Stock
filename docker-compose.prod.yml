@@ -42,6 +42,21 @@ services:
             - .env
         command: ["python", "server.py"]
 
+    # fireant_api:
+    #     build: ./api
+    #     container_name: fireant_api
+    #     restart: always
+    #     working_dir: /fireant/api
+    #     depends_on:
+    #         - fireant_db
+    #         - fireant_python
+    #     networks:
+    #         - fireant_net
+    #     ports:
+    #         - "3000:3000"
+    #     env_file:
+    #         - .env
+    #     command: ["npm", "run", "start:prod"] # chạy bản dist
     fireant_api:
         build: ./api
         container_name: fireant_api
@@ -50,13 +65,16 @@ services:
         depends_on:
             - fireant_db
             - fireant_python
+        volumes:
+            - ./api:/fireant/api
+            - ./data:/fireant/data
         networks:
             - fireant_net
         ports:
             - "3000:3000"
         env_file:
             - .env
-        command: ["npm", "run", "start:prod"] # chạy bản dist
+        command: ["npm", "run", "start:prod"]
 
     fireant_web:
         build: ./web
