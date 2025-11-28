@@ -33,7 +33,7 @@ services:
         working_dir: /fireant/python
         volumes:
             - ./python_data:/fireant/python
-            - ./data:/fireant/python/data
+            - ./data:/fireant/data
         networks:
             - fireant_net
         ports:
