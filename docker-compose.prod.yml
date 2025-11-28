@@ -33,7 +33,7 @@ services:
         working_dir: /fireant/python
         volumes:
             - ./python_data:/fireant/python
-            - ./data:/fireant/data
+            - ./data:/fireant/python/data
         networks:
             - fireant_net
         ports:
@@ -48,7 +48,7 @@ services:
             - FLASK_RUN_RELOAD=False
         dns:
             - 8.8.8.8
-            - 1.1.1.1 
+            - 1.1.1.1
 
     # fireant_api:
     #     build: ./api
