@@ -41,6 +41,14 @@ services:
         env_file:
             - .env
         command: ["python", "server.py"]
+        environment:
+            - TZ=Asia/Ho_Chi_Minh
+            - FLASK_ENV=production
+            - FLASK_DEBUG=0
+            - FLASK_RUN_RELOAD=False
+        dns:
+            - 8.8.8.8
+            - 1.1.1.1 
 
     # fireant_api:
     #     build: ./api
