@@ -149,41 +149,23 @@ export class AiStockService
   //     const { userId, question } = body;
 
   //     const symbol = this.detectSymbol(question);
-  //     /** CASE A — NO SYMBOL → trả HTML + lưu lịch sử */
-  //     if (!symbol) {
-  //       const answerHtml = `
-  //         <p><b>Không tìm thấy mã cổ phiếu</b> trong câu hỏi.</p>
-  //         <p>Vui lòng nhập mã như <b>VCB</b>, <b>FPT</b>, <b>SSI</b>.</p>
-  //       `;
-
-  //       await this.aiStockRepository.save({
-  //         userId,
-  //         question,
-  //         symbol: null,
-  //         answer: answerHtml,
-  //       });
-
-  //       return {
-  //         status: HttpStatusCode.OK,
-  //         code: ResponseCode.SUCCESS,
-  //         message: 'AI trả lời thành công',
-  //         data: {
-  //           symbol: null,
-  //           answer: answerHtml,
-  //         },
-  //       };
-  //     }
 
   //     /** CASE B — CÓ SYMBOL */
-  //     const [priceData, financeData, newsList] = await Promise.all([
-  //       this.fetchPrice(symbol),
-  //       this.fetchFinance(symbol),
-  //       this.fetchNews(symbol),
-  //     ]);
-  //     console.log('1', newsList);
+  //     // Nếu không có symbol → trả về data rỗng để không bị lỗi
+  //     const [priceData, financeData, newsList] = symbol
+  //       ? await Promise.all([
+  //           this.fetchPrice(symbol),
+  //           this.fetchFinance(symbol),
+  //           this.fetchNews(symbol),
+  //         ])
+  //       : [null, null, []];
+
   //     const latestNews = newsList[0] || null;
-  //     const newsSnippet = await this.buildNewsSnippet(latestNews);
-  //     console.log('2', newsSnippet);
+
+  //     const newsSnippet = latestNews
+  //       ? await this.buildNewsSnippet(latestNews)
+  //       : null;
+
   //     const lastCandle = Array.isArray(priceData)
   //       ? priceData[priceData.length - 1]
   //       : null;
@@ -193,12 +175,12 @@ export class AiStockService
   // Tiêu đề: ${newsSnippet.title}
   // Tóm tắt: ${newsSnippet.summary}
   // Link: ${newsSnippet.link}
-  //     `.trim()
+  //   `.trim()
   //       : 'Không có tin tức.';
 
   //     /** Build AI context */
   //     const context = `
-  // DỮ LIỆU CỔ PHIẾU: ${symbol}
+  // DỮ LIỆU CỔ PHIẾU: ${symbol || 'Không tìm thấy mã'}
 
   // [GIÁ GẦN NHẤT]
   // ${lastCandle ? JSON.stringify(lastCandle) : 'Không có dữ liệu giá.'}
@@ -211,7 +193,7 @@ export class AiStockService
 
   // - Trả lời HTML.
   // - Dùng <p>, <b>, <i>, <br>, <ul>, <li>, <a>.
-  //     `.trim();
+  //   `.trim();
 
   //     const ai = await this.groq.chat.completions.create({
   //       model: 'llama-3.3-70b-versatile',
@@ -219,7 +201,7 @@ export class AiStockService
   //         {
   //           role: 'system',
   //           content: `${`
-  // Bạn là AI chuyên gia chứng khoán Việt Nam.
+  // Bạn là AI chuyên gia chứng khoán Việt Nam của công ty Fireant.
   // Bạn CHỈ được trả lời các câu hỏi liên quan đến:
   // - chứng khoán
   // - cổ phiếu
@@ -227,10 +209,26 @@ export class AiStockService
   // - thị trường
   // - phân tích kỹ thuật / cơ bản
   // - kinh tế
+  // - kinh doanh
+  // - đầu tư vàng, bất động sản, crypto
+  // - các công cụ tài chính
+  // - các chỉ số tài chính
+  // - gdp, lạm phát, lãi suất
+
+  // NGUYÊN TẮC QUAN TRỌNG:
+  // - Tin nhắn dài ngay sau system (message thứ 2) chỉ là NGỮ CẢNH DỮ LIỆU,
+  //   KHÔNG phải câu hỏi của người dùng.
+  // - KHÔNG được trả lời, KHÔNG được chào hỏi, KHÔNG được phản hồi lại message này.
+  // - Chỉ được trả lời câu hỏi cuối cùng của người dùng.
+
+  // QUY TẮC CHÀO HỎI:
+  // - Nếu người dùng chỉ gõ các câu chào đơn thuần như: "hi", "hello", "xin chào", "chào bạn"
+  //   thì hãy chào lại ngắn gọn và giới thiệu bạn là AI chứng khoán.
+  // - Nếu câu hỏi KHÔNG PHẢI là chào đơn thuần thì trả lời thẳng vào nội dung.
+  //   KHÔNG được chào lại, KHÔNG được mở đầu bằng "Xin chào".
 
   // NẾU câu hỏi KHÔNG liên quan đến chứng khoán → trả lời đúng mẫu sau:
-
-  // "<p><b>Xin lỗi!</b> Tôi chỉ hỗ trợ các câu hỏi liên quan đến chứng khoán, cổ phiếu và tài chính. Vui lòng đặt câu hỏi phù hợp.</p>"
+  // "<p><b>Xin lỗi!</b> Tôi chỉ hỗ trợ các câu hỏi liên quan đến chứng khoán, cổ phiếu, tài chính và kinh tế. Vui lòng đặt câu hỏi phù hợp.</p>"
 
   // TUYỆT ĐỐI KHÔNG trả lời linh tinh về các chủ đề khác.
   // `}`,
@@ -247,7 +245,7 @@ export class AiStockService
   //     await this.aiStockRepository.save({
   //       userId,
   //       question,
-  //       symbol,
+  //       symbol: symbol || null,
   //       answer: answerHtml,
   //     });
 
@@ -265,6 +263,28 @@ export class AiStockService
     body: AiStockAskReqI,
   ): Promise<BaseResDataI<AiStockAskResI>> {
     const { userId, question } = body;
+
+    // Lấy 3 lịch sử gần nhất của user (nếu có)
+    const lastHistories = userId
+      ? await this.aiStockRepository.find({
+          where: { userId },
+          order: { createdAt: 'DESC' },
+          take: 3,
+        })
+      : [];
+
+    const orderedHistories = lastHistories.reverse();
+
+    const historyMessages = orderedHistories.flatMap((h) => [
+      {
+        role: 'user' as const,
+        content: h.question,
+      },
+      {
+        role: 'assistant' as const,
+        content: h.answer,
+      },
+    ]);
 
     const symbol = this.detectSymbol(question);
 
@@ -321,7 +341,6 @@ ${newsText}
           content: `${`
 Bạn là AI chuyên gia chứng khoán Việt Nam của công ty Fireant. 
 Bạn CHỈ được trả lời các câu hỏi liên quan đến:
-- chào hỏi cơ bản như là người ta chào thì mình đáp lại thui, và bạn phải giới thiệu b là ai khi người ta chào b nhé
 - chứng khoán
 - cổ phiếu
 - tài chính doanh nghiệp
@@ -330,16 +349,37 @@ Bạn CHỈ được trả lời các câu hỏi liên quan đến:
 - kinh tế
 - kinh doanh
 - đầu tư vàng, bất động sản, crypto
+- liên quan đến các ngành và các công ty 
 - các công cụ tài chính
 - các chỉ số tài chính
 - gdp, lạm phát, lãi suất
-NẾU câu hỏi KHÔNG liên quan đến chứng khoán → trả lời đúng mẫu sau:
+- kinh tế vĩ mô và vĩ mô thị trường Việt Nam
+- Báo cáo ngành, báo cáo tài chính, báo cáo quản trị
+- tài chính thế giới và các yếu tố kinh tế toàn cầu ảnh hưởng đến thị trường Việt Nam
+- các ngành nghề thuộc phân loại ICB / VSIC
+- doanh nghiệp niêm yết tại HOSE / HNX / UPCoM
+- doanh nghiệp Việt Nam chưa niêm yết nhưng hoạt động trong các ngành kinh tế và có thông tin công khai
 
+NGUYÊN TẮC QUAN TRỌNG:
+- Tin nhắn dài ngay sau system (message thứ 2) chỉ là NGỮ CẢNH DỮ LIỆU, 
+  KHÔNG phải câu hỏi của người dùng.
+- KHÔNG được trả lời, KHÔNG được chào hỏi, KHÔNG được phản hồi lại message này.
+- Chỉ được trả lời câu hỏi cuối cùng của người dùng.
+
+
+QUY TẮC CHÀO HỎI:
+- Nếu người dùng chỉ gõ các câu chào đơn thuần như: "hi", "hello", "xin chào", "chào bạn"
+  thì hãy chào lại ngắn gọn và giới thiệu bạn là AI chứng khoán.
+- Nếu câu hỏi KHÔNG PHẢI là chào đơn thuần thì trả lời thẳng vào nội dung. 
+  KHÔNG được chào lại, KHÔNG được mở đầu bằng "Xin chào".
+
+NẾU câu hỏi KHÔNG liên quan đến chứng khoán → trả lời đúng mẫu sau:
 "<p><b>Xin lỗi!</b> Tôi chỉ hỗ trợ các câu hỏi liên quan đến chứng khoán, cổ phiếu, tài chính và kinh tế. Vui lòng đặt câu hỏi phù hợp.</p>"
 
 TUYỆT ĐỐI KHÔNG trả lời linh tinh về các chủ đề khác.
 `}`,
         },
+        ...historyMessages,
         { role: 'user', content: context },
         { role: 'user', content: question },
       ],
