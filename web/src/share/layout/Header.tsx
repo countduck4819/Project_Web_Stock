@@ -48,10 +48,16 @@ export default function Header() {
                         <Link href="/" className="hover:text-primary">
                             Cộng đồng
                         </Link>
-                        <Link href="/" className="hover:text-primary">
+                        <Link
+                            href="/ma-chung-khoan/vnindex"
+                            className="hover:text-primary"
+                        >
                             Thị trường
                         </Link>
-                        <Link href="/" className="hover:text-primary">
+                        <Link
+                            href="/ve-chung-toi"
+                            className="hover:text-primary"
+                        >
                             Về FireAnt
                         </Link>
                     </nav>

@@ -7,9 +7,15 @@ import { AnimatePresence, easeInOut, motion } from "framer-motion";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { CircleUserRound, HelpCircle } from "lucide-react";
+import { BookOpen, CircleUserRound, HelpCircle } from "lucide-react";
 import { cn } from "@/lib/utils";
+
 import Link from "next/link";
+import {
+    HoverCard,
+    HoverCardContent,
+    HoverCardTrigger,
+} from "@/components/ui/hover-card";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -109,14 +115,30 @@ export default function FireAntSoftware() {
                         Phần mềm FireAnt
                     </h2>
                     <div className="flex items-center gap-4 text-sm text-[#1D5EFF]">
-                        <button className="flex items-center gap-1 hover:underline">
-                            <HelpCircle size={16} />
-                            Giới thiệu
+                        <button className="cursor-pointer flex items-center gap-1 hover:underline">
+                            <Link
+                                href="/ve-chung-toi"
+                                className="flex items-center gap-[0.2rem]"
+                            >
+                                <BookOpen size={16} />
+                                Giới thiệu
+                            </Link>
                         </button>
-                        <button className="flex items-center gap-1 hover:underline">
-                            <HelpCircle size={16} />
-                            Hướng dẫn
-                        </button>
+                        <HoverCard>
+                            <HoverCardTrigger asChild>
+                                <button className="flex items-center gap-1 hover:underline">
+                                    <HelpCircle size={16} /> Hướng dẫn
+                                </button>
+                            </HoverCardTrigger>
+
+                            <HoverCardContent className="w-64">
+                                <p>
+                                    Đây là hướng dẫn thao tác chi tiết từng
+                                    bước. Click vào từng mục để xem video, ảnh
+                                    minh họa và các tip nâng cao.
+                                </p>
+                            </HoverCardContent>
+                        </HoverCard>
                     </div>
                 </div>
 

@@ -8,6 +8,7 @@ export const publicRouters: string[] = [
     "/dashboard",
     "/ma-chung-khoan",
     "/tin-tuc",
+    "/ve-chung-toi",
 ];
 
 export const STOCK_INDEX_MAP: Record<StockIndex, string> = {
